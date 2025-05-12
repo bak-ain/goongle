@@ -4,57 +4,14 @@ import Character from './Character';
 import MovingBtn from './MovingBtn';
 import Tile from './Tile';
 import Quiz from './Quiz';
-import { TileImg, TileEventImg } from '../img/img';
+import { startTile, map1Tiles, quizTile, eventTiles } from '../utils';
 import './Board.css';
 
-const tileData = [
-  // ✅ 기본 타일 8개
-  { id: 1, title: '경복궁', type: 'default', width: 350, height: 170, gungId: 'gyeongbokgung', image: TileImg.gung, gridArea: 't2' },
-  { id: 2, title: '근정전', type: 'default', width: 350, height: 170, gungId: 'geunjeongjeon', image: TileImg.gung, gridArea: 't4' },
-  { id: 3, title: '수정전', type: 'default', width: 150, height: 150, gungId: 'sujeongjeon', image: TileImg.gung, gridArea: 't6' },
-  { id: 4, title: '경회루', type: 'default', width: 150, height: 150, gungId: 'gyeonghoeru', image: TileImg.gung, gridArea: 't8' },
-  { id: 5, title: '강녕전', type: 'default', width: 350, height: 150, gungId: 'gangnyeongjeon', image: TileImg.gung, gridArea: 't10' },
-  { id: 6, title: '향원정', type: 'default', width: 150, height: 170, gungId: 'hyangwonjeong', image: TileImg.gung, gridArea: 't11' },
-  { id: 7, title: '건청궁', type: 'default', width: 350, height: 150, gungId: 'geoncheonggung', image: TileImg.gung, gridArea: 't12' },
-  { id: 8, title: '고궁박물관', type: 'default', width: 150, height: 150, gungId: 'gogungmuseum', image: TileImg.gung, gridArea: 't14' },
-
-  // ✅ 퀴즈 타일
-  { id: 9, title: '궁 퀴즈', type: 'quiz', width: 170, height: 148, image: TileImg.quiz, gridArea: 't15' },
-
-  // ✅ 이벤트 타일 6개 (앞면/뒷면 구분)
-  {
-    id: 10, title: '이벤트1', type: 'event', width: 150, height: 150, gridArea: 't3',
-    front: { image: TileEventImg.event1, text: '이벤트1' },
-    back: { image: TileEventImg.event1, text: '랜덤선물!' }
-  },
-  {
-    id: 11, title: '이벤트2', type: 'event', width: 150, height: 150, gridArea: 't5',
-    front: { image: TileEventImg.event2, text: '이벤트2' },
-    back: { image: TileEventImg.event2, text: '게임기회!' }
-  },
-  {
-    id: 12, title: '이벤트3', type: 'event', width: 170, height: 148, gridArea: 't7',
-    front: { image: TileEventImg.event3, text: '이벤트3' },
-    back: { image: TileEventImg.event3, text: '추첨참여!' }
-  },
-  {
-    id: 13, title: '이벤트4', type: 'event', width: 150, height: 150, gridArea: 't9',
-    front: { image: TileEventImg.event4, text: '이벤트4' },
-    back: { image: TileEventImg.event4, text: '왕의선물!' }
-  },
-  {
-    id: 14, title: '이벤트5', type: 'event', width: 150, height: 150, gridArea: 't13',
-    front: { image: TileEventImg.event5, text: '이벤트5' },
-    back: { image: TileEventImg.event5, text: '명소사진!' }
-  },
-  {
-    id: 15, title: '이벤트6', type: 'event', width: 150, height: 150, gridArea: 't16',
-    front: { image: TileEventImg.event6, text: '이벤트6' },
-    back: { image: TileEventImg.event6, text: '기념뱃지!' }
-  },
-
-  // ✅ 시작 타일
-  { id: 16, title: 'START', type: 'start', width: 150, height: 150, image: null, gridArea: 't1' }
+export const tileData = [
+  startTile,
+  ...map1Tiles,
+  quizTile,
+  ...eventTiles
 ];
 
 const Board = () => {
