@@ -1,0 +1,8 @@
+.Gnb{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #888;
+    width: 80%;
+}

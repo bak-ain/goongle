@@ -1,0 +1,11 @@
+.Character{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Character img{
+   height: 130px;
+   width: auto;
+}

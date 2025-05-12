@@ -1,0 +1,45 @@
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/GapyeongHanseokbong/GapyeongHanseokbong.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 
+    font-family: 'Gapyeong Hanseokbong';
+    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'SunBatang';
+    font-family: 'ShillaCulture';
+*/
+
+
+@font-face {
+    font-family: 'SunBatang';
+    src: url('font/SunBatang-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SunBatang';
+    src: url('font/SunBatang-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SunBatang';
+    src: url('font/SunBatang-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ShillaCulture';
+    src: url('font/ShillaCulture-M.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ShillaCulture';
+    src: url('font/ShillaCulture-B.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

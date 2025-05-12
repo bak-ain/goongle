@@ -1,0 +1,26 @@
+.Board {
+  width: 1200px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Board 안에서 그리드 배치용 */
+.tile-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "t13  t12  t11  t10  t9"
+    "t14  .    .    .    t8"
+    "t15  .    .    .    t7"
+    "t16  .    .    .    t6"
+    "t1   t2   t3   t4   t5";
+  width: fit-content;
+  /* height: 750px; */
+  border: 3px solid #000;
+  margin: auto;
+  box-sizing: border-box;
+}

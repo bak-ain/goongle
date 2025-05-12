@@ -1,0 +1,42 @@
+.Profile {
+    text-align: center;
+    font-family: "Noto Sans KR";
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.cha_box {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cha_box img {
+    height: 60px;
+    width: auto;
+}
+
+.nickname_box {
+    width: 80px;
+    height: 30px;
+    /* padding: 6px 12px; */
+    border-radius: 8px;
+    border: 2px solid #2E3C43;
+    background: #263137;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nickname_box span {
+    font-size: 16px;
+    font-weight: 500;
+}
