@@ -1,6 +1,6 @@
 .GuideBtn {
-    width: 75px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     color: #333;
     text-align: center;
     font-family: "Noto Sans KR";
@@ -8,6 +8,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    border-radius: 16px;
+    border-radius: 8px;
     background: #FFD8E4;
 }

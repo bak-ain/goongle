@@ -15,6 +15,7 @@ import gle2 from './gle2.png';
 import gle3 from './gle3.png';
 import gung from './gung.png';
 import quiz from './quiz.png'
+import yutStart from './event_start.png'
 import event1 from './event1_front.png';
 import event2 from './event2_front.png';
 import event3 from './event3_front.png';
@@ -23,6 +24,16 @@ import event5 from './event5_front.png';
 import event6 from './event6_front.png';
 import right_btn from './right_btn.png';
 import left_btn from './left_btn.png';
+import finall from './finall.png';
+import fin from './fin.png';
+import gungItem1 from './gung1.svg'
+import doo from './do.png';
+import gae from './gae.png';
+import gul from './gul.png';
+import yut from './yut.png';
+import mo from './mo.png';
+import backdo from './backdo.png';
+import yutDefault from './yut_default.png'
 
 export const Icons = {
   coin,
@@ -46,6 +57,7 @@ export const TileImg = {
   quiz
 }
 export const TileEventImg = {
+  yutStart,
   event1,
   event2,
   event3,
@@ -56,4 +68,21 @@ export const TileEventImg = {
 export const M_btn = {
   right_btn,
   left_btn
+}
+export const Fins = {
+  finall,
+  fin
+}
+export const GungItems = {
+  gungItem1,
+}
+export const YutItems = {
+  yutDefault,
+  doo,
+  gae,
+  gul,
+  yut,
+  mo,
+  backdo
+
 }

@@ -1,0 +1,8 @@
+.CenterWrap{
+    width: 48vw;
+    height: 26vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F1E9D4;
+}

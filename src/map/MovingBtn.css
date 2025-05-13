@@ -1,12 +1,12 @@
 .MovingBtn{
     display: flex;
     justify-content: space-between;
-    width: 230px;
-    height: 100px;
+    width: 12vw;
+    height:5vw;
 }
 .MovingBtn button{
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;

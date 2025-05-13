@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Character from './Character';
 import MovingBtn from './MovingBtn';
+import CenterWrap from './CenterWrap';
 import Tile from './Tile';
 import Quiz from './Quiz';
 import { startTile, map1Tiles, quizTile, eventTiles } from '../utils';
@@ -14,14 +15,24 @@ export const tileData = [
   ...eventTiles
 ];
 
-const Board = () => {
-  const [eventMode, setEventMode] = useState(false);
+const Board = ({ eventMode, triggerYut }) => {
   const [showQuiz, setShowQuiz] = useState(false);
   const startIndex = tileData.findIndex(tile => tile.type === 'start');
   const [position, setPosition] = useState(startIndex);
+  const [prevEventMode, setPrevEventMode] = useState(false); // 이전값 추적용
+  const [resetYutItem, setResetYutItem] = useState(false);
   const navigate = useNavigate();
 
-  // 👇 이동 → 도착 후 GungInfo or Quiz 실행
+
+  // ✅ eventMode가 false → true로 바뀌는 순간 캐릭터 위치 초기화
+  useEffect(() => {
+    if (!prevEventMode && eventMode) {
+      setPosition(startIndex); // 캐릭터를 시작 위치로 이동
+    }
+    setPrevEventMode(eventMode); // 다음 비교를 위해 상태 저장
+  }, [eventMode]);
+
+
   const moveToTile = (targetIndex, tileType, tileDataObj) => {
     if (targetIndex === position) {
       openTile(tileType, tileDataObj);
@@ -33,7 +44,6 @@ const Board = () => {
     const step = () => {
       current = (current + 1) % tileData.length;
 
-      // 이벤트 타일이면 스킵
       while (tileData[current].type === 'event') {
         current = (current + 1) % tileData.length;
       }
@@ -41,7 +51,7 @@ const Board = () => {
       setPosition(current);
 
       if (current !== targetIndex) {
-        setTimeout(step, 300); // 애니메이션 타이밍
+        setTimeout(step, 300);
       } else {
         setTimeout(() => openTile(tileType, tileDataObj), 300);
       }
@@ -50,7 +60,6 @@ const Board = () => {
     step();
   };
 
-  // 👇 목적지 도착 후 실행 함수
   const openTile = (type, tile) => {
     if (type === 'quiz') {
       setShowQuiz(true);
@@ -59,7 +68,6 @@ const Board = () => {
     }
   };
 
-  // 👇 이거 하나만 남기면 됨!
   const handleClick = (tile) => {
     if (tile.type === 'event' || tile.type === 'start') return;
 
@@ -67,8 +75,6 @@ const Board = () => {
     moveToTile(targetIndex, tile.type, tile);
   };
 
-
-  // 이동 로직
   const handleMove = (direction) => {
     const len = tileData.length;
     let newPos = position;
@@ -77,34 +83,90 @@ const Board = () => {
       newPos = direction === 'right'
         ? (newPos + 1) % len
         : (newPos - 1 + len) % len;
-    } while (tileData[newPos].type === 'event'); // event는 건너뜀
+    } while (tileData[newPos].type === 'event');
 
     setPosition(newPos);
   };
 
+  const moveByYutResult = (result) => {
+    const steps = {
+      doo: 1,
+      gae: 2,
+      gul: 3,
+      yut: 4,
+      mo: 5,
+      backdo: -1
+    };
+
+    const moveCount = steps[result];
+    if (moveCount == null) return;
+
+    const isForward = moveCount > 0;
+    const absMove = Math.abs(moveCount);
+
+    let current = position;
+    let moved = 0;
+
+    // ✅ 1. 윷 아이템 보여주고 1초 후에 이동 시작
+    setTimeout(() => {
+      const step = () => {
+        do {
+          current = isForward
+            ? (current + 1) % tileData.length
+            : (current - 1 + tileData.length) % tileData.length;
+        } while (tileData[current].type !== 'event');
+
+        moved++;
+        setPosition(current);
+
+        if (moved < absMove) {
+          setTimeout(step, 300);
+        } else {
+          // ✅ 2. 이동이 끝난 후 1.5초 후에 다시 원래 자리로 복귀
+          setTimeout(() => {
+            setPosition(startIndex);      // 캐릭터 복귀
+            setResetYutItem(true);        // YutItem을 'yutStart'로 되돌림
+
+            // ✅ 딜레이 후 false로 다시 초기화
+            setTimeout(() => {
+              setResetYutItem(false);     // 다음 윷 던지기 위해 초기화
+            }, 100); // 100~200ms 정도면 충분해
+          }, 1500);
+
+
+          setTimeout(() => {
+            openTile(tileData[current].type, tileData[current]);
+          }, 300); // 도착한 타일 열기
+        }
+      };
+
+      step();
+    }, 1000); // ✅ 이동 딜레이 1초
+  };
+
+
 
   return (
-    <><div className='Board'>
-      <div className="tile-wrap">
-        {tileData.map(tile => (
-          <Tile
-            key={tile.id}
-            tile={tile}
-            eventMode={eventMode}
-            onClick={() => handleClick(tile)}
-          />
-        ))}
-
-        {/* ✅ 캐릭터 위치는 tileData[position]의 gridArea로 결정됨 */}
-        <Character tile={tileData[position]} />
+    <div className='Board'>
+      <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} resetYutItem={resetYutItem} />
+      <div className='mapArea'>
+        <div className="tile_wrap">
+          {tileData.map(tile => (
+            <Tile
+              key={tile.id}
+              tile={tile}
+              eventMode={eventMode}
+              onClick={() => handleClick(tile)}
+            />
+          ))}
+          <Character tile={tileData[position]} />
+        </div>
       </div>
-      <MovingBtn onMove={handleMove} />
 
+      <MovingBtn onMove={handleMove} />
       {showQuiz && <Quiz onClose={() => setShowQuiz(false)} />}
     </div>
-    </>
   );
 };
-
 
 export default Board;

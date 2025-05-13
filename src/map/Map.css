@@ -1,0 +1,5 @@
+.Map{
+    display: flex;
+    gap: 5vw;
+    position: relative;
+}

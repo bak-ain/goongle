@@ -1,0 +1,26 @@
+.YutnoriBtn {
+    width: 18vw;
+    height: 8.85vw;
+    background-image: url(../img/Ybtn_bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    gap: 0.2vw;
+    padding-top: 1.5vw;
+    margin-top: 0.6vw;
+    border-radius: 1.5vw;
+    border: 0.2vw solid #7C4F8E;
+    background-color: #F5D08C;
+    color: var(--text-Bk2);
+}
+
+.YutnoriBtn span {
+    display: block;
+}
+
+.YutnoriBtn img {
+    display: block;
+    width: 6.2vw;
+    height: 5.6vw;
+}

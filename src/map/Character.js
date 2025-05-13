@@ -3,7 +3,7 @@ import { Characters } from '../img/img';
 import './Character.css';
 
 const Character = ({ tile }) => {
-  const gridArea = tile.gridArea;
+  const { gridArea, top = '0', left = '0' } = tile;
 
   const randomCharacter = useMemo(() => {
     const keys = Object.keys(Characters);
@@ -12,8 +12,18 @@ const Character = ({ tile }) => {
   }, []);
 
   return (
-    <div className="Character" style={{ gridArea, zIndex: 10 }}>
-      <img src={randomCharacter} alt="캐릭터" />
+    <div className="Character_wrapper" style={{ gridArea }}>
+      <div
+        className="Character"
+        style={{
+          position: 'absolute',
+          top,
+          left,
+          zIndex: 10
+        }}
+      >
+        <img src={randomCharacter} alt="캐릭터" />
+      </div>
     </div>
   );
 };

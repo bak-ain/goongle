@@ -1,15 +1,15 @@
 import './App.css';
 import './font.css'; 
 import Header from './components/Header';
-import Board from './map/Board'; 
+import Map from './map/Map';
+import CenterWrap from './map/CenterWrap';
 
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Board/>
-
+      <Map/>
     </div>
   );
 }

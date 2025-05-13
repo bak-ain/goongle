@@ -6,6 +6,11 @@
     font-family: "Noto Sans KR", sans-serif;
     font-family: 'SunBatang';
     font-family: 'ShillaCulture';
+    font-family: 'MaruBuriExtraLight';
+    font-family: 'MaruBuriLight';
+    font-family: 'MaruBuri';
+    font-family: 'MaruBuriBold';
+    font-family: 'MaruBuriSemiBold';
 */
 
 
@@ -41,5 +46,11 @@
     font-family: 'ShillaCulture';
     src: url('font/ShillaCulture-B.woff') format('woff');
     font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Independence_hall';
+    src: url('font/Independence_hall.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
