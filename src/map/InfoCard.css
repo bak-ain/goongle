@@ -125,15 +125,7 @@
   margin-right: 1.3rem;
 }
 
-/* .small-line small {
-  font-size: 0.85rem;
-  color: #666;
-} */
-/* 윷놀이 규칙 전용 */
-/* .InfoCard.event-mode {
-  background-color: #ffe15f;
-  color: #000;
-} */
+
 .unit {
   display: inline-block;
   min-width: 6rem;
@@ -162,4 +154,7 @@
 
 .line_5 {
   background: #996DAC;
+}
+.InfoCard.eventMode .InfoCard_wrap{
+  background-color: #F1E9D4;
 }

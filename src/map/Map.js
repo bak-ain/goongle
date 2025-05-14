@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Board from './Board';
 import InfoCard from './InfoCard';
 import YutnoriBtn from './YutnoriBtn';
+import Header from '../components/Header';
 import './Map.css';
 
 const Map = () => {
@@ -19,6 +20,7 @@ const Map = () => {
 
   return (
     <div className="Map">
+      <Header/>
       <Board eventMode={eventMode} triggerYut={triggerYut} />
       <div className='Map_left'>
         <InfoCard eventMode={eventMode} gungId="gyeongbokgung" />

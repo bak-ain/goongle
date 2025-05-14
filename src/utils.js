@@ -30,43 +30,49 @@ export const eventTiles = [
   {
     id: 101, title: '이벤트1', type: 'event', width: '8vw', height: '8vw', gridArea: 't3',
     front: { image: TileEventImg.event1, text: '이벤트1' },
-    back: { image: TileEventImg.event1, text: '랜덤선물!' }
+    back: { image: TileEventImg.event1, text: '닢1' },
+    top: '-14%', left: '26%'
   },
   {
     id: 102, title: '이벤트2', type: 'event', width: '8vw', height: '8vw', gridArea: 't5',
     front: { image: TileEventImg.event2, text: '이벤트2' },
-    back: { image: TileEventImg.event2, text: '게임기회!' }
+    back: { image: TileEventImg.event2, text: '닢2' },
+    top: '-14%', left: '42%'
   },
   {
     id: 103, title: '이벤트3', type: 'event', width: '9vw', height: '7.6vw', gridArea: 't7',
     front: { image: TileEventImg.event3, text: '이벤트3' },
-    back: { image: TileEventImg.event3, text: '추첨참여!' }
+    back: { image: TileEventImg.event3, text: '닢3' },
+    top: '-15%', left: '38%'
   },
   {
     id: 104, title: '이벤트4', type: 'event', width: '8vw', height: '8vw', gridArea: 't9',
     front: { image: TileEventImg.event4, text: '이벤트4' },
-    back: { image: TileEventImg.event4, text: '왕의선물!' }
+    back: { image: TileEventImg.event4, text: '닢1' },
+    top: '-13%', left: '42%'
   },
   {
     id: 105, title: '이벤트5', type: 'event', width: '8vw', height: '8vw', gridArea: 't13',
     front: { image: TileEventImg.event5, text: '이벤트5' },
-    back: { image: TileEventImg.event5, text: '명소사진!' }
+    back: { image: TileEventImg.event5, text: '닢2' },
+    top: '-13%', left: '8%'
   },
   {
     id: 106, title: '이벤트6', type: 'event', width: '9vw', height: '7vw', gridArea: 't15',
     front: { image: TileEventImg.event6, text: '이벤트6' },
-    back: { image: TileEventImg.event6, text: '기념뱃지!' }
+    back: { image: TileEventImg.event6, text: '닢3' },
+    top: '-15%', left: '14%'
   },
 ]
 
 export const map1Tiles = [
   {
     id: 1,
-    title: '경복궁',
+    title: '광화문',
     type: 'default',
     width: '17.2vw',
     height: '9vw',
-    gungId: 'gyeongbokgung',
+    gungId: 'gwanghwamun',
     image: TileImg.gung,
     gridArea: 't2',
     top: '-10%',

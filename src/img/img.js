@@ -35,6 +35,7 @@ import mo from './mo.png';
 import backdo from './backdo.png';
 import yutDefault from './yut_default.png'
 
+
 export const Icons = {
   coin,
   event,

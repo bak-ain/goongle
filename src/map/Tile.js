@@ -1,6 +1,7 @@
 import React from 'react';
 import './Board.css';
 
+
 const Tile = ({ tile, eventMode, onClick }) => {
   const isEvent = tile.type === 'event';
   const flipClass = eventMode && isEvent ? 'flipped' : '';

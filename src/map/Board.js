@@ -30,7 +30,7 @@ const Board = ({ eventMode, triggerYut }) => {
       setPosition(startIndex); // 캐릭터를 시작 위치로 이동
     }
     setPrevEventMode(eventMode); // 다음 비교를 위해 상태 저장
-  }, [eventMode]);
+  }, [eventMode, prevEventMode, startIndex]);
 
 
   const moveToTile = (targetIndex, tileType, tileDataObj) => {
@@ -72,10 +72,21 @@ const Board = ({ eventMode, triggerYut }) => {
     if (tile.type === 'event' || tile.type === 'start') return;
 
     const targetIndex = tileData.findIndex(t => t.id === tile.id);
+
+    if (targetIndex === position) {
+      // ✅ 이미 도착한 위치라면 즉시 실행
+      openTile(tile.type, tile);
+      return;
+    }
+
+    // ✅ 아니면 이동부터
     moveToTile(targetIndex, tile.type, tile);
   };
 
+
   const handleMove = (direction) => {
+    if (eventMode) return; // ✅ eventMode일 때는 이동 차단
+
     const len = tileData.length;
     let newPos = position;
 
@@ -86,7 +97,17 @@ const Board = ({ eventMode, triggerYut }) => {
     } while (tileData[newPos].type === 'event');
 
     setPosition(newPos);
+
+    // ✅ 이동 직후 default 타일이면 바로 열기
+    const targetTile = tileData[newPos];
+    if (targetTile.type === 'default' && targetTile.gungId) {
+      setTimeout(() => {
+        openTile(targetTile.type, targetTile);
+      }, 800); // 약간의 딜레이를 줘서 자연스러운 이동 효과
+    }
   };
+
+
 
   const moveByYutResult = (result) => {
     const steps = {
@@ -146,6 +167,7 @@ const Board = ({ eventMode, triggerYut }) => {
 
 
 
+
   return (
     <div className='Board'>
       <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} resetYutItem={resetYutItem} />
@@ -159,7 +181,7 @@ const Board = ({ eventMode, triggerYut }) => {
               onClick={() => handleClick(tile)}
             />
           ))}
-          <Character tile={tileData[position]} />
+          <Character tile={tileData[position]} eventMode={eventMode} />
         </div>
       </div>
 
