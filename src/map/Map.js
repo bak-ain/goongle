@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Board from './Board';
 import InfoCard from './InfoCard';
 import YutnoriBtn from './YutnoriBtn';
-import Header from '../components/Header';
 import QuizEntryPopup from './QuizEntryPopup';
 import { useNavigate } from 'react-router-dom';
 import './Map.css';
@@ -34,7 +33,7 @@ const Map = ({ isMember, setIsMember }) => {
     <div className="Map">
       {/* <Header isMember={isMember} /> */}
       <Board eventMode={eventMode} triggerYut={triggerYut} currentGung="gyeongbokgung" setShowQuizPopup={setShowQuizPopup}
-        setQuizPopupMode={setQuizPopupMode} />
+        setQuizPopupMode={setQuizPopupMode}  isMember={isMember}/>
       <div className='Map_left'>
         <InfoCard eventMode={eventMode} gungId="gyeongbokgung" />
         <YutnoriBtn onClick={handleYutnoriClick} />

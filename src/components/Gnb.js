@@ -3,9 +3,7 @@ import GnbItem from './GnbItem';
 import { Icons } from '../img/img';
 import './Gnb.css';
 
-const Gnb = () => {
-  const isMember = Boolean(localStorage.getItem('userToken'));
-
+const Gnb = ({ isMember, setIsMember }) => {
   return (
     <ul className="Gnb">
       <GnbItem
@@ -19,7 +17,9 @@ const Gnb = () => {
       <GnbItem
         icon={Icons.login}
         label={isMember ? '로그아웃' : '로그인'}
-        to={isMember ? '/logout' : '/login'}
+        to={isMember}
+        setIsMember={setIsMember}
+        type={isMember ? 'logout' : 'login'}
       />
 
       {!isMember && (

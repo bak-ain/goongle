@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './GnbItem.css';
 
-const GnbItem = ({ icon, label, to, isConditional, isMember }) => {
+const GnbItem = ({ icon, label, to, isConditional, isMember,setIsMember }) => {
   const navigate = useNavigate();
 
   const handleClick = (e) => {
@@ -10,9 +10,10 @@ const GnbItem = ({ icon, label, to, isConditional, isMember }) => {
 
     // 🔸 로그아웃 처리
     if (label === '로그아웃') {
-      localStorage.removeItem('userToken'); // 로그인 정보 제거
+      localStorage.removeItem('userToken');
+      setIsMember(false);
       alert('로그아웃되었습니다.');
-      navigate('/login'); // 또는 원하는 페이지로
+      navigate('/'); // 또는 원하는 페이지로
       return;
     }
 

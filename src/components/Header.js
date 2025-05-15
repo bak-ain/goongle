@@ -6,7 +6,7 @@ import GuideBtn from "./GuideBtn";
 import React, { useState } from 'react';
 import LoginPopup from "./LoginPopup";
 
-const Header = ({ isMember,setIsMember  }) => {
+const Header = ({ isMember, setIsMember }) => {
     const [showLoginPopup, setShowLoginPopup] = useState(false);
     return (
         <div className="Header">
@@ -15,11 +15,11 @@ const Header = ({ isMember,setIsMember  }) => {
                 <GuideBtn />
             </div>
             <div className="bottom">
-                <Gnb />
-                <Profile isMember={isMember} onLoginClick={() => setShowLoginPopup(true)}  />
+                <Gnb isMember={isMember} setIsMember={setIsMember} />
+                <Profile isMember={isMember} onLoginClick={() => setShowLoginPopup(true)} />
             </div>
             {showLoginPopup && (
-                <LoginPopup onClose={() => setShowLoginPopup(false)} setIsMember={setIsMember}  />
+                <LoginPopup onClose={() => setShowLoginPopup(false)} setIsMember={setIsMember} />
             )}
         </div>
     )

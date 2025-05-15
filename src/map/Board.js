@@ -20,7 +20,8 @@ const Board = ({
   setShowQuizPopup,
   setQuizPopupMode,
   showQuizPopup,
-  quizPopupMode
+  quizPopupMode,
+  isMember
 }) => {
   const mapTiles = mapTilesByGung[currentGung] || []; // 기본값 처리
   const tileData = [
@@ -44,14 +45,7 @@ const Board = ({
   const [giveAmount, setGiveAmount] = useState(1);
   const [justEarned, setJustEarned] = useState(false);
   // const [showEntryPopup, setShowEntryPopup] = useState(false);
-  const [isMember, setIsMember] = useState(false); // 🔐 회원 여부 상태
   // const [pendingQuizTile, setPendingQuizTile] = useState(null);
-
-
-  useEffect(() => {
-    const userToken = localStorage.getItem('userToken');
-    setIsMember(!!userToken);
-  }, []);
 
 
   // console.log("giveNipVisible:", giveNipVisible, "giveAmount:", giveAmount, "nipCount:", nipCount);
@@ -105,7 +99,6 @@ const Board = ({
 
   const openTile = (type, tile) => {
     if (type === 'quiz') {
-      const isMember = !!localStorage.getItem('userToken');
 
       if (!isMember) {
         setQuizPopupMode('login');
