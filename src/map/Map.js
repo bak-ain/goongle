@@ -7,11 +7,12 @@ import QuizEntryPopup from './QuizEntryPopup';
 import { useNavigate } from 'react-router-dom';
 import './Map.css';
 
-const Map = () => {
+const Map = ({ isMember, setIsMember }) => {
   const [eventMode, setEventMode] = useState(false);
   const [triggerYut, setTriggerYut] = useState(0);
   const [showLoginGuide, setShowLoginGuide] = useState(false);
-  const isMember = !!localStorage.getItem('userToken');
+  const [showQuizPopup, setShowQuizPopup] = useState(false);
+  const [quizPopupMode, setQuizPopupMode] = useState('quiz');
   const navigate = useNavigate();
 
   const handleYutnoriClick = () => {
@@ -31,8 +32,9 @@ const Map = () => {
 
   return (
     <div className="Map">
-      <Header />
-      <Board eventMode={eventMode} triggerYut={triggerYut} currentGung="gyeongbokgung" />
+      {/* <Header isMember={isMember} /> */}
+      <Board eventMode={eventMode} triggerYut={triggerYut} currentGung="gyeongbokgung" setShowQuizPopup={setShowQuizPopup}
+        setQuizPopupMode={setQuizPopupMode} />
       <div className='Map_left'>
         <InfoCard eventMode={eventMode} gungId="gyeongbokgung" />
         <YutnoriBtn onClick={handleYutnoriClick} />
@@ -47,7 +49,16 @@ const Map = () => {
           onCancel={() => setShowLoginGuide(false)}
         />
       )}
-
+      {showQuizPopup && (
+        <QuizEntryPopup
+          mode={quizPopupMode}
+          onConfirm={() => {
+            setShowQuizPopup(false);
+            // 퀴즈 팝업이 quiz 모드일 때만 추가 로직 필요 시 여기에
+          }}
+          onCancel={() => setShowQuizPopup(false)}
+        />
+      )}
     </div>
   );
 };

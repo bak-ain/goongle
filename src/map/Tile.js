@@ -9,7 +9,7 @@ const Tile = ({ tile, eventMode, onClick }) => {
   return (
     <div className="tile-cell" style={{ gridArea: tile.gridArea }}>
       <div
-        className={`tile-slot ${tile.type} ${tile.positionClass}`}
+        className={`tile-slot ${tile.type} ${tile.positionClass} tile${tile.id}`}
         style={{
           width: tile.width,
           height: tile.height,
@@ -22,18 +22,15 @@ const Tile = ({ tile, eventMode, onClick }) => {
             <div className="tile-inner">
               <div className="tile-front">
                 <img src={tile.front.image} alt={tile.front.text} />
-                <p>{tile.front.text}</p>
               </div>
               <div className="tile-back">
                 <img src={tile.back.image} alt={tile.back.text} />
-                <p>{tile.back.text}</p>
               </div>
             </div>
           </div>
         ) : (
           <div className="tile">
             {tile.image && <img src={tile.image} alt={tile.title} />}
-            <p>{tile.title}</p>
           </div>
         )}
       </div>

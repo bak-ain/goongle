@@ -13,7 +13,15 @@ import './Board.css';
 
 
 
-const Board = ({ eventMode, triggerYut, currentGung }) => {
+const Board = ({
+  eventMode,
+  triggerYut,
+  currentGung,
+  setShowQuizPopup,
+  setQuizPopupMode,
+  showQuizPopup,
+  quizPopupMode
+}) => {
   const mapTiles = mapTilesByGung[currentGung] || []; // 기본값 처리
   const tileData = [
     startTile,
@@ -26,8 +34,6 @@ const Board = ({ eventMode, triggerYut, currentGung }) => {
   const returnToTileId = state?.returnToTileId;
   const [showQuiz, setShowQuiz] = useState(false);
   const [currentQuiz, setCurrentQuiz] = useState(null);
-  const [showQuizPopup, setShowQuizPopup] = useState(false);
-  const [quizPopupMode, setQuizPopupMode] = useState('quiz'); // 'quiz' or 'login'
   const startIndex = tileData.findIndex(tile => tile.type === 'start');
   const [position, setPosition] = useState(startIndex);
   const [prevEventMode, setPrevEventMode] = useState(false); // 이전값 추적용
@@ -99,6 +105,8 @@ const Board = ({ eventMode, triggerYut, currentGung }) => {
 
   const openTile = (type, tile) => {
     if (type === 'quiz') {
+      const isMember = !!localStorage.getItem('userToken');
+
       if (!isMember) {
         setQuizPopupMode('login');
         setShowQuizPopup(true);
@@ -109,6 +117,7 @@ const Board = ({ eventMode, triggerYut, currentGung }) => {
       setShowQuizPopup(true);
       return;
     }
+
 
     else if (type === 'event') {
       const randomAmount = Math.floor(Math.random() * 3) + 1; // 1~3
