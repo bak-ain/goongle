@@ -1,25 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Board from './Board';
 import InfoCard from './InfoCard';
 import YutnoriBtn from './YutnoriBtn';
 import QuizEntryPopup from './QuizEntryPopup';
-import { useNavigate } from 'react-router-dom';
+import LoginPopup from '../components/LoginPopup';
+import { useLogin } from '../LoginContext';
 import './Map.css';
 
-const Map = ({ isMember, setIsMember }) => {
+const Map = ({ currentGung, setCurrentGung }) => {
+  const { isMember } = useLogin();
   const [eventMode, setEventMode] = useState(false);
   const [triggerYut, setTriggerYut] = useState(0);
   const [showLoginGuide, setShowLoginGuide] = useState(false);
+  const [showLoginPopup, setShowLoginPopup] = useState(false);
   const [showQuizPopup, setShowQuizPopup] = useState(false);
   const [quizPopupMode, setQuizPopupMode] = useState('quiz');
-  const navigate = useNavigate();
+  const [shouldStartQuiz, setShouldStartQuiz] = useState(false);
+  const [shouldStartEvent, setShouldStartEvent] = useState(false);
+  const [loginOrigin, setLoginOrigin] = useState(null); // 'yut' | 'quiz'
 
   const handleYutnoriClick = () => {
     if (!isMember) {
-      setShowLoginGuide(true); // 비회원일 경우 로그인 안내
+      setLoginOrigin('yut');
+      setShowLoginGuide(true);
       return;
     }
-
     if (!eventMode) {
       setEventMode(true);
     } else {
@@ -27,35 +32,86 @@ const Map = ({ isMember, setIsMember }) => {
     }
   };
 
+  useEffect(() => {
+    if (shouldStartEvent) {
+      setEventMode(true);
+      setShouldStartEvent(false);
+    }
+  }, [shouldStartEvent]);
+  // 🔸 로그아웃 시 자동으로 이벤트모드 종료
+  useEffect(() => {
+    if (!isMember && eventMode) {
+      setEventMode(false);
+    }
+  }, [isMember, eventMode]);
 
 
   return (
     <div className="Map">
-      {/* <Header isMember={isMember} /> */}
-      <Board eventMode={eventMode} triggerYut={triggerYut} currentGung="gyeongbokgung" setShowQuizPopup={setShowQuizPopup}
-        setQuizPopupMode={setQuizPopupMode}  isMember={isMember}/>
-      <div className='Map_left'>
+      <Board
+        eventMode={eventMode}
+        triggerYut={triggerYut}
+        currentGung={currentGung}
+        setShowQuizPopup={setShowQuizPopup}
+        setQuizPopupMode={setQuizPopupMode}
+        setShowLoginPopup={setShowLoginPopup}
+        setLoginOrigin={setLoginOrigin}
+        shouldStartQuiz={shouldStartQuiz}
+        setShouldStartQuiz={setShouldStartQuiz}
+      />
+
+      <div className="Map_left">
         <InfoCard eventMode={eventMode} gungId="gyeongbokgung" />
-        <YutnoriBtn onClick={handleYutnoriClick} />
+        <YutnoriBtn
+          onClick={handleYutnoriClick}
+          forceClicked={eventMode}
+          onRequireLogin={() => {
+            setLoginOrigin('yut');
+            setShowLoginGuide(true);
+          }}
+        />
+
       </div>
+
       {showLoginGuide && (
         <QuizEntryPopup
           mode="login"
           onConfirm={() => {
             setShowLoginGuide(false);
-            navigate('/login'); // 로그인 페이지로 이동
+            setShowLoginPopup(true);
           }}
           onCancel={() => setShowLoginGuide(false)}
         />
       )}
+
       {showQuizPopup && (
         <QuizEntryPopup
           mode={quizPopupMode}
           onConfirm={() => {
             setShowQuizPopup(false);
-            // 퀴즈 팝업이 quiz 모드일 때만 추가 로직 필요 시 여기에
+            if (quizPopupMode === 'quiz') {
+              setShouldStartQuiz(true);
+            } else if (quizPopupMode === 'login') {
+              setLoginOrigin('quiz');
+              setShowLoginPopup(true);
+            }
           }}
           onCancel={() => setShowQuizPopup(false)}
+        />
+      )}
+
+      {showLoginPopup && (
+        <LoginPopup
+          onClose={() => {
+            setShowLoginPopup(false);
+            if (loginOrigin === 'yut') {
+              setShouldStartEvent(true);
+            } else if (loginOrigin === 'quiz') {
+              setQuizPopupMode('quiz');
+              setShowQuizPopup(true);
+            }
+            setLoginOrigin(null);
+          }}
         />
       )}
     </div>

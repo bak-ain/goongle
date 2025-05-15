@@ -1,34 +1,34 @@
+// ✅ Gnb.js: 궁 5개 + 궁글닢만 표시
+
 import React from 'react';
 import GnbItem from './GnbItem';
 import { Icons } from '../img/img';
 import './Gnb.css';
 
-const Gnb = ({ isMember, setIsMember }) => {
+const GUNG_LIST = [
+  { id: 'gyeongbokgung', label: '경복궁', icon: Icons.gnb1, iconOn: Icons.gnb1On },
+  { id: 'gyeonghuigung', label: '경희궁', icon: Icons.gnb2, iconOn: Icons.gnb2On },
+  { id: 'changdeokgung', label: '창덕궁', icon: Icons.gnb3, iconOn: Icons.gnb3On },
+  { id: 'changgyeonggung', label: '창경궁', icon: Icons.gnb4, iconOn: Icons.gnb4On },
+  { id: 'deoksugung', label: '덕수궁', icon: Icons.gnb5, iconOn: Icons.gnb5On },
+];
+
+const Gnb = ({ currentGung, setCurrentGung }) => {
   return (
     <ul className="Gnb">
-      <GnbItem
-        icon={Icons.mapPin}
-        label="Map"
-        to="/map"
-        isConditional
-        isMember={isMember}
-      />
+      {GUNG_LIST.map((gung) => (
+        <GnbItem
+          key={gung.id}
+          icon={currentGung === gung.id ? gung.iconOn : gung.icon}
+          label={gung.label}
+          isActive={currentGung === gung.id}
+          onClick={() => setCurrentGung(gung.id)}
+        />
+      ))}
 
-      <GnbItem
-        icon={Icons.login}
-        label={isMember ? '로그아웃' : '로그인'}
-        to={isMember}
-        setIsMember={setIsMember}
-        type={isMember ? 'logout' : 'login'}
-      />
+      {/* <li className="divider" /> */}
 
-      {!isMember && (
-        <GnbItem icon={Icons.join} label="회원가입" to="/signup" />
-      )}
-
-      <GnbItem icon={Icons.coin} label="궁글 닢" to="/coin" />
-
-      <GnbItem icon={Icons.event} label="이벤트" to="/event" />
+      <GnbItem icon={Icons.coin} label="궁글 닢" onClick={() => alert('궁글 닢 페이지로 이동')} />
     </ul>
   );
 };

@@ -1,6 +1,16 @@
 // src/img/img.js
 
 import coin from './coin.png';
+import gnb1 from './kbicon.png'
+import gnb1On from './kbiconon.png'
+import gnb2 from './khicon.png'
+import gnb2On from './khiconon.png'
+import gnb3 from './ckicon.png'
+import gnb3On from './ckiconon.png'
+import gnb4 from './ckngicon.png'
+import gnb4On from './ckngiconon.png'
+import gnb5 from './duckicon.png'
+import gnb5On from './duckiconon.png'
 import event from './event.png';
 import login from './users.png';
 import logo from './logo.png';
@@ -38,12 +48,20 @@ import yutDefault from './yut_default.png'
 
 export const Icons = {
   coin,
-  event,
-  login,
+  gnb1,
+  gnb1On,
+  gnb2,
+  gnb2On,
+  gnb3,
+  gnb3On,
+  gnb4,
+  gnb4On,
+  gnb5,
+  gnb5On,
   logo,
-  mapPin,
-  join,
+  login
 };
+
 export const Characters = {
   goong1,
   goong2,

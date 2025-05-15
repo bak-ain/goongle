@@ -24,7 +24,7 @@ const QuizEntryPopup = ({ mode = 'quiz', onConfirm, onCancel }) => {
               <strong>제휴 쿠폰</strong>을 구매할 수 있어요.
             </p>
             <div className="btns">
-              <button onClick={() => window.location.href = "/login"}>로그인</button>
+              <button onClick={onConfirm}>로그인</button>
               <button onClick={onCancel}>돌아가기</button>
             </div>
           </>
