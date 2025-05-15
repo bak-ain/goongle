@@ -1,0 +1,69 @@
+.quiz-entry-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* 어두운 반투명 배경 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: 'Pretendard', sans-serif;
+}
+
+.popup-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.popup-box h2 strong {
+  font-size: 1.8rem;
+  display: block;
+  margin-top: 4px;
+}
+
+.popup-box p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 16px 0 24px;
+}
+
+.popup-box .btns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.popup-box button {
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.popup-box button:first-child {
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.popup-box button:last-child {
+  background: #fff;
+  color: #000;
+  border: 1.5px solid #000;
+}

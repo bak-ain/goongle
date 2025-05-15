@@ -1,27 +1,64 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import GiveNip from './GiveNip';
 import Character from './Character';
 import MovingBtn from './MovingBtn';
 import CenterWrap from './CenterWrap';
 import Tile from './Tile';
 import Quiz from './Quiz';
-import { startTile, map1Tiles, quizTile, eventTiles } from '../utils';
+import QuizEntryPopup from './QuizEntryPopup';
+import { startTile, mapTilesByGung, quizTile, eventTiles } from '../utils';
+import { quizData } from "../utils";
 import './Board.css';
 
-export const tileData = [
-  startTile,
-  ...map1Tiles,
-  quizTile,
-  ...eventTiles
-];
 
-const Board = ({ eventMode, triggerYut }) => {
+
+const Board = ({ eventMode, triggerYut, currentGung }) => {
+  const mapTiles = mapTilesByGung[currentGung] || []; // 기본값 처리
+  const tileData = [
+    startTile,
+    ...mapTiles,
+    { ...quizTile, gungId: currentGung },
+    ...eventTiles
+  ];
+
+  const { state } = useLocation();
+  const returnToTileId = state?.returnToTileId;
   const [showQuiz, setShowQuiz] = useState(false);
+  const [currentQuiz, setCurrentQuiz] = useState(null);
+  const [showQuizPopup, setShowQuizPopup] = useState(false);
+  const [quizPopupMode, setQuizPopupMode] = useState('quiz'); // 'quiz' or 'login'
   const startIndex = tileData.findIndex(tile => tile.type === 'start');
   const [position, setPosition] = useState(startIndex);
   const [prevEventMode, setPrevEventMode] = useState(false); // 이전값 추적용
   const [resetYutItem, setResetYutItem] = useState(false);
   const navigate = useNavigate();
+  const [nipCount, setNipCount] = useState(0);
+  const [giveNipVisible, setGiveNipVisible] = useState(false);
+  const [giveAmount, setGiveAmount] = useState(1);
+  const [justEarned, setJustEarned] = useState(false);
+  // const [showEntryPopup, setShowEntryPopup] = useState(false);
+  const [isMember, setIsMember] = useState(false); // 🔐 회원 여부 상태
+  // const [pendingQuizTile, setPendingQuizTile] = useState(null);
+
+
+  useEffect(() => {
+    const userToken = localStorage.getItem('userToken');
+    setIsMember(!!userToken);
+  }, []);
+
+
+  // console.log("giveNipVisible:", giveNipVisible, "giveAmount:", giveAmount, "nipCount:", nipCount);
+  useEffect(() => {
+    if (returnToTileId) {
+      const targetIndex = tileData.findIndex(t => t.id === returnToTileId);
+      if (targetIndex !== -1) setPosition(targetIndex);
+
+      // ✅ URL의 state를 초기화하여 새로고침 시 영향을 없애기
+      navigate('/', { replace: true }); // ← state 제거용
+    }
+  }, [returnToTileId, navigate]);
+
 
 
   // ✅ eventMode가 false → true로 바뀌는 순간 캐릭터 위치 초기화
@@ -62,9 +99,26 @@ const Board = ({ eventMode, triggerYut }) => {
 
   const openTile = (type, tile) => {
     if (type === 'quiz') {
-      setShowQuiz(true);
+      if (!isMember) {
+        setQuizPopupMode('login');
+        setShowQuizPopup(true);
+        return;
+      }
+
+      setQuizPopupMode('quiz');
+      setShowQuizPopup(true);
+      return;
+    }
+
+    else if (type === 'event') {
+      const randomAmount = Math.floor(Math.random() * 3) + 1; // 1~3
+      setNipCount(prev => prev + randomAmount);
+      setGiveAmount(randomAmount);
+      setGiveNipVisible(true);
     } else if (type === 'default' && tile.gungId) {
-      navigate(`/gung/${tile.gungId}`);
+      navigate(`/gung/${tile.gungId}`, {
+        state: { fromTileId: tile.id }
+      });
     }
   };
 
@@ -100,7 +154,9 @@ const Board = ({ eventMode, triggerYut }) => {
 
     // ✅ 이동 직후 default 타일이면 바로 열기
     const targetTile = tileData[newPos];
-    if (targetTile.type === 'default' && targetTile.gungId) {
+    if ((targetTile.type === 'default' && targetTile.gungId) ||
+      targetTile.type === 'quiz'
+    ) {
       setTimeout(() => {
         openTile(targetTile.type, targetTile);
       }, 800); // 약간의 딜레이를 줘서 자연스러운 이동 효과
@@ -143,21 +199,10 @@ const Board = ({ eventMode, triggerYut }) => {
         if (moved < absMove) {
           setTimeout(step, 300);
         } else {
-          // ✅ 2. 이동이 끝난 후 1.5초 후에 다시 원래 자리로 복귀
-          setTimeout(() => {
-            setPosition(startIndex);      // 캐릭터 복귀
-            setResetYutItem(true);        // YutItem을 'yutStart'로 되돌림
-
-            // ✅ 딜레이 후 false로 다시 초기화
-            setTimeout(() => {
-              setResetYutItem(false);     // 다음 윷 던지기 위해 초기화
-            }, 100); // 100~200ms 정도면 충분해
-          }, 1500);
-
-
+          // ✅ 2. 도착한 타일 열기
           setTimeout(() => {
             openTile(tileData[current].type, tileData[current]);
-          }, 300); // 도착한 타일 열기
+          }, 300);
         }
       };
 
@@ -165,13 +210,17 @@ const Board = ({ eventMode, triggerYut }) => {
     }, 1000); // ✅ 이동 딜레이 1초
   };
 
-
+  const getRandomQuiz = () => {
+    const quizList = quizData[currentGung];
+    if (!quizList || quizList.length === 0) return null;
+    return quizList[Math.floor(Math.random() * quizList.length)];
+  };
 
 
   return (
     <div className='Board'>
-      <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} resetYutItem={resetYutItem} />
       <div className='mapArea'>
+        <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} resetYutItem={resetYutItem} />
         <div className="tile_wrap">
           {tileData.map(tile => (
             <Tile
@@ -186,7 +235,51 @@ const Board = ({ eventMode, triggerYut }) => {
       </div>
 
       <MovingBtn onMove={handleMove} />
-      {showQuiz && <Quiz onClose={() => setShowQuiz(false)} />}
+      {showQuizPopup && (
+        <QuizEntryPopup
+          mode={quizPopupMode}
+          onConfirm={() => {
+            setShowQuizPopup(false);
+            if (quizPopupMode === 'quiz') {
+              const randomQuiz = getRandomQuiz();
+              if (randomQuiz) {
+                setCurrentQuiz(randomQuiz);
+                setShowQuiz(true);
+              }
+            }
+          }}
+          onCancel={() => setShowQuizPopup(false)}
+        />
+      )}
+
+
+      {showQuiz && currentQuiz && (
+        <Quiz
+          questionData={currentQuiz}
+          onClose={() => {
+            setShowQuiz(false);
+            if (justEarned) {
+              setTimeout(() => {
+                setGiveNipVisible(true);
+                setJustEarned(false);
+              }, 100);
+            }
+          }}
+          onCorrect={() => {
+            const fixedAmount = 1;
+            setNipCount(prev => prev + fixedAmount);
+            setGiveAmount(fixedAmount);
+            setJustEarned(true);
+          }}
+        />
+      )}
+
+      {giveNipVisible && (
+        <GiveNip
+          amount={nipCount} // 총 보유 닢
+          onClose={() => setGiveNipVisible(false)}
+        />
+      )}
     </div>
   );
 };

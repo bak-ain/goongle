@@ -9,7 +9,7 @@ const Tile = ({ tile, eventMode, onClick }) => {
   return (
     <div className="tile-cell" style={{ gridArea: tile.gridArea }}>
       <div
-        className={`tile-slot ${tile.type} tile-${tile.id}`}
+        className={`tile-slot ${tile.type} ${tile.positionClass}`}
         style={{
           width: tile.width,
           height: tile.height,

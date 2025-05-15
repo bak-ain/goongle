@@ -17,7 +17,7 @@
   background-position: center center;
   background-size: contain;
   left: 50%;
-  top: 0;
+  top: 1.2vw;
   transform: translateX(-50%);
 }
 

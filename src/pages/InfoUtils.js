@@ -1,20 +1,20 @@
-import Gwanghwamun1 from './Gwanghwamun1.png'
-import Gwanghwamun2 from './Gwanghwamun2.png'
-import Gwanghwamun3 from './Gwanghwamun3.png'
-import Gwanghwamun4 from './Gwanghwamun4.png'
-import Gwanghwamun5 from './Gwanghwamun5.png'
-import Gwanghwamun6 from './Gwanghwamun6.png'
-import Gwanghwamun7 from './Gwanghwamun7.png'
-import Gwanghwamun8 from './Gwanghwamun8.png'
-import Gwanghwamun9 from './Gwanghwamun9.png'
-import Gwanghwamun10 from './Gwanghwamun10.png'
-import Gwanghwamun11 from './Gwanghwamun11.png'
-import Gwanghwamun12 from './Gwanghwamun12.png'
-import Gwanghwamun13 from './Gwanghwamun13.png'
-import Gwanghwamun14 from './Gwanghwamun14.png'
-import Gwanghwamun15 from './Gwanghwamun15.png'
-import Gwanghwamun16 from './Gwanghwamun16.png'
-import Gwanghwamun17 from './Gwanghwamun17.png'
+import Gwanghwamun1 from '../img/Gwanghwamun1.png'
+import Gwanghwamun2 from '../img/Gwanghwamun2.png'
+import Gwanghwamun3 from '../img/Gwanghwamun3.png'
+import Gwanghwamun4 from '../img/Gwanghwamun4.png'
+import Gwanghwamun5 from '../img/Gwanghwamun5.png'
+import Gwanghwamun6 from '../img/Gwanghwamun6.png'
+import Gwanghwamun7 from '../img/Gwanghwamun7.png'
+import Gwanghwamun8 from '../img/Gwanghwamun8.png'
+import Gwanghwamun9 from '../img/Gwanghwamun9.png'
+import Gwanghwamun10 from '../img/Gwanghwamun10.png'
+import Gwanghwamun11 from '../img/Gwanghwamun11.png'
+import Gwanghwamun12 from '../img/Gwanghwamun12.png'
+import Gwanghwamun13 from '../img/Gwanghwamun13.png'
+import Gwanghwamun14 from '../img/Gwanghwamun14.png'
+import Gwanghwamun15 from '../img/Gwanghwamun15.png'
+import Gwanghwamun16 from '../img/Gwanghwamun16.png'
+import Gwanghwamun17 from '../img/Gwanghwamun17.png'
 
 export const InfoImgs = {
   gyeongbokgung: {
@@ -23,9 +23,10 @@ export const InfoImgs = {
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
       fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun10, Gwanghwamun16, Gwanghwamun17],
+      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
       sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      last: [Gwanghwamun14],
+      seventh: [Gwanghwamun14],
+      last: [],
     },
     geunjeongjeon: {
       first: [],
@@ -97,7 +98,7 @@ export const InfoTexts = {
           "자리하고 있답니다.",
         ]
       },
-      last: {
+      seventh: {
         title: '단아함 속의 위엄, 광화문의 구조 이야기',
         paragraphs: [
           "광화문은 전통 목조 건축 양식으로 지어진 아름다운 구조물을 가지고 있어요.",
@@ -107,6 +108,11 @@ export const InfoTexts = {
           "단단하고 듬직한 모습으로 지금도 광화문을 지키고 있답니다."
         ]
       },
+      last: {
+        title: '',
+        paragraphs: [
+        ]
+      }
     },
     geunjeongjeon: {
       first: {},
@@ -114,7 +120,7 @@ export const InfoTexts = {
       // ...
     },
   },
-   changdeokgung: {
+  changdeokgung: {
     donhwamun: {
       first: {},
       second: {},

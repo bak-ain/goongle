@@ -1,0 +1,37 @@
+.quiz-wrap {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  z-index: 9999;
+}
+
+.quiz-box {
+  width: 80%;
+  margin: 100px auto;
+  background: black;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.options button {
+  display: block;
+  margin: 10px 0;
+  background: none;
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hint-box .character{
+    width: 65px;
+    height: 86px;
+}
