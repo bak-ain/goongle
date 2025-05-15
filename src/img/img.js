@@ -23,15 +23,17 @@ import goong4 from './goong4.png';
 import gle1 from './gle1.png';
 import gle2 from './gle2.png';
 import gle3 from './gle3.png';
-import gung from './gung.png';
+import gung from './first.png';
+import gung2 from './second.png';
+import gung3 from './second.png';
 import quiz from './quiz.png'
 import yutStart from './event_start.png'
-import event1 from './event1_front.png';
-import event2 from './event2_front.png';
-import event3 from './event3_front.png';
-import event4 from './event4_front.png';
-import event5 from './event5_front.png';
-import event6 from './event6_front.png';
+import event1 from './Vector3.png';
+import event2 from './Vector1.png';
+import event3 from './Vector2.png';
+import event4 from './Vector3.png';
+import event5 from './Vector1.png';
+import event6 from './Vector2.png';
 import right_btn from './right_btn.png';
 import left_btn from './left_btn.png';
 import finall from './finall.png';
@@ -73,6 +75,8 @@ export const Characters = {
 };
 export const TileImg = {
   gung,
+  gung2,
+  gung3,
   quiz
 }
 export const TileEventImg = {

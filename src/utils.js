@@ -96,7 +96,7 @@ export const mapTilesByGung = {
       width: '17.2vw',
       height: '9vw',
       gungId: 'geunjeongjeon',
-      image: TileImg.gung,
+      image: TileImg.gung2,
       gridArea: 't4',
       top: '-10%',
       left: '40%',
