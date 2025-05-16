@@ -8,6 +8,7 @@
     /* padding-top: 20px;
     padding-bottom: 40px; */
     border-right: 1px solid #ccc;
+    background: #fff;
 }
 .top{
     display: flex;

@@ -12,7 +12,7 @@
   width: 12vw;
   height: 2vw;
   position: absolute;
-  background-image: url(../img/finall.svg);
+  background-image: url(../img/pintop.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -24,7 +24,7 @@
 .fins {
   width: 10vw;
   height: 3vw;
-  background-image: url(../img/fins.svg);
+  background-image: url(../img/pinbottom.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -35,9 +35,9 @@
 }
 
 .InfoCard_wrap {
-  background-color: #F3D7E3;
+  background-color: #F1E9D4;
   border-radius: 1.25rem;
-  border: 0.2vw solid #7C4F8E;
+  border: 0.2vw solid #264256;
   border-radius: 0.6vw;
   padding: 2.5vw 1.25vw;
   width: 18vw;
@@ -47,6 +47,7 @@
   gap: 1.5vw;
 }
 .InfoCard h2 {
+  color: #2A6DB9;
   text-align: center;
   font-family: "Gapyeong Hanseokbong";
   font-size: 1.875rem;
