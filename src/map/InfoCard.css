@@ -37,7 +37,7 @@
 .InfoCard_wrap {
   background-color: #F1E9D4;
   border-radius: 1.25rem;
-  border: 0.2vw solid #264256;
+  border: 0.2vw solid var(--Gyeongbokgung-info-color);
   border-radius: 0.6vw;
   padding: 2.5vw 1.25vw;
   width: 18vw;
