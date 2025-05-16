@@ -8,7 +8,7 @@ const GiveNip = ({ amount, onClose, total }) => {
     <div className="GiveNip">
       <div className="nip-content">
         <img src={Characters.goong1} alt="캐릭터" className="char" />
-        <div className="coin"></div> {/* 닢 이미지 or 배경 */}
+        <div className="coin"></div>
         <p className="count">현재 보유한 닢 : {total}닢</p>
         <h2 className="title">얼~쑤!</h2>
         <p className="subtitle">{amount}닢 드리오~!</p>
