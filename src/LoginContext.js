@@ -6,9 +6,11 @@ export const LoginProvider = ({ children }) => {
   const [isMember, setIsMember] = useState(false);
 
   useEffect(() => {
-    const token = localStorage.getItem('userToken');
+    const token = sessionStorage.getItem('userToken') || localStorage.getItem('userToken');
     setIsMember(!!token);
   }, []);
+
+
 
   return (
     <LoginContext.Provider value={{ isMember, setIsMember }}>

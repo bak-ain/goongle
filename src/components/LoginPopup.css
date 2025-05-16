@@ -56,3 +56,12 @@ input {
   padding: 10px;
   font-size: 14px;
 }
+/* LoginPopup.css에 추가 */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}

@@ -4,15 +4,21 @@ import './LoginPopup.css';
 
 const LoginPopup = ({ onClose }) => {
     const { setIsMember } = useLogin();
-    const [id, setId] = useState('');
-    const [pw, setPw] = useState('');
+    const [id, setId] = useState('gungle123');
+    const [pw, setPw] = useState('1234');
     const [error, setError] = useState('');
+    const [rememberMe, setRememberMe] = useState(false); // ✅ 추가
 
     const handleLogin = () => {
         if (id === 'gungle123' && pw === '1234') {
-            localStorage.setItem('userToken', 'valid');
+            if (rememberMe) {
+                localStorage.setItem('userToken', 'valid');
+            } else {
+                sessionStorage.setItem('userToken', 'valid');
+            }
+
             setIsMember(true);
-            onClose(); // 팝업 닫기
+            onClose();
         } else {
             setError('아이디 또는 비밀번호가 틀렸습니다.');
         }
@@ -39,7 +45,19 @@ const LoginPopup = ({ onClose }) => {
                         onKeyDown={(e) => e.key === 'Enter' && handleLogin()}
                     />
                     {error && <p className="error-msg">{error}</p>}
+
+                    {/* ✅ 로그인 상태 유지 체크박스 */}
+                    <label className="remember-me">
+                        <input
+                            type="checkbox"
+                            checked={rememberMe}
+                            onChange={(e) => setRememberMe(e.target.checked)}
+                        />
+                        로그인 상태 유지
+                    </label>
+
                     <button className="login-btn" onClick={handleLogin}>로그인</button>
+
                     <div className="social-login">
                         <button>G Google로 로그인하기</button>
                         <button> Apple로 로그인하기</button>
