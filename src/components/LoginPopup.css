@@ -59,9 +59,20 @@ input {
 /* LoginPopup.css에 추가 */
 .remember-me {
   display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
   align-items: center;
   gap: 6px;
-  margin-top: 8px;
+  margin: 8px 0 16px auto;  /* 위-우아래-아래 간격 */
   font-size: 14px;
-  color: #555;
+  color: #444;
+  cursor: pointer;
+  user-select: none;
 }
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: black; /* 체크 색상 (모던 브라우저에서만) */
+  cursor: pointer;
+}
+

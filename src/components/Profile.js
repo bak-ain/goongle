@@ -11,6 +11,7 @@ const Profile = ({ onLoginClick }) => {
   const handleClick = () => {
     if (isMember) {
       localStorage.removeItem('userToken');
+      sessionStorage.removeItem('userToken');
       setIsMember(false);
       alert('로그아웃되었습니다.');
       navigate('/');

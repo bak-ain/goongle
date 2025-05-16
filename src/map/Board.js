@@ -47,6 +47,7 @@ const Board = ({
   const [giveNipVisible, setGiveNipVisible] = useState(false);
   const [giveAmount, setGiveAmount] = useState(1);
   const [justEarned, setJustEarned] = useState(false);
+  const [isMoving, setIsMoving] = useState(false); // ✅ 이동 중 여부
 
   useEffect(() => {
     if (returnToTileId) {
@@ -145,7 +146,7 @@ const Board = ({
 
 
   const handleMove = (direction) => {
-    if (eventMode) return; // ✅ eventMode일 때는 이동 차단
+    if (eventMode || isMoving) return; // ✅ 이동 중이면 무시
 
     const len = tileData.length;
     let newPos = position;
@@ -156,18 +157,20 @@ const Board = ({
         : (newPos - 1 + len) % len;
     } while (tileData[newPos].type === 'event');
 
+    setIsMoving(true); // ✅ 이동 시작 표시
     setPosition(newPos);
 
-    // ✅ 이동 직후 default 타일이면 바로 열기
     const targetTile = tileData[newPos];
-    if ((targetTile.type === 'default' && targetTile.gungId) ||
-      targetTile.type === 'quiz'
-    ) {
+    if ((targetTile.type === 'default' && targetTile.gungId) || targetTile.type === 'quiz') {
       setTimeout(() => {
         openTile(targetTile.type, targetTile);
-      }, 800); // 약간의 딜레이를 줘서 자연스러운 이동 효과
+        setIsMoving(false); // ✅ 페이지 이동 후 다시 이동 가능
+      }, 800); // 자연스러운 이동 효과
+    } else {
+      setTimeout(() => setIsMoving(false), 800);
     }
   };
+
 
 
 

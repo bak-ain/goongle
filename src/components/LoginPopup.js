@@ -47,14 +47,15 @@ const LoginPopup = ({ onClose }) => {
                     {error && <p className="error-msg">{error}</p>}
 
                     {/* ✅ 로그인 상태 유지 체크박스 */}
-                    <label className="remember-me">
+                    <div className="remember-me">
                         <input
                             type="checkbox"
                             checked={rememberMe}
                             onChange={(e) => setRememberMe(e.target.checked)}
+                            id="rememberMe"
                         />
-                        로그인 상태 유지
-                    </label>
+                        <label htmlFor="rememberMe">로그인 상태 유지</label>
+                    </div>
 
                     <button className="login-btn" onClick={handleLogin}>로그인</button>
 
