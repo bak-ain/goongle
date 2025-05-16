@@ -40,7 +40,9 @@
   line-height: 1.5;
   margin: 16px 0 24px;
 }
-
+.popup-box p span{
+  font-size: 0.9rem;
+}
 .popup-box .btns {
   display: flex;
   justify-content: center;

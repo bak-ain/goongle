@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useLogin } from '../LoginContext';
 import GiveNip from './GiveNip';
 import Character from './Character';
 import MovingBtn from './MovingBtn';
@@ -19,9 +20,10 @@ const Board = ({
   currentGung,
   setShowQuizPopup,
   setQuizPopupMode,
-  showQuizPopup,
-  quizPopupMode,
-  isMember
+  shouldStartQuiz,
+  setShouldStartQuiz,
+  setShowLoginPopup,
+  onQuizConfirm,
 }) => {
   const mapTiles = mapTilesByGung[currentGung] || []; // 기본값 처리
   const tileData = [
@@ -31,6 +33,7 @@ const Board = ({
     ...eventTiles
   ];
 
+  const { isMember } = useLogin();
   const { state } = useLocation();
   const returnToTileId = state?.returnToTileId;
   const [showQuiz, setShowQuiz] = useState(false);
@@ -44,11 +47,7 @@ const Board = ({
   const [giveNipVisible, setGiveNipVisible] = useState(false);
   const [giveAmount, setGiveAmount] = useState(1);
   const [justEarned, setJustEarned] = useState(false);
-  // const [showEntryPopup, setShowEntryPopup] = useState(false);
-  // const [pendingQuizTile, setPendingQuizTile] = useState(null);
 
-
-  // console.log("giveNipVisible:", giveNipVisible, "giveAmount:", giveAmount, "nipCount:", nipCount);
   useEffect(() => {
     if (returnToTileId) {
       const targetIndex = tileData.findIndex(t => t.id === returnToTileId);
@@ -64,9 +63,14 @@ const Board = ({
   // ✅ eventMode가 false → true로 바뀌는 순간 캐릭터 위치 초기화
   useEffect(() => {
     if (!prevEventMode && eventMode) {
-      setPosition(startIndex); // 캐릭터를 시작 위치로 이동
+      // 이벤트모드 진입 시
+      setPosition(startIndex);
+    } else if (prevEventMode && !eventMode) {
+      // 이벤트모드 종료 시
+      setPosition(startIndex);
     }
-    setPrevEventMode(eventMode); // 다음 비교를 위해 상태 저장
+
+    setPrevEventMode(eventMode);
   }, [eventMode, prevEventMode, startIndex]);
 
 
@@ -211,6 +215,17 @@ const Board = ({
       step();
     }, 1000); // ✅ 이동 딜레이 1초
   };
+  useEffect(() => {
+    if (shouldStartQuiz) {
+      const randomQuiz = getRandomQuiz();
+      if (randomQuiz) {
+        setCurrentQuiz(randomQuiz);
+        setShowQuiz(true);
+      }
+      // 부모 상태 초기화 요청 (필수!)
+      setShouldStartQuiz(false); // ❗ 부모 상태도 초기화돼야 함
+    }
+  }, [shouldStartQuiz]);
 
   const getRandomQuiz = () => {
     const quizList = quizData[currentGung];
@@ -237,24 +252,6 @@ const Board = ({
       </div>
 
       <MovingBtn onMove={handleMove} />
-      {showQuizPopup && (
-        <QuizEntryPopup
-          mode={quizPopupMode}
-          onConfirm={() => {
-            setShowQuizPopup(false);
-            if (quizPopupMode === 'quiz') {
-              const randomQuiz = getRandomQuiz();
-              if (randomQuiz) {
-                setCurrentQuiz(randomQuiz);
-                setShowQuiz(true);
-              }
-            }
-          }}
-          onCancel={() => setShowQuizPopup(false)}
-        />
-      )}
-
-
       {showQuiz && currentQuiz && (
         <Quiz
           questionData={currentQuiz}
@@ -278,7 +275,8 @@ const Board = ({
 
       {giveNipVisible && (
         <GiveNip
-          amount={nipCount} // 총 보유 닢
+          amount={giveAmount}
+          total={nipCount}
           onClose={() => setGiveNipVisible(false)}
         />
       )}

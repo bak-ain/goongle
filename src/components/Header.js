@@ -4,9 +4,11 @@ import Logo from "./LogoBtn";
 import Profile from "./Profile";
 import GuideBtn from "./GuideBtn";
 import React, { useState } from 'react';
+import { useLogin } from "../LoginContext";
 import LoginPopup from "./LoginPopup";
 
-const Header = ({ isMember, setIsMember }) => {
+const Header = ({ currentGung, setCurrentGung }) => {
+    const { isMember, setIsMember } = useLogin();
     const [showLoginPopup, setShowLoginPopup] = useState(false);
     return (
         <div className="Header">
@@ -15,7 +17,7 @@ const Header = ({ isMember, setIsMember }) => {
                 <GuideBtn />
             </div>
             <div className="bottom">
-                <Gnb isMember={isMember} setIsMember={setIsMember} />
+                <Gnb currentGung={currentGung} setCurrentGung={setCurrentGung}  />
                 <Profile isMember={isMember} onLoginClick={() => setShowLoginPopup(true)} />
             </div>
             {showLoginPopup && (

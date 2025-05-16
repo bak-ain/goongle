@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useLogin } from '../LoginContext';
 import './LoginPopup.css';
 
-const LoginPopup = ({ onClose, setIsMember }) => {
+const LoginPopup = ({ onClose }) => {
+    const { setIsMember } = useLogin();
     const [id, setId] = useState('');
     const [pw, setPw] = useState('');
     const [error, setError] = useState('');

@@ -1,6 +1,16 @@
 // src/img/img.js
 
 import coin from './coin.png';
+import gnb1 from './kbicon.png'
+import gnb1On from './kbiconon.png'
+import gnb2 from './khicon.png'
+import gnb2On from './khiconon.png'
+import gnb3 from './ckicon.png'
+import gnb3On from './ckiconon.png'
+import gnb4 from './ckngicon.png'
+import gnb4On from './ckngiconon.png'
+import gnb5 from './duckicon.png'
+import gnb5On from './duckiconon.png'
 import event from './event.png';
 import login from './users.png';
 import logo from './logo.png';
@@ -13,17 +23,24 @@ import goong4 from './goong4.png';
 import gle1 from './gle1.png';
 import gle2 from './gle2.png';
 import gle3 from './gle3.png';
-import gung from './gung.png';
+import gung from './first.png';
+import gung2 from './second.png';
+import gung3 from './thrid.png';
+import gung4 from './fourth.png';
+import gung5 from './fifth.png';
+import gung6 from './sixth.png';
+import gung7 from './seventh.png';
+import gung8 from './eighth.png';
 import quiz from './quiz.png'
 import yutStart from './event_start.png'
-import event1 from './event1_front.png';
-import event2 from './event2_front.png';
-import event3 from './event3_front.png';
-import event4 from './event4_front.png';
-import event5 from './event5_front.png';
-import event6 from './event6_front.png';
-import right_btn from './right_btn.png';
-import left_btn from './left_btn.png';
+import event1 from './Vector3.png';
+import event2 from './Vector1.png';
+import event3 from './Vector2.png';
+import event4 from './Vector3.png';
+import event5 from './Vector1.png';
+import event6 from './Vector2.png';
+import right_btn from './rightbtn.png';
+import left_btn from './leftbtn.png';
 import finall from './finall.png';
 import fin from './fin.png';
 import gungItem1 from './gung1.svg'
@@ -38,12 +55,20 @@ import yutDefault from './yut_default.png'
 
 export const Icons = {
   coin,
-  event,
-  login,
+  gnb1,
+  gnb1On,
+  gnb2,
+  gnb2On,
+  gnb3,
+  gnb3On,
+  gnb4,
+  gnb4On,
+  gnb5,
+  gnb5On,
   logo,
-  mapPin,
-  join,
+  login
 };
+
 export const Characters = {
   goong1,
   goong2,
@@ -55,6 +80,13 @@ export const Characters = {
 };
 export const TileImg = {
   gung,
+  gung2,
+  gung3,
+  gung4,
+  gung5,
+  gung6,
+  gung7,
+  gung8,
   quiz
 }
 export const TileEventImg = {
