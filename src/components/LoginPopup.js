@@ -58,13 +58,9 @@ const LoginPopup = ({ onClose }) => {
                             onChange={(e) => setRememberMe(e.target.checked)}
                             id="rememberMe"
                         />
-<<<<<<< HEAD
-                        <p>로그인 상태 유지</p>
-                    </label>
-=======
+
                         <label htmlFor="rememberMe">로그인 상태 유지</label>
                     </div>
->>>>>>> eae1062c08d095a8865b53e12dd2ee39edf3fbb2
 
                     <button className="login-btn" onClick={handleLogin}>로그인</button>
 
