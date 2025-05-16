@@ -74,10 +74,6 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
             <p>{questionData.explanation}</p>
 
             <button className="exit" onClick={handleExit}>나가기</button>
-            {/* <div className="btns">
-              <button onClick={handleExit}>윷던지기</button>
-              <button onClick={handleExit}>다른 정보탐험</button>
-            </div> */}
           </div>
         </div>
       )}

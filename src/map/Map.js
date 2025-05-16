@@ -17,8 +17,11 @@ const Map = ({ currentGung, setCurrentGung }) => {
   const [quizPopupMode, setQuizPopupMode] = useState('quiz');
   const [shouldStartQuiz, setShouldStartQuiz] = useState(false);
   const [shouldStartEvent, setShouldStartEvent] = useState(false);
-  const [loginOrigin, setLoginOrigin] = useState(null); // 'yut' | 'quiz'
+  const [loginOrigin, setLoginOrigin] = useState(null);
   const [resetYutnoriBtn, setResetYutnoriBtn] = useState(false);
+  const [yutChances, setYutChances] = useState(3);
+  const [yutClicked, setYutClicked] = useState(false);
+  const [yutReady, setYutReady] = useState(false);
 
 
   const handleYutnoriClick = (phase) => {
@@ -29,12 +32,16 @@ const Map = ({ currentGung, setCurrentGung }) => {
     }
 
     if (phase === 'start') {
-      setEventMode(true); // 🔹 이벤트모드 바로 활성화
+      setEventMode(true);
+      setYutReady(true); // 이벤트 모드 진입 후 준비 상태 ON
     } else if (phase === 'play') {
-      setTriggerYut(prev => prev + 1); // 🔹 윷던지기
+      if (yutReady && yutChances > 0) {
+        setTriggerYut(prev => prev + 1);
+        setYutChances(prev => prev - 1);
+        setYutReady(false); // play 했으면 준비상태 해제
+      }
     }
   };
-
 
   useEffect(() => {
     if (shouldStartEvent) {
@@ -42,13 +49,12 @@ const Map = ({ currentGung, setCurrentGung }) => {
       setShouldStartEvent(false);
     }
   }, [shouldStartEvent]);
-  // 🔸 로그아웃 시 자동으로 이벤트모드 종료
+
   useEffect(() => {
     if (!isMember && eventMode) {
       setEventMode(false);
     }
   }, [isMember, eventMode]);
-
 
   return (
     <div className="Map">
@@ -65,21 +71,27 @@ const Map = ({ currentGung, setCurrentGung }) => {
         setShouldStartQuiz={setShouldStartQuiz}
         resetYutnoriBtn={resetYutnoriBtn}
         setResetYutnoriBtn={setResetYutnoriBtn}
+        setYutChances={setYutChances}
+        setClicked={setYutClicked}
+        setYutReady={setYutReady}
       />
 
       <div className="Map_left">
-        <InfoCard eventMode={eventMode}  gungId={currentGung}  />
+        <InfoCard eventMode={eventMode} gungId={currentGung} />
         <YutnoriBtn
           isMember={isMember}
           onClick={handleYutnoriClick}
           resetTrigger={resetYutnoriBtn}
           forceClicked={eventMode}
+          chances={yutChances}
+          setChances={setYutChances}
+          clicked={yutClicked}
+          setClicked={setYutClicked}
           onRequireLogin={() => {
             setLoginOrigin('yut');
             setShowLoginGuide(true);
           }}
         />
-
       </div>
 
       {showLoginGuide && (

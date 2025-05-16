@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { TileEventImg } from '../img/img';
-import { useLogin } from '../LoginContext';
 import './YutnoriBtn.css';
 
-const YutnoriBtn = ({ onClick, forceClicked = false, onRequireLogin, isMember ,resetTrigger  }) => {
-  // const { isMember } = useLogin();
-  const [clicked, setClicked] = useState(false);
-  const [chances, setChances] = useState(3); // 윷놀이 남은 기회 수
-
-  
+const YutnoriBtn = ({
+  onClick,
+  forceClicked = false,
+  onRequireLogin,
+  isMember,
+  resetTrigger,
+  chances,
+  setChances,
+  clicked,
+  setClicked
+}) => {
   useEffect(() => {
-    // 🔁 외부에서 trigger 들어오면 초기화
     setClicked(false);
-    setChances(3);
   }, [resetTrigger]);
 
   const handleClick = () => {
@@ -23,23 +25,24 @@ const YutnoriBtn = ({ onClick, forceClicked = false, onRequireLogin, isMember ,r
 
     if (!clicked && !forceClicked) {
       setClicked(true);
-      onClick('start'); // 🔹 Map에게 이벤트모드 ON 요청
+      onClick('start'); // setYutReady(true) 도 함께 실행됨
       return;
     }
 
-    if ((clicked || forceClicked) && chances > 0) {
-      setChances(prev => prev - 1);
-      onClick('play'); // 🔹 Map에게 윷놀이 요청
-    }
+    // 이후 play는 Map에서 yutReady && yutChances > 0일 때만 진행되므로 여긴 그대로
+    onClick('play');
   };
+
 
 
   const isEventStarted = clicked || forceClicked;
 
-
-
   return (
-    <button className="YutnoriBtn" onClick={handleClick}>
+    <button
+      className="YutnoriBtn"
+      onClick={handleClick}
+      disabled={isMember && clicked && chances === 0}// 버튼은 기회 0이면 비활성화
+    >
       {!isMember && (
         <img src={TileEventImg.yutStart} alt="윷놀이" className="yut-img" />
       )}
