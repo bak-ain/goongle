@@ -18,19 +18,23 @@ const Map = ({ currentGung, setCurrentGung }) => {
   const [shouldStartQuiz, setShouldStartQuiz] = useState(false);
   const [shouldStartEvent, setShouldStartEvent] = useState(false);
   const [loginOrigin, setLoginOrigin] = useState(null); // 'yut' | 'quiz'
+  const [resetYutnoriBtn, setResetYutnoriBtn] = useState(false);
 
-  const handleYutnoriClick = () => {
+
+  const handleYutnoriClick = (phase) => {
     if (!isMember) {
       setLoginOrigin('yut');
       setShowLoginGuide(true);
       return;
     }
-    if (!eventMode) {
-      setEventMode(true);
-    } else {
-      setTriggerYut(prev => prev + 1);
+
+    if (phase === 'start') {
+      setEventMode(true); // 🔹 이벤트모드 바로 활성화
+    } else if (phase === 'play') {
+      setTriggerYut(prev => prev + 1); // 🔹 윷던지기
     }
   };
+
 
   useEffect(() => {
     if (shouldStartEvent) {
@@ -50,6 +54,7 @@ const Map = ({ currentGung, setCurrentGung }) => {
     <div className="Map">
       <Board
         eventMode={eventMode}
+        setEventMode={setEventMode}
         triggerYut={triggerYut}
         currentGung={currentGung}
         setShowQuizPopup={setShowQuizPopup}
@@ -58,13 +63,16 @@ const Map = ({ currentGung, setCurrentGung }) => {
         setLoginOrigin={setLoginOrigin}
         shouldStartQuiz={shouldStartQuiz}
         setShouldStartQuiz={setShouldStartQuiz}
+        resetYutnoriBtn={resetYutnoriBtn}
+        setResetYutnoriBtn={setResetYutnoriBtn}
       />
 
       <div className="Map_left">
-        <InfoCard eventMode={eventMode} gungId="gyeongbokgung" />
+        <InfoCard eventMode={eventMode}  gungId={currentGung}  />
         <YutnoriBtn
           isMember={isMember}
           onClick={handleYutnoriClick}
+          resetTrigger={resetYutnoriBtn}
           forceClicked={eventMode}
           onRequireLogin={() => {
             setLoginOrigin('yut');

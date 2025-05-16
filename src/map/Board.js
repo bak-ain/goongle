@@ -16,6 +16,7 @@ import './Board.css';
 
 const Board = ({
   eventMode,
+  setEventMode,
   triggerYut,
   currentGung,
   setShowQuizPopup,
@@ -24,6 +25,8 @@ const Board = ({
   setShouldStartQuiz,
   setShowLoginPopup,
   onQuizConfirm,
+  resetYutnoriBtn,
+  setResetYutnoriBtn
 }) => {
   const mapTiles = mapTilesByGung[currentGung] || []; // 기본값 처리
   const tileData = [
@@ -239,7 +242,7 @@ const Board = ({
 
   return (
     <div className='Board'>
-      <div className='mapArea'>
+      <div className={`mapArea gung_${currentGung}`}>
         <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} resetYutItem={resetYutItem} />
         <div className="tile_wrap">
           {tileData.map(tile => (
@@ -281,7 +284,12 @@ const Board = ({
         <GiveNip
           amount={giveAmount}
           total={nipCount}
-          onClose={() => setGiveNipVisible(false)}
+          onClose={() => {
+            setGiveNipVisible(false);
+            setEventMode(false);
+            setEventMode(false);             // 맵 비활성화
+            setResetYutnoriBtn(prev => !prev); // 버튼 리셋 트리거
+          }}
         />
       )}
     </div>

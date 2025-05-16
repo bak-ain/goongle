@@ -46,6 +46,11 @@
   align-items: center;
   gap: 1.5vw;
 }
+
+.gung_changgyeonggung .InfoCard_wrap {
+  border: 0.2vw solid #996DAC ;
+}
+
 .InfoCard h2 {
   color: #2A6DB9;
   text-align: center;
@@ -54,10 +59,11 @@
   font-style: normal;
   font-weight: 700;
 }
+
 .InfoCard h3 {
   display: flex;
   align-items: center;
-    text-align: left;
+  text-align: left;
 }
 
 .InfoCard i {
@@ -110,19 +116,23 @@
   line-height: normal;
 }
 
-.move .p2 p{
+.move .p2 p {
   margin-bottom: 5px;
 }
-.play .p2{
+
+.play .p2 {
   line-height: 180%;
 }
-.ticket .p2.l1{
+
+.ticket .p2.l1 {
   margin-bottom: 5px;
 }
-.ticket .p2.l3{
+
+.ticket .p2.l3 {
   margin-top: 5px;
 }
-.ticket small{
+
+.ticket small {
   margin-right: 1.3rem;
 }
 
@@ -132,9 +142,11 @@
   min-width: 6rem;
 
 }
+
 .InfoCard.eventMode .p2 {
   white-space: pre-line;
 }
+
 .line_bg {
   display: inline-block;
   width: 1.3rem;
@@ -156,6 +168,7 @@
 .line_5 {
   background: #996DAC;
 }
-.InfoCard.eventMode .InfoCard_wrap{
+
+.InfoCard.eventMode .InfoCard_wrap {
   background-color: #F1E9D4;
 }
