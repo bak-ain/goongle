@@ -8,7 +8,9 @@ const QuizEntryPopup = ({ mode = 'quiz', onConfirm, onCancel }) => {
         {mode === 'quiz' ? (
           <>
             <h2>궁:글<br /><strong>랜덤 퀴즈!</strong></h2>
-            <p>해당맵 관련 퀴즈를 맞추시면<br />윷놀이 1회권을 증정합니다.</p>
+            <p>해당맵 관련 퀴즈를 맞추시면<br />윷놀이 1회권을 증정합니다.
+             <br/><span>(퀴즈는 하루 1회만 가능합니다.)</span>
+            </p>
             <div className="btns">
               <button onClick={onConfirm}>퀴즈 풀기</button>
               <button onClick={onCancel}>돌아가기</button>

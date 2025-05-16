@@ -173,8 +173,12 @@
   left: -0.16vw;
   top: -0.16vw;
 }
-
-
+.tile100 .tile{
+  background: #1A164E;
+}
+.tile107 .tile{
+  background: #B172D2;
+}
 /* 🟥 이벤트 타일: 플립용 컨테이너 */
 .tile-container {
   perspective: 1000px;
