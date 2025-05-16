@@ -3,29 +3,40 @@ import { TileEventImg } from '../img/img';
 import { useLogin } from '../LoginContext';
 import './YutnoriBtn.css';
 
-const YutnoriBtn = ({ onClick, forceClicked = false, onRequireLogin ,isMember  }) => {
+const YutnoriBtn = ({ onClick, forceClicked = false, onRequireLogin, isMember ,resetTrigger  }) => {
   // const { isMember } = useLogin();
   const [clicked, setClicked] = useState(false);
   const [chances, setChances] = useState(3); // 윷놀이 남은 기회 수
 
+  
+  useEffect(() => {
+    // 🔁 외부에서 trigger 들어오면 초기화
+    setClicked(false);
+    setChances(3);
+  }, [resetTrigger]);
+
   const handleClick = () => {
     if (!isMember) {
-      onRequireLogin && onRequireLogin(); // 🔹 비회원이면 로그인 안내 요청
+      onRequireLogin && onRequireLogin();
       return;
     }
 
     if (!clicked && !forceClicked) {
       setClicked(true);
-      onClick(); // 처음 진입: 이벤트모드 시작
-    } else {
-      if (chances > 0) {
-        setChances(prev => prev - 1);
-        onClick(); // 이벤트모드 중: 윷던지기
-      }
+      onClick('start'); // 🔹 Map에게 이벤트모드 ON 요청
+      return;
+    }
+
+    if ((clicked || forceClicked) && chances > 0) {
+      setChances(prev => prev - 1);
+      onClick('play'); // 🔹 Map에게 윷놀이 요청
     }
   };
 
+
   const isEventStarted = clicked || forceClicked;
+
+
 
   return (
     <button className="YutnoriBtn" onClick={handleClick}>

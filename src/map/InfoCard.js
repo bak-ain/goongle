@@ -52,7 +52,7 @@ const InfoCard = ({ eventMode, gungId }) => {
               </h3>
               <p className="p2 l1">{yutnoriRule.rules.ticketRule.line1}</p>
               <p className="p2 l2">{yutnoriRule.rules.ticketRule.line2}</p>
-                <small>{yutnoriRule.rules.ticketRule.line3.text}</small>
+              <small>{yutnoriRule.rules.ticketRule.line3.text}</small>
               <p className="p2 l3">{yutnoriRule.rules.ticketRule.line4}</p>
             </li>
 
@@ -69,7 +69,7 @@ const InfoCard = ({ eventMode, gungId }) => {
   const { name, address, tel, time, price, transport } = info;
 
   return (
-    <div className="InfoCard">
+    <div className={`InfoCard ${gungId ? `gung_${gungId}` : ''}`}>
       <div className='spring' />
       <div className='fins' />
       <div className='InfoCard_wrap'>
