@@ -1,8 +1,13 @@
 .Gnb{
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 40px;
     padding-bottom: 40px;
     border-bottom: 1px dashed #888;
     width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.GnbItem{
+    flex: 1;
 }
