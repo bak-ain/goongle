@@ -31,6 +31,14 @@ import gung5 from './fifth.png';
 import gung6 from './sixth.png';
 import gung7 from './seventh.png';
 import gung8 from './eighth.png';
+import gung9 from './nineth.png';
+import gung10 from './ten.png';
+import gung11 from './eleventh.png';
+import gung12 from './twelve.png';
+import gung13 from './thirteen.png';
+import gung14 from './fourteen.png';
+import gung15 from './fifteen.png';
+import gung16 from './sixteen.png';
 import quiz from './quiz.png'
 import yutStart from './event_start.png'
 import event1 from './Vector3.png';
@@ -87,6 +95,14 @@ export const TileImg = {
   gung6,
   gung7,
   gung8,
+  gung9,
+  gung10,
+  gung11,
+  gung12,
+  gung13,
+  gung14,
+  gung15,
+  gung16,
   quiz
 }
 export const TileEventImg = {
