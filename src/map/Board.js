@@ -244,6 +244,7 @@ const Board = ({
               key={tile.id}
               tile={tile}
               eventMode={eventMode}
+              isMember={isMember}
               onClick={() => handleClick(tile)}
             />
           ))}

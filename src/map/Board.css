@@ -21,6 +21,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .mapArea {
@@ -53,7 +54,8 @@
   /* 셀 고정 크기 */
   position: relative;
   gap: 0px;
-  border: 3px solid transparent;
+  border: 3px solid #1c1c1c;
+  background: #F1E9D4;
 }
 
 .tile-cell {
@@ -63,7 +65,9 @@
 }
 
 
-
+.default{
+  z-index: 1;
+}
 /* 공통 타일 외부 wrapper (slot) */
 .tile-slot {
   display: flex;
@@ -110,7 +114,7 @@
 
 .tile-103 {
   right: -0.16vw;
-  top: -0.16vw;
+  top: -0.1vw;
 }
 
 .tile-104 {
@@ -126,16 +130,16 @@
 
 .tile-106 {
   left: -0.16vw;
-  top: -0.16vw;
+  top: -0.1vw;
 }
 
 .tile-107 {
   left: -0.16vw;
-  top: -0.8vw;
+  top: -0.6vw;
 }
 
 .tile-1 {
-  left: -3.8vw;
+  left: -3.7vw;
   bottom: -0.16vw;
 }
 
@@ -146,12 +150,12 @@
 
 .tile-3 {
   right: -0.16vw;
-  top: -0.05vw;
+  top: -0.6vw;
 }
 
 .tile-4 {
   right: -0.16vw;
-  top: -0.16vw;
+  top: -0.6vw;
 }
 
 .tile-5 {
@@ -165,19 +169,21 @@
 }
 
 .tile-7 {
-  left: -3.8vw;
+  left: -3.75vw;
   top: -0.16vw;
 }
 
 .tile-8 {
   left: -0.16vw;
-  top: -0.16vw;
+  top: -0.6vw;
 }
 .tile100 .tile{
   background: #1A164E;
+  z-index: 1;
 }
 .tile107 .tile{
   background: #B172D2;
+  z-index: 1;
 }
 /* 🟥 이벤트 타일: 플립용 컨테이너 */
 .tile-container {
@@ -208,8 +214,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgba(28, 28, 28, 0.2);
-  background: #CDC5BB;
+  border: 2px solid #1c1c1c;
+  background: #3B3953;
 }
 
 .tile-back {

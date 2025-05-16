@@ -1,10 +1,21 @@
 import React from 'react';
 import './Board.css';
 
-
-const Tile = ({ tile, eventMode, onClick }) => {
+const Tile = ({ tile, eventMode, isMember, onClick }) => {
   const isEvent = tile.type === 'event';
+  const isStart = tile.type === 'start';
   const flipClass = eventMode && isEvent ? 'flipped' : '';
+
+  // ✅ opacity 조건 분기
+  let tileOpacity = 1;
+
+  if (eventMode) {
+    if (isEvent && !isMember) {
+      tileOpacity = 0.2; // 🔹 비회원용 이벤트 타일
+    } else if (!isEvent && !isStart) {
+      tileOpacity = 0.5; // 🔹 일반 타일 (quiz, default 등)
+    }
+  }
 
   return (
     <div className="tile-cell" style={{ gridArea: tile.gridArea }}>
@@ -13,7 +24,8 @@ const Tile = ({ tile, eventMode, onClick }) => {
         style={{
           width: tile.width,
           height: tile.height,
-          position: 'absolute', 
+          position: 'absolute',
+          opacity: tileOpacity, // 🔸 적용!
         }}
         onClick={onClick}
       >
@@ -37,6 +49,5 @@ const Tile = ({ tile, eventMode, onClick }) => {
     </div>
   );
 };
-
 
 export default Tile;
