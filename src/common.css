@@ -156,6 +156,19 @@ button {
     --text-Bk2: #333;
     --text-sub: #555;
     --white-color: #fff;
+    --Gyeongbokgung-main-color: #2A6DB9;
+    --Gyeonghuigung-main-color: #238455;
+    --Changdeokgung-main-color:#A13B47;
+    --Changgyeonggung-main-color:#D2A75F;
+    --Deoksugung-main-color:#3B9AA1;
+    --Gyeongbokgung-info-color: #1B5CA6;
+    --Gyeonghuigung-info-color: #0F5734;
+    --Changdeokgung-info-color:#87333C;
+    --Changgyeonggung-info-color:#B98F48;
+    --Deoksugung-info-color:#2E8389;
+
+
+
 }
 
 /* font_style */

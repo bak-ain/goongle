@@ -69,3 +69,13 @@
   color: #000;
   border: 1.5px solid #000;
 }
+
+
+/* 0516 신종현 */
+
+p.p2 strong{
+  font-weight: 700;
+}
+p.p2 span{
+  font-weight: 700;
+}
