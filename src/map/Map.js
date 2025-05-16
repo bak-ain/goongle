@@ -63,6 +63,7 @@ const Map = ({ currentGung, setCurrentGung }) => {
       <div className="Map_left">
         <InfoCard eventMode={eventMode} gungId="gyeongbokgung" />
         <YutnoriBtn
+          isMember={isMember}
           onClick={handleYutnoriClick}
           forceClicked={eventMode}
           onRequireLogin={() => {

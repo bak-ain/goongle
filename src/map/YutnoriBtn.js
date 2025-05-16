@@ -3,8 +3,8 @@ import { TileEventImg } from '../img/img';
 import { useLogin } from '../LoginContext';
 import './YutnoriBtn.css';
 
-const YutnoriBtn = ({ onClick, forceClicked = false, onRequireLogin }) => {
-  const { isMember } = useLogin();
+const YutnoriBtn = ({ onClick, forceClicked = false, onRequireLogin ,isMember  }) => {
+  // const { isMember } = useLogin();
   const [clicked, setClicked] = useState(false);
   const [chances, setChances] = useState(3); // 윷놀이 남은 기회 수
 
