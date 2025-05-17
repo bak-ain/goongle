@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Board from './Board';
 import InfoCard from './InfoCard';
 import YutnoriBtn from './YutnoriBtn';
@@ -18,11 +18,13 @@ const Map = ({ currentGung, setCurrentGung }) => {
   const [shouldStartQuiz, setShouldStartQuiz] = useState(false);
   const [shouldStartEvent, setShouldStartEvent] = useState(false);
   const [loginOrigin, setLoginOrigin] = useState(null);
-  const [resetYutnoriBtn, setResetYutnoriBtn] = useState(false);
   const [yutChances, setYutChances] = useState(3);
   const [yutClicked, setYutClicked] = useState(false);
   const [yutReady, setYutReady] = useState(false);
 
+  useEffect(() => {
+    console.log('📦 [STATE]', { yutChances, yutClicked, yutReady, eventMode });
+  }, [yutChances, yutClicked, yutReady, eventMode]);
 
   const handleYutnoriClick = (phase) => {
     if (!isMember) {
@@ -32,20 +34,51 @@ const Map = ({ currentGung, setCurrentGung }) => {
     }
 
     if (phase === 'start') {
+      console.log('🟢 START 버튼 클릭');
       setEventMode(true);
-      setYutReady(true); // 이벤트 모드 진입 후 준비 상태 ON
-    } else if (phase === 'play') {
+      setYutReady(true);
+      setYutClicked(true);
+      return;
+    }
+
+    if (phase === 'play') {
+      console.log('🎯 PLAY 버튼 클릭');
+
       if (yutReady && yutChances > 0) {
+        console.log('🎯 PLAY CONFIRMED');
+
         setTriggerYut(prev => prev + 1);
-        setYutChances(prev => prev - 1);
-        setYutReady(false); // play 했으면 준비상태 해제
+
+        setYutChances(prev => {
+          const next = Math.max(prev - 1, 0);
+          console.log('📉 chances updated to:', next);
+
+          if (next === 0) {
+            console.log('🚫 기회 소진 → eventMode OFF');
+            setEventMode(false);
+          }
+
+          return next;
+        });
+
+        setYutReady(false);
+        setYutClicked(false);
       }
     }
+  };
+
+
+  const handleYutReset = () => {
+    console.log('🔄 RESET STATE');
+    setYutReady(false);
+    setYutClicked(false);
   };
 
   useEffect(() => {
     if (shouldStartEvent) {
       setEventMode(true);
+      setYutReady(true);
+      setYutClicked(true);
       setShouldStartEvent(false);
     }
   }, [shouldStartEvent]);
@@ -55,6 +88,17 @@ const Map = ({ currentGung, setCurrentGung }) => {
       setEventMode(false);
     }
   }, [isMember, eventMode]);
+  const [isReenterFromGiveNip, setIsReenterFromGiveNip] = useState(false);
+
+  useEffect(() => {
+    if (isReenterFromGiveNip) {
+      console.log('🧼 GiveNip 재진입 초기화 → clicked: false');
+      setYutClicked(false);
+      setYutReady(false);
+      setIsReenterFromGiveNip(false);
+    }
+  }, [isReenterFromGiveNip]);
+
 
   return (
     <div className="Map">
@@ -69,11 +113,9 @@ const Map = ({ currentGung, setCurrentGung }) => {
         setLoginOrigin={setLoginOrigin}
         shouldStartQuiz={shouldStartQuiz}
         setShouldStartQuiz={setShouldStartQuiz}
-        resetYutnoriBtn={resetYutnoriBtn}
-        setResetYutnoriBtn={setResetYutnoriBtn}
-        setYutChances={setYutChances}
-        setClicked={setYutClicked}
-        setYutReady={setYutReady}
+        onResetYut={handleYutReset}
+        isReenterFromGiveNip={isReenterFromGiveNip}
+        setIsReenterFromGiveNip={setIsReenterFromGiveNip}
       />
 
       <div className="Map_left">
@@ -81,11 +123,9 @@ const Map = ({ currentGung, setCurrentGung }) => {
         <YutnoriBtn
           isMember={isMember}
           onClick={handleYutnoriClick}
-          resetTrigger={resetYutnoriBtn}
-          forceClicked={eventMode}
           chances={yutChances}
-          setChances={setYutChances}
           clicked={yutClicked}
+          eventMode={eventMode}
           setClicked={setYutClicked}
           onRequireLogin={() => {
             setLoginOrigin('yut');

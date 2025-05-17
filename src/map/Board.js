@@ -21,10 +21,9 @@ const Board = ({
   setQuizPopupMode,
   shouldStartQuiz,
   setShouldStartQuiz,
-  setResetYutnoriBtn,
-  setYutChances,
-  setClicked,
-  setYutReady
+  onResetYut,
+  isReenterFromGiveNip,
+  setIsReenterFromGiveNip
 }) => {
   const { isMember } = useLogin();
   const { state } = useLocation();
@@ -37,7 +36,6 @@ const Board = ({
 
   const [position, setPosition] = useState(startIndex);
   const [prevEventMode, setPrevEventMode] = useState(false);
-  const [resetYutItem, setResetYutItem] = useState(false);
   const [nipCount, setNipCount] = useState(0);
   const [giveAmount, setGiveAmount] = useState(1);
   const [giveNipVisible, setGiveNipVisible] = useState(false);
@@ -181,7 +179,7 @@ const Board = ({
   return (
     <div className='Board'>
       <div className={`mapArea gung_${currentGung}`}>
-        <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} resetYutItem={resetYutItem} />
+        <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} />
         <div className="tile_wrap">
           {tileData.map(tile => (
             <Tile key={tile.id} tile={tile} eventMode={eventMode} isMember={isMember} onClick={() => handleClick(tile)} />
@@ -191,6 +189,7 @@ const Board = ({
       </div>
 
       <MovingBtn onMove={handleMove} />
+
       {showQuiz && currentQuiz && (
         <Quiz
           questionData={currentQuiz}
@@ -216,11 +215,10 @@ const Board = ({
           amount={giveAmount}
           total={nipCount}
           onClose={() => {
+            setIsReenterFromGiveNip(true);     // ✅ 먼저 실행
+            setEventMode(false);               // 그다음 OFF
+            onResetYut();                      // 리셋 함수는 마지막
             setGiveNipVisible(false);
-            setEventMode(false);
-            setResetYutnoriBtn(prev => !prev);
-            setClicked(false);
-            setYutReady(false); // 준비 상태 해제
           }}
         />
       )}
