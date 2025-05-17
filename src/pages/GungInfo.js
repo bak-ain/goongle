@@ -25,12 +25,56 @@ const ScrollProgress = ({ currentIndex, total }) => {
     );
 };
 
-const PLACE_TO_GUNG = {
+export const PLACE_TO_GUNG = {
+    // Gyeongbokgung
     gwanghwamun: 'gyeongbokgung',
     geunjeongjeon: 'gyeongbokgung',
+    sujeongjeon: 'gyeongbokgung',
+    gyeonghoeru: 'gyeongbokgung',
+    gangnyeongjeon: 'gyeongbokgung',
     hyangwonjeong: 'gyeongbokgung',
+    geoncheonggung: 'gyeongbokgung',
+    gogungmuseum: 'gyeongbokgung',
+
+    // Changdeokgung
     donhwamun: 'changdeokgung',
-    // ... 필요한 만큼 추가
+    injeongjeon: 'changdeokgung',
+    huijeongdang: 'changdeokgung',
+    nakseonjae: 'changdeokgung',
+    buyongji: 'changdeokgung',
+    aeryeonji: 'changdeokgung',
+    yeongyeongdang: 'changdeokgung',
+    ongnyucheon: 'changdeokgung',
+
+    // Changgyeonggung
+    honghwamun: 'changgyeonggung',
+    okcheongyo: 'changgyeonggung',
+    myeongjeongjeon: 'changgyeonggung',
+    munjeongjeon: 'changgyeonggung',
+    gyeongchunjeon: 'changgyeonggung',
+    yeongchunheon: 'changgyeonggung',
+    daeonshil: 'changgyeonggung',
+    chundangji: 'changgyeonggung',
+
+    // Deoksugung
+    daehanmun: 'deoksugung',
+    hamnyeongjeon: 'deoksugung',
+    jeonggwanheon: 'deoksugung',
+    seogeodang: 'deoksugung',
+    junghwajeon: 'deoksugung',
+    nationalmuseum: 'deoksugung',
+    seokjojeon: 'deoksugung',
+    dondeokjeon: 'deoksugung',
+
+    // Gyeonghuigung
+    heunghwamun: 'gyeonghuigung',
+    sungjeongjeon: 'gyeonghuigung',
+    jajeongjeon: 'gyeonghuigung',
+    chungwandang: 'gyeonghuigung',
+    yanghwadang: 'gyeonghuigung',
+    yeonmotjeongwon: 'gyeonghuigung',
+    taeryeongjeon: 'gyeonghuigung',
+    seoulmuseum: 'gyeonghuigung'
 };
 const GUNG_NAMES = {
     gyeongbokgung: { kr: '경복궁', hanja: '景福宮' },
@@ -41,7 +85,7 @@ const GUNG_NAMES = {
 };
 
 
-const GungHeader = ({ placeId, fromTileId, characterKey  }) => {
+const GungHeader = ({ placeId, fromTileId, characterKey }) => {
     const navigate = useNavigate();
 
     const gungId = PLACE_TO_GUNG[placeId];

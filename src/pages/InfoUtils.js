@@ -110,7 +110,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Injeongjeon: {
+    injeongjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -120,7 +120,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Huijeongdang: {
+    huijeongdang: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -130,7 +130,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Nakseonjae: {
+    nakseonjae: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -140,7 +140,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Buyongji: {
+    buyongji: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -150,7 +150,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Aeryeonji: {
+    aeryeonji: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -160,7 +160,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Yeongyeongdang: {
+    yeongyeongdang: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -170,7 +170,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Ongnyucheon: {
+    ongnyucheon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -182,7 +182,7 @@ export const InfoImgs = {
     },
   },
   changgyeonggung: {
-    Honghwamun: {
+    honghwamun: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -192,7 +192,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Okcheongyo: {
+    okcheongyo: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -202,7 +202,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Myeongjeongjeon: {
+    myeongjeongjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -212,7 +212,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Munjeongjeon: {
+    munjeongjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -222,7 +222,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Gyeongchunjeon: {
+    gyeongchunjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -232,7 +232,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Yeongchunheon: {
+    yeongchunheon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -242,7 +242,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Daeonshil: {
+    daeonshil: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -252,7 +252,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Chundangji: {
+    chundangji: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -264,7 +264,7 @@ export const InfoImgs = {
     },
   },
   deoksugung: {
-    Daehanmun: {
+    daehanmun: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -274,7 +274,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Hamnyeongjeon: {
+    hamnyeongjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -284,7 +284,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Jeonggwanheon: {
+    jeonggwanheon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -294,7 +294,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Seogeodang: {
+    seogeodang: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -304,7 +304,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Junghwajeon: {
+    junghwajeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -314,7 +314,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    NationalMuseum: {
+    nationalmuseum: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -324,7 +324,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Seokjojeon: {
+    seokjojeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -334,7 +334,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Dondeokjeon: {
+    dondeokjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -346,7 +346,7 @@ export const InfoImgs = {
     },
   },
   gyeonghuigung: {
-    Heunghwamun: {
+    heunghwamun: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -356,7 +356,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Sungjeongjeon: {
+    sungjeongjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -366,7 +366,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Jajeongjeon: {
+    jajeongjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -376,7 +376,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Chungwandang: {
+    chungwandang: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -386,7 +386,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Yanghwadang: {
+    yanghwadang: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -396,7 +396,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Yeonmotjeongwon: {
+    yeonmotjeongwon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -406,7 +406,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    Taeryeongjeon: {
+    taeryeongjeon: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -416,7 +416,7 @@ export const InfoImgs = {
       seventh: [Gwanghwamun14],
       last: [],
     },
-    SeoulMuseum: {
+    seoulmuseum: {
       first: [Gwanghwamun1],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
@@ -1062,7 +1062,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Injeongjeon: {
+    injeongjeon: {
       first: {
         title: '인정전'
       },
@@ -1132,7 +1132,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Huijeongdang: {
+    huijeongdang: {
       first: {
         title: '희정당'
       },
@@ -1202,7 +1202,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Nakseonjae: {
+    nakseonjae: {
       first: {
         title: '낙선재'
       },
@@ -1272,7 +1272,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Buyongji: {
+    buyongji: {
       first: {
         title: '부용지'
       },
@@ -1342,7 +1342,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Aeryeonji: {
+    aeryeonji: {
       first: {
         title: '애련지'
       },
@@ -1412,7 +1412,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Yeongyeongdang: {
+    yeongyeongdang: {
       first: {
         title: '연경당'
       },
@@ -1482,7 +1482,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Ongnyucheon: {
+    ongnyucheon: {
       first: {
         title: '옥류천'
       },
@@ -1554,7 +1554,7 @@ export const InfoTexts = {
     },
   },
   changgyeonggung: {
-    Honghwamun: {
+    honghwamun: {
       first: {
         title: '홍화문'
       },
@@ -1624,7 +1624,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Okcheongyo: {
+    okcheongyo: {
       first: {
         title: '옥천교'
       },
@@ -1694,7 +1694,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Myeongjeongjeon: {
+    myeongjeongjeon: {
       first: {
         title: '명정전'
       },
@@ -1764,7 +1764,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Munjeongjeon: {
+    munjeongjeon: {
       first: {
         title: '문정전'
       },
@@ -1834,7 +1834,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Gyeongchunjeon: {
+    gyeongchunjeon: {
       first: {
         title: '경춘전'
       },
@@ -1904,7 +1904,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Yeongchunheon: {
+    yeongchunheon: {
       first: {
         title: '영춘헌'
       },
@@ -1974,7 +1974,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Daeonshil: {
+    daeonshil: {
       first: {
         title: '대온실'
       },
@@ -2044,7 +2044,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Chundangji: {
+    chundangji: {
       first: {
         title: '춘당지'
       },
@@ -2116,7 +2116,7 @@ export const InfoTexts = {
     },
   },
   deoksugung: {
-    Daehanmun: {
+    daehanmun: {
       first: {
         title: '대한문'
       },
@@ -2186,7 +2186,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Hamnyeongjeon: {
+    hamnyeongjeon: {
       first: {
         title: '함녕전'
       },
@@ -2256,7 +2256,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Jeonggwanheon: {
+    jeonggwanheon: {
       first: {
         title: '정관헌'
       },
@@ -2326,7 +2326,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Seogeodang: {
+    seogeodang: {
       first: {
         title: '석어당'
       },
@@ -2396,7 +2396,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Junghwajeon: {
+    junghwajeon: {
       first: {
         title: '중화전'
       },
@@ -2466,7 +2466,7 @@ export const InfoTexts = {
         ]
       }
     },
-    NationalMuseum: {
+    nationalmuseum: {
       first: {
         title: '국립현대미술관'
       },
@@ -2536,7 +2536,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Seokjojeon: {
+    seokjojeon: {
       first: {
         title: '석조전'
       },
@@ -2606,7 +2606,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Dondeokjeon: {
+    dondeokjeon: {
       first: {
         title: '돈덕전'
       },
@@ -2678,7 +2678,7 @@ export const InfoTexts = {
     },
   },
   gyeonghuigung: {
-    Heunghwamun: {
+    heunghwamun: {
       first: {
         title: '흥화문'
       },
@@ -2748,7 +2748,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Sungjeongjeon: {
+    sungjeongjeon: {
       first: {
         title: '숭정전'
       },
@@ -2818,7 +2818,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Jajeongjeon: {
+    jajeongjeon: {
       first: {
         title: '자정전'
       },
@@ -2888,7 +2888,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Chungwandang: {
+    chungwandang: {
       first: {
         title: '춘관당'
       },
@@ -2958,7 +2958,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Yanghwadang: {
+    yanghwadang: {
       first: {
         title: '양화당'
       },
@@ -3028,7 +3028,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Yeonmotjeongwon: {
+    yeonmotjeongwon: {
       first: {
         title: '연못정원'
       },
@@ -3098,7 +3098,7 @@ export const InfoTexts = {
         ]
       }
     },
-    Taeryeongjeon: {
+    taeryeongjeon: {
       first: {
         title: '태령전'
       },
@@ -3168,7 +3168,7 @@ export const InfoTexts = {
         ]
       }
     },
-    SeoulMuseum: {
+    seoulmuseum: {
       first: {
         title: '서울역사박물관'
       },
