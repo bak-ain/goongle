@@ -7,9 +7,8 @@ import LoginPopup from '../components/LoginPopup';
 import { useLogin } from '../LoginContext';
 import './Map.css';
 
-const Map = ({ currentGung, setCurrentGung }) => {
+const Map = ({ currentGung, setCurrentGung ,eventMode, setEventMode  }) => {
   const { isMember } = useLogin();
-  const [eventMode, setEventMode] = useState(false);
   const [triggerYut, setTriggerYut] = useState(0);
   const [showLoginGuide, setShowLoginGuide] = useState(false);
   const [showLoginPopup, setShowLoginPopup] = useState(false);

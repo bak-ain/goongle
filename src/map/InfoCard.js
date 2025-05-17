@@ -11,7 +11,7 @@ const InfoCard = ({ eventMode, gungId }) => {
         <div className="fins" />
         <div className="InfoCard_wrap">
           <div className="InfoCard_top">
-            <h2>{yutnoriRule.title}</h2>
+            <h2 className='h2'>{yutnoriRule.title}</h2>
           </div>
           <ul className="InfoCard_contents">
             {/* 이동 규칙 */}
@@ -74,7 +74,7 @@ const InfoCard = ({ eventMode, gungId }) => {
       <div className='fins' />
       <div className='InfoCard_wrap'>
         <div className='InfoCard_top'>
-          <h2>{name}</h2>
+          <h2 className='h2'>{name}</h2>
           <p className='p3'>위치 : {address}<br />tel : {tel}</p>
         </div>
         <ul className='InfoCard_contents'>

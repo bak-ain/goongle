@@ -31,43 +31,43 @@ export const quizTile = {
 export const eventTiles = [
   {
     id: 101, title: '이벤트1', type: 'event', width: '69.57%', height: '108.11%', gridArea: 't3',
-    front: { image: TileEventImg.event1, text: '이벤트1' },
-    back: { image: TileEventImg.event1, text: '닢1' },
+    front: { image: TileEventImg.event6, text: '이벤트1' },
+    back: { image: TileEventImg.event9, text: '닢1' },
     top: '-14%', left: '26%',
     positionClass: 'tile-101'
   },
   {
     id: 102, title: '이벤트2', type: 'event', width: '69.57%', height: '102.7%', gridArea: 't5',
-    front: { image: TileEventImg.event2, text: '이벤트2' },
-    back: { image: TileEventImg.event2, text: '닢2' },
+    front: { image: TileEventImg.event4, text: '이벤트2' },
+    back: { image: TileEventImg.event7, text: '닢2' },
     top: '-14%', left: '42%',
     positionClass: 'tile-102'
   },
   {
     id: 103, title: '이벤트3', type: 'event', width: '78.26%', height: '94.59%', gridArea: 't7',
-    front: { image: TileEventImg.event3, text: '이벤트3' },
-    back: { image: TileEventImg.event3, text: '닢3' },
+    front: { image: TileEventImg.event5, text: '이벤트3' },
+    back: { image: TileEventImg.event8, text: '닢3' },
     top: '-15%', left: '38%',
     positionClass: 'tile-103'
   },
   {
     id: 104, title: '이벤트4', type: 'event', width: '69.57%', height: '94.59%', gridArea: 't9',
-    front: { image: TileEventImg.event4, text: '이벤트4' },
-    back: { image: TileEventImg.event4, text: '닢1' },
+    front: { image: TileEventImg.event6, text: '이벤트4' },
+    back: { image: TileEventImg.event9, text: '닢1' },
     top: '-13%', left: '42%',
     positionClass: 'tile-104'
   },
   {
     id: 105, title: '이벤트5', type: 'event', width: '69.57%', height: '94.59%', gridArea: 't13',
-    front: { image: TileEventImg.event5, text: '이벤트5' },
-    back: { image: TileEventImg.event5, text: '닢2' },
+    front: { image: TileEventImg.event4, text: '이벤트5' },
+    back: { image: TileEventImg.event7, text: '닢2' },
     top: '-13%', left: '8%',
     positionClass: 'tile-105'
   },
   {
     id: 106, title: '이벤트6', type: 'event', width: '78.26%', height: '94.59%', gridArea: 't15',
-    front: { image: TileEventImg.event6, text: '이벤트6' },
-    back: { image: TileEventImg.event6, text: '닢3' },
+    front: { image: TileEventImg.event5, text: '이벤트6' },
+    back: { image: TileEventImg.event8, text: '닢3' },
     top: '-15%', left: '14%',
     positionClass: 'tile-106'
   },

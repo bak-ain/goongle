@@ -65,12 +65,15 @@ import gung39 from './thirtynine.png';
 import gung40 from './fourty.png';
 import quiz from './quiz.png'
 import yutStart from './event_start.png'
-import event1 from './Vector3.png';
-import event2 from './Vector1.png';
-import event3 from './Vector2.png';
-import event4 from './Vector3.png';
-import event5 from './Vector1.png';
-import event6 from './Vector2.png';
+import event1 from './nonFront1.svg';
+import event2 from './nonFront2.svg';
+import event3 from './nonFront3.svg';
+import event4 from './front1.png';
+import event5 from './front2.svg';
+import event6 from './front3.svg';
+import event7 from './back1.png';
+import event8 from './back2.svg';
+import event9 from './back3.svg';
 import right_btn from './rightbtn.png';
 import left_btn from './leftbtn.png';
 import finall from './finall.png';
@@ -161,6 +164,9 @@ export const TileEventImg = {
   event4,
   event5,
   event6,
+  event7,
+  event8,
+  event9
 }
 export const M_btn = {
   right_btn,

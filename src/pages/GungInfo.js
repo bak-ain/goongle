@@ -143,7 +143,7 @@ const FirstSec = ({ gungId, placeId }) => {
     return (
         <div className="FirstSec">
             <div className="first_img">
-                <img src={InfoImgs[gungId][placeId].first[0]} alt="광화문 대표 이미지" />
+                <img src={InfoImgs[gungId][placeId].first[0]} alt={placeId} />
             </div>
             <h2 className='h2'>{InfoTexts[gungId][placeId].first.title}</h2>
         </div>
@@ -173,7 +173,7 @@ const SecondSec = ({ gungId, placeId }) => {
                 ))}
             </div>
             <div className="second_img">
-                <img src={InfoImgs[gungId][placeId].second[0]} alt='광화문 이미지' />
+                <img src={InfoImgs[gungId][placeId].second[0]} alt={placeId} />
             </div>
         </div>
     );
@@ -182,14 +182,10 @@ const SecondSec = ({ gungId, placeId }) => {
 const ThirdSec = ({ gungId, placeId }) => {
     return (
         <div className='ThirdSec'>
-            <img src={InfoImgs[gungId][placeId].third[0]} alt='광화문 이미지' />
-            <img src={InfoImgs[gungId][placeId].third[1]} alt='광화문 이미지' />
-            <img src={InfoImgs[gungId][placeId].third[2]} alt='광화문 이미지' />
-            <TextBox
-                gungId="gyeongbokgung"
-                placeId="gwanghwamun"
-                section="third"
-            />
+            <img src={InfoImgs[gungId][placeId].third[0]} alt={placeId} />
+            <img src={InfoImgs[gungId][placeId].third[1]} alt={placeId} />
+            <img src={InfoImgs[gungId][placeId].third[2]} alt={placeId} />
+            <TextBox gungId={gungId} placeId={placeId} section="third" />
         </div>
     )
 }
@@ -198,18 +194,14 @@ const FourthSec = ({ gungId, placeId }) => {
     return (
         <div className='FourthSec'>
             <div className='left_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fourth[0]} alt='광화문 이미지' />
-                <img src={InfoImgs[gungId][placeId].fourth[1]} alt='광화문 이미지' />
+                <img src={InfoImgs[gungId][placeId].fourth[0]} alt={placeId} />
+                <img src={InfoImgs[gungId][placeId].fourth[1]} alt={placeId} />
             </div>
             <div className='right_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fourth[2]} alt='광화문 이미지' />
-                <img src={InfoImgs[gungId][placeId].fourth[3]} alt='광화문 이미지' />
+                <img src={InfoImgs[gungId][placeId].fourth[2]} alt={placeId} />
+                <img src={InfoImgs[gungId][placeId].fourth[3]} alt={placeId} />
             </div>
-            <TextBox
-                gungId="gyeongbokgung"
-                placeId="gwanghwamun"
-                section="fourth"
-            />
+            <TextBox gungId={gungId} placeId={placeId} section="fourth" />
         </div>
     )
 }
@@ -218,18 +210,14 @@ const FifthSec = ({ gungId, placeId }) => {
     return (
         <div className='FifthSec'>
             <div className='left_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fifth[0]} alt='광화문 이미지' />
-                <img src={InfoImgs[gungId][placeId].fifth[1]} alt='광화문 이미지' />
+                <img src={InfoImgs[gungId][placeId].fifth[0]} alt={placeId} />
+                <img src={InfoImgs[gungId][placeId].fifth[1]} alt={placeId} />
             </div>
             <div className='right_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fifth[2]} alt='광화문 이미지' />
-                <img src={InfoImgs[gungId][placeId].fifth[3]} alt='광화문 이미지' />
+                <img src={InfoImgs[gungId][placeId].fifth[2]} alt={placeId} />
+                <img src={InfoImgs[gungId][placeId].fifth[3]} alt={placeId} />
             </div>
-            <TextBox
-                gungId="gyeongbokgung"
-                placeId="gwanghwamun"
-                section="fifth"
-            />
+            <TextBox gungId={gungId} placeId={placeId} section="fifth" />
         </div>
     )
 }
@@ -237,14 +225,10 @@ const FifthSec = ({ gungId, placeId }) => {
 const SixSec = ({ gungId, placeId }) => {
     return (
         <div className='SixSec'>
-            <img src={InfoImgs[gungId][placeId].sixth[0]} alt='광화문 이미지' />
-            <img src={InfoImgs[gungId][placeId].sixth[1]} alt='광화문 이미지' />
-            <img src={InfoImgs[gungId][placeId].sixth[2]} alt='광화문 이미지' />
-            <TextBox
-                gungId="gyeongbokgung"
-                placeId="gwanghwamun"
-                section="sixth"
-            />
+            <img src={InfoImgs[gungId][placeId].sixth[0]} alt={placeId} />
+            <img src={InfoImgs[gungId][placeId].sixth[1]} alt={placeId} />
+            <img src={InfoImgs[gungId][placeId].sixth[2]} alt={placeId} />
+            <TextBox gungId={gungId} placeId={placeId} section="sixth" />
         </div>
     )
 }
@@ -252,12 +236,8 @@ const SixSec = ({ gungId, placeId }) => {
 const SevenSec = ({ gungId, placeId }) => {
     return (
         <div className='SevenSec'>
-            <img src={InfoImgs[gungId][placeId].seventh[0]} alt='광화문 이미지' />
-            <TextBox
-                gungId="gyeongbokgung"
-                placeId="gwanghwamun"
-                section="seventh"
-            />
+            <img src={InfoImgs[gungId][placeId].seventh[0]} alt={placeId} />
+            <TextBox gungId={gungId} placeId={placeId} section="seventh" />
         </div>
     )
 }
