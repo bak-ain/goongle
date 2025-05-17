@@ -1,23 +1,38 @@
-.MovingBtn{
+.MovingBtn {
     display: flex;
     justify-content: space-between;
-    width: 12vw;
-    height:5vw;
+    width: 13vw;
+    height: 6vw;
+    gap: 3vw;
 }
-.MovingBtn button{
-    width: 5vw;
-    height: 5vw;
+
+.MovingBtn button {
+    flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: transparent;
+    position: relative;
 }
-button img{
-    width: 80%;
+
+.MovingBtn button img {
+    width: 4vw;
+    height: auto;
 }
-button.left img{
-    width: 100%;
+
+.MovingBtn button img.front {
+    z-index: 3;
+    transition: .3s;
+    position: relative;
 }
-button.right img{
-    width: 100%;
+
+.MovingBtn button img.back {
+    position: absolute;
+    transform: translateY(1%);
+}
+
+.MovingBtn button:hover img.front,
+.MovingBtn button:active img.front {
+    opacity: 0;
 }

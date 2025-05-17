@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #F1E9D4; */
+    background-image: url(../img/centerBg.svg);
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: 80%;
     
 }

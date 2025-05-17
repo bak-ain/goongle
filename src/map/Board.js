@@ -239,7 +239,7 @@ const Board = ({
   return (
     <div className='Board'>
       <div className={`mapArea gung_${currentGung}`}>
-        <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} />
+        <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} currentGung={currentGung}/>
         <div className="tile_wrap">
           {tileData.map(tile => (
             <Tile key={tile.id} tile={tile} eventMode={eventMode} isMember={isMember} onClick={() => handleClick(tile)} />
