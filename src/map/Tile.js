@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { TileEventImg } from '../img/img';
 import './Board.css';
 
 const Tile = ({ tile, eventMode, isMember, onClick }) => {
@@ -15,6 +16,25 @@ const Tile = ({ tile, eventMode, isMember, onClick }) => {
     tileOpacity = 0.5; // 🔹 일반 타일 (event 제외)
   }
   
+  const getModifiedFrontImage = () => {
+  if (isEvent && !isMember) {
+    switch (tile.id) {
+      case 101:
+      case 104:
+        return TileEventImg.event3;
+      case 102:
+      case 105:
+        return TileEventImg.event1;
+      case 103:
+      case 106:
+        return TileEventImg.event2;
+      default:
+        return tile.front.image;
+    }
+  }
+  return tile.front.image;
+};
+
   return (
     <div className="tile-cell" style={{ gridArea: tile.gridArea }}>
       <div
@@ -31,7 +51,7 @@ const Tile = ({ tile, eventMode, isMember, onClick }) => {
           <div className={`tile-container ${flipClass}`}>
             <div className="tile-inner">
               <div className="tile-front">
-                <img src={tile.front.image} alt={tile.front.text} />
+                <img src={getModifiedFrontImage()} alt={tile.front.text} />
               </div>
               <div className="tile-back">
                 <img src={tile.back.image} alt={tile.back.text} />

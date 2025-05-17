@@ -3,7 +3,7 @@ import GungItem from './GungItem';
 import YutItem from './YutItem';
 import './CenterWrap.css';
 
-const CenterWrap = ({ eventMode, triggerYut, onYutResult, resetYutItem  }) => {
+const CenterWrap = ({ eventMode, triggerYut, onYutResult, resetYutItem, currentGung   }) => {
     return (
         <div className="CenterWrap">
             {eventMode ? (
@@ -11,7 +11,7 @@ const CenterWrap = ({ eventMode, triggerYut, onYutResult, resetYutItem  }) => {
                     reset={resetYutItem}
                     onResult={onYutResult} />
             ) : (
-                <GungItem />
+                <GungItem  currentGung={currentGung}/>
             )}
         </div>
     );

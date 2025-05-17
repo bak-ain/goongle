@@ -75,10 +75,16 @@ import event7 from './back1.png';
 import event8 from './back2.svg';
 import event9 from './back3.svg';
 import right_btn from './rightbtn.png';
+import right_btnB from './rightbtnB.png';
 import left_btn from './leftbtn.png';
+import left_btnB from './leftbtnB.png';
 import finall from './finall.png';
 import fin from './fin.png';
 import gungItem1 from './gung1.svg'
+import gungItem2 from './gung2.svg'
+import gungItem3 from './gung3.svg'
+import gungItem4 from './gung4.svg'
+import gungItem5 from './gung5.svg'
 import doo from './do.png';
 import gae from './gae.png';
 import gul from './gul.png';
@@ -170,7 +176,9 @@ export const TileEventImg = {
 }
 export const M_btn = {
   right_btn,
-  left_btn
+  left_btn,
+  right_btnB,
+  left_btnB
 }
 export const Fins = {
   finall,
@@ -178,6 +186,10 @@ export const Fins = {
 }
 export const GungItems = {
   gungItem1,
+  gungItem2,
+  gungItem3,
+  gungItem4,
+  gungItem5,
 }
 export const YutItems = {
   yutDefault,
