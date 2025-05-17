@@ -18,18 +18,15 @@ const YutnoriBtn = ({
     }
 
     if (chances <= 0) {
-      console.log('❌ chances 소진됨');
       return;
     }
 
     if (!eventMode) {
-      console.log('🟢 START 버튼 클릭');
       setClicked(true); // 첫 클릭 상태 기억
       onClick('start');
       return;
     }
 
-    console.log('🎯 PLAY 버튼 클릭');
     onClick('play');
   };
 

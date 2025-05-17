@@ -22,9 +22,6 @@ const Map = ({ currentGung, setCurrentGung }) => {
   const [yutClicked, setYutClicked] = useState(false);
   const [yutReady, setYutReady] = useState(false);
 
-  useEffect(() => {
-    console.log('📦 [STATE]', { yutChances, yutClicked, yutReady, eventMode });
-  }, [yutChances, yutClicked, yutReady, eventMode]);
 
   const handleYutnoriClick = (phase) => {
     if (!isMember) {
@@ -42,16 +39,15 @@ const Map = ({ currentGung, setCurrentGung }) => {
     }
 
     if (phase === 'play') {
-      console.log('🎯 PLAY 버튼 클릭');
-
+    
       if (yutReady && yutChances > 0) {
-        console.log('🎯 PLAY CONFIRMED');
+    
 
         setTriggerYut(prev => prev + 1);
 
         setYutChances(prev => {
           const next = Math.max(prev - 1, 0);
-          console.log('📉 chances updated to:', next);
+      
 
           if (next === 0) {
             console.log('🚫 기회 소진 → eventMode OFF');
@@ -69,7 +65,6 @@ const Map = ({ currentGung, setCurrentGung }) => {
 
 
   const handleYutReset = () => {
-    console.log('🔄 RESET STATE');
     setYutReady(false);
     setYutClicked(false);
   };
@@ -92,7 +87,6 @@ const Map = ({ currentGung, setCurrentGung }) => {
 
   useEffect(() => {
     if (isReenterFromGiveNip) {
-      console.log('🧼 GiveNip 재진입 초기화 → clicked: false');
       setYutClicked(false);
       setYutReady(false);
       setIsReenterFromGiveNip(false);
