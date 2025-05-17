@@ -1,8 +1,24 @@
-.GungItem{
+.GungItem {
     width: 16vw;
     height: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.GungItem img{
+
+.GungItem img {
     width: 100%;
-    height: 100%;
+
+}
+
+.GungItem.gyeongbokgung img {
+    width: 78%;
+    height: auto;
+}
+
+.GungItem.gyeonghuigung img {
+    width: 85%;
+}
+.GungItem.changdeokgung img {
+    width: 90%;
 }
