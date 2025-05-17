@@ -15,3 +15,9 @@
 button img{
     width: 80%;
 }
+button.left img{
+    width: 100%;
+}
+button.right img{
+    width: 100%;
+}

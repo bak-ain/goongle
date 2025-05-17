@@ -12,7 +12,7 @@
   width: 12vw;
   height: 2vw;
   position: absolute;
-  background-image: url(../img/pintop.svg);
+  background-image: url(../img/pinbottom.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -21,10 +21,13 @@
   transform: translateX(-50%);
 }
 
+
+
+
 .fins {
   width: 10vw;
   height: 3vw;
-  background-image: url(../img/pinbottom.svg);
+  background-image: url(../img/pintop.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -47,9 +50,62 @@
   gap: 1.5vw;
 }
 
+
+/* 각궁 info 색 변경경 */
 .gung_changgyeonggung .InfoCard_wrap {
-  border: 0.2vw solid #996DAC ;
+  border: 0.2vw solid var(--Changgyeonggung-info-color) ;
 }
+.gung_gyeonghuigung .InfoCard_wrap {
+  border: 0.2vw solid var(--Gyeonghuigung-info-color) ;
+}
+.gung_changdeokgung .InfoCard_wrap {
+  border: 0.2vw solid var(--Changdeokgung-info-color) ;
+}
+.gung_deoksugung .InfoCard_wrap {
+  border: 0.2vw solid var(--Deoksugung-info-color) ;
+}
+
+
+.gung_changgyeonggung.InfoCard h2{
+  color: var(--Changgyeonggung-info-color);
+}
+.gung_gyeonghuigung.InfoCard h2{
+  color: var(--Gyeonghuigung-info-color);
+}
+.gung_changdeokgung.InfoCard h2{
+  color: var(--Changdeokgung-info-color);
+}
+.gung_deoksugung.InfoCard h2{
+  color: var(--Deoksugung-info-color);
+}
+
+.gung_gyeonghuigung .spring{
+  background-image: url(../img/pintop2.svg);
+}
+.gung_changdeokgung .spring{
+  background-image: url(../img/pintop3.svg);
+}
+.gung_changgyeonggung .spring{
+  background-image: url(../img/pintop4.svg);
+}
+.gung_deoksugung .spring{
+  background-image: url(../img/pintop5.svg);
+}
+
+
+.gung_gyeonghuigung .fins{
+  background-image: url(../img/pinbottom2.svg);
+}
+.gung_changdeokgung .fins{
+  background-image: url(../img/pinbottom3.svg);
+}
+.gung_changgyeonggung .fins{
+  background-image: url(../img/pinbottom4.svg);
+}
+.gung_deoksugung .fins{
+  background-image: url(../img/pinbottom5.svg);
+}
+
 
 .InfoCard h2 {
   color: #2A6DB9;
