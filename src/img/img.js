@@ -1,6 +1,7 @@
 // src/img/img.js
 
-import coin from './coin.png';
+import coin from './coin.svg';
+import nipcoin from './nipcoin.png';
 import gnb1 from './kbicon.png'
 import gnb1On from './kbiconon.svg'
 import gnb2 from './khicon.png'
@@ -90,6 +91,7 @@ import yutDefault from './yut_default.png'
 
 export const Icons = {
   coin,
+  nipcoin,
   gnb1,
   gnb1On,
   gnb2,

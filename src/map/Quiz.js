@@ -37,10 +37,13 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
   return (
     <div className="quiz-wrap">
       <div className="quiz-box">
+        
         <h2 className="question">
           <span className="q-mark">Q</span> {questionData.question}
         </h2>
-        <p className="desc">*답은 하나만 선택해 주세요.<br />난이도 ⭐⭐⭐</p>
+        <div className='marginleft'>
+        <p className="desc">*답은 하나만 선택해 주세요.</p>
+        <p className="desc2">난이도 ⭐⭐⭐</p>
         <div className="options">
           {questionData.options.map((option, index) => (
             <button
@@ -52,6 +55,7 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
               <span>{String.fromCharCode(65 + index)}.</span> {option}
             </button>
           ))}
+        </div>
         </div>
 
         {!selected && (
@@ -65,15 +69,16 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
       {selected !== null && isCorrect && (
         <div className="popup correct">
           <img src={correctIcon} alt="정답" />
+          <p>정답이오~!</p>
         </div>
       )}
       {selected !== null && isCorrect === false && (
         <div className="popup wrong">
           <img src={wrongIcon} alt="오답" />
           <div className="explanation">
+            <h3>다음 기회에...</h3>
             <p>{questionData.explanation}</p>
 
-            <button className="exit" onClick={handleExit}>나가기</button>
           </div>
         </div>
       )}
