@@ -41,25 +41,32 @@ const GUNG_NAMES = {
 };
 
 
-const GungHeader = ({ placeId, fromTileId }) => {
-  const navigate = useNavigate();
+const GungHeader = ({ placeId, fromTileId, characterKey  }) => {
+    const navigate = useNavigate();
 
-  const gungId = PLACE_TO_GUNG[placeId];
-  const name = GUNG_NAMES[gungId] || { kr: '', hanja: '' };
+    const gungId = PLACE_TO_GUNG[placeId];
+    const name = GUNG_NAMES[gungId] || { kr: '', hanja: '' };
 
-  const handleExit = () => {
-    navigate('/', { state: { returnToTileId: fromTileId } });
-  };
+    const handleExit = () => {
+        navigate('/', {
+            state: {
+                returnToTileId: fromTileId,
+                returnToGungId: gungId, // ✅ 현재 궁 ID도 함께 넘김!
+                returnToCharacterKey: characterKey,
+            },
+        });
+    };
 
-  return (
-    <header className="GungHeader">
-      <div className='gung_name'>
-        <div className="hanja">{name.hanja}</div>
-        <div className="kr">{name.kr}</div>
-      </div>
-      <button className="exit" onClick={handleExit}>나가기</button>
-    </header>
-  );
+
+    return (
+        <header className="GungHeader">
+            <div className='gung_name'>
+                <div className="hanja">{name.hanja}</div>
+                <div className="kr">{name.kr}</div>
+            </div>
+            <button className="exit" onClick={handleExit}>나가기</button>
+        </header>
+    );
 };
 
 
@@ -220,8 +227,9 @@ const LastSec = ({ gungId, placeId }) => {
 const GungInfo = () => {
     const { state } = useLocation();
     const fromTileId = state?.fromTileId;
+    const characterKey = state?.characterKey;
     const { gungId: placeId } = useParams();
-    const gungId = PLACE_TO_GUNG[placeId];   
+    const gungId = PLACE_TO_GUNG[placeId];
     const containerRef = useRef(null);
     const [sectionIndex, setSectionIndex] = useState(0);
     const totalSections = 8;
@@ -273,17 +281,17 @@ const GungInfo = () => {
     return (
         <div className="GungInfoWrapper" > {/* 공통 배경 처리 */}
             {/* <ScrollProgress sectionIndex={sectionIndex} total={totalSections} /> */}
-            <GungHeader placeId={placeId} fromTileId={fromTileId} />  {/* 한자 + 국문 + 나가기 버튼 */}
+            <GungHeader placeId={placeId} fromTileId={fromTileId} characterKey={characterKey} />  {/* 한자 + 국문 + 나가기 버튼 */}
 
             <div className="GungInfo" ref={containerRef}>
-                <section className="first"><FirstSec gungId={gungId} placeId={placeId}/></section>
+                <section className="first"><FirstSec gungId={gungId} placeId={placeId} /></section>
                 <section className="second"><SecondSec gungId={gungId} placeId={placeId} /></section>
-                <section className='third'><ThirdSec gungId={gungId} placeId={placeId}/></section>
-                <section className='fourth'><FourthSec gungId={gungId} placeId={placeId}/></section>
-                <section className='fifth'><FifthSec gungId={gungId} placeId={placeId}/></section>
-                <section className='six'><SixSec gungId={gungId} placeId={placeId}/></section>
-                <section className='seven'><SevenSec gungId={gungId} placeId={placeId}/></section>
-                <section className='last'><LastSec gungId={gungId} placeId={placeId}/></section>
+                <section className='third'><ThirdSec gungId={gungId} placeId={placeId} /></section>
+                <section className='fourth'><FourthSec gungId={gungId} placeId={placeId} /></section>
+                <section className='fifth'><FifthSec gungId={gungId} placeId={placeId} /></section>
+                <section className='six'><SixSec gungId={gungId} placeId={placeId} /></section>
+                <section className='seven'><SevenSec gungId={gungId} placeId={placeId} /></section>
+                <section className='last'><LastSec gungId={gungId} placeId={placeId} /></section>
             </div>
 
             <ScrollHint isLast={sectionIndex === totalSections - 1} />

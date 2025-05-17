@@ -9,6 +9,7 @@ import Tile from './Tile';
 import Quiz from './Quiz';
 import QuizEntryPopup from './QuizEntryPopup';
 import { startTile, mapTilesByGung, quizTile, eventTiles } from '../utils';
+import { Characters } from '../img/img';
 import { quizData } from "../utils";
 import './Board.css';
 
@@ -17,6 +18,7 @@ const Board = ({
   setEventMode,
   triggerYut,
   currentGung,
+  setCurrentGung,
   setShowQuizPopup,
   setQuizPopupMode,
   shouldStartQuiz,
@@ -29,6 +31,8 @@ const Board = ({
   const { state } = useLocation();
   const navigate = useNavigate();
   const returnToTileId = state?.returnToTileId;
+  const returnToGungId = state?.returnToGungId;
+  const returnToCharacterKey = state?.returnToCharacterKey;
 
   const mapTiles = mapTilesByGung[currentGung] || [];
   const tileData = [startTile, ...mapTiles, { ...quizTile, gungId: currentGung }, ...eventTiles];
@@ -43,6 +47,40 @@ const Board = ({
   const [currentQuiz, setCurrentQuiz] = useState(null);
   const [justEarned, setJustEarned] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
+  const [pendingQuizTile, setPendingQuizTile] = useState(null);
+
+  const characterKeys = Object.keys(Characters).filter(k => k !== 'gle3');
+  const [characterKey, setCharacterKey] = useState(() => {
+    return characterKeys[Math.floor(Math.random() * characterKeys.length)];
+  });
+
+  useEffect(() => {
+    if (returnToCharacterKey) {
+      setCharacterKey(returnToCharacterKey);
+    }
+  }, [returnToCharacterKey]);
+  useEffect(() => {
+    if (!returnToCharacterKey) {
+      const newKey = characterKeys[Math.floor(Math.random() * characterKeys.length)];
+      setCharacterKey(newKey);
+    }
+  }, [currentGung]);
+
+  useEffect(() => {
+    if (returnToGungId && returnToGungId !== currentGung) {
+      setCurrentGung(returnToGungId);
+    }
+  }, [returnToGungId]);
+
+  useEffect(() => {
+    if (!isMember) {
+      setPosition(startIndex);
+    }
+  }, [isMember, startIndex]);
+
+  useEffect(() => {
+    setPosition(startIndex);
+  }, [currentGung, startIndex]);
 
   useEffect(() => {
     if (returnToTileId) {
@@ -50,7 +88,7 @@ const Board = ({
       if (targetIndex !== -1) setPosition(targetIndex);
       navigate('/', { replace: true });
     }
-  }, [returnToTileId, navigate]);
+  }, [returnToTileId, tileData, navigate]);
 
   useEffect(() => {
     if (!prevEventMode && eventMode) {
@@ -64,6 +102,7 @@ const Board = ({
   const openTile = (type, tile) => {
     if (type === 'quiz') {
       if (!isMember) {
+        setPendingQuizTile(tile);
         setQuizPopupMode('login');
         setShowQuizPopup(true);
         return;
@@ -76,9 +115,24 @@ const Board = ({
       setGiveAmount(randomAmount);
       setGiveNipVisible(true);
     } else if (type === 'default' && tile.gungId) {
-      navigate(`/gung/${tile.gungId}`, { state: { fromTileId: tile.id } });
+      navigate(`/gung/${tile.gungId}`, {
+        state: {
+          fromTileId: tile.id,
+          characterKey: characterKey
+        }
+      });
     }
   };
+
+  useEffect(() => {
+    if (isMember && pendingQuizTile) {
+      const targetIndex = tileData.findIndex(t => t.id === pendingQuizTile.id);
+      if (targetIndex !== -1) {
+        moveToTile(targetIndex, 'quiz', pendingQuizTile);
+      }
+      setPendingQuizTile(null);
+    }
+  }, [isMember, pendingQuizTile, tileData]);
 
   const moveToTile = (targetIndex, tileType, tileDataObj) => {
     if (targetIndex === position) {
@@ -104,6 +158,12 @@ const Board = ({
 
   const handleClick = (tile) => {
     if (tile.type === 'event' || tile.type === 'start') return;
+    if (tile.type === 'quiz' && !isMember) {
+      setPendingQuizTile(tile);
+      setQuizPopupMode('login');
+      setShowQuizPopup(true);
+      return;
+    }
     const targetIndex = tileData.findIndex(t => t.id === tile.id);
     if (targetIndex === position) {
       openTile(tile.type, tile);
@@ -184,7 +244,7 @@ const Board = ({
           {tileData.map(tile => (
             <Tile key={tile.id} tile={tile} eventMode={eventMode} isMember={isMember} onClick={() => handleClick(tile)} />
           ))}
-          <Character tile={tileData[position]} eventMode={eventMode} />
+          <Character tile={tileData[position]} characterKey={characterKey} eventMode={eventMode} />
         </div>
       </div>
 
@@ -215,9 +275,9 @@ const Board = ({
           amount={giveAmount}
           total={nipCount}
           onClose={() => {
-            setIsReenterFromGiveNip(true);     // ✅ 먼저 실행
-            setEventMode(false);               // 그다음 OFF
-            onResetYut();                      // 리셋 함수는 마지막
+            setIsReenterFromGiveNip(true);
+            setEventMode(false);
+            onResetYut();
             setGiveNipVisible(false);
           }}
         />

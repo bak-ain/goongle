@@ -2,19 +2,13 @@ import React, { useMemo } from 'react';
 import { Characters } from '../img/img';
 import './Character.css';
 
-const Character = ({ tile, eventMode }) => {
+const Character = ({ tile, characterKey, eventMode }) => {
   const { gridArea, top = '0', left = '0' } = tile;
 
   const characterImage = useMemo(() => {
-    if (eventMode) {
-      return Characters['gle3']; // ✅ 이벤트 맵일 때는 gle3 고정
-    }
-
-    // ✅ eventMode가 false일 때는 gle3 제외하고 랜덤
-    const keys = Object.keys(Characters).filter(key => key !== 'gle3');
-    const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    return Characters[randomKey];
-  }, [eventMode]);
+    if (eventMode) return Characters['gle3'];       // 이벤트 모드 고정 캐릭터
+    return Characters[characterKey];                // 전달받은 키 기반 캐릭터
+  }, [eventMode, characterKey]);
 
   return (
     <div className="Character_wrapper" style={{ gridArea }}>

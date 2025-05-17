@@ -101,6 +101,7 @@ const Map = ({ currentGung, setCurrentGung }) => {
         setEventMode={setEventMode}
         triggerYut={triggerYut}
         currentGung={currentGung}
+        setCurrentGung={setCurrentGung}
         setShowQuizPopup={setShowQuizPopup}
         setQuizPopupMode={setQuizPopupMode}
         setShowLoginPopup={setShowLoginPopup}
