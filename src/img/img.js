@@ -2,15 +2,15 @@
 
 import coin from './coin.png';
 import gnb1 from './kbicon.png'
-import gnb1On from './kbiconon.png'
+import gnb1On from './kbiconon.svg'
 import gnb2 from './khicon.png'
-import gnb2On from './khiconon.png'
+import gnb2On from './khiconon.svg'
 import gnb3 from './ckicon.png'
-import gnb3On from './ckiconon.png'
+import gnb3On from './ckiconon.svg'
 import gnb4 from './ckngicon.png'
-import gnb4On from './ckngiconon.png'
+import gnb4On from './ckngiconon.svg'
 import gnb5 from './duckicon.png'
-import gnb5On from './duckiconon.png'
+import gnb5On from './duckiconon.svg'
 import event from './event.png';
 import login from './users.png';
 import logo from './logo.png';
@@ -39,6 +39,30 @@ import gung13 from './thirteen.png';
 import gung14 from './fourteen.png';
 import gung15 from './fifteen.png';
 import gung16 from './sixteen.png';
+import gung17 from './seventeen.png';
+import gung18 from './eighteen.png';
+import gung19 from './nineteen.png';
+import gung20 from './twenty.png';
+import gung21 from './twentyone.png';
+import gung22 from './twentytwo.png';
+import gung23 from './twentythree.png';
+import gung24 from './twentyfour.png';
+import gung25 from './twentyfive.png';
+import gung26 from './twentysix.png';
+import gung27 from './twentyseven.png';
+import gung28 from './twentyeight.png';
+import gung29 from './twentynine.png';
+import gung30 from './thirty.png';
+import gung31 from './thirtyone.png';
+import gung32 from './thirtytwo.png';
+import gung33 from './thirtythree.png';
+import gung34 from './thirtyfour.png';
+import gung35 from './thirtyfive.png';
+import gung36 from './thirtysix.png';
+import gung37 from './thirtyseven.png';
+import gung38 from './thirtyeight.png';
+import gung39 from './thirtynine.png';
+import gung40 from './fourty.png';
 import quiz from './quiz.png'
 import yutStart from './event_start.png'
 import event1 from './Vector3.png';
@@ -103,6 +127,30 @@ export const TileImg = {
   gung14,
   gung15,
   gung16,
+  gung17,
+  gung18,
+  gung19,
+  gung20,
+  gung21,
+  gung22,
+  gung23,
+  gung24,
+  gung25,
+  gung26,
+  gung27,
+  gung28,
+  gung29,
+  gung30,
+  gung31,
+  gung32,
+  gung33,
+  gung34,
+  gung35,
+  gung36,
+  gung37,
+  gung38,
+  gung39,
+  gung40,
   quiz
 }
 export const TileEventImg = {

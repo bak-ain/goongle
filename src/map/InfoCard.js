@@ -90,7 +90,7 @@ const InfoCard = ({ eventMode, gungId }) => {
           <li className='transport'>
             <h3 className='p'><i class="fa-regular fa-map"></i>교통편</h3>
             {transport.subway.map((s, i) => (
-              <p key={i} className='p2'> <em className={`line_bg line_${s.line} `} >{s.line}</em>호선 : {s.station}</p>
+              <p key={i} className='p2'> <em className={`line_bg line_${s.line} `} >{s.line}</em> {s.station}</p>
             ))}
             <p className='p2'>  간선 : {transport.bus.간선.join(', ')}</p>
             <p className='p2'> 지선 : {transport.bus.지선.join(', ')}</p>

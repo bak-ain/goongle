@@ -23,6 +23,7 @@ const Gnb = ({ currentGung, setCurrentGung }) => {
           label={gung.label}
           isActive={currentGung === gung.id}
           onClick={() => setCurrentGung(gung.id)}
+          className={gung.id} // ✅ 각 궁 id를 className으로 전달
         />
       ))}
 

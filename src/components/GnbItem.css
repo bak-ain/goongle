@@ -29,3 +29,24 @@
     font-weight: bold;
 }
 
+.GnbItem.gyeonghuigung.on .gnb_label {
+    color: var(--Gyeonghuigung-info-color);
+    font-weight: bold;
+}
+
+.GnbItem.changdeokgung.on .gnb_label {
+    color: var(--Changdeokgung-info-color);
+    font-weight: bold;
+}
+
+.GnbItem.changgyeonggung.on .gnb_label {
+    color: var(--Changgyeonggung-info-color);
+    font-weight: bold;
+}
+
+.GnbItem.deoksugung.on .gnb_label {
+    color: var(--Deoksugung-info-color);
+    font-weight: bold;
+}
+
+
