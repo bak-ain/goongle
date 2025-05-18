@@ -23,6 +23,11 @@
     /* or 강조색 */
 }
 
+/* 텍스트박스들 라인하이트 조절 */
+.TextBox p{
+    line-height: 160%;
+    white-space: nowrap;
+}
 .GungInfoWrapper {
     height: 100vh;
     overflow: hidden;
