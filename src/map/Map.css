@@ -11,9 +11,36 @@
     padding-top: 2vw;
 
 }
-/* .Board {
-       padding-top: 30px;
+
+
+@media screen and (max-width: 1024px) {
+    .Map{
+        flex-direction: column;
+    }
+    .Board{
+        order: 2;
+    }
+    .Map_left{
+        display: flex;
+        gap: 3vw;
+        align-items: center;
+    }
+    .fins{
+        display: none;
+    }
+    .InfoCard_wrap{
+        width: 60vw;
+    }
+    .InfoCard .InfoCard_top{
+        flex-direction: row;
+    }
+    .InfoCard .InfoCard_contents {
+        flex-direction: row;
+    }
+    .YutnoriBtn{
+        flex-direction: column;
+        width: 25vw;
+        height: 20vw;
+        align-items: center;
+    }
 }
-.InfoCard{
-       padding-top: 30px;
-} */

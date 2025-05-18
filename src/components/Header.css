@@ -84,15 +84,24 @@
 
     .Profile {
         width: 20%;
-        flex-direction: row !important;
-        gap: 2vw !important;
+        /* flex-direction: row !important; */
+        gap: 0 !important;
+    }
+
+    .cha_box {
+        width: 60px !important;
+        height: 60px !important;
     }
 
 
-    .Gnb {
-        flex-direction: row;
-        padding-bottom: 0;
-        border-bottom: none;
-        flex: 2;
+    .cha_box.member img {
+        height: 50px !important;
     }
-}
+
+        .Gnb {
+            flex-direction: row;
+            padding-bottom: 0;
+            border-bottom: none;
+            flex: 2;
+        }
+    }
