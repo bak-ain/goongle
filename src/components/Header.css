@@ -4,31 +4,95 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    /* padding-top: 20px;
-    padding-bottom: 40px; */
-    border-right: 1px solid #ccc;
+    justify-content: space-around;
+    box-shadow: 4px 0px 8px -2px rgba(234, 216, 198, 0.20);
     background: #fff;
+    z-index: 1000;
 }
-.top{
+
+.Gnb {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #888;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.GnbItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.top {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    padding-top: 20px;
 }
-.bottom{
+
+.bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding-bottom: 40px;
+    /* padding-bottom: 30px; */
 }
-.Logo{
+
+.Logo {
     width: 60px;
     height: 60px;
 }
-.Logo img{
+
+.Logo img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    .Header {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        padding-inline: 3vw;
+    }
+
+    .Logo {
+        display: none;
+    }
+
+    .top {
+        width: 10%;
+    }
+
+    .bottom {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex: 2;
+        gap: 0;
+    }
+
+    .Profile {
+        width: 20%;
+        flex-direction: row !important;
+        gap: 2vw !important;
+    }
+
+
+    .Gnb {
+        flex-direction: row;
+        padding-bottom: 0;
+        border-bottom: none;
+        flex: 2;
+    }
 }

@@ -22,7 +22,7 @@ const Profile = ({ onLoginClick }) => {
 
   return (
     <div className="Profile" >
-      <div className="cha_box">
+      <div className={`cha_box ${isMember ? 'member' : 'guest'}`}>
         <img
           src={isMember ? Characters.goong1 : Icons.login} // ✅ 조건부 이미지
           alt="프로필"

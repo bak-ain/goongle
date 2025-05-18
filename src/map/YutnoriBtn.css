@@ -4,6 +4,7 @@
     background-image: url(../img/Ybtn_bg2.svg);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 95%;
     display: flex;
     justify-content: center;
     gap: 0.2vw;

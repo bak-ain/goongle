@@ -1,22 +1,22 @@
 .quiz-wrap {
-    width: calc(100% - 100px);
+    width: 100%;
     height: 100%;
-    background-color: rgba(4, 4, 4, 0.9);
+    /* background-color: rgba(4, 4, 4, 0.9); */
     position: fixed;
-    right: 0;
+    right: 9%;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
     z-index: 9999;
 }
 
 .quiz-box {
   padding: 30px;
   border-radius: 30px;
-    width: 60%;
+    width: 45%;
     height: 55%;
     background-color: #000;
     background-image: url(../img/quizbk.png);
@@ -127,7 +127,7 @@ p.desc2{
     width: 60%;
     height: 55%;
     border-radius: 30px;
-    background-color: rgba(4, 4, 4, 0.9);
+    /* background-color: rgba(4, 4, 4, 0.9); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +170,7 @@ p.desc2{
     width: 60%;
     height: 55%;
     border-radius: 30px;
-    background-color: rgba(4, 4, 4, 0.9);
+    /* background-color: rgba(4, 4, 4, 0.9); */
     display: flex;
     justify-content: center;
     align-items: center;

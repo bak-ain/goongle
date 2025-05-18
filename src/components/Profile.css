@@ -3,7 +3,7 @@
     font-family: "Noto Sans KR";
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -13,7 +13,8 @@
     width: 75px;
     height: 75px;
     border-radius: 20px;
-    background: #CCC;
+    /* background: #CCC; */
+    /* border: 1px solid #ccc; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +24,9 @@
     height: 40px;
     width: auto;
 }
-
+.cha_box.member img {
+    height: 60px;
+}
 .nickname_box {
     width: 80px;
     height: 30px;

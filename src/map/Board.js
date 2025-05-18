@@ -115,14 +115,18 @@ const Board = ({
       setGiveAmount(randomAmount);
       setGiveNipVisible(true);
     } else if (type === 'default' && tile.gungId) {
-      navigate(`/gung/${tile.gungId}`, {
-        state: {
-          fromTileId: tile.id,
-          characterKey: characterKey
-        }
-      });
+      // ✅ 딜레이 후 이동 (예: 500ms)
+      setTimeout(() => {
+        navigate(`/gung/${tile.gungId}`, {
+          state: {
+            fromTileId: tile.id,
+            characterKey: characterKey,
+          },
+        });
+      }, 800); // ← 원하는 만큼 밀리초 조정 가능
     }
   };
+
 
   useEffect(() => {
     if (isMember && pendingQuizTile) {
@@ -239,7 +243,7 @@ const Board = ({
   return (
     <div className='Board'>
       <div className={`mapArea gung_${currentGung}`}>
-        <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} currentGung={currentGung}/>
+        <CenterWrap eventMode={eventMode} triggerYut={triggerYut} onYutResult={moveByYutResult} currentGung={currentGung} />
         <div className="tile_wrap">
           {tileData.map(tile => (
             <Tile key={tile.id} tile={tile} eventMode={eventMode} isMember={isMember} onClick={() => handleClick(tile)} />

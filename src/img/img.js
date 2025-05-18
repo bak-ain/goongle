@@ -1,6 +1,7 @@
 // src/img/img.js
 
 import coin from './coin.svg';
+import coinOn from './coinon.svg';
 import nipcoin from './nipcoin.png';
 import gnb1 from './kbicon.png'
 import gnb1On from './kbiconon.svg'
@@ -26,7 +27,7 @@ import gle2 from './gle2.png';
 import gle3 from './gle3.png';
 import gung from './first.png';
 import gung2 from './second.png';
-import gung3 from './thrid.png';
+import gung3 from './thrid.svg';
 import gung4 from './fourth.png';
 import gung5 from './fifth.png';
 import gung6 from './sixth.png';
@@ -64,6 +65,7 @@ import gung37 from './thirtyseven.png';
 import gung38 from './thirtyeight.png';
 import gung39 from './thirtynine.png';
 import gung40 from './fourty.png';
+import start from './start.svg'
 import quiz from './quiz.png'
 import yutStart from './event_start.png'
 import event1 from './nonFront1.svg';
@@ -97,6 +99,7 @@ import yutDefault from './yut_default.png'
 
 export const Icons = {
   coin,
+  coinOn,
   nipcoin,
   gnb1,
   gnb1On,
@@ -162,7 +165,8 @@ export const TileImg = {
   gung38,
   gung39,
   gung40,
-  quiz
+  quiz,
+  start
 }
 export const TileEventImg = {
   yutStart,

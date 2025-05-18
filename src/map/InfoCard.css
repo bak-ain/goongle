@@ -44,6 +44,7 @@
   border-radius: 0.6vw;
   padding: 2.5vw 1.25vw;
   width: 18vw;
+  /* height: 35vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +138,8 @@
   gap: 1.3vw;
   align-items: flex-start;
   height: max-content;
+  /* width: 100%;
+  height: 100%; */
   /* align-items: center; */
 }
 
@@ -185,7 +188,7 @@
 }
 
 .ticket small {
-  margin-right: 1.3rem;
+  margin-left: 1.8rem;
 }
 
 

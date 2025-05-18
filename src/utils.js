@@ -8,7 +8,7 @@ export const startTile = {
   type: 'start',
   width: '69.57%',
   height: '108.11%',
-  image: null,
+  image: TileImg.start,
   gridArea: 't1',
   top: '-10%',
   left: '10%',

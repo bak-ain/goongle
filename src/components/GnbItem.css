@@ -15,13 +15,12 @@
     align-items: center;
 }
 
-.gnb_icon {
-    
-}
+
 .gnb_label {
     color: var(--text-main);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .GnbItem.on .gnb_label {
@@ -49,4 +48,7 @@
     font-weight: bold;
 }
 
-
+.GnbItem.Nip.on .gnb_label {
+    color: #FDD253;
+    font-weight: bold;
+}

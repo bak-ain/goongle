@@ -252,3 +252,13 @@ button {
     font-weight: 400;
     line-height: normal;
 }
+@media screen and (max-width: 1749px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 14px;
+  }
+}
