@@ -101,6 +101,7 @@
   justify-content: center;
   align-items: center;
   border: 2px solid #1c1c1c;
+  cursor: pointer;
 }
 
 .tile img,
