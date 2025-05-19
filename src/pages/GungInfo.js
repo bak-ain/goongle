@@ -12,21 +12,6 @@ import { Characters } from "../img/img";
 gsap.registerPlugin(ScrollTrigger);
 
 
-
-
-const ScrollProgress = ({ currentIndex, total }) => {
-    return (
-        <div className="scroll-progress">
-            {Array.from({ length: total }).map((_, i) => (
-                <div
-                    key={i}
-                    className={`progress-line ${i <= currentIndex ? 'filled' : ''}`}
-                />
-            ))}
-        </div>
-    );
-};
-
 export const PLACE_TO_GUNG = {
     // Gyeongbokgung
     gwanghwamun: 'gyeongbokgung',
@@ -118,7 +103,7 @@ const GungHeader = ({ placeId, fromTileId, characterKey }) => {
 
 const ScrollHint = ({ isLast }) => {
     if (isLast) return null;
-    return <div className="scroll-hint">scroll →</div>;
+    return <div className="scroll-hint n2">scroll →</div>;
 };
 
 const TextBox = ({ gungId, placeId, section }) => {
@@ -329,7 +314,6 @@ const GungInfo = () => {
 
     return (
         <div className="GungInfoWrapper" > {/* 공통 배경 처리 */}
-            {/* <ScrollProgress sectionIndex={sectionIndex} total={totalSections} /> */}
             <GungHeader placeId={placeId} fromTileId={fromTileId} characterKey={characterKey} />  {/* 한자 + 국문 + 나가기 버튼 */}
 
             <div className="GungInfo" ref={containerRef}>

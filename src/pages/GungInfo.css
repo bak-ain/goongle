@@ -1,27 +1,4 @@
-.scroll-progress {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    z-index: 100;
-}
 
-.progress-line {
-    width: 3px;
-    height: 40px;
-    background-color: #444;
-    opacity: 0.2;
-    transition: opacity 0.3s;
-}
-
-.progress-line.filled {
-    opacity: 1;
-    background-color: #fff;
-    /* or 강조색 */
-}
 
 /* 텍스트박스들 라인하이트 조절 */
 .TextBox p{
@@ -438,4 +415,10 @@ img.guide{
 }
 .LastSec p strong{
     font-weight: 700;
+}
+.scroll-hint{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    font-size: 1.5rem !important;
 }
