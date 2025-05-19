@@ -22,7 +22,6 @@
 }
 .GungInfo {
     display: flex;
-    overflow-x: hidden;
     width: 100%;
     height: 100vh;
     scroll-behavior: smooth;
@@ -86,11 +85,7 @@ img.guide{
 }
 
 /* second */
-.SecondSec .ThirdSec .FourthSec .FifthSec .SixSec .SevenSec .LastSec{
-    width: 100%;
-    height: 100%;
-    
-}
+
 
 .SecondSec{
     width: 100%;
@@ -422,3 +417,89 @@ img.guide{
     bottom: 2%;
     font-size: 1.5rem !important;
 }
+
+
+.GungInfo {
+  width: 100vw;
+  height: 100vh;
+  position: relative; /* 이거 꼭 있어야 돼 */
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #000;
+}
+
+.swiper-pagination {
+  display: block !important;
+  opacity: 1 !important;
+  z-index: 1000;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1000;
+}
+/* GungInfo.css에 추가하거나 수정 */
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1000;
+}
+.GungInfoWrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.GungInfo {
+  width: 100vw;
+  height: 100vh;
+  position: relative; /* pagination 위치 기준용 */
+}
+.swiper-slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-pagination {
+  z-index: 9999 !important; /* GungHeader보다 위로 */
+}
+
+.swiper-pagination {
+  display: block !important;
+  opacity: 1 !important;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  pointer-events: auto; /* ← 이것도 추가하면 좋음 */
+}
+

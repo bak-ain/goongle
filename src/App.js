@@ -11,7 +11,7 @@ function App() {
       <LoginProvider>
         <Routes>
           <Route path="/" element={<Home />} />              {/* ✅ 통합 홈 */}
-          <Route path="/gung/:gungId" element={<GungInfo />} />
+          <Route path="/gung/:placeId" element={<GungInfo />} />
         </Routes>
       </LoginProvider>
     </div>
