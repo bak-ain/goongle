@@ -3,7 +3,7 @@
     font-family: "Noto Sans KR";
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -11,10 +11,7 @@
 
 .cha_box {
     width: 70px;
-    height: 70px;
-    /* border-radius: 20px; */
-    /* background: #CCC; */
-    /* border: 1px solid #ccc; */
+    /* height: 70px; */
     display: flex;
     justify-content: center;
     align-items: center;

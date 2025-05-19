@@ -1,16 +1,17 @@
 .GuideBtn {
-    width: 80px;
-    height: 35px;
-    color: #333;
-    text-align: center;
-    font-family: "Noto Sans KR";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    border-radius: 8px;
-    background: #FFD8E4;
+  width: 80px;
+  height: 35px;
+  color: #333;
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 8px;
+  background: #FFD8E4;
 }
+
 .FullScreenGuide {
   position: fixed;
   top: 0;
@@ -20,11 +21,26 @@
   overflow: hidden;
   z-index: 9999;
   cursor: pointer;
+  background: rgb(0, 0, 0, 0.9);
 }
 
-.FullScreenGuide img {
+.FullScreenGuide .guideImg {
+  background-image: url(../img/guide.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 이미지가 화면에 꽉 차도록 */
-  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .FullScreenGuide .guideImg{
+    background-image: url(../img/guideT.png);
+    /* background-size: cover; */
+  }
+}
+@media screen and (max-width: 390px) {
+  .FullScreenGuide .guideImg{
+    background-image: url(../img/guideM.png);
+    /* background-size: cover; */
+  }
 }

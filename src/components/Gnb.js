@@ -13,7 +13,7 @@ const GUNG_LIST = [
 ];
 
 const Gnb = ({ currentGung, setCurrentGung }) => {
-   const [coinClicked, setCoinClicked] = useState(false);
+  const [coinClicked, setCoinClicked] = useState(false);
   return (
     <ul className="Gnb">
       {GUNG_LIST.map((gung) => (
@@ -22,24 +22,31 @@ const Gnb = ({ currentGung, setCurrentGung }) => {
           icon={currentGung === gung.id ? gung.iconOn : gung.icon}
           label={gung.label}
           isActive={currentGung === gung.id}
-          onClick={() => {setCurrentGung(gung.id); setCoinClicked(false);}}
+          onClick={() => { setCurrentGung(gung.id); setCoinClicked(false); }}
           className={gung.id} // ✅ 각 궁 id를 className으로 전달
         />
       ))}
 
       {/* <li className="divider" /> */}
 
-     <GnbItem
+      <GnbItem
         icon={coinClicked ? Icons.coinOn : Icons.coin}
         label="궁글 닢"
         isActive={coinClicked}
         onClick={() => {
-          setCoinClicked(true); // 클릭 시 on으로 변경
-          setCurrentGung(null); // 궁 선택 해제
-          alert('궁글 닢 페이지로 이동');
+          setCoinClicked(true);
+          setCurrentGung(null);
         }}
         className="Nip"
-      />
+      >
+        {/* 🧾 서브메뉴 예시 */}
+        <ul className="sub_list">
+          <li>닢제도 가이드</li>
+          <li>닢 교환권</li>
+          <li>닢 제휴처</li>
+        </ul>
+      </GnbItem>
+
     </ul>
   );
 };

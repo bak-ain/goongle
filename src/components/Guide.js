@@ -6,7 +6,8 @@ import './Guide.css';
 const Guide = ({ onClose }) => {
     return (
         <div className="FullScreenGuide" onClick={onClose}>
-            <img src={guideImg} alt="가이드" />
+            {/* <img src={guideImg} alt="가이드" /> */}
+            <div className='guideImg'></div>
         </div>
     );
 };

@@ -263,7 +263,7 @@
 }
 
 /* 정보칸 이미지들들 */
-.tile107 img{
+.tile107 img {
   width: 80%;
   height: 80%;
   object-fit: contain;
@@ -299,12 +299,15 @@
   margin-left: -32%;
   object-fit: cover;
 }
+
 .tile5 img {
   object-fit: contain;
 }
+
 .tile6 img {
   object-fit: contain;
 }
+
 .tile7 img {
   margin-top: 40%;
   height: 10vw;
@@ -639,25 +642,65 @@
     width: 89vw;
     height: 75vw;
   }
-  .tile-1.tile-slot ,
-  .tile-2.tile-slot ,.tile101,.tile-slot {
+
+  .tile-1.tile-slot,
+  .tile-2.tile-slot,
+  .tile101,
+  .tile-slot {
     align-items: end;
   }
+
   .tile-5.tile-slot,
-  .tile-7.tile-slot, .tile-6.tile-slot{
-    align-items:start;
+  .tile-7.tile-slot,
+  .tile-6.tile-slot {
+    align-items: start;
   }
+
   .tile-1 .tile,
-  .tile-2 .tile,.tile-6 .tile {
+  .tile-2 .tile,
+  .tile-6 .tile {
     height: 70%;
   }
- .tile-5 .tile,
+
+  .tile-5 .tile,
   .tile-7 .tile {
     height: 70%;
   }
+
   .tile101 .tile-container {
     height: 68%;
   }
 
 
+}
+
+@media screen and (max-width: 390px) {
+  .tile img {
+    transform: rotate(-90deg);
+  }
+
+  .Character {
+    transform: rotate(-90deg);
+  }
+
+  .Map {
+    overflow: hidden;
+  }
+
+  .mapArea {
+    transform: rotate(90deg);
+  }
+
+  .tile_wrap {
+    width: 120vw;
+    height: 84vw;
+  }
+
+  .CenterWrap {
+    background-size: 80%;
+  }
+
+  .Character img {
+    height: 14vw;
+  }
 }
