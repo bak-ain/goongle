@@ -60,7 +60,7 @@
 
 
 .TextBox h2{
-    padding-bottom: 8%;
+    padding-bottom: 5%;
 }
 
 .hanja{
@@ -150,7 +150,9 @@ img.guide{
 .SecondSec img.first{
     margin-top: 2%;
     border-radius: 30px;
-
+    width: 75vw;
+    height: 27vw;
+    object-fit: cover;
 }
 
 /* third */
@@ -160,7 +162,6 @@ img.guide{
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding-top: 2%;
     position: relative;
@@ -177,21 +178,31 @@ img.guide{
 
 .ThirdSec img.first{
     border-radius: 30px;
+    margin-left: 15%;
+    width: 20vw;
+    height: 32vw;
+    object-fit: cover;
 }
 .ThirdSec img.sec{
     position: absolute;
     right: 15%;
     top: -10%;
     border-radius: 50%;
+    width: 22vw;
+    height: 20vw;
+    object-fit: cover;
 }
 .ThirdSec img.third{
     position: absolute;
     right: 10%;
     bottom: 12%;
     border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
 }
 .ThirdSec .TextBox{
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
 /* fourth */
@@ -224,12 +235,18 @@ img.guide{
 }
 .FourthSec .left_img img.first{
     border-radius: 30px;
+    width: 18vw;
+    height: 24vw;
+    object-fit: cover;
 }
 .FourthSec .left_img img.sec{
     position: absolute;
     right: -20%;
     bottom: 0;
     border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
 }
 
 .FourthSec .right_img{
@@ -238,6 +255,9 @@ img.guide{
     margin-left: 5%;
 }
 .FourthSec .right_img img.third{
+    width: 18vw;
+    height: 24vw;
+    object-fit: cover;
     border-radius: 30px;
 }
 .FourthSec .right_img img.fourth{
@@ -245,6 +265,9 @@ img.guide{
     left: -30%;
     top: -38%;
     border-radius: 50%;
+    width: 14vw;
+    height: 14vw;
+    object-fit: cover;
 }
 
 
@@ -265,7 +288,7 @@ img.guide{
     bottom: 18%;
 }
 .FifthSec .TextBox{
-    margin-top: 8%;
+    margin-top: 6%;
 }
 .FifthSec .position{
     margin-top: 2%;
@@ -280,12 +303,18 @@ img.guide{
 }
 .FifthSec .left_img img.first{
     border-radius: 30px;
+    width: 18vw;
+    height: 24vw;
+    object-fit: cover;
 }
 .FifthSec .left_img img.sec{
     position: absolute;
     right: -20%;
     top: -30%;
     border-radius: 50%;
+    width: 14vw;
+    height: 14vw;
+    object-fit: cover;
 }
 .FifthSec .right_img{
     position: relative;
@@ -293,12 +322,18 @@ img.guide{
 }
 .FifthSec .right_img img.third{
     border-radius: 30px;
+        width: 18vw;
+    height: 24vw;
+    object-fit: cover;
 }
 .FifthSec .right_img img.fourth{
     position: absolute;
     left: -30%;
     bottom: 0;
     border-radius: 50%;
+        width: 14vw;
+    height: 14vw;
+    object-fit: cover;
 }
 
 /* sixth */
@@ -325,12 +360,18 @@ img.guide{
 }
 .SixSec img.first{
     border-radius: 30px;
+    width: 28vw;
+    height: 20vw;
+    object-fit: cover;
 }
 .SixSec img.sec{
     position: absolute;
     right: 15%;
     top: -10%;
     border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
 }
 .SixSec img.third{
     position: absolute;
@@ -338,11 +379,13 @@ img.guide{
     bottom: 12%;
     border-radius: 30px;
     width: 20vw;
+    height: 18vw;
+    object-fit: cover;
 }
 .SixSec .TextBox{
-    padding-top: 4%;
+    padding-top: 4%;  
 }
-
+ 
 /* seventh */
 
 .SevenSec{
@@ -360,9 +403,14 @@ img.guide{
     bottom: 18%;
     transform: scaleX(-1);
 }
-.SevenSec img{
+.SevenSec img.first{
     border-radius: 30px;
+    width: 32vw;
+    height: 20vw;
+    object-fit: cover;
 }
+
+
 .SevenSec .TextBox{
     margin-bottom: 8%;
 }

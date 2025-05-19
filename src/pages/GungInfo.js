@@ -168,7 +168,7 @@ const SecondSec = ({ gungId, placeId }) => {
     return (
         <div className="SecondSec">
             <div className='guidetext'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
+            <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
             <div className="text">
                 {paragraphs.map((line, index) => (
                     <p key={index}>
@@ -260,7 +260,7 @@ const SevenSec = ({ gungId, placeId }) => {
         <div className='SevenSec'>
             <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
 
-            <img src={InfoImgs[gungId][placeId].seventh[0]} alt={placeId} />
+            <img src={InfoImgs[gungId][placeId].seventh[0]} alt={placeId} className='first'/>
             <TextBox gungId={gungId} placeId={placeId} section="seventh" />
         </div>
     )
