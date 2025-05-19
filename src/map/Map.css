@@ -1,4 +1,4 @@
-.Map{
+.Map {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,67 +7,143 @@
     height: 100vh;
     /* padding-bottom: 2vw; */
 }
-.Board{
+
+.Board {
 
     /* padding-top: 2vw; */
 }
-.Map_left{
+
+.Map_left {
     margin-bottom: 3vw;
 }
-.InfoCard{
+
+.InfoCard {
     /* padding-top: 2vw; */
 
 }
-@media screen and (max-width: 1500px){
-    .Map{
+
+@media screen and (max-width: 1500px) {
+    .Map {
         padding-bottom: 5vw;
     }
-    .Board{
+
+    .Board {
         gap: 2vw;
     }
-    .InfoCard_wrap{
+
+    .InfoCard_wrap {
         width: 20vw;
     }
-    .YutnoriBtn{
+
+    .YutnoriBtn {
         width: 20vw;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .Map{
+    .Map {
         flex-direction: column;
         padding-bottom: 0;
         height: calc(100vh - 100px);
-        gap: 1vw;
+        gap: 3vw;
     }
-    .Board{
+
+    .Board {
         order: 2;
     }
-    .Map_left{
+
+    .Map_left {
         display: flex;
         gap: 3vw;
         align-items: center;
         margin-bottom: 0;
     }
-    .spring, .fins{
+
+    .spring,
+    .fins {
         display: none;
     }
-    .InfoCard_wrap{
-        width: 57vw;
+
+    .InfoCard {
+        padding-top: 0;
     }
-    .InfoCard .InfoCard_top{
+
+    .InfoCard_wrap {
+        width: 70vw;
+        height: 20vw;
+        justify-content: center;
+        /* padding: 2vw 0.5vw; */
+        border-radius: 1.5vw;
+        gap: 2vw;
+    }
+
+    .InfoCard .InfoCard_top {
+        width: 90%;
         flex-direction: row;
+        justify-content: space-between;
     }
+
+    .InfoCard .InfoCard_top .p3 {
+        font-family: "Noto sans kr";
+        font-size: 1.2rem;
+        text-align: right;
+    }
+
+    .InfoCard i {
+        margin-right: 1vw;
+    }
+
+    .InfoCard .p2 {
+        margin-left: 0;
+    }
+
+    .InfoCard .time small {
+        margin-left: 0;
+    }
+
     .InfoCard .InfoCard_contents {
+        width: 100%;
         flex-direction: row;
+        gap: 0;
+        justify-content: space-around;
     }
-    .YutnoriBtn{
+
+    .InfoCard_contents .transport p:nth-child(4),
+    .InfoCard_contents .transport p:nth-child(5),
+    .InfoCard_contents .transport p:nth-child(6) {
+        display: none;
+    }
+
+    .ticket small {
+        margin-left: 0;
+    }
+
+    .YutnoriBtn {
         flex-direction: column;
-        width: 25vw;
-        height: 18vw;
+        width: 18vw;
+        height: 20vw;
         align-items: center;
+        margin-top: 0;
+        gap: 1vw;
+        border-radius: 2.2vw;
+        background-image: url(../img/Ybtn_bgT.svg);
+        background-size: 97%;
+        background-position: 80% center;
     }
-    .YutnoriBtn span br{
+
+    .YutnoriBtn .h2 {
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+
+    .YutnoriBtn img {
+        width: 10vw;
+        height: 9vw;
+        order: -1;
+        margin-right: 5%;
+    }
+
+    .YutnoriBtn span br {
         display: none;
     }
 }

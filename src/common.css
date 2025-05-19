@@ -216,7 +216,7 @@ button {
 
 .p {
     font-family: 'MaruBuriBold';
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-style: normal;
     line-height: 100%;
 }
@@ -272,3 +272,8 @@ button {
     font-size: 12px;
   }
 }
+/* @media screen and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+} */

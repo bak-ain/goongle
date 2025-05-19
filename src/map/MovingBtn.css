@@ -36,6 +36,15 @@
 .MovingBtn button:active img.front {
     opacity: 0;
 }
-@media screen and (max-width: 1024px){
-    
+
+@media screen and (max-width: 1024px) {
+    .MovingBtn {
+        width: 20vw;
+        height: 9vw;
+        gap: 5vw;
+    }
+
+    .MovingBtn button img {
+        width: 6vw;
+    }
 }
