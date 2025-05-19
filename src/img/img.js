@@ -27,7 +27,7 @@ import gle2 from './gle2.png';
 import gle3 from './gle3.png';
 import gung from './first.png';
 import gung2 from './second.png';
-import gung3 from './thrid.svg';
+import gung3 from './third.png';
 import gung4 from './fourth.png';
 import gung5 from './fifth.png';
 import gung6 from './sixth.png';
