@@ -88,13 +88,16 @@ import gungItem2 from './gung2.svg'
 import gungItem3 from './gung3.svg'
 import gungItem4 from './gung4.svg'
 import gungItem5 from './gung5.svg'
-import doo from './do.png';
-import gae from './gae.png';
-import gul from './gul.png';
-import yut from './yut.png';
-import mo from './mo.png';
-import backdo from './backdo.png';
+import doo from './doT.png';
+import gae from './gaT.png';
+import gul from './gulT.png';
+import yut from './yutT.png';
+import mo from './moT.png';
+import backdo from './backdoT.png';
 import yutDefault from './yut_default.png'
+import yutFront from './yutFront.png'
+import yutBack from './yutBack.png'
+import yutBdo from './yutBdo.png'
 
 
 export const Icons = {
@@ -199,11 +202,16 @@ export const GungItems = {
 }
 export const YutItems = {
   yutDefault,
+  yutFront,
+  yutBack,
+  yutBdo
+
+}
+export const YutText = {
   doo,
   gae,
   gul,
   yut,
   mo,
   backdo
-
 }

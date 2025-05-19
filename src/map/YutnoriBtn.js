@@ -31,7 +31,7 @@ const YutnoriBtn = ({
   };
 
   return (
-    <button className="YutnoriBtn" onClick={handleClick}>
+    <button className={eventMode ? 'YutnoriBtn on' : 'YutnoriBtn'} onClick={handleClick}>
       {!isMember && (
         <img src={TileEventImg.yutStart} alt="윷놀이" className="yut-img" />
       )}
@@ -47,8 +47,8 @@ const YutnoriBtn = ({
         <>
           <img src={TileEventImg.yutStart} alt="윷놀이" className="yut-img centered" />
           <div className="event-text">
-            <p className="click-label">클릭!</p>
-            <p className="chance">남은 기회 : {chances}회</p>
+            <p className="click-label s">클릭!</p>
+            <p className="chance p">남은 기회 : {chances}회</p>
           </div>
         </>
       )}

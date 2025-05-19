@@ -1,8 +1,115 @@
-.YutItem{
-    width:23vw;
-    height: 19vw;
-}
-.YutItem img{
+.YutItemWrapper {
     width: 100%;
     height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.yutSet {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.yut {
+    flex: 1;
+    perspective: 1000px;
+}
+
+.yut-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yut-inner.flip {
+    animation: flipEffect 0.6s ease forwards;
+}
+
+/* 윷 회전 + 튕김 애니메이션 */
+@keyframes flipEffect {
+    0% {
+        transform: rotateY(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotateY(180deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotateY(360deg) scale(1);
+    }
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 60%;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(0deg);
+}
+
+.yutResultText {
+    animation: bounceIn 0.6s ease forwards;
+    opacity: 0;
+    position: absolute;
+    margin-left: 60%;
+    margin-bottom: 30%;
+    transform: translateY(-20px) scale(0.8);
+    order: -1;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.8);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(10px) scale(1.05);
+    }
+
+    80% {
+        transform: translateY(-5px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.yutResultText img {
+    width: 5vw;
+    height: auto;
+}
+
+.yutResultText.backdo-text img {
+    width: 7.5vw;
+    /* 예시: 조금 작게 */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }

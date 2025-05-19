@@ -25,3 +25,13 @@
     width: 6.2vw;
     height: 5.6vw;
 }
+.YutnoriBtn.on{
+    gap: 1vw;
+    padding-left: 1vw;
+}
+.YutnoriBtn.on .event-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    padding-top: 1vw;
+}

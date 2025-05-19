@@ -39,10 +39,10 @@ const Map = ({ currentGung, setCurrentGung ,eventMode, setEventMode  }) => {
 
     if (phase === 'play') {
     
-      if (yutReady && yutChances > 0) {
+      if (yutReady && yutChances >= 0) {
     
 
-        setTriggerYut(prev => prev + 1);
+       setTriggerYut(Math.random().toString(36).substring(2, 5)); // 매번 다른 문자열
 
         setYutChances(prev => {
           const next = Math.max(prev - 1, 0);
