@@ -105,11 +105,32 @@
 
 .yutResultText.backdo-text img {
     width: 7.5vw;
-    /* 예시: 조금 작게 */
 }
 
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .yutSet {
+        width: 65%;
+        height: 65%;
+    }
+
+    .yutResultText {
+        margin-bottom: 40%;
+        margin-left: 70%;
+    }
+
+    .yutResultText img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .yutResultText.backdo-text img {
+        width: 13vw;
     }
 }

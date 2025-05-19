@@ -93,3 +93,11 @@
     transform: translateX(-50%) translateY(-5px) scale(0.95);
   }
 }
+
+@media screen and (max-width: 1024px) {
+
+  .Character img {
+    height: 10vw;
+    width: auto;
+  }
+}

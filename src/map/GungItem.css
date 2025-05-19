@@ -22,3 +22,9 @@
 .GungItem.changdeokgung img {
     width: 90%;
 }
+@media screen and (max-width: 1024px){
+    .GungItem{
+        width: 30vw;
+        height: 16vw;
+    }
+}
