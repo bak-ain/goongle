@@ -1,6 +1,4 @@
 .Board {
-  height: 100vh;
-  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   gap: 1vw;
@@ -592,4 +590,19 @@
 
 .tile100 img {
   mix-blend-mode: soft-light;
+}
+
+@media screen and (max-width: 1024px) {
+  .tile_wrap {
+    width: 89vw;
+    height: 70vw;
+  }
+
+  .tile103 img,
+  .tile106 img {
+    width: 80%;
+    height: auto;
+  }
+
+
 }

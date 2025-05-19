@@ -49,7 +49,8 @@ const Board = ({
   const [isMoving, setIsMoving] = useState(false);
   const [pendingQuizTile, setPendingQuizTile] = useState(null);
 
-  const characterKeys = Object.keys(Characters).filter(k => k !== 'gle3');
+  const characterKeys = Object.keys(Characters).filter(k => k !== 'gle3' && k !== 'goong4');
+
   const [characterKey, setCharacterKey] = useState(() => {
     return characterKeys[Math.floor(Math.random() * characterKeys.length)];
   });

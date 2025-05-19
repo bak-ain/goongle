@@ -1,21 +1,44 @@
 .Map{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5vw;
     position: relative;
     height: 100vh;
+    /* padding-bottom: 2vw; */
 }
 .Board{
-    padding-top: 2vw;
+
+    /* padding-top: 2vw; */
+}
+.Map_left{
+    margin-bottom: 3vw;
 }
 .InfoCard{
-    padding-top: 2vw;
+    /* padding-top: 2vw; */
 
 }
-
+@media screen and (max-width: 1500px){
+    .Map{
+        padding-bottom: 5vw;
+    }
+    .Board{
+        gap: 2vw;
+    }
+    .InfoCard_wrap{
+        width: 20vw;
+    }
+    .YutnoriBtn{
+        width: 20vw;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .Map{
         flex-direction: column;
+        padding-bottom: 0;
+        height: calc(100vh - 100px);
+        gap: 1vw;
     }
     .Board{
         order: 2;
@@ -24,12 +47,13 @@
         display: flex;
         gap: 3vw;
         align-items: center;
+        margin-bottom: 0;
     }
-    .fins{
+    .spring, .fins{
         display: none;
     }
     .InfoCard_wrap{
-        width: 60vw;
+        width: 57vw;
     }
     .InfoCard .InfoCard_top{
         flex-direction: row;
@@ -40,7 +64,10 @@
     .YutnoriBtn{
         flex-direction: column;
         width: 25vw;
-        height: 20vw;
+        height: 18vw;
         align-items: center;
+    }
+    .YutnoriBtn span br{
+        display: none;
     }
 }
