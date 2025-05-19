@@ -124,7 +124,7 @@ const ScrollHint = ({ isLast }) => {
 const TextBox = ({ gungId, placeId, section }) => {
     const sectionData = InfoTexts[gungId]?.[placeId]?.[section];
 
-    if (!sectionData) return null; // 혹시 없는 경우 안전하게
+    if (!sectionData) return null;
 
     return (
         <div className="TextBox">
@@ -132,7 +132,7 @@ const TextBox = ({ gungId, placeId, section }) => {
             <p className='p'>
                 {sectionData.paragraphs.map((line, index) => (
                     <React.Fragment key={index}>
-                        {line}
+                        {parseBold(line)}
                         <br />
                     </React.Fragment>
                 ))}
@@ -168,17 +168,17 @@ const SecondSec = ({ gungId, placeId }) => {
     return (
         <div className="SecondSec">
             <div className='guidetext'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
-            <div className="text">
-                {paragraphs.map((line, index) => (
-                    <p key={index}>
-                        {parseBold(line)}
-                    </p>
-                ))}
-            </div>
+                <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
+                <div className="text">
+                    {paragraphs.map((line, index) => (
+                        <p key={index}>
+                            {parseBold(line)}
+                        </p>
+                    ))}
+                </div>
             </div>
             <div className="second_img">
-                <img src={InfoImgs[gungId][placeId].second[0]} alt={placeId} className='first'/>
+                <img src={InfoImgs[gungId][placeId].second[0]} alt={placeId} className='first' />
             </div>
         </div>
     );
@@ -187,14 +187,14 @@ const SecondSec = ({ gungId, placeId }) => {
 const ThirdSec = ({ gungId, placeId }) => {
     return (
         <div className='ThirdSec'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
+            <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
 
             <img src={InfoImgs[gungId][placeId].third[1]} className='sec' alt={placeId} />
             <img src={InfoImgs[gungId][placeId].third[2]} className='third' alt={placeId} />
-            
+
             <div className='position'>
-            <img src={InfoImgs[gungId][placeId].third[0]} className='first' alt={placeId} />
-            <TextBox gungId={gungId} placeId={placeId} section="third" />
+                <img src={InfoImgs[gungId][placeId].third[0]} className='first' alt={placeId} />
+                <TextBox gungId={gungId} placeId={placeId} section="third" />
             </div>
         </div>
     )
@@ -203,18 +203,18 @@ const ThirdSec = ({ gungId, placeId }) => {
 const FourthSec = ({ gungId, placeId }) => {
     return (
         <div className='FourthSec'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
+            <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
 
             <div className='position'>
-            <div className='left_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fourth[0]} className='first' alt={placeId} />
-                <img src={InfoImgs[gungId][placeId].fourth[1]} className='sec' alt={placeId} />
-            </div>
-            <TextBox gungId={gungId} placeId={placeId} section="fourth" />
-            <div className='right_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fourth[2]} className='third' alt={placeId} />
-                <img src={InfoImgs[gungId][placeId].fourth[3]} className='fourth' alt={placeId} />
-            </div>
+                <div className='left_img imgBox'>
+                    <img src={InfoImgs[gungId][placeId].fourth[0]} className='first' alt={placeId} />
+                    <img src={InfoImgs[gungId][placeId].fourth[1]} className='sec' alt={placeId} />
+                </div>
+                <TextBox gungId={gungId} placeId={placeId} section="fourth" />
+                <div className='right_img imgBox'>
+                    <img src={InfoImgs[gungId][placeId].fourth[2]} className='third' alt={placeId} />
+                    <img src={InfoImgs[gungId][placeId].fourth[3]} className='fourth' alt={placeId} />
+                </div>
             </div>
         </div>
     )
@@ -223,18 +223,18 @@ const FourthSec = ({ gungId, placeId }) => {
 const FifthSec = ({ gungId, placeId }) => {
     return (
         <div className='FifthSec'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
+            <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
 
             <div className='position'>
-            <div className='left_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fifth[0]} className='first' alt={placeId} />
-                <img src={InfoImgs[gungId][placeId].fifth[1]} className='sec' alt={placeId} />
-            </div>
-            <TextBox gungId={gungId} placeId={placeId} section="fifth" />
-            <div className='right_img imgBox'>
-                <img src={InfoImgs[gungId][placeId].fifth[2]} className='third' alt={placeId} />
-                <img src={InfoImgs[gungId][placeId].fifth[3]} className='fourth' alt={placeId} />
-            </div>
+                <div className='left_img imgBox'>
+                    <img src={InfoImgs[gungId][placeId].fifth[0]} className='first' alt={placeId} />
+                    <img src={InfoImgs[gungId][placeId].fifth[1]} className='sec' alt={placeId} />
+                </div>
+                <TextBox gungId={gungId} placeId={placeId} section="fifth" />
+                <div className='right_img imgBox'>
+                    <img src={InfoImgs[gungId][placeId].fifth[2]} className='third' alt={placeId} />
+                    <img src={InfoImgs[gungId][placeId].fifth[3]} className='fourth' alt={placeId} />
+                </div>
             </div>
         </div>
     )
@@ -243,13 +243,13 @@ const FifthSec = ({ gungId, placeId }) => {
 const SixSec = ({ gungId, placeId }) => {
     return (
         <div className='SixSec'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
+            <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
 
             <img src={InfoImgs[gungId][placeId].sixth[1]} className='sec' alt={placeId} />
             <img src={InfoImgs[gungId][placeId].sixth[2]} className='third' alt={placeId} />
             <div className='position'>
-            <img src={InfoImgs[gungId][placeId].sixth[0]} className='first' alt={placeId} />
-            <TextBox gungId={gungId} placeId={placeId} section="sixth" />
+                <img src={InfoImgs[gungId][placeId].sixth[0]} className='first' alt={placeId} />
+                <TextBox gungId={gungId} placeId={placeId} section="sixth" />
             </div>
         </div>
     )
@@ -258,7 +258,7 @@ const SixSec = ({ gungId, placeId }) => {
 const SevenSec = ({ gungId, placeId }) => {
     return (
         <div className='SevenSec'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
+            <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
 
             <img src={InfoImgs[gungId][placeId].seventh[0]} alt={placeId} />
             <TextBox gungId={gungId} placeId={placeId} section="seventh" />
@@ -268,10 +268,8 @@ const SevenSec = ({ gungId, placeId }) => {
 const LastSec = ({ gungId, placeId }) => {
     return (
         <div className='LastSec'>
-            <img src={Characters.goong4} alt="가이드캐릭터터" className="guide" />
-
-            <h2 className='h2'>-The End-</h2>
-            <p>오랜 시간 우리 곁을 지켜온 <strong>광화문 이야기</strong>, 잘 들으셨나요? <br/>다시 그 앞에 설때면, 역사와 오늘이 만나는 그 의미를 떠올려 주세요</p>
+            <img src={Characters.goong4} alt="가이드캐릭터" className="guide" />
+            <TextBox gungId={gungId} placeId={placeId} section="last" />
         </div>
     )
 }

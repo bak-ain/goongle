@@ -495,8 +495,10 @@ export const InfoTexts = {
         ]
       },
       last: {
-        title: '',
+        title: '-The End-',
         paragraphs: [
+          "오랜 시간 우리 곁을 지켜온 **광화문 이야기**, 잘 들으셨나요?",
+          "다시 그 앞에 설때면, 역사와 오늘이 만나는 그 의미를 떠올려 주세요"
         ]
       }
     },
