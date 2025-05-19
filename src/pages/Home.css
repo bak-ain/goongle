@@ -4,3 +4,8 @@
     background: #F4EFEA;
     position: relative;
 }
+@media screen and (max-width: 1500px){
+    .Home{
+        flex-direction: column;
+    }
+}

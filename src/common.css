@@ -262,6 +262,11 @@ button {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 1024px) {
   html {
     font-size: 12px;

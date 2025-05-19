@@ -68,7 +68,7 @@ import gung40 from './fourty.png';
 import start from './start.svg'
 import quiz from './quiz.png'
 import yutStart from './event_start.png'
-import event1 from './nonFront1.svg';
+import event1 from './nonFront1.png';
 import event2 from './nonFront2.svg';
 import event3 from './nonFront3.svg';
 import event4 from './front1.png';

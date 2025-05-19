@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { TileEventImg } from '../img/img';
 import './YutnoriBtn.css';
 
@@ -11,6 +12,19 @@ const YutnoriBtn = ({
   setClicked,
   eventMode // 👈 추가됨
 }) => {
+
+   const [showIntroText, setShowIntroText] = useState(false);
+
+  // 회원 전환 시 span에 효과
+  useEffect(() => {
+    if (isMember && !eventMode) {
+      setShowIntroText(true);
+      setTimeout(() => {
+        setShowIntroText(false); // 효과 한 번만
+      }, 400);
+    }
+  }, [isMember, eventMode]);
+
   const handleClick = () => {
     if (!isMember) {
       onRequireLogin?.();
@@ -38,7 +52,7 @@ const YutnoriBtn = ({
 
       {isMember && !eventMode && (
         <>
-          <span className="h2">윷놀이<br />시작</span>
+          <span className={`h2 ${showIntroText ? 'fade-in' : ''}`}>윷놀이<br />시작</span>
           <img src={TileEventImg.yutStart} alt="윷놀이" className="yut-img" />
         </>
       )}

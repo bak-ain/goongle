@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
   padding-top: 0.6vw;
+  z-index: 10;
 }
 
 .spring {
@@ -17,7 +18,7 @@
   background-position: center center;
   background-size: contain;
   left: 50%;
-  top: 1.2vw;
+  top: 0;
   transform: translateX(-50%);
 }
 
