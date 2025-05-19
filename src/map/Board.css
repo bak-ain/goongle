@@ -509,7 +509,8 @@
 }
 
 .tile18 img {
-  width: 16.8vw;
+  margin-bottom: -19%;
+  width: 19vw;
   object-fit: cover;
 }
 
@@ -518,13 +519,15 @@
 }
 
 .tile19 img {
-  width: 7.8vw;
+  margin-top: 40%;
+  width: 9vw;
   object-fit: cover;
 }
 
 .tile19 .tile {}
 
 .tile20 img {
+  margin-right: -10%;
   width: 7vw;
   object-fit: cover;
 }
@@ -543,14 +546,16 @@
 }
 
 .tile22 img {
-  width: 4vw;
+  margin-top: 10%;
+  width: 4.5vw;
   object-fit: cover;
 }
 
 .tile22 .tile {}
 
 .tile23 img {
-  width: 14vw;
+  margin-bottom: -6%;
+  width: 13vw;
   object-fit: cover;
 }
 
@@ -559,7 +564,8 @@
 }
 
 .tile24 img {
-  width: 7.8vw;
+  margin-right: -40%;
+  width: 9vw;
   object-fit: cover;
 }
 
@@ -570,6 +576,7 @@
 /* 덕수궁 25 26 27 28 29 30 31 32 */
 
 .tile25 img {
+  margin-left: -15%;
   width: 16vw;
   object-fit: cover;
 }
@@ -586,7 +593,8 @@
 .tile26 .tile {}
 
 .tile27 img {
-  width: 7vw;
+  margin-right: -40%;
+  width: 9vw;
   object-fit: cover;
 }
 
@@ -595,7 +603,8 @@
 }
 
 .tile28 img {
-  width: 7vw;
+  margin-right: -10%;
+  width: 7.7vw;
   object-fit: cover;
 }
 
@@ -604,7 +613,7 @@
 }
 
 .tile29 img {
-  width: 6.8vw;
+  width: 6vw;
   object-fit: cover;
 }
 
@@ -625,7 +634,8 @@
 .tile31 .tile {}
 
 .tile32 img {
-  width: 7vw;
+  margin-right: -80%;
+  width: 12vw;
   object-fit: cover;
 }
 
