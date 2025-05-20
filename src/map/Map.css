@@ -19,7 +19,6 @@
 
 .InfoCard {
     /* padding-top: 2vw; */
-
 }
 
 @media screen and (max-width: 1500px) {
@@ -284,4 +283,5 @@
     .YutnoriBtn {
         /* height: 24vw; */
     }
+
 }
