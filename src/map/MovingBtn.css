@@ -48,3 +48,14 @@
         width: 6vw;
     }
 }
+
+@media screen and (min-width: 360px) and (max-width: 430px) {
+    .MovingBtn {
+        width: 40vw;
+        height: 18vw;
+    }
+
+    .MovingBtn button img {
+        width: 12vw;
+    }
+}

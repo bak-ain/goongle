@@ -46,7 +46,7 @@
   /* 8px 14px → rem */
   border-radius: 1rem;
   /* 20px → rem */
-  font-size: 1vw;
+  font-size: 18px;
   font-weight: 600;
   white-space: nowrap;
   box-shadow: 0 0.2rem 0.2rem rgba(112, 111, 111, 0.1);
@@ -58,7 +58,7 @@
 .speech-bubble::after {
   content: '';
   position: absolute;
-  top: 98%;
+  top: 97%;
   left: 50%;
   transform: translateX(-50%);
   width: 0.625rem;
@@ -99,5 +99,8 @@
   .Character img {
     height: 10vw;
     width: auto;
+  }
+  .speech-bubble{
+    font-size: 16px;
   }
 }

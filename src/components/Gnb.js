@@ -18,9 +18,11 @@ const Gnb = ({ currentGung, setCurrentGung, onItemClick }) => {
   const isNipPage = currentPath.startsWith('/nip');
   const currentGungFromURL = currentPath.startsWith('/map/') ? currentPath.split('/')[2] : null;
 
+  const activeGung = currentGungFromURL || currentGung; // ✅ 우선순위: URL → props fallback
+
   const handleMove = (path) => {
     navigate(path);
-    if (onItemClick) onItemClick(); // ✅ 메뉴 닫기 트리거
+    if (onItemClick) onItemClick();
   };
 
   return (
@@ -28,9 +30,9 @@ const Gnb = ({ currentGung, setCurrentGung, onItemClick }) => {
       {GUNG_LIST.map((gung) => (
         <GnbItem
           key={gung.id}
-          icon={currentGungFromURL === gung.id ? gung.iconOn : gung.icon}
+          icon={activeGung === gung.id ? gung.iconOn : gung.icon}
           label={gung.label}
-          isActive={currentGungFromURL === gung.id}
+          isActive={activeGung === gung.id}
           onClick={() => handleMove(`/map/${gung.id}`)}
           className={gung.id}
         />
@@ -52,6 +54,7 @@ const Gnb = ({ currentGung, setCurrentGung, onItemClick }) => {
     </ul>
   );
 };
+
 
 
 export default Gnb;

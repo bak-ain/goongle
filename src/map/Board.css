@@ -30,7 +30,7 @@
   align-items: center;
   width: fit-content;
   margin: 0 auto;
-  border: 2px solid #1c1c1c;
+  border: 0.15vw solid #1c1c1c;
   position: relative;
 }
 
@@ -68,7 +68,7 @@
   /* 셀 고정 크기 */
   position: relative;
   gap: 0px;
-  border: 2px solid #1c1c1c;
+  border: 0.15vw solid #1c1c1c;
   background: #F1E9D4;
 }
 
@@ -100,7 +100,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #1c1c1c;
+  border: 0.15vw solid #1c1c1c;
   cursor: pointer;
 }
 
@@ -239,7 +239,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #1c1c1c;
+  border: 0.15vw solid #1c1c1c;
   background: #3B3953;
 }
 
@@ -252,7 +252,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000;
+  border: 0.15vw solid #000;
   background: #F6D390;
 }
 
@@ -684,13 +684,28 @@
 
 }
 
-@media screen  and (min-width: 360px) and (max-width: 430px) {
-  .MovingBtn {
+@media screen and (max-width: 430px) {
+  .Board{
+    gap: 4vw;
   }
-
   .tile_wrap {
     width: 84vw;
     height: 120vw;
+  }
+
+  .tile-1 .tile,
+  .tile-2 .tile,
+  .tile-6 .tile {
+    height: 50%;
+  }
+
+  .tile-5 .tile,
+  .tile-7 .tile {
+    height: 50%;
+  }
+
+  .tile101 .tile-container {
+    height: 48%;
   }
 
   .CenterWrap {

@@ -40,7 +40,7 @@
     }
 }
 
-@media screen  and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .Map {
         flex-direction: column;
         padding-bottom: 0;
@@ -183,14 +183,105 @@
 
 @media screen and (max-width: 430px) {
     .Map {
-        gap: 30vw;
         height: 100vh;
-        justify-content: flex-start;
-        padding-top: 20%;
-        /* overflow: hidden; */
+        /* gap: 3vw; */
     }
-    .Board{
-        position: absolute;
-        bottom: 15%;
+
+    .Map .Map_left {
+        gap: 4vw;
+    }
+
+    .InfoCard_wrap {
+        width: 48vw;
+        height: 25vw;
+        gap: 1vw;
+        border-radius: 2.2vw;
+    }
+
+    .InfoCard .InfoCard_top {
+        flex-direction: column;
+    }
+
+    .InfoCard .InfoCard_top .p3 {
+        text-align: center;
+    }
+
+    .InfoCard .InfoCard_contents {
+        display: none;
+    }
+
+    .YutnoriBtn {
+        width: 34vw;
+        height: 25vw;
+        border-radius: 3vw;
+        background-size: 16%, 12%;
+    }
+
+    .YutnoriBtn .h2 {
+        font-size: 1.8rem;
+    }
+
+    .YutnoriBtn.on {
+        gap: 0.5vw;
+    }
+
+    .YutnoriBtn.on .event-text {
+        gap: 0;
+    }
+
+    .InfoCard.eventMode .InfoCard_contents {
+        display: flex;
+    }
+
+    .InfoCard.eventMode .InfoCard_contents .play,
+    .InfoCard.eventMode .InfoCard_contents .ticket,
+    .InfoCard.eventMode .InfoCard_contents .move h3 {
+        display: none;
+    }
+
+    .InfoCard .p2 {
+        line-height: 150% !important;
+    }
+
+    .move {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .move .p2 {
+        width: 100%;
+    }
+
+    .move .p2 p {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Map {
+        padding-top: 13vw;
+        gap: 2vw;
+    }
+
+    .Board {
+        gap: 1.5vw;
+    }
+
+    .tile_wrap {
+        width: 84vw;
+        height: 110vw;
+    }
+
+    .InfoCard_wrap {
+        /* height: 24vw; */
+    }
+
+    .YutnoriBtn {
+        /* height: 24vw; */
     }
 }
