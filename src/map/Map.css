@@ -19,7 +19,6 @@
 
 .InfoCard {
     /* padding-top: 2vw; */
-
 }
 
 @media screen and (max-width: 1500px) {
@@ -183,14 +182,7 @@
 
 @media screen and (max-width: 430px) {
     .Map {
-        gap: 30vw;
         height: 100vh;
-        justify-content: flex-start;
-        padding-top: 20%;
-        /* overflow: hidden; */
     }
-    .Board{
-        position: absolute;
-        bottom: 15%;
-    }
+
 }

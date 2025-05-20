@@ -443,6 +443,9 @@ img.guide{
   background: #000;
   opacity: 0.5;
   transition: 0.3s;
+    width: 12px !important;
+  height: 12px !important;
+  background-color: #ffa920 !important; /* orange-300 */
 }
 
 .swiper-pagination-bullet-active {
@@ -1046,6 +1049,7 @@ button.exit{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
         margin-bottom: 10%;
 
 }
@@ -1225,5 +1229,14 @@ button.exit{
 }
 .scroll-hint.n2{
 scale: 0.8;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.5;
+  transition: 0.3s;
+    width: 10px !important;
+  height: 10px !important;
+  background-color: #ffa920 !important; /* orange-300 */
 }
 }

@@ -1,6 +1,6 @@
 .login-popup-overlay {
   position: fixed;
-  top: 0; left: 0;
+  top: 0; right: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.4);
@@ -11,6 +11,7 @@
 }
 
 .login-popup-content {
+  width: 35%;
   background: white;
   padding: 40px;
   border-radius: 20px;
@@ -26,8 +27,8 @@
   font-size: 24px;
 }
 .login-wrap {
-  width: 529px;
-  height: 552px;
+  width: 100%;
+  height: 100%;
   background: white;
   border-radius: 20px;
   text-align: center;
@@ -155,3 +156,44 @@ button.apple{
     color: #333;
 }
 
+@media screen and (max-width: 1024px) {
+
+  .login-popup-content {
+  width: 60%;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+  }
+}
+
+@media screen and (max-width : 430px){
+    .login-popup-overlay {
+    right: 70px;
+  }
+  .login-popup-content {
+  width: 88%;
+  height: 60%;
+  background: white;
+  padding: 0;
+  border-radius: 20px;
+  position: relative;
+  }
+
+  .remember-me {
+  width: 50%;
+}
+button.google{
+  background: #fff;
+  border: 2px solid #000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+button.apple{
+  background: #fff;
+  border: 2px solid #000;
+  font-size: 12px;
+  font-weight: 600;
+}
+}
