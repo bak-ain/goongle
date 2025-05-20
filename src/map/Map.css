@@ -40,7 +40,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen  and (max-width: 1024px) {
     .Map {
         flex-direction: column;
         padding-bottom: 0;
@@ -153,10 +153,12 @@
     .InfoCard.eventMode .InfoCard_top {
         justify-content: center;
     }
-    .InfoCard.eventMode p{
+
+    .InfoCard.eventMode p {
         margin-bottom: 0;
     }
-      .InfoCard.eventMode .p2{
+
+    .InfoCard.eventMode .p2 {
         line-height: 160%;
         margin-bottom: 0;
     }
@@ -178,9 +180,11 @@
 
 
 }
-@media screen and (max-width: 390px){
-    .Map{
-        /* width: calc(100% - 100px);
-        height: 100vh; */
+
+@media screen and (max-width: 430px) {
+    .Map {
+        gap: 30vw;
+        height: 100vh;
+        /* overflow: hidden; */
     }
 }

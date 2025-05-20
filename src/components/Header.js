@@ -10,21 +10,30 @@ import LoginPopup from "./LoginPopup";
 const Header = ({ currentGung, setCurrentGung }) => {
     const { isMember, setIsMember } = useLogin();
     const [showLoginPopup, setShowLoginPopup] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false); // 햄버거 toggle 상태
+
     return (
-        <div className="Header">
-            <div className="top">
-                <Logo />
-                <GuideBtn />
+        <>
+            <div className="Hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? '✕' : '☰'}
             </div>
-            <div className="bottom">
-                <Gnb currentGung={currentGung} setCurrentGung={setCurrentGung}  />
-                <Profile isMember={isMember} onLoginClick={() => setShowLoginPopup(true)} />
+
+            <div className={`Header ${menuOpen ? 'active' : ''}`}>
+                <div className="top">
+                    <Logo />
+                    <GuideBtn />
+                </div>
+                <div className="bottom">
+                    <Gnb currentGung={currentGung} setCurrentGung={setCurrentGung} />
+                    <Profile isMember={isMember} onLoginClick={() => setShowLoginPopup(true)} />
+                </div>
+                {showLoginPopup && (
+                    <LoginPopup onClose={() => setShowLoginPopup(false)} setIsMember={setIsMember} />
+                )}
             </div>
-            {showLoginPopup && (
-                <LoginPopup onClose={() => setShowLoginPopup(false)} setIsMember={setIsMember} />
-            )}
-        </div>
-    )
-}
+        </>
+    );
+};
+
 
 export default Header;

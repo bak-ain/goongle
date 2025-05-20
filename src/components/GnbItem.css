@@ -81,10 +81,12 @@
 .GnbItem.Nip:hover .submenu {
     display: block;
 }
+
 /* 모바일/태블릿 toggle용 */
 .GnbItem.sub_open .submenu {
-  display: block;
+    display: block;
 }
+
 .sub_list {
     list-style: none;
     margin: 0;
@@ -100,8 +102,39 @@
 .sub_list li:hover {
     background-color: #f5f5f5;
 }
+
 @media (hover: hover) {
-  .GnbItem.sub_open .submenu {
-    display: none; /* PC에선 hover 우선 */
-  }
+    .GnbItem.sub_open .submenu {
+        display: none;
+        /* PC에선 hover 우선 */
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .GnbItem {
+        width: 50px;
+        height: 100%;
+    }
+
+    .GnbItem .submenu {
+        top: -95%;
+        left: -70%;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 430px) {
+    .GnbItem {
+        width: 30px;
+        height: 60px;
+    }
+
+    .GnbItem .submenu {
+        top: 0%;
+        left: -440%;
+        font-size: 14px;
+    }
+
+    .gnb_label {
+        font-size: 14px;
+    }
 }

@@ -21,9 +21,11 @@
     height: 40px;
     width: auto;
 }
+
 .cha_box.member img {
     height: 60px;
 }
+
 .nickname_box {
     width: 80px;
     height: 30px;
@@ -40,4 +42,36 @@
 .nickname_box span {
     font-size: 1rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1500px) {
+    .Profile {
+        width: 12%;
+        gap: 5px;
+    }
+
+    .cha_box {
+        width: 60px;
+        height: auto;
+    }
+
+
+    .cha_box.member img {
+        height: 50px;
+    }
+
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 430px) {
+    .Profile {
+        width: 100%;
+    }
+      .nickname_box{
+        width: 60px;
+        height: 35px;
+      }
+    .nickname_box span{
+        font-size: 14px;
+    }
 }

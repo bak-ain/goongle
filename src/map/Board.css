@@ -674,7 +674,7 @@
 
 }
 
-@media screen and (max-width: 390px) {
+@media screen  and (min-width: 360px) and (max-width: 430px) {
   .tile img {
     transform: rotate(-90deg);
   }
@@ -683,12 +683,15 @@
     transform: rotate(-90deg);
   }
 
-  .Map {
-    overflow: hidden;
+
+  .Board {
+    transform: rotate(90deg);
+    flex-direction: row;
+    gap: 0 !important;
   }
 
-  .mapArea {
-    transform: rotate(90deg);
+  .MovingBtn {
+    transform: rotate(-90deg);
   }
 
   .tile_wrap {
@@ -698,6 +701,9 @@
 
   .CenterWrap {
     background-size: 80%;
+    transform: rotate(-90deg);
+    left: 22%;
+    top: 18%;
   }
 
   .Character img {
