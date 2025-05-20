@@ -185,3 +185,294 @@ p.desc2{
   color: #FFE3B4;
   font-size: 2.2rem;
 }
+
+@media screen and (max-width : 1024px) {
+  .quiz-wrap {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(4, 4, 4, 0.9); */
+    position: fixed;
+    right: 0;
+    top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    z-index: 9999;
+}
+  .quiz-box {
+
+    border-radius: 30px;
+    width: 65%;
+    height: 35%;
+    background-color: #000;
+    background-image: url(../img/quizbk.png);
+    padding: 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* 오답 */
+
+.wrong{
+    position: absolute;
+  left: 50%;
+  top: 46.4%;
+  transform: translate(-50%, -50%);
+    width: 65%;
+    height: 34.8%;
+    border-radius: 30px;
+     background-color: rgba(4, 4, 4, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.wrong .explanation{
+  width: 50%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 30px;
+      display: flex;
+  flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wrong .explanation h3{
+    font-family: "Gapyeong Hanseokbong";
+    font-size: 3rem;
+    color: #FFE3B4;
+    font-weight: 700;
+}
+
+.wrong .explanation p{
+  width: 80%;
+  text-align: center;
+    font-family: "Gapyeong Hanseokbong";
+
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+/* 정답 */
+
+.correct{
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+    width: 60%;
+    height: 55%;
+    border-radius: 30px;
+    /* background-color: rgba(4, 4, 4, 0.9); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.correct p{
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    font-family: "Gapyeong Hanseokbong";
+  color: #FFE3B4;
+  font-size: 2.2rem;
+}
+}
+
+@media screen and (max-width : 430px) {
+  .quiz-wrap {
+    width: 100%;
+    height: 100%;
+     background-color: rgba(4, 4, 4, 0.8);
+    position: fixed;
+    right: 0;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    z-index: 9999;
+}
+  .quiz-box {
+    border-radius: 30px;
+    width: 80%;
+    height: 35%;
+    background-color: #000;
+    background-image: url(../img/quizbk.png);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+h2.question{
+  font-family: "Gapyeong Hanseokbong";
+  color: #fff;
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  font-size: 1.2rem;
+}
+span.q-mark{
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 2.2rem;
+  color: #72B1EF;
+  font-weight: 500;
+  
+}
+
+.marginleft{
+  margin-left: 8%;
+}
+
+p.desc{
+  margin-top: 1.2%;
+    font-family: "Noto Sans KR";
+  color: #fff;
+  font-size: 1rem;
+}
+
+p.desc2{
+  margin-top: 1.2%;
+  font-family: "Noto Sans KR";
+  color: #fff;
+  margin-left: 0.8%;
+}
+
+.hint-box{
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 5%;
+  height: 100%;
+}
+.hint-box .hint{
+  color: #fff;
+  font-family: "Noto Sans KR";
+  font-size: 1.1rem;
+  width: 125%;
+  height: 3vw;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3vw;
+  display: none;
+
+}
+.hint-box img{
+  transform: scaleX(-1);
+}
+.options{
+  margin-top: 5%;
+
+}
+.option{
+  background: none;
+}
+.options button {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  text-align: left;
+  transition: 0.6s;
+  
+}
+.options button:hover{
+  scale: 1.1;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hint-box .character{
+    width: 65px;
+    height: 86px;
+}
+/* 오답 */
+
+.wrong{
+  position: absolute;
+  left: 55%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 55%;
+  border-radius: 30px;
+  background: none;
+  /* background-color: rgba(4, 4, 4, 0.9); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.wrong .explanation{
+  width: 50%;
+  height: 50%;
+  background: none;
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrong .explanation h3{
+  position: absolute;
+  left: 8%;
+  bottom: 22%;
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 3rem;
+  color: #FFE3B4;
+  font-weight: 700;
+}
+
+.wrong .explanation p{
+  width: 80%;
+  text-align: center;
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 1.6rem;
+  line-height: 130%;
+  display: none;
+}
+
+/* 정답 */
+
+.correct{
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+    width: 60%;
+    height: 55%;
+    border-radius: 30px;
+    /* background-color: rgba(4, 4, 4, 0.9); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.correct p{
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    font-family: "Gapyeong Hanseokbong";
+  color: #FFE3B4;
+  font-size: 2.2rem;
+}
+}

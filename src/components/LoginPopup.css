@@ -168,7 +168,7 @@ button.apple{
 }
 
 @media screen and (max-width : 430px){
-    .login-popup-overlay {
+  .Header .login-popup-overlay {
     right: 70px;
   }
   .login-popup-content {
@@ -180,7 +180,7 @@ button.apple{
   position: relative;
   }
 
-  .remember-me {
+.remember-me {
   width: 50%;
 }
 button.google{
