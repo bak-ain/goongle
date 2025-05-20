@@ -134,6 +134,8 @@ import Gwanghwamun133 from '../img/Gwanghwamun133.png'
 import Gwanghwamun134 from '../img/Gwanghwamun134.jpg'
 import Gwanghwamun135 from '../img/Gwanghwamun135.jpg'
 import Gwanghwamun136 from '../img/Gwanghwamun136.jpg'
+import Gwanghwamun137 from '../img/Gwanghwamun137.jpg'
+import Gwanghwamun138 from '../img/Gwanghwamun138.jpg'
 
 export const InfoImgs = {
   gyeongbokgung: {
@@ -220,7 +222,7 @@ export const InfoImgs = {
   },
   changdeokgung: {
     donhwamun: {
-      first: [Gwanghwamun1],
+      first: [Gwanghwamun137],
       second: [Gwanghwamun2],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
       fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
@@ -466,8 +468,8 @@ export const InfoImgs = {
   },
   gyeonghuigung: {
     heunghwamun: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
+      first: [Gwanghwamun137],
+      second: [Gwanghwamun138],
       third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
       fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
       fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],

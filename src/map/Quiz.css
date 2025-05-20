@@ -120,29 +120,29 @@ p.desc2{
 /* 오답 */
 
 .wrong{
-    position: absolute;
+  position: absolute;
   left: 50%;
-  top: 41.9%;
+  top: 44.4%;
   transform: translate(-50%, -50%);
-    width: 60%;
-    height: 55%;
+    width: 45%;
+    height: 55.1%;
     border-radius: 30px;
-    /* background-color: rgba(4, 4, 4, 0.9); */
+     background-color: rgba(4, 4, 4, 0.6); 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 15%;
 }
 .wrong .explanation{
   width: 50%;
-  height: 80%;
+  height: 85%;
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-radius: 30px;
-      display: flex;
+  display: flex;
   flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .wrong .explanation h3{
     font-family: "Gapyeong Hanseokbong";
@@ -439,6 +439,7 @@ p.desc2{
   font-size: 3rem;
   color: #FFE3B4;
   font-weight: 700;
+  display: none;
 }
 
 .wrong .explanation p{

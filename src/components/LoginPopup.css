@@ -132,7 +132,6 @@ input {
   margin-top: 10%;
   display: flex;
   flex-direction: column;
-
 }
 
 .loginid {
@@ -215,4 +214,33 @@ button.apple {
     font-size: 12px;
     font-weight: 600;
   }
+}
+
+@media screen and (max-width : 375px) {
+    .login-popup-content {
+    height: 70%;
+    padding: 0;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .loginall {
+  margin-top: 8%;
+  }
+    button.google {
+      font-size: 10px;
+  }
+    button.apple {
+      font-size: 10px;
+
+  }
+
+  .login-btn {
+  margin:0;
+}
+
+.signup-link {
+  margin-top: 40px;
+;
+}
 }
