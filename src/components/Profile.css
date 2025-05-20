@@ -21,7 +21,9 @@
     height: 40px;
     width: auto;
 }
-
+.cha_box.member{
+    cursor: pointer;
+} 
 .cha_box.member img {
     height: 60px;
 }

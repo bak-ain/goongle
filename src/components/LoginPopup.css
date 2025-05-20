@@ -1,9 +1,10 @@
 .login-popup-overlay {
   position: fixed;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +27,7 @@
   border: none;
   font-size: 24px;
 }
+
 .login-wrap {
   width: 100%;
   height: 100%;
@@ -40,7 +42,7 @@ input {
   margin-bottom: 12px;
   padding: 12px;
   font-size: 16px;
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .login-btn {
@@ -52,9 +54,11 @@ input {
   font-size: 18px;
   font-weight: 500;
 }
+
 .social-login {
   height: 48px;
 }
+
 .social-login button {
   width: 50%;
   padding: 10px;
@@ -62,21 +66,26 @@ input {
   color: #000;
   font-size: 1rem;
 }
-.social-login button.google{
+
+.social-login button.google {
   margin-right: 4px;
-} 
-.social-login button.apple{
+}
+
+.social-login button.apple {
   margin-left: 4px;
-} 
+}
+
 /* LoginPopup.css에 추가 */
 .remember-me {
   width: 40%;
   display: flex;
-  justify-content: flex-end; /* 오른쪽 정렬 */
+  justify-content: flex-end;
+  /* 오른쪽 정렬 */
   align-items: center;
 
   gap: 6px;
-  margin: 8px 0 16px auto;  /* 위-우아래-아래 간격 */
+  margin: 8px 0 16px auto;
+  /* 위-우아래-아래 간격 */
 
   font-size: 14px;
   color: #444;
@@ -84,12 +93,13 @@ input {
   user-select: none;
 }
 
-.remember-me input{
+.remember-me input {
   width: 10%;
   height: 100%;
   margin: 0;
 }
-.remember-me p{
+
+.remember-me p {
   font-family: "Noto Sans KR";
   color: #000;
 }
@@ -98,102 +108,111 @@ input {
 
 /* 0516 CSS 수정 -신종현- */
 
-.login-wrap h2{
+.login-wrap h2 {
   font-family: 'Gapyeong Hanseokbong';
   font-size: 2rem;
   text-align: left;
   font-weight: 700;
 }
-.social-login{
+
+.social-login {
   display: flex;
 }
 
 
-.loginall h3{
+.loginall h3 {
   text-align: left;
   font-family: "Noto Sans KR";
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 6px;
 }
-.loginall{
+
+.loginall {
   margin-top: 10%;
   display: flex;
   flex-direction: column;
 
 }
+
 .loginid {
   border: none;
   border-bottom: 1px solid #C1C7CD;
   background: #F2F4F8;
 }
+
 .loginpassword {
   border: none;
   border-bottom: 1px solid #C1C7CD;
   background: #F2F4F8;
 }
-.social-login{
+
+.social-login {
   margin-top: 28px;
 }
-button.google{
+
+button.google {
   background: #fff;
   border: 2px solid #000;
   font-size: 14px;
   font-weight: 600;
 }
 
-button.apple{
+button.apple {
   background: #fff;
   border: 2px solid #000;
   font-size: 14px;
   font-weight: 600;
 }
-.signup-link{
+
+.signup-link {
   margin-top: 48px;
   font-size: 1rem;
-    font-family: "Noto Sans KR";
-    font-weight: 500;
-    color: #333;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  color: #333;
 }
 
 @media screen and (max-width: 1024px) {
 
   .login-popup-content {
-  width: 60%;
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  position: relative;
+    width: 60%;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
   }
 }
 
-@media screen and (max-width : 430px){
+@media screen and (max-width : 430px) {
   .Header .login-popup-overlay {
     right: 70px;
   }
+
   .login-popup-content {
-  width: 88%;
-  height: 60%;
-  background: white;
-  padding: 0;
-  border-radius: 20px;
-  position: relative;
+    width: 88%;
+    height: 60%;
+    background: white;
+    padding: 0;
+    border-radius: 20px;
+    position: relative;
   }
 
-.remember-me {
-  width: 50%;
-}
-button.google{
-  background: #fff;
-  border: 2px solid #000;
-  font-size: 12px;
-  font-weight: 600;
-}
+  .remember-me {
+    width: 50%;
+  }
 
-button.apple{
-  background: #fff;
-  border: 2px solid #000;
-  font-size: 12px;
-  font-weight: 600;
-}
+  button.google {
+    background: #fff;
+    border: 2px solid #000;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  button.apple {
+    background: #fff;
+    border: 2px solid #000;
+    font-size: 12px;
+    font-weight: 600;
+  }
 }

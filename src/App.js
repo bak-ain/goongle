@@ -12,6 +12,7 @@ import MapGHgung from './pages/MapGHgung';
 import NipGuide from './pages/NipGuide';
 import NipChange from './pages/NipChange';
 import NipPartner from './pages/NipPartner';
+import MyPage from './pages/MyPage';
 import './App.css';
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <Route path="/nip-guide" element={<NipGuide />} />
             <Route path="/nip-change" element={<NipChange />} />
             <Route path="/nip-partner" element={<NipPartner />} />
+            <Route path="/mypage" element={<MyPage />} />
           </Routes>
         )}
       </LoginProvider>

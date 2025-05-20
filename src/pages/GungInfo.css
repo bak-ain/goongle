@@ -955,7 +955,7 @@ img.guide {
 }
 
 /* 반응형 모바일 iPhone SE (가로)*/
-@media screen and (max-width:667px) {
+@media screen and (max-width: 932px) and (orientation: landscape) {
 
     /* first */
     .FirstSec .first_img {

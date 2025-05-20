@@ -1,16 +1,82 @@
-.Home{
+.Home {
     display: flex;
     gap: 6vw;
     background: #F4EFEA;
     position: relative;
 }
-@media screen and (max-width: 1500px){
-    .Home{
+
+.MapGHgung .InfoCard_wrap {
+    border: 0.2vw solid var(--Gyeonghuigung-info-color);
+}
+
+.MapGHgung .InfoCard h2 {
+    color: var(--Gyeonghuigung-info-color);
+}
+
+.MapGHgung .spring {
+    background-image: url(../img/pintop2.svg);
+}
+
+.MapGHgung .fins {
+    background-image: url(../img/pinbottom2.svg);
+}
+
+.MapCDgung .InfoCard_wrap {
+    border: 0.2vw solid var(--Changdeokgung-info-color);
+}
+
+.MapCDgung .InfoCard h2 {
+    color: var(--Changdeokgung-info-color);
+}
+
+.MapCDgung .spring {
+    background-image: url(../img/pintop3.svg);
+}
+
+.MapCDgung .fins {
+    background-image: url(../img/pinbottom3.svg);
+}
+
+.MapCGgung .InfoCard_wrap {
+    border: 0.2vw solid var(--Changgyeonggung-info-color);
+}
+
+.MapCGgung .InfoCard h2 {
+    color: var(--Changgyeonggung-info-color);
+}
+
+.MapCGgung .spring {
+    background-image: url(../img/pintop4.svg);
+}
+
+.MapCGgung .fins {
+    background-image: url(../img/pinbottom4.svg);
+}
+
+.MapDSgung .InfoCard_wrap {
+    border: 0.2vw solid var(--Deoksugung-info-color);
+}
+
+.MapDSgung .InfoCard h2 {
+    color: var(--Deoksugung-info-color);
+}
+
+.MapDSgung .spring {
+    background-image: url(../img/pintop5.svg);
+}
+
+.MapDSgung .fins {
+    background-image: url(../img/pinbottom5.svg);
+}
+
+@media screen and (max-width: 1500px) {
+    .Home {
         flex-direction: column;
     }
 }
-@media screen and (max-width: 430px){
-    .Home{
+
+@media screen and (max-width: 430px) {
+    .Home {
         gap: 0;
     }
 }

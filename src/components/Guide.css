@@ -14,7 +14,7 @@
 
 .FullScreenGuide {
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
@@ -50,5 +50,11 @@
 
   .GuideBtn {
     width: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .Header .FullScreenGuide {
+    bottom: 70px;
   }
 }

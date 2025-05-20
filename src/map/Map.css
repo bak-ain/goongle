@@ -8,18 +8,11 @@
     /* padding-bottom: 2vw; */
 }
 
-.Board {
-
-    /* padding-top: 2vw; */
-}
 
 .Map_left {
     margin-bottom: 3vw;
 }
 
-.InfoCard {
-    /* padding-top: 2vw; */
-}
 
 @media screen and (max-width: 1500px) {
     .Map {
@@ -297,7 +290,146 @@
         font-size: 17px;
     }
 
-    .event-text  .chance{
+    .event-text .chance {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    .Map {
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        padding-left: 3vw;
+    }
+
+    .Map_left {
+        position: absolute;
+        top: 5%;
+        right: 8%;
+        flex-direction: column;
+        z-index: 9999999;
+    }
+
+    .Board {
+        flex-direction: row;
+        align-items: end;
+        gap: 5vw;
+    }
+
+    .InfoCard_wrap {
+        width: 23vw;
+        height: 15vw;
+        gap: 1vw;
+        border-radius: 2.2vw;
+    }
+
+    .InfoCard .InfoCard_top {
+        flex-direction: column;
+    }
+
+    .InfoCard .InfoCard_top .p3 {
+        text-align: center;
+    }
+
+    .InfoCard.eventMode .InfoCard_contents {
+        display: flex;
+    }
+
+    .InfoCard .InfoCard_contents {
+        display: none;
+    }
+
+    .InfoCard.eventMode .InfoCard_contents .play,
+    .InfoCard.eventMode .InfoCard_contents .ticket,
+    .InfoCard.eventMode .InfoCard_contents .move h3 {
+        display: none;
+    }
+
+    .YutnoriBtn {
+        width: 23vw;
+        height: 15vw;
+        background-size: 16%, 12%;
+    }
+
+    .YutnoriBtn img {
+        width: 8vw;
+        height: 7vw;
+    }
+
+    .InfoCard .InfoCard_top .p3 {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    .Map_left {
+        top: 16%;
+        right: 2.5%;
+    }
+
+    .InfoCard_wrap,
+    .YutnoriBtn {
+        width: 25vw;
+        height: 16vw;
+    }
+
+    .YutnoriBtn {
+        gap: 0.2vw;
+        background-size: 15%, 12%;
+    }
+
+    .InfoCard h2 {
+        font-size: 2rem;
+    }
+
+    .YutnoriBtn .h2 {
+        font-size: 1.8rem;
+        margin-bottom: 7%;
+    }
+
+    .YutnoriBtn.on {
+        gap: 0.5vw;
+    }
+
+    .InfoCard .InfoCard_top .p3 {
+        font-size: 13px;
+    }
+
+    .InfoCard.eventMode .p2 {
+        line-height: 130% !important;
+        font-size: 13px !important;
+    }
+
+    .MapCGgung .InfoCard .InfoCard_top .p3 {
+        font-size: 12px;
+    }
+
+    .event-text {
+        gap: 0 !important;
+    }
+
+    .event-text .click-label {
+        font-size: 17px;
+    }
+
+    .event-text .chance {
+        font-size: 14px;
+    }
+
+    .move {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .move .p2 p {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
