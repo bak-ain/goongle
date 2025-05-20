@@ -1340,7 +1340,6 @@ img.guide {
         font-size: 2rem;
     }
 
-<<<<<<< HEAD
     .SevenSec .TextBox p {
         font-size: 1rem;
     }
@@ -1386,7 +1385,6 @@ img.guide {
         background-color: #ffa920 !important;
         /* orange-300 */
     }
-=======
 .swiper-pagination-bullet {
   background: #000;
   opacity: 0.5;
@@ -1710,5 +1708,4 @@ scale: 0.8;
   height: 10px !important;
   background-color: #ffa920 !important; /* orange-300 */
 }
->>>>>>> bbe3af631382fd75b80327857f5a68c2c5240eeb
 }
