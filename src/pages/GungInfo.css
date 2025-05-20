@@ -150,6 +150,8 @@ img.guide {
 }
 
 .ThirdSec img.guide {
+    width: 8vw;
+    height: auto;
     position: absolute;
     left: 35%;
     bottom: 18%;
@@ -206,6 +208,8 @@ img.guide {
 }
 
 .FourthSec img.guide {
+        width: 8vw;
+    height: auto;
     position: absolute;
     right: 33%;
     bottom: 22%;
@@ -279,6 +283,8 @@ img.guide {
 }
 
 .FifthSec img.guide {
+        width: 8vw;
+    height: auto;
     position: absolute;
     left: 35%;
     bottom: 18%;
@@ -351,6 +357,8 @@ img.guide {
 }
 
 .SixSec img.guide {
+        width: 8vw;
+    height: auto;
     position: absolute;
     right: 35%;
     bottom: 18%;
@@ -408,6 +416,8 @@ img.guide {
 }
 
 .SevenSec img.guide {
+        width: 8vw;
+    height: auto;
     position: absolute;
     right: 10%;
     bottom: 18%;
