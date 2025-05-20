@@ -236,7 +236,8 @@ const Board = ({
   }, [shouldStartQuiz]);
 
   const getRandomQuiz = () => {
-    const quizList = quizData[currentGung];
+    const quizList = quizData['gyeongbokgung'];
+    // 일단 다 경복궁퀴즈로 넣어놓음
     if (!quizList || quizList.length === 0) return null;
     return quizList[Math.floor(Math.random() * quizList.length)];
   };

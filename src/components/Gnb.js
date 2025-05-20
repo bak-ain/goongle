@@ -1,8 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import GnbItem from './GnbItem';
 import { Icons } from '../img/img';
-// import './Gnb.css';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const GUNG_LIST = [
   { id: 'gyeongbokgung', label: '경복궁', icon: Icons.gnb1, iconOn: Icons.gnb1On },
@@ -12,43 +11,47 @@ const GUNG_LIST = [
   { id: 'deoksugung', label: '덕수궁', icon: Icons.gnb5, iconOn: Icons.gnb5On },
 ];
 
-const Gnb = ({ currentGung, setCurrentGung }) => {
-  const [coinClicked, setCoinClicked] = useState(false);
+const Gnb = ({ currentGung, setCurrentGung, onItemClick }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const isNipPage = currentPath.startsWith('/nip');
+  const currentGungFromURL = currentPath.startsWith('/map/') ? currentPath.split('/')[2] : null;
+
+  const handleMove = (path) => {
+    navigate(path);
+    if (onItemClick) onItemClick(); // ✅ 메뉴 닫기 트리거
+  };
+
   return (
     <ul className="Gnb">
       {GUNG_LIST.map((gung) => (
         <GnbItem
           key={gung.id}
-          icon={currentGung === gung.id ? gung.iconOn : gung.icon}
+          icon={currentGungFromURL === gung.id ? gung.iconOn : gung.icon}
           label={gung.label}
-          isActive={currentGung === gung.id}
-          onClick={() => { setCurrentGung(gung.id); setCoinClicked(false); }}
-          className={gung.id} // ✅ 각 궁 id를 className으로 전달
+          isActive={currentGungFromURL === gung.id}
+          onClick={() => handleMove(`/map/${gung.id}`)}
+          className={gung.id}
         />
       ))}
-
-      {/* <li className="divider" /> */}
-
       <GnbItem
-        icon={coinClicked ? Icons.coinOn : Icons.coin}
+        icon={isNipPage ? Icons.coinOn : Icons.coin}
         label="궁글 닢"
-        isActive={coinClicked}
-        onClick={() => {
-          setCoinClicked(true);
-          setCurrentGung(null);
-        }}
+        isActive={isNipPage}
+        onClick={() => handleMove('/nip-guide')}
         className="Nip"
+        enableToggle={true}
       >
-        {/* 🧾 서브메뉴 예시 */}
         <ul className="sub_list">
-          <li>닢제도 가이드</li>
-          <li>닢 교환권</li>
-          <li>닢 제휴처</li>
+          <li onClick={() => handleMove('/nip-guide')}>닢제도 가이드</li>
+          <li onClick={() => handleMove('/nip-change')}>닢 교환권</li>
+          <li onClick={() => handleMove('/nip-partner')}>닢 제휴처</li>
         </ul>
       </GnbItem>
-
     </ul>
   );
 };
+
 
 export default Gnb;

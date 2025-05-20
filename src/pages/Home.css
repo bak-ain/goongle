@@ -9,7 +9,7 @@
         flex-direction: column;
     }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 430px){
     .Home{
         gap: 0;
     }

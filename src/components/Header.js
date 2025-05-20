@@ -11,7 +11,7 @@ const Header = ({ currentGung, setCurrentGung }) => {
     const { isMember, setIsMember } = useLogin();
     const [showLoginPopup, setShowLoginPopup] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false); // 햄버거 toggle 상태
-
+    const onMenuClose = () => setMenuOpen(false);
     return (
         <>
             <div className="Hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -21,11 +21,15 @@ const Header = ({ currentGung, setCurrentGung }) => {
             <div className={`Header ${menuOpen ? 'active' : ''}`}>
                 <div className="top">
                     <Logo />
-                    <GuideBtn />
+                    <GuideBtn onClick={onMenuClose} />
                 </div>
                 <div className="bottom">
-                    <Gnb currentGung={currentGung} setCurrentGung={setCurrentGung} />
-                    <Profile isMember={isMember} onLoginClick={() => setShowLoginPopup(true)} />
+                    <Gnb currentGung={currentGung} setCurrentGung={setCurrentGung}
+                        onItemClick={() => setMenuOpen(false)} />
+                    <Profile isMember={isMember} onLoginClick={() => {
+                        setShowLoginPopup(true);
+                        onMenuClose(); 
+                    }} />
                 </div>
                 {showLoginPopup && (
                     <LoginPopup onClose={() => setShowLoginPopup(false)} setIsMember={setIsMember} />

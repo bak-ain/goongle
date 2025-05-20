@@ -185,6 +185,12 @@
     .Map {
         gap: 30vw;
         height: 100vh;
+        justify-content: flex-start;
+        padding-top: 20%;
         /* overflow: hidden; */
+    }
+    .Board{
+        position: absolute;
+        bottom: 15%;
     }
 }

@@ -1,28 +1,36 @@
-import React, { useState, useEffect, useRef } from 'react';
+// GnbItem.jsx
+import React, { useEffect, useRef } from 'react';
 import './GnbItem.css';
 
-const GnbItem = ({ icon, label, onClick, isActive, className, children, enableToggle }) => {
-  const [isSubOpen, setIsSubOpen] = useState(false);
+const GnbItem = ({
+  icon,
+  label,
+  onClick,
+  isActive,
+  className,
+  children,
+  enableToggle,
+  isSubOpen,
+  setIsSubOpen,
+}) => {
   const itemRef = useRef(null);
 
-  // 바깥 클릭 시 서브메뉴 닫기
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (itemRef.current && !itemRef.current.contains(e.target)) {
-        setIsSubOpen(false);
+        setIsSubOpen?.(false);
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [setIsSubOpen]);
 
   const handleClick = (e) => {
     if (enableToggle) {
       e.stopPropagation();
-      setIsSubOpen((prev) => !prev);
+      setIsSubOpen?.((prev) => !prev);
     }
     if (onClick) onClick();
   };
