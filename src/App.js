@@ -16,6 +16,7 @@ import './App.css';
 
 function App() {
   const [showGuide, setShowGuide] = useState(true);
+  const [logoutMessage, setLogoutMessage] = useState('');
 
   // 한 번 본 가이드는 다시 안 보이게 하고 싶다면 아래 코드 추가
   // useEffect(() => {

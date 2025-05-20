@@ -3,6 +3,7 @@ import { Characters } from '../img/img';
 import './Character.css';
 
 const Character = ({ tile, characterKey, eventMode }) => {
+  const isMobile = window.innerWidth <= 430;
   const { gridArea, top = '0', left = '0' } = tile;
 
   const characterImage = useMemo(() => {
@@ -34,8 +35,8 @@ const Character = ({ tile, characterKey, eventMode }) => {
         className={`Character ${jumping ? 'jump' : ''}`}
         style={{
           position: 'absolute',
-          top,
-          left,
+          top: isMobile ? tile.topMobile || top : top,
+          left: isMobile ? tile.leftMobile || left : left,
           zIndex: 10,
         }}
       >

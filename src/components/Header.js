@@ -28,8 +28,10 @@ const Header = ({ currentGung, setCurrentGung }) => {
                         onItemClick={() => setMenuOpen(false)} />
                     <Profile isMember={isMember} onLoginClick={() => {
                         setShowLoginPopup(true);
-                        onMenuClose(); 
-                    }} />
+                        onMenuClose();
+                    }}
+                        onLogout={onMenuClose}
+                    />
                 </div>
                 {showLoginPopup && (
                     <LoginPopup onClose={() => setShowLoginPopup(false)} setIsMember={setIsMember} />

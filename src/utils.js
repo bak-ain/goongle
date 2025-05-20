@@ -12,6 +12,8 @@ export const startTile = {
   gridArea: 't1',
   top: '-10%',
   left: '10%',
+  topMobile: '0%',
+  leftMobile: '2%',
   positionClass: 'tile-100'
 };
 
@@ -25,6 +27,8 @@ export const quizTile = {
   gridArea: 't16',
   top: '-10%',
   left: '12%',
+  topMobile: '0%',
+  leftMobile: '3%',
   positionClass: 'tile-107'
 };
 
@@ -34,6 +38,10 @@ export const eventTiles = [
     front: { image: TileEventImg.event6, text: '이벤트1' },
     back: { image: TileEventImg.event9, text: '닢1' },
     top: '-14%', left: '26%',
+    topMobile: '10%',
+    leftMobile: '3%',
+    topMobile: '15%',
+    leftMobile: '8%',
     positionClass: 'tile-101'
   },
   {
@@ -41,6 +49,8 @@ export const eventTiles = [
     front: { image: TileEventImg.event4, text: '이벤트2' },
     back: { image: TileEventImg.event7, text: '닢2' },
     top: '-14%', left: '42%',
+    topMobile: '15%',
+    leftMobile: '30%',
     positionClass: 'tile-102'
   },
   {
@@ -48,6 +58,8 @@ export const eventTiles = [
     front: { image: TileEventImg.event5, text: '이벤트3' },
     back: { image: TileEventImg.event8, text: '닢3' },
     top: '-15%', left: '38%',
+    topMobile: '-10%',
+    leftMobile: '26%',
     positionClass: 'tile-103'
   },
   {
@@ -55,6 +67,8 @@ export const eventTiles = [
     front: { image: TileEventImg.event6, text: '이벤트4' },
     back: { image: TileEventImg.event9, text: '닢1' },
     top: '-13%', left: '42%',
+    topMobile: '-10%',
+    leftMobile: '30%',
     positionClass: 'tile-104'
   },
   {
@@ -62,6 +76,8 @@ export const eventTiles = [
     front: { image: TileEventImg.event4, text: '이벤트5' },
     back: { image: TileEventImg.event7, text: '닢2' },
     top: '-13%', left: '8%',
+    topMobile: '-10%',
+    leftMobile: '-3%',
     positionClass: 'tile-105'
   },
   {
@@ -69,6 +85,8 @@ export const eventTiles = [
     front: { image: TileEventImg.event5, text: '이벤트6' },
     back: { image: TileEventImg.event8, text: '닢3' },
     top: '-15%', left: '14%',
+    topMobile: '-10%',
+    leftMobile: '-5%',
     positionClass: 'tile-106'
   },
 ]
@@ -87,6 +105,8 @@ export const mapTilesByGung = {
       gridArea: 't2',
       top: '-10%',
       left: '20%',
+      topMobile: '20%',
+      leftMobile: '10%',
       positionClass: 'tile-1'
     },
     {
@@ -100,6 +120,8 @@ export const mapTilesByGung = {
       gridArea: 't4',
       top: '-10%',
       left: '40%',
+      topMobile: '20%',
+      leftMobile: '30%',
       positionClass: 'tile-2'
     },
     {
@@ -113,6 +135,8 @@ export const mapTilesByGung = {
       gridArea: 't6',
       top: '-10%',
       left: '45%',
+      topMobile: '-10%',
+      leftMobile: '35%',
       positionClass: 'tile-3'
     },
     {
@@ -126,6 +150,8 @@ export const mapTilesByGung = {
       gridArea: 't8',
       top: '-10%',
       left: '45%',
+      topMobile: '-10%',
+      leftMobile: '35%',
       positionClass: 'tile-4'
     },
     {
@@ -139,6 +165,8 @@ export const mapTilesByGung = {
       gridArea: 't10',
       top: '0',
       left: '36%',
+      topMobile: '-30%',
+      leftMobile: '30%',
       positionClass: 'tile-5'
     },
     {
@@ -152,6 +180,8 @@ export const mapTilesByGung = {
       gridArea: 't11',
       top: '0',
       left: '30%',
+      topMobile: '-30%',
+      leftMobile: '16%',
       positionClass: 'tile-6'
     },
     {
@@ -165,6 +195,8 @@ export const mapTilesByGung = {
       gridArea: 't12',
       top: '0',
       left: '24%',
+      topMobile: '-30%',
+      leftMobile: '13%',
       positionClass: 'tile-7'
     },
     {
@@ -178,6 +210,8 @@ export const mapTilesByGung = {
       gridArea: 't14',
       top: '0',
       left: '12%',
+      topMobile: '0%',
+      leftMobile: '4%',
       positionClass: 'tile-8'
     }
   ],

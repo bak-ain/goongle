@@ -4,6 +4,7 @@
   gap: 1vw;
   align-items: center;
   position: relative;
+  z-index: 100;
 }
 
 .GiveNip {
@@ -983,12 +984,11 @@
   .Character img {
     height: 14vw;
   }
-
-  /* 경복궁 */
   .tile1 img {
   margin-top: 40%;
   width: 20vw;
   height: 20vw;
   object-fit: cover;
 }
+
 }

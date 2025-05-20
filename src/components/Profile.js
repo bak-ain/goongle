@@ -4,21 +4,26 @@ import { Characters, Icons } from '../img/img'; // ← Icons 추가
 import { useLogin } from '../LoginContext';
 import './Profile.css';
 
-const Profile = ({ onLoginClick }) => {
+const Profile = ({ onLoginClick, onLogout }) => {
   const { isMember, setIsMember } = useLogin();
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    if (isMember) {
-      localStorage.removeItem('userToken');
-      sessionStorage.removeItem('userToken');
-      setIsMember(false);
+const handleClick = () => {
+  if (isMember) {
+    localStorage.removeItem('userToken');
+    sessionStorage.removeItem('userToken');
+    setIsMember(false);
+    if (onLogout) onLogout();
+    
+    // 알림을 따로 분리
+    setTimeout(() => {
       alert('로그아웃되었습니다.');
       navigate('/');
-    } else {
-      onLoginClick(); // 로그인 팝업 호출
-    }
-  };
+    }, 10);
+  } else {
+    onLoginClick();
+  }
+};
 
   return (
     <div className="Profile" >
