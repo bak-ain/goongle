@@ -133,7 +133,9 @@
   gap: 0.8vw;
   align-items: center;
 }
-
+.InfoCard .InfoCard_top .p3{
+  text-align: center;
+}
 .InfoCard .InfoCard_contents {
   display: flex;
   flex-direction: column;
@@ -216,6 +218,13 @@
   font-weight: 500;
   line-height: 1.2rem;
   text-align: center;
+}
+
+.line_2 {
+  background: #00A84D;
+}
+.line_4 {
+  background: #02A4E3;
 }
 
 .line_3 {
