@@ -30,7 +30,6 @@ const Map = ({ currentGung, setCurrentGung ,eventMode, setEventMode  }) => {
     }
 
     if (phase === 'start') {
-      console.log('🟢 START 버튼 클릭');
       setEventMode(true);
       setYutReady(true);
       setYutClicked(true);
@@ -39,7 +38,7 @@ const Map = ({ currentGung, setCurrentGung ,eventMode, setEventMode  }) => {
 
     if (phase === 'play') {
     
-      if (yutReady && yutChances >= 0) {
+      if (yutReady && yutChances > 0) {
     
 
        setTriggerYut(Math.random().toString(36).substring(2, 5)); // 매번 다른 문자열
@@ -49,7 +48,6 @@ const Map = ({ currentGung, setCurrentGung ,eventMode, setEventMode  }) => {
       
 
           if (next === 0) {
-            console.log('🚫 기회 소진 → eventMode OFF');
             setEventMode(false);
           }
 

@@ -36,7 +36,7 @@
 
 .speech-bubble {
   position: absolute;
-  bottom: 120%;
+  bottom: 110%;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Noto Sans KR";

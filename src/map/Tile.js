@@ -15,25 +15,25 @@ const Tile = ({ tile, eventMode, isMember, onClick }) => {
   } else if (eventMode && !isEvent && !isStart) {
     tileOpacity = 0.5; // 🔹 일반 타일 (event 제외)
   }
-  
+
   const getModifiedFrontImage = () => {
-  if (isEvent && !isMember) {
-    switch (tile.id) {
-      case 101:
-      case 104:
-        return TileEventImg.event3;
-      case 102:
-      case 105:
-        return TileEventImg.event1;
-      case 103:
-      case 106:
-        return TileEventImg.event2;
-      default:
-        return tile.front.image;
+    if (isEvent && !isMember) {
+      switch (tile.id) {
+        case 101:
+        case 104:
+          return TileEventImg.event3;
+        case 102:
+        case 105:
+          return TileEventImg.event1;
+        case 103:
+        case 106:
+          return TileEventImg.event2;
+        default:
+          return tile.front.image;
+      }
     }
-  }
-  return tile.front.image;
-};
+    return tile.front.image;
+  };
 
   return (
     <div className="tile-cell" style={{ gridArea: tile.gridArea }}>
@@ -44,6 +44,12 @@ const Tile = ({ tile, eventMode, isMember, onClick }) => {
           height: tile.height,
           position: 'absolute',
           opacity: tileOpacity,
+          cursor:
+            isEvent
+              ? 'default'
+              : eventMode && !isStart
+                ? 'default'
+                : 'pointer', // ✅ 포인터 조건 처리 완료
         }}
         onClick={onClick}
       >

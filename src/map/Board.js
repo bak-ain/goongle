@@ -162,6 +162,7 @@ const Board = ({
   };
 
   const handleClick = (tile) => {
+    if (eventMode) return;
     if (tile.type === 'event' || tile.type === 'start') return;
     if (tile.type === 'quiz' && !isMember) {
       setPendingQuizTile(tile);

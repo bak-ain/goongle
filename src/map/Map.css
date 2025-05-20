@@ -309,7 +309,7 @@
         top: 5%;
         right: 8%;
         flex-direction: column;
-        z-index: 999;
+        z-index: 100;
     }
 
     .Board {
