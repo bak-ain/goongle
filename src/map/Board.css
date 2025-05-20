@@ -685,35 +685,16 @@
 }
 
 @media screen  and (min-width: 360px) and (max-width: 430px) {
-  .tile img {
-    transform: rotate(-90deg);
-  }
-
-  .Character {
-    transform: rotate(-90deg);
-  }
-
-
-  .Board {
-    transform: rotate(90deg);
-    flex-direction: row;
-    gap: 0 !important;
-  }
-
   .MovingBtn {
-    transform: rotate(-90deg);
   }
 
   .tile_wrap {
-    width: 120vw;
-    height: 84vw;
+    width: 84vw;
+    height: 120vw;
   }
 
   .CenterWrap {
     background-size: 80%;
-    transform: rotate(-90deg);
-    left: 22%;
-    top: 18%;
   }
 
   .Character img {

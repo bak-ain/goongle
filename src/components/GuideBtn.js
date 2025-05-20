@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Guide from './Guide'; // 모달에 띄울 컴포넌트
 import './Guide.css';
 
