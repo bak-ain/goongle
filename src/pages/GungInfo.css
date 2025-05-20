@@ -1,25 +1,30 @@
-
+.TextBox {
+    z-index: 99999;
+}
 
 /* 텍스트박스들 라인하이트 조절 */
-.TextBox p{
+.TextBox p {
     line-height: 160%;
     white-space: nowrap;
 }
+
 .GungInfoWrapper {
     height: 100vh;
     overflow: hidden;
     background: #f6ebd3 url('../img/info_bg.png') center/cover no-repeat fixed;
     position: relative;
 }
-.GungHeader{
+
+.GungHeader {
     width: 100%;
-   position: fixed;
-   display: flex;
-   justify-content: space-between;
-   padding-inline: 2vw;
-   padding-top: 2vw;
-   z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2vw;
+    padding-top: 2vw;
+    z-index: 999;
 }
+
 .GungInfo {
     display: flex;
     width: 100%;
@@ -35,17 +40,18 @@
 }
 
 
-.TextBox h2{
+.TextBox h2 {
     padding-bottom: 5%;
 }
 
-.hanja{
+.hanja {
     font-family: "Gapyeong Hanseokbong";
     font-size: 1.3rem;
     font-weight: 500;
 
 }
-.kr{
+
+.kr {
     margin-top: 8%;
     font-family: "Gapyeong Hanseokbong";
     font-size: 1.3rem;
@@ -53,9 +59,10 @@
 
 }
 
-img.guide{
+img.guide {
     scale: 0.9;
 }
+
 /* first */
 
 
@@ -80,14 +87,14 @@ img.guide{
     border-radius: 30px;
 }
 
-.FirstSec h2{
+.FirstSec h2 {
     margin-top: 2%;
 }
 
 /* second */
 
 
-.SecondSec{
+.SecondSec {
     width: 100%;
     height: 100%;
     display: flex;
@@ -96,7 +103,8 @@ img.guide{
     justify-content: center;
     padding-top: 2%;
 }
-.SecondSec .guidetext{
+
+.SecondSec .guidetext {
     width: 100%;
     display: flex;
     height: 12%;
@@ -104,9 +112,11 @@ img.guide{
     justify-content: center;
     gap: 2%;
 }
-.SecondSec .guidetext img.guide{
+
+.SecondSec .guidetext img.guide {
     height: 80%;
 }
+
 .SecondSec .text p {
     font-family: 'MaruBuri';
     font-size: 1.25rem;
@@ -119,7 +129,7 @@ img.guide{
     font-family: 'MaruBuriBold';
 }
 
-.SecondSec img.first{
+.SecondSec img.first {
     margin-top: 2%;
     border-radius: 30px;
     width: 75vw;
@@ -129,7 +139,7 @@ img.guide{
 
 /* third */
 
-.ThirdSec{
+.ThirdSec {
     width: 100%;
     height: 100%;
     display: flex;
@@ -138,24 +148,27 @@ img.guide{
     padding-top: 2%;
     position: relative;
 }
-.ThirdSec img.guide{
+
+.ThirdSec img.guide {
     position: absolute;
     left: 35%;
     bottom: 18%;
 }
-.ThirdSec .position{
+
+.ThirdSec .position {
     display: flex;
     gap: 3%;
 }
 
-.ThirdSec img.first{
+.ThirdSec img.first {
     border-radius: 30px;
     margin-left: 12%;
     width: 20vw;
     height: 32vw;
     object-fit: cover;
 }
-.ThirdSec img.sec{
+
+.ThirdSec img.sec {
     position: absolute;
     right: 15%;
     top: -10%;
@@ -164,7 +177,8 @@ img.guide{
     height: 20vw;
     object-fit: cover;
 }
-.ThirdSec img.third{
+
+.ThirdSec img.third {
     position: absolute;
     right: 10%;
     bottom: 12%;
@@ -173,13 +187,14 @@ img.guide{
     height: 15vw;
     object-fit: cover;
 }
-.ThirdSec .TextBox{
+
+.ThirdSec .TextBox {
     margin-top: 4%;
 }
 
 /* fourth */
 
-.FourthSec{
+.FourthSec {
     width: 100%;
     height: 100%;
     display: flex;
@@ -189,29 +204,35 @@ img.guide{
     position: relative;
     padding-top: 2%;
 }
-.FourthSec img.guide{
+
+.FourthSec img.guide {
     position: absolute;
     right: 33%;
     bottom: 22%;
     transform: scaleX(-1);
 }
-.FourthSec .TextBox{
+
+.FourthSec .TextBox {
     margin-top: 3%;
 }
-.FourthSec .position{
+
+.FourthSec .position {
     display: flex;
     gap: 3%;
 }
-.FourthSec .left_img{
+
+.FourthSec .left_img {
     position: relative;
 }
-.FourthSec .left_img img.first{
+
+.FourthSec .left_img img.first {
     border-radius: 30px;
     width: 18vw;
     height: 24vw;
     object-fit: cover;
 }
-.FourthSec .left_img img.sec{
+
+.FourthSec .left_img img.sec {
     position: absolute;
     right: -20%;
     bottom: 0;
@@ -221,18 +242,20 @@ img.guide{
     object-fit: cover;
 }
 
-.FourthSec .right_img{
+.FourthSec .right_img {
     position: relative;
     margin-top: 8%;
     margin-left: 5%;
 }
-.FourthSec .right_img img.third{
+
+.FourthSec .right_img img.third {
     width: 18vw;
     height: 24vw;
     object-fit: cover;
     border-radius: 30px;
 }
-.FourthSec .right_img img.fourth{
+
+.FourthSec .right_img img.fourth {
     position: absolute;
     left: -30%;
     top: -38%;
@@ -245,7 +268,7 @@ img.guide{
 
 /* fifth */
 
-.FifthSec{
+.FifthSec {
     width: 100%;
     height: 100%;
     display: flex;
@@ -254,32 +277,38 @@ img.guide{
     justify-content: center;
     position: relative;
 }
-.FifthSec img.guide{
+
+.FifthSec img.guide {
     position: absolute;
     left: 35%;
     bottom: 18%;
 }
-.FifthSec .TextBox{
+
+.FifthSec .TextBox {
     margin-top: 6%;
 }
-.FifthSec .position{
+
+.FifthSec .position {
     margin-top: 2%;
     width: 100%;
     display: flex;
     gap: 5%;
     justify-content: center;
 }
-.FifthSec .left_img{
+
+.FifthSec .left_img {
     position: relative;
     margin-top: 6%;
 }
-.FifthSec .left_img img.first{
+
+.FifthSec .left_img img.first {
     border-radius: 30px;
     width: 18vw;
     height: 24vw;
     object-fit: cover;
 }
-.FifthSec .left_img img.sec{
+
+.FifthSec .left_img img.sec {
     position: absolute;
     right: -20%;
     top: -30%;
@@ -288,29 +317,32 @@ img.guide{
     height: 14vw;
     object-fit: cover;
 }
-.FifthSec .right_img{
+
+.FifthSec .right_img {
     position: relative;
     margin-left: 5%;
 }
-.FifthSec .right_img img.third{
+
+.FifthSec .right_img img.third {
     border-radius: 30px;
-        width: 18vw;
+    width: 18vw;
     height: 24vw;
     object-fit: cover;
 }
-.FifthSec .right_img img.fourth{
+
+.FifthSec .right_img img.fourth {
     position: absolute;
     left: -30%;
     bottom: 0;
     border-radius: 50%;
-        width: 14vw;
+    width: 14vw;
     height: 14vw;
     object-fit: cover;
 }
 
 /* sixth */
 
-.SixSec{
+.SixSec {
     width: 100%;
     height: 100%;
     display: flex;
@@ -318,25 +350,28 @@ img.guide{
     position: relative;
 }
 
-.SixSec img.guide{
+.SixSec img.guide {
     position: absolute;
     right: 35%;
     bottom: 18%;
     transform: scaleX(-1);
 }
-.SixSec .position{
+
+.SixSec .position {
     display: flex;
     gap: 5%;
     margin-top: 12%;
     margin-left: 8%;
 }
-.SixSec img.first{
+
+.SixSec img.first {
     border-radius: 30px;
     width: 28vw;
     height: 20vw;
     object-fit: cover;
 }
-.SixSec img.sec{
+
+.SixSec img.sec {
     position: absolute;
     right: 15%;
     top: -10%;
@@ -345,7 +380,8 @@ img.guide{
     height: 20vw;
     object-fit: cover;
 }
-.SixSec img.third{
+
+.SixSec img.third {
     position: absolute;
     right: 10%;
     bottom: 12%;
@@ -354,13 +390,14 @@ img.guide{
     height: 18vw;
     object-fit: cover;
 }
-.SixSec .TextBox{
-    padding-top: 4%;  
+
+.SixSec .TextBox {
+    padding-top: 4%;
 }
- 
+
 /* seventh */
 
-.SevenSec{
+.SevenSec {
     width: 100%;
     height: 100%;
     display: flex;
@@ -369,13 +406,15 @@ img.guide{
     gap: 3%;
     position: relative;
 }
-.SevenSec img.guide{
+
+.SevenSec img.guide {
     position: absolute;
     right: 10%;
     bottom: 18%;
     transform: scaleX(-1);
 }
-.SevenSec img.first{
+
+.SevenSec img.first {
     border-radius: 30px;
     width: 32vw;
     height: 20vw;
@@ -383,13 +422,13 @@ img.guide{
 }
 
 
-.SevenSec .TextBox{
+.SevenSec .TextBox {
     margin-bottom: 0%;
 }
 
 /* last */
 
-.LastSec{
+.LastSec {
     width: 100%;
     height: 100%;
     display: flex;
@@ -398,20 +437,24 @@ img.guide{
     align-items: center;
     gap: 2%;
 }
-.LastSec h2{
+
+.LastSec h2 {
     text-align: center;
 }
-.LastSec p{
+
+.LastSec p {
     text-align: center;
     font-family: "Gapyeong Hanseokbong";
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 120%;
 }
-.LastSec p strong{
+
+.LastSec p strong {
     font-weight: 700;
 }
-.scroll-hint{
+
+.scroll-hint {
     position: fixed;
     right: 2%;
     bottom: 2%;
@@ -420,824 +463,926 @@ img.guide{
 
 
 .GungInfo {
-  width: 100vw;
-  height: 100vh;
-  position: relative; /* 이거 꼭 있어야 돼 */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    /* 이거 꼭 있어야 돼 */
 }
 
 .swiper-wrapper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .swiper-pagination {
-  bottom: 3% !important;
+    bottom: 3% !important;
 }
 
 .swiper-pagination-bullet {
-  background: #000;
-  opacity: 0.5;
-  transition: 0.3s;
+    background: #000;
+    opacity: 0.5;
+    transition: 0.3s;
     width: 12px !important;
-  height: 12px !important;
-  background-color: #ffa920 !important; /* orange-300 */
+    height: 12px !important;
+    background-color: #ffa920 !important;
+    /* orange-300 */
 }
 
 .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #000;
+    opacity: 1;
+    background: #000;
 }
 
 .swiper-pagination {
-  display: block !important;
-  opacity: 1 !important;
-  z-index: 1000;
+    display: block !important;
+    opacity: 1 !important;
+    z-index: 1000;
 }
+
 .swiper-pagination {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 1000;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
 }
+
 /* GungInfo.css에 추가하거나 수정 */
 .swiper-pagination {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 1000;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
 }
+
 .GungInfoWrapper {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
+
 .GungInfo {
-  width: 100vw;
-  height: 100vh;
-  position: relative; /* pagination 위치 기준용 */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    /* pagination 위치 기준용 */
 }
+
 .swiper-slide {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .swiper-pagination {
-  z-index: 9999 !important; /* GungHeader보다 위로 */
+    z-index: 9999 !important;
+    /* GungHeader보다 위로 */
 }
 
 .swiper-pagination {
-  display: block !important;
-  opacity: 1 !important;
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 9999;
-  pointer-events: auto; /* ← 이것도 추가하면 좋음 */
+    display: block !important;
+    opacity: 1 !important;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9999;
+    pointer-events: auto;
+    /* ← 이것도 추가하면 좋음 */
 }
 
 /* 반응형 태블릿 */
 
 @media screen and (max-width:1024px) {
+
     /* first */
     .FirstSec .first_img {
         width: 80vw;
         height: auto;
     }
-    .FirstSec h2{
+
+    .FirstSec h2 {
         font-size: 3.5rem;
     }
 
     /* second */
-    .SecondSec .guidetext{
-    width: 95%;
-    display: flex;
-    gap: 2%;
+    .SecondSec .guidetext {
+        width: 95%;
+        display: flex;
+        gap: 2%;
     }
-    .SecondSec .guidetext p{
+
+    .SecondSec .guidetext p {
         font-size: 1.6rem;
         width: 95%;
     }
-    .SecondSec img.first{
-    margin-top: 6%;
-    border-radius: 30px;
-    width: 90vw;
-    height: 40vw;
-    object-fit: cover;
+
+    .SecondSec img.first {
+        margin-top: 6%;
+        border-radius: 30px;
+        width: 90vw;
+        height: 40vw;
+        object-fit: cover;
     }
 
     /* third */
 
-    .ThirdSec img.first{
-    margin-top: 10%;
-    margin-left: 10%;
-    width: 80%;
-    height: 40vw;
-    object-fit: cover;
+    .ThirdSec img.first {
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 80%;
+        height: 40vw;
+        object-fit: cover;
     }
-    .ThirdSec .position{
+
+    .ThirdSec .position {
         margin-bottom: 15%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-.ThirdSec img.sec{
-    position: absolute;
-    left: 5%;
-    top: 8%;
-    border-radius: 50%;
-    width: 26vw;
-    height: 26vw;
-    object-fit: cover;
-    display: none;
+
+    .ThirdSec img.sec {
+        position: absolute;
+        left: 5%;
+        top: 8%;
+        border-radius: 50%;
+        width: 26vw;
+        height: 26vw;
+        object-fit: cover;
+        display: none;
     }
-.ThirdSec img.third{
-    position: absolute;
-    right: 3%;
-    bottom: 8%;
-    border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
-    object-fit: cover;
-    display: none;
+
+    .ThirdSec img.third {
+        position: absolute;
+        right: 3%;
+        bottom: 8%;
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        display: none;
 
     }
-    .ThirdSec img.guide{
-    margin-bottom: -8%;
-    margin-left: -28%;
-    width: 15vw;
-    height: auto;
-    object-fit: cover;
+
+    .ThirdSec img.guide {
+        margin-bottom: -8%;
+        margin-left: -28%;
+        width: 15vw;
+        height: auto;
+        object-fit: cover;
     }
-    .ThirdSec .TextBox{
+
+    .ThirdSec .TextBox {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-.ThirdSec .TextBox h2{
-    font-size: 4rem;
-}
-.ThirdSec .TextBox p.p{
-    width: 90%;
-    font-size: 2rem;
-    text-align: center;
-}
+
+    .ThirdSec .TextBox h2 {
+        font-size: 4rem;
+    }
+
+    .ThirdSec .TextBox p.p {
+        width: 90%;
+        font-size: 2rem;
+        text-align: center;
+    }
 
     /* fourth */
-.FourthSec{
-    padding-bottom: 5%;
-}
-.FourthSec img.guide{
-    position: absolute;
-    right: 10%;
-    bottom: 13%;
-    width: 12vw;
-    height: auto;
-}
-.FourthSec .TextBox{
-    margin-top: 3%;
+    .FourthSec {
+        padding-bottom: 5%;
+    }
+
+    .FourthSec img.guide {
+        position: absolute;
+        right: 10%;
+        bottom: 13%;
+        width: 12vw;
+        height: auto;
+    }
+
+    .FourthSec .TextBox {
+        margin-top: 3%;
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.FourthSec .TextBox h2{
-    font-size: 3.5rem;
-}
-.FourthSec .TextBox p{
-    font-size: 2rem;
-    text-align: center;
-}
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.FourthSec .position{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6%;
-    
-}
-.FourthSec .left_img{
-    position: relative;
-    
-}
-.FourthSec .left_img img.first{
-    border-radius: 30px;
-    width: 80vw;
-    height: 45vw;
-    object-fit: cover;
+    .FourthSec .TextBox h2 {
+        font-size: 3.5rem;
+    }
 
-}
-.FourthSec .left_img img.sec{
-    position: absolute;
-    right: -18%;
-    bottom: -3%;
-    border-radius: 50%;
-    width: 18vw;
-    height: 18vw;
-    object-fit: cover;
-    display: none;
-}
+    .FourthSec .TextBox p {
+        font-size: 2rem;
+        text-align: center;
+    }
 
-.FourthSec .right_img{
-    display: none;
-    position: relative;
-    margin-top: 8%;
-    margin-left: 5%;
-}
-.FourthSec .right_img img.third{
-    border-radius: 30px;
-    width: 20vw;
-    height: 28vw;
-    object-fit: cover;
-}
-.FourthSec .right_img img.fourth{
-    position: absolute;
-    left: -30%;
-    top: -38%;
-    border-radius: 50%;
-    width: 14vw;
-    height: 14vw;
-    object-fit: cover;
-    margin-top: 10%;
-}
+    .FourthSec .position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6%;
 
-/* fifth */
+    }
 
+    .FourthSec .left_img {
+        position: relative;
 
-.FifthSec img.guide{
-    position: absolute;
-    left: 12%;
-    bottom: 18%;
-    width: 16vw;
-}
-.FifthSec .TextBox{
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.FifthSec .TextBox h2{
-    font-size: 4rem;
-}
-.FifthSec .TextBox p{
-    font-size: 2rem;
-    text-align: center;
-}
-.FifthSec .position{
-    margin-top: -20%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-    justify-content: center;
-    align-items: center;
-}
-.FifthSec .left_img{
-    position: relative;
-    margin-top: 6%;
-}
-.FifthSec .left_img img.first{
-    border-radius: 30px;
-    width: 80vw;
-    height: 40vw;
-    object-fit: cover;
-}
-.FifthSec .left_img img.sec{
-    position: absolute;
-    right: -8%;
-    top: -20%;
-    border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
-    object-fit: cover;
-    display: none;
+    }
 
-}
-.FifthSec .right_img{
-    display: none;
-    position: relative;
-    margin-left: 5%;
-}
-.FifthSec .right_img img.third{
-    border-radius: 30px;
+    .FourthSec .left_img img.first {
+        border-radius: 30px;
+        width: 80vw;
+        height: 45vw;
+        object-fit: cover;
+
+    }
+
+    .FourthSec .left_img img.sec {
+        position: absolute;
+        right: -18%;
+        bottom: -3%;
+        border-radius: 50%;
+        width: 18vw;
+        height: 18vw;
+        object-fit: cover;
+        display: none;
+    }
+
+    .FourthSec .right_img {
+        display: none;
+        position: relative;
+        margin-top: 8%;
+        margin-left: 5%;
+    }
+
+    .FourthSec .right_img img.third {
+        border-radius: 30px;
         width: 20vw;
-    height: 24vw;
-    object-fit: cover;
-}
-.FifthSec .right_img img.fourth{
-    position: absolute;
-    left: -30%;
-    bottom: 0;
-    border-radius: 50%;
+        height: 28vw;
+        object-fit: cover;
+    }
+
+    .FourthSec .right_img img.fourth {
+        position: absolute;
+        left: -30%;
+        top: -38%;
+        border-radius: 50%;
         width: 14vw;
-    height: 14vw;
-    object-fit: cover;
-}
+        height: 14vw;
+        object-fit: cover;
+        margin-top: 10%;
+    }
 
-/* sixth */
+    /* fifth */
 
 
-.SixSec img.guide{
-    position: absolute;
-    left: 14%;
-    bottom: 15%;
-    transform: scaleX(1);
-    width: 14vw;
-    height: auto;
-}
-.SixSec .position{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    margin-top: 26%;
-    margin-left: 0%;
-}
-.SixSec img.first{
-    border-radius: 30px;
-    width: 80vw;
-    height: 40vw;
-    object-fit: cover;
-}
-.SixSec img.sec{
-    position: absolute;
-    right: 2%;
-    top: 12%;
-    border-radius: 50%;
-    width: 26vw;
-    height: 26vw;
-    object-fit: cover;
-    display: none;
+    .FifthSec img.guide {
+        position: absolute;
+        left: 12%;
+        bottom: 18%;
+        width: 16vw;
+    }
 
-}
-.SixSec img.third{
-    position: absolute;
-    right: 5%;
-    bottom: 12%;
-    border-radius: 30px;
-    width: 28vw;
-    height: 18vw;
-    object-fit: cover;
-    display: none;
-}
-.SixSec .TextBox{
-    padding-top: 2%;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.SixSec .TextBox h2{
-    font-size: 3.8rem;
-}
-.SixSec .TextBox p{
-    font-size: 2rem;
-    text-align: center;
-}
-/* seventh */
-.SevenSec{
-    display: flex;
-    flex-direction: column;
-}
+    .FifthSec .TextBox {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.SevenSec img.guide{
-    position: absolute;
-    right: 10%;
-    bottom: 20%;
-    transform: scaleX(-1);
-    width: 14vw;
-    height: auto;
-}
-.SevenSec img.first{
-    border-radius: 30px;
-    width: 90%;
-    height: 40vw;
-    object-fit: cover;
-}
-.SevenSec .TextBox h2{
-    font-size: 4rem;
-}
-.SevenSec .TextBox p{
-    font-size: 2rem;
-}
-.SevenSec .TextBox{
-    margin-bottom: 8%;
-}
+    .FifthSec .TextBox h2 {
+        font-size: 4rem;
+    }
 
-/* last */
+    .FifthSec .TextBox p {
+        font-size: 2rem;
+        text-align: center;
+    }
 
-.LastSec img.guide{
-    width: 20%;
-}
+    .FifthSec .position {
+        margin-top: -20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
 
-.LastSec .TextBox h2{
-    font-size: 5rem;
-}
-.LastSec .TextBox p{
-    font-size: 2.5rem;
-}
+    .FifthSec .left_img {
+        position: relative;
+        margin-top: 6%;
+    }
 
-button.exit{
-    scale: 1.2;
-}
+    .FifthSec .left_img img.first {
+        border-radius: 30px;
+        width: 80vw;
+        height: 40vw;
+        object-fit: cover;
+    }
 
-.TextBox p{
-    line-height: 160%;
-    white-space: wrap;
-}
+    .FifthSec .left_img img.sec {
+        position: absolute;
+        right: -8%;
+        top: -20%;
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        display: none;
+
+    }
+
+    .FifthSec .right_img {
+        display: none;
+        position: relative;
+        margin-left: 5%;
+    }
+
+    .FifthSec .right_img img.third {
+        border-radius: 30px;
+        width: 20vw;
+        height: 24vw;
+        object-fit: cover;
+    }
+
+    .FifthSec .right_img img.fourth {
+        position: absolute;
+        left: -30%;
+        bottom: 0;
+        border-radius: 50%;
+        width: 14vw;
+        height: 14vw;
+        object-fit: cover;
+    }
+
+    /* sixth */
+
+
+    .SixSec img.guide {
+        position: absolute;
+        left: 14%;
+        bottom: 15%;
+        transform: scaleX(1);
+        width: 14vw;
+        height: auto;
+    }
+
+    .SixSec .position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 26%;
+        margin-left: 0%;
+    }
+
+    .SixSec img.first {
+        border-radius: 30px;
+        width: 80vw;
+        height: 40vw;
+        object-fit: cover;
+    }
+
+    .SixSec img.sec {
+        position: absolute;
+        right: 2%;
+        top: 12%;
+        border-radius: 50%;
+        width: 26vw;
+        height: 26vw;
+        object-fit: cover;
+        display: none;
+
+    }
+
+    .SixSec img.third {
+        position: absolute;
+        right: 5%;
+        bottom: 12%;
+        border-radius: 30px;
+        width: 28vw;
+        height: 18vw;
+        object-fit: cover;
+        display: none;
+    }
+
+    .SixSec .TextBox {
+        padding-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SixSec .TextBox h2 {
+        font-size: 3.8rem;
+    }
+
+    .SixSec .TextBox p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* seventh */
+    .SevenSec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SevenSec img.guide {
+        position: absolute;
+        right: 10%;
+        bottom: 20%;
+        transform: scaleX(-1);
+        width: 14vw;
+        height: auto;
+    }
+
+    .SevenSec img.first {
+        border-radius: 30px;
+        width: 90%;
+        height: 40vw;
+        object-fit: cover;
+    }
+
+    .SevenSec .TextBox h2 {
+        font-size: 4rem;
+    }
+
+    .SevenSec .TextBox p {
+        font-size: 2rem;
+    }
+
+    .SevenSec .TextBox {
+        margin-bottom: 8%;
+    }
+
+    /* last */
+
+    .LastSec img.guide {
+        width: 20%;
+    }
+
+    .LastSec .TextBox h2 {
+        font-size: 5rem;
+    }
+
+    .LastSec .TextBox p {
+        font-size: 2.5rem;
+    }
+
+    button.exit {
+        scale: 1.2;
+    }
+
+    .TextBox p {
+        line-height: 160%;
+        white-space: wrap;
+    }
 }
 
 /* 반응형 모바일 iPhone SE (가로)*/
 @media screen and (max-width:667px) {
+
     /* first */
     .FirstSec .first_img {
         width: 40vw;
         height: auto;
     }
-    .FirstSec h2{
+
+    .FirstSec h2 {
         font-size: 2rem;
     }
 
     /* second */
-    .SecondSec{
+    .SecondSec {
         padding-top: 6%;
     }
-    .SecondSec .guidetext{
-    width: 110%;
-    display: flex;
-    gap: 2%;
+
+    .SecondSec .guidetext {
+        width: 110%;
+        display: flex;
+        gap: 2%;
     }
-    .SecondSec .guidetext p{
+
+    .SecondSec .guidetext p {
         font-size: 1rem;
         width: 110%;
     }
-    .SecondSec img.first{
-    margin-top: 6%;
-    border-radius: 10px;
-    width: 80vw;
-    height: 20vw;
-    object-fit: cover;
+
+    .SecondSec img.first {
+        margin-top: 6%;
+        border-radius: 10px;
+        width: 80vw;
+        height: 20vw;
+        object-fit: cover;
     }
 
     /* third */
 
-    .ThirdSec img.first{
-    margin-top: 0%;
-    margin-left: 3%;
-    width: 50vw;
-    height: 35vw;
-    object-fit: cover;
+    .ThirdSec img.first {
+        margin-top: 0%;
+        margin-left: 3%;
+        width: 50vw;
+        height: 35vw;
+        object-fit: cover;
     }
-    .ThirdSec .position{
+
+    .ThirdSec .position {
         margin-bottom: 0%;
-        flex-direction: row; /* 기본 방향 */
+        flex-direction: row;
+        /* 기본 방향 */
         align-items: center;
         justify-content: center;
     }
-.ThirdSec img.sec{
-    position: absolute;
-    left: 5%;
-    top: 8%;
-    border-radius: 50%;
-    width: 26vw;
-    height: 26vw;
-    object-fit: cover;
-    display: none;
+
+    .ThirdSec img.sec {
+        position: absolute;
+        left: 5%;
+        top: 8%;
+        border-radius: 50%;
+        width: 26vw;
+        height: 26vw;
+        object-fit: cover;
+        display: none;
     }
-.ThirdSec img.third{
-    position: absolute;
-    right: 3%;
-    bottom: 8%;
-    border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
-    object-fit: cover;
-    display: none;
+
+    .ThirdSec img.third {
+        position: absolute;
+        right: 3%;
+        bottom: 8%;
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        display: none;
 
     }
-    .ThirdSec img.guide{
-    margin-bottom: -3%;
-    margin-left: 12%;
-    width: 10vw;
-    height: auto;
-    object-fit: cover;
+
+    .ThirdSec img.guide {
+        margin-bottom: -3%;
+        margin-left: 12%;
+        width: 10vw;
+        height: auto;
+        object-fit: cover;
     }
-    .ThirdSec .TextBox{
+
+    .ThirdSec .TextBox {
         margin-bottom: 10%;
         display: flex;
         flex-direction: column;
         align-items: start;
     }
-.ThirdSec .TextBox h2{
-    font-size: 2rem;
-}
-.ThirdSec .TextBox p.p{
-    width: 90%;
-    font-size: 1rem;
-    text-align: center;
-}
+
+    .ThirdSec .TextBox h2 {
+        font-size: 2rem;
+    }
+
+    .ThirdSec .TextBox p.p {
+        width: 90%;
+        font-size: 1rem;
+        text-align: center;
+    }
 
     /* fourth */
-.FourthSec{
-    padding-bottom: 5%;
-}
-.FourthSec img.guide{
-    position: absolute;
-    right: 2%;
-    bottom: 13%;
-    width: 12vw;
-    height: auto;
-}
-.FourthSec .position{
-    margin-top: 6%;
-}
-.FourthSec .TextBox{
-    margin-top: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    .FourthSec {
+        padding-bottom: 5%;
+    }
+
+    .FourthSec img.guide {
+        position: absolute;
+        right: 2%;
+        bottom: 13%;
+        width: 12vw;
+        height: auto;
+    }
+
+    .FourthSec .position {
+        margin-top: 6%;
+    }
+
+    .FourthSec .TextBox {
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
         margin-bottom: 10%;
 
-}
-.FourthSec .TextBox h2{
-    font-size: 2rem;
-    text-align: left;
-}
-.FourthSec .TextBox p{
-    font-size: 1rem;
-    text-align: left;
-}
+    }
 
-.FourthSec .position{
-    display: flex;
-    flex-direction: row; /* 기본 방향 */
+    .FourthSec .TextBox h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
 
-    align-items: center;
-    gap: 6%;
-    
-}
-.FourthSec .left_img{
-    position: relative;
-    
-}
-.FourthSec .left_img img.first{
-    border-radius: 30px;
-    width: 40vw;
-    height: 37vw;
-    object-fit: cover;
-    margin-left: 5%;
+    .FourthSec .TextBox p {
+        font-size: 1rem;
+        text-align: left;
+    }
 
-}
-.FourthSec .left_img img.sec{
-    position: absolute;
-    right: -18%;
-    bottom: -3%;
-    border-radius: 50%;
-    width: 18vw;
-    height: 18vw;
-    object-fit: cover;
-    display: none;
-}
+    .FourthSec .position {
+        display: flex;
+        flex-direction: row;
+        /* 기본 방향 */
 
-.FourthSec .right_img{
-    display: none;
-    position: relative;
-    margin-top: 8%;
-    margin-left: 5%;
-}
-.FourthSec .right_img img.third{
-    border-radius: 30px;
-    width: 20vw;
-    height: 28vw;
-    object-fit: cover;
-}
-.FourthSec .right_img img.fourth{
-    position: absolute;
-    left: -30%;
-    top: -38%;
-    border-radius: 50%;
-    width: 14vw;
-    height: 14vw;
-    object-fit: cover;
-    margin-top: 10%;
-}
+        align-items: center;
+        gap: 6%;
 
-/* fifth */
+    }
 
+    .FourthSec .left_img {
+        position: relative;
 
-.FifthSec img.guide{
-    position: absolute;
-    left: 85%;
-    bottom: 13%;
-    width: 10vw;
-    transform: scaleX(-1);
-}
-.FifthSec .TextBox{
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-        margin-bottom: 10%;
+    }
 
-}
-.FifthSec .TextBox h2{
-    font-size: 2rem;
-}
-.FifthSec .TextBox p{
-    font-size: 1rem;
-    text-align: center;
-}
-.FifthSec .position{
-    margin-top: 0%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    justify-content: center;
-    align-items: center;
-}
-.FifthSec .left_img{
-    position: relative;
-    margin-top: 2%;
-}
-.FifthSec .left_img img.first{
-    border-radius: 30px;
-    width: 40vw;
-    height: 37vw;
-    object-fit: cover;
-}
-.FifthSec .left_img img.sec{
-    position: absolute;
-    right: -8%;
-    top: -20%;
-    border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
-    object-fit: cover;
-    display: none;
+    .FourthSec .left_img img.first {
+        border-radius: 30px;
+        width: 40vw;
+        height: 37vw;
+        object-fit: cover;
+        margin-left: 5%;
 
-}
-.FifthSec .right_img{
-    display: none;
-    position: relative;
-    margin-left: 5%;
-}
-.FifthSec .right_img img.third{
-    border-radius: 30px;
+    }
+
+    .FourthSec .left_img img.sec {
+        position: absolute;
+        right: -18%;
+        bottom: -3%;
+        border-radius: 50%;
+        width: 18vw;
+        height: 18vw;
+        object-fit: cover;
+        display: none;
+    }
+
+    .FourthSec .right_img {
+        display: none;
+        position: relative;
+        margin-top: 8%;
+        margin-left: 5%;
+    }
+
+    .FourthSec .right_img img.third {
+        border-radius: 30px;
         width: 20vw;
-    height: 24vw;
-    object-fit: cover;
-}
-.FifthSec .right_img img.fourth{
-    position: absolute;
-    left: -30%;
-    bottom: 0;
-    border-radius: 50%;
+        height: 28vw;
+        object-fit: cover;
+    }
+
+    .FourthSec .right_img img.fourth {
+        position: absolute;
+        left: -30%;
+        top: -38%;
+        border-radius: 50%;
         width: 14vw;
-    height: 14vw;
-    object-fit: cover;
-}
+        height: 14vw;
+        object-fit: cover;
+        margin-top: 10%;
+    }
 
-/* sixth */
+    /* fifth */
 
 
-.SixSec img.guide{
-    position: absolute;
-    left: 85%;
-    bottom: 15%;
-    transform: scaleX(-1);
-    width: 12vw;
-    height: auto;
-}
-.SixSec .position{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    margin-top: 11%;
-    margin-left: 0%;
-}
-.SixSec img.first{
-    border-radius: 30px;
-    width: 35vw;
-    height: 37vw;
-    object-fit: cover;
-    margin-left: 3%;
-}
-.SixSec img.sec{
-    position: absolute;
-    right: 2%;
-    top: 12%;
-    border-radius: 50%;
-    width: 26vw;
-    height: 26vw;
-    object-fit: cover;
-    display: none;
+    .FifthSec img.guide {
+        position: absolute;
+        left: 85%;
+        bottom: 13%;
+        width: 10vw;
+        transform: scaleX(-1);
+    }
 
-}
-.SixSec img.third{
-    position: absolute;
-    right: 5%;
-    bottom: 12%;
-    border-radius: 30px;
-    width: 28vw;
-    height: 18vw;
-    object-fit: cover;
-    display: none;
-}
-.SixSec .TextBox{
-    padding-top: 0%;  
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    .FifthSec .TextBox {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 10%;
+
+    }
+
+    .FifthSec .TextBox h2 {
+        font-size: 2rem;
+    }
+
+    .FifthSec .TextBox p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .FifthSec .position {
+        margin-top: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FifthSec .left_img {
+        position: relative;
+        margin-top: 2%;
+    }
+
+    .FifthSec .left_img img.first {
+        border-radius: 30px;
+        width: 40vw;
+        height: 37vw;
+        object-fit: cover;
+    }
+
+    .FifthSec .left_img img.sec {
+        position: absolute;
+        right: -8%;
+        top: -20%;
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        display: none;
+
+    }
+
+    .FifthSec .right_img {
+        display: none;
+        position: relative;
+        margin-left: 5%;
+    }
+
+    .FifthSec .right_img img.third {
+        border-radius: 30px;
+        width: 20vw;
+        height: 24vw;
+        object-fit: cover;
+    }
+
+    .FifthSec .right_img img.fourth {
+        position: absolute;
+        left: -30%;
+        bottom: 0;
+        border-radius: 50%;
+        width: 14vw;
+        height: 14vw;
+        object-fit: cover;
+    }
+
+    /* sixth */
+
+
+    .SixSec img.guide {
+        position: absolute;
+        left: 85%;
+        bottom: 15%;
+        transform: scaleX(-1);
+        width: 12vw;
+        height: auto;
+    }
+
+    .SixSec .position {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 11%;
+        margin-left: 0%;
+    }
+
+    .SixSec img.first {
+        border-radius: 30px;
+        width: 35vw;
+        height: 37vw;
+        object-fit: cover;
+        margin-left: 3%;
+    }
+
+    .SixSec img.sec {
+        position: absolute;
+        right: 2%;
+        top: 12%;
+        border-radius: 50%;
+        width: 26vw;
+        height: 26vw;
+        object-fit: cover;
+        display: none;
+
+    }
+
+    .SixSec img.third {
+        position: absolute;
+        right: 5%;
+        bottom: 12%;
+        border-radius: 30px;
+        width: 28vw;
+        height: 18vw;
+        object-fit: cover;
+        display: none;
+    }
+
+    .SixSec .TextBox {
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
         margin-bottom: 8%;
 
-}
-.SixSec .TextBox h2{
-    font-size: 2rem;
-}
-.SixSec .TextBox p{
-    font-size: 1rem;
-    text-align: left;
-}
-/* seventh */
-.SevenSec{
-    display: flex;
-    flex-direction: row;
-    padding-top: 3%;
-}
+    }
 
-.SevenSec img.guide{
-    position: absolute;
-    right: 3%;
-    bottom: 13%;
-    transform: scaleX(-1);
-    width: 12vw;
-    height: auto;
-}
-.SevenSec img.first{
-    border-radius: 30px;
-    width: 32vw;
-    height: 37vw;
-    object-fit: cover;
-}
-.SevenSec .TextBox h2{
-    font-size: 2rem;
-}
-.SevenSec .TextBox p{
-    font-size: 1rem;
-}
-.SevenSec .TextBox{
-    margin-bottom: 8%;
-}
+    .SixSec .TextBox h2 {
+        font-size: 2rem;
+    }
 
-/* last */
+    .SixSec .TextBox p {
+        font-size: 1rem;
+        text-align: left;
+    }
 
-.LastSec img.guide{
-    width: 20%;
-}
+    /* seventh */
+    .SevenSec {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3%;
+    }
 
-.LastSec .TextBox h2{
-    font-size: 2rem;
-}
-.LastSec .TextBox p{
-    font-size: 1.3rem;
-}
+    .SevenSec img.guide {
+        position: absolute;
+        right: 3%;
+        bottom: 13%;
+        transform: scaleX(-1);
+        width: 12vw;
+        height: auto;
+    }
 
-button.exit{
-    scale: 1.2;
-    font-size: 1rem;
-}
+    .SevenSec img.first {
+        border-radius: 30px;
+        width: 32vw;
+        height: 37vw;
+        object-fit: cover;
+    }
 
-.TextBox p{
-    line-height: 160%;
-    white-space: wrap;
-}
-.scroll-hint.n2{
-scale: 0.8;
-}
+    .SevenSec .TextBox h2 {
+        font-size: 2rem;
+    }
 
-.swiper-pagination-bullet {
-  background: #000;
-  opacity: 0.5;
-  transition: 0.3s;
-    width: 10px !important;
-  height: 10px !important;
-  background-color: #ffa920 !important; /* orange-300 */
-}
+    .SevenSec .TextBox p {
+        font-size: 1rem;
+    }
+
+    .SevenSec .TextBox {
+        margin-bottom: 8%;
+    }
+
+    /* last */
+
+    .LastSec img.guide {
+        width: 20%;
+    }
+
+    .LastSec .TextBox h2 {
+        font-size: 2rem;
+    }
+
+    .LastSec .TextBox p {
+        font-size: 1.3rem;
+    }
+
+    button.exit {
+        scale: 1.2;
+        font-size: 1rem;
+    }
+
+    .TextBox p {
+        line-height: 160%;
+        white-space: wrap;
+    }
+
+    .scroll-hint.n2 {
+        scale: 0.8;
+    }
+
+    .swiper-pagination-bullet {
+        background: #000;
+        opacity: 0.5;
+        transition: 0.3s;
+        width: 10px !important;
+        height: 10px !important;
+        background-color: #ffa920 !important;
+        /* orange-300 */
+    }
 }

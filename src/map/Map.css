@@ -284,4 +284,20 @@
         /* height: 24vw; */
     }
 
+    .InfoCard .InfoCard_top .p3 {
+        font-size: 13px;
+    }
+
+    .InfoCard.eventMode .p2 {
+        line-height: 130% !important;
+        font-size: 13px !important;
+    }
+
+    .event-text .click-label {
+        font-size: 17px;
+    }
+
+    .event-text  .chance{
+        font-size: 14px;
+    }
 }
