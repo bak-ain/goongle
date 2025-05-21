@@ -1,0 +1,476 @@
+.NipChange {
+    display: flex;
+}
+.NipChange .Header{
+    position: fixed;
+}
+
+section.nip_box {
+  width: 100%;
+  background: url(../img/nip_bg.png);
+  overflow-x: hidden;
+}
+
+
+
+.ticket {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ticket h2 {
+  padding-top: 60px;
+  padding-bottom: 95px;
+}
+
+.menu {
+  width: 62vw;
+  /* 1191px 기준 */
+  height: 3.18vw;
+  /* 61px 기준 */
+
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*   padding: 0;
+  margin: 0; */
+}
+
+nav.menu ul li {
+  position: relative;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+nav.menu ul li::after {
+  content: '';
+  width: 9.33vw;
+  height: 0.3vw;
+  background-color: #2B475D;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+nav.menu ul li:hover::after,
+nav.menu ul li.active::after {
+  transform: translateX(-50%) scaleX(1);
+  /* hover 또는 active 시 보이게 */
+}
+
+.list {
+  width: 100%;
+  max-width: 960px;
+  /* 작은 화면에서는 100%로 줄어듦 */
+  /* 최대 너비 고정 (예: 46.04vw ≒ 960px @1920px 기준) */
+  padding: 50px 0;
+}
+
+.list ul {
+  width: 100%;
+  height: 1200px;
+  position: relative;
+}
+
+.list ul>li {
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  /* background: #ccc; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.list ul>li.active {
+  display: flex;
+
+}
+
+
+.ticket_box {
+  /* background: yellow; */
+  margin-top: 60px;
+  height: auto;
+  /* 높이는 내용이나 비율로 조절 */
+  width: 100%;
+  aspect-ratio: 960 / 220;
+  /* 원래 비율 유지 (11.46vw ≒ 220px일 경우) */
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.NipChange .img_box {
+  flex: 1;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+ 
+  /* background: #ccc; */
+  overflow: hidden;
+  position: relative;
+}
+
+.NipChange .img_box img {
+  height: 100%;
+  position: absolute;
+  right: 0; top: 0;
+}
+
+.center {
+  flex: 0 0 65%;
+  width: 29.69vw;
+  height: 100%;
+  background-image: url(../img/tic_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+
+.center_txt {
+  /* padding-right: 3.125vw; */
+  flex: 2;
+}
+
+.center h3 {
+  padding-bottom: 15px;
+}
+
+.center_txt p {
+  padding-bottom: 50px;
+
+}
+
+.right {
+  flex: 1;
+  /* padding-left: 120px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right button {
+  width: 9.25rem;
+  height: 2.875rem;
+  color: #fff;
+  border-radius: 20px;
+  background: #2B475D;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1450px) {
+    .ticket_box {
+        width: 55rem;
+        height: 12rem;
+    }
+
+
+}
+
+
+
+
+/* 1024px 태블릿  */
+@media screen and (max-width: 1024px) {
+
+.list ul{
+    height: 1100px;
+}
+    .menu {
+        width: 80vw;
+        height: 3vw;
+
+    }
+
+    nav.menu ul li::after {
+        width: 13.58vw;
+        height: 0.4vw;
+    }
+
+         .center_txt h3 {
+        font-size: 1.25rem;
+    }
+
+    .center_txt p {
+        font-size: 1.1rem;
+    }
+
+    .center_txt strong {
+        font-size: 1.25rem;
+    }
+
+    .right button {
+        width: 7.75rem;
+        height: 2.875rem;
+    }
+
+    .ticket_box {
+
+        width: 85vw;
+        height: 19vw;
+    }
+.right {
+    padding-left: 0px;
+}
+.img_box img {
+    width: 90%;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 970px) {
+    .center button.n2 {
+        font-size: 1.1rem;
+    }
+
+    .right button {
+        width: 6.75rem;
+        height: 2.875rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 890px) {
+    .center h3 {
+        font-size: 1.2rem;
+
+    }
+
+    .center_txt strong {
+        font-size: 1.1rem;
+    }
+
+    .center_txt p {
+        font-size: 0.9rem;
+        padding-bottom: 35px;
+    }
+
+
+
+}
+
+
+/* 768px 태블릿  */
+@media screen and (max-width: 768px) {
+    .ticket h2 {
+        font-size: 2rem;
+    }
+
+    .menu ul {
+        font-size: 1.125rem;
+    }
+
+    .center h3 {
+        font-size: 1rem;
+
+    }
+
+    .center_txt strong {
+        font-size: 1rem;
+    }
+
+    .center_txt p {
+        font-size: 0.9rem;
+        padding-bottom: 35px;
+    }
+
+    .right button {
+
+        width: 6rem;
+        height: 4.91vw;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 740px) {
+    .NipChange{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .center button.n2 {
+        font-size: 1rem;
+    }
+
+    .right button {
+
+        width: 5rem;
+        height: 4.5vw;
+    }
+
+}
+
+@media screen and (max-width: 615px) {
+
+    .center h3 {
+        font-size: 1rem;
+
+    }
+
+    .center_txt strong {
+        font-size: 1rem;
+    }
+
+    .center_txt p {
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+/* 530px  */
+@media screen and (max-width: 530px) {
+   
+
+    .ticket h2 {
+        padding-bottom: 35px;
+        font-size: 1.5625rem;
+    }
+
+    .menu ul {
+        font-size: 0.8125rem;
+    }
+
+    .center h3 {
+        font-size: 0.8125rem;
+
+    }
+
+    .center_txt strong {
+        font-size: 0.8125rem;
+    }
+
+    .center_txt p {
+        font-size: 0.75rem;
+        padding-bottom: 15px;
+    }
+
+    .ticket_box {
+        width: 28rem;
+        height: 7rem;
+    }
+
+ 
+
+   .right button {
+        font-size: 0.875rem !important;
+        width: 4.9rem;
+        height: 5.62vw;
+        ;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+     .ticket_box {
+        padding-left: 0;
+        margin-top: 30px;
+        width: 25.5rem;
+height: 6.75rem;
+    }
+.list {
+  
+    padding: 30px 0;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 430px) {
+
+    .ticket h2 {
+    padding-top: 40px;
+   
+}
+    .ticket_box {
+     width: 23.5rem;
+    height: 6.2rem;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .menu {
+        width: 90vw;
+        height: 3vw;
+
+    }
+}
+
+
+/* 375px 태블릿  */
+@media screen and (max-width: 375px) {
+     .gnb {
+        display: none;
+    }
+      .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    right: -325px;
+  }
+        .ticket h2 {
+        padding-top: 65px;
+    }
+
+
+ .center_txt p {
+        font-size: 0.7rem;
+        padding-bottom: 15px;
+    }
+
+      .ticket_box {
+     width: 22.5rem;
+    height: 6.2rem;
+    }
+
+    
+    .right button {
+        width: 4.2rem;
+        height: 6.62vw;
+        ;
+    }
+    .list {
+    padding: 20px 0;
+}
+
+}

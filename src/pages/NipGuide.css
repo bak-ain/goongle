@@ -4,18 +4,18 @@
 .NipGuide .Header{
     position: fixed;
 }
-.menu-icon {
+.NipGuide .menu-icon {
     display: none;
 }
 
-section.nip_box {
+.NipGuide section.nip_box {
     width: 100%;
     height: auto;
     background: url(../img/nip_bg.png) no-repeat center/cover;
     overflow-x: hidden;
 }
 
-.b_txt_box {
+.NipGuide .b_txt_box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,20 +25,20 @@ section.nip_box {
 
 }
 
-.txt_box {
+.NipGuide .txt_box {
     /* overflow: hidden; */
     display: flex;
     flex-direction: column;
 
 }
 
-.txt_box h2 {
+.NipGuide .txt_box h2 {
     color: #333;
     padding-top: 65px;
     padding-bottom: 35px;
 }
 
-.txt_box .p_box {
+.NipGuide .txt_box .p_box {
     border-radius: 100px;
     width: 660px;
     height: 90px;
@@ -49,7 +49,7 @@ section.nip_box {
     background-color: #2B475D;
 }
 
-.txt_box .p_box p {
+.NipGuide .txt_box .p_box p {
     font-family: 'MaruBuri';
     font-size: 1.2em;
     font-weight: 600;
@@ -69,17 +69,17 @@ section.nip_box {
 
 }
 
-.txt_box h3 {
+.NipGuide .txt_box h3 {
     color: #333;
     padding-top: 60px;
     font-size: 32.00px;
 }
 
-.txt_box h3 b {
+.NipGuide .txt_box h3 b {
     font-weight: 300;
 }
 
-.txt_box p {
+.NipGuide .txt_box p {
     font-family: 'MaruBuri';
     line-height: 1.4;
     font-size: 20px;
@@ -90,7 +90,7 @@ section.nip_box {
     padding-top: 15px;
 }
 
-.nip_box {
+.NipGuide .nip_box {
     color: #333;
     background: url(../img/txt_bg.png)no-repeat center/cover;
     width: 863px;
@@ -101,7 +101,7 @@ section.nip_box {
     align-items: center;
 }
 
-.container {
+.NipGuide .container {
     width: 570px;
     height: 826px;
     display: flex;
@@ -115,23 +115,23 @@ section.nip_box {
 
 }
 
-.container article {
+.NipGuide .container article {
     width: 70%;
 }
 
-.container .section1 .das {
+.NipGuide .container .section1 .das {
     width: 90%;
     height: 1px;
     background-image: url(../img/Line.png);
 }
 
-.container .section2 .das {
+.NipGuide .container .section2 .das {
     width: 90%;
     height: 1px;
     background-image: url(../img/Line.png);
 }
 
-.container .section3 .das {
+.NipGuide .container .section3 .das {
     width: 90%;
     height: 1px;
     background-image: url(../img/Line.png);
@@ -139,20 +139,20 @@ section.nip_box {
 
 
 
-.container strong {
+.NipGuide .container strong {
     font-weight: 600;
 }
 
-.container h3 {
+.NipGuide .container h3 {
     padding-bottom: 15px;
 
 }
 
-.container h3 b {
+.NipGuide .container h3 b {
     font-weight: 400;
 }
 
-/* .container .section1 {
+.NipGuide /* .container .section1 {
     width: 420px;
     height: 115px;
     display: flex;
@@ -160,42 +160,42 @@ section.nip_box {
     align-items: center;
 }
 
-.container .section2 {
+.NipGuide .container .section2 {
     width: 415px;
     height: 136px;
 }
 
-.container .section3 {
+.NipGuide .container .section3 {
     width: 415px;
     height: 110px;
 }
 
-.container .section4 {
+.NipGuide .container .section4 {
     width: 505px;
     height: 122px;
 }
  */
-/* .container .section4 ul li.set {
+.NipGuide /* .container .section4 ul li.set {
     text-align: center;
     background: #AFAAAA;
 } */
 
-.container .section strong {
+.NipGuide .container .section strong {
     font-weight: 600;
 }
 
 
-.container ul {
+.NipGuide .container ul {
     padding-top: 15px;
     line-height: 1.6;
 }
 
-.container ul li {
+.NipGuide .container ul li {
     text-align: left;
     list-style-type: disc;
 }
 
-.container ul li.not {
+.NipGuide .container ul li.not {
     font-size: 16px;
     list-style: none;
 
@@ -203,11 +203,11 @@ section.nip_box {
 
 /* 1024px 태블릿  */
 @media screen and (max-width: 1024px) {
-    .container article {
+    .NipGuide .container article {
         margin-left: 2vw;
     }
 
-    .gnb {
+    .NipGuide .gnb {
         width: 1024.00px;
         height: 100.00px;
         position: fixed;
@@ -219,7 +219,7 @@ section.nip_box {
         left: auto;
     }
 
-    .nip_box {
+    .NipGuide .nip_box {
         padding-bottom: 128.00px;
     }
 }
@@ -229,18 +229,18 @@ section.nip_box {
 
 /* 900 태블릿 */
 @media screen and (max-width: 900px) {
-    .nip_box {
+    .NipGuide .nip_box {
         width: 95vw;
         height: 105vw;
     }
 
-    .container {
+    .NipGuide .container {
         width: 47vw;
         height: 90vw;
         padding-top: 65px;
     }
 
-    .container article {
+    .NipGuide .container article {
         width: 95%;
     }
 
@@ -248,7 +248,7 @@ section.nip_box {
 
 /* 836 태블릿 */
 @media screen and (max-width: 836px) {
-    .container ul {
+    .NipGuide .container ul {
         font-size: 16.00px;
 
     }
@@ -261,51 +261,51 @@ section.nip_box {
 @media screen and (max-width: 800px) {
 
 
-    .txt_box h2 {
+    .NipGuide .txt_box h2 {
         font-size: 32px;
     }
 
-    .txt_box .p_box p {
+    .NipGuide .txt_box .p_box p {
         font-size: 16px;
         width: 60.8vw;
         height: 7vh;
     }
 
-    .txt_box .p_box {
+    .NipGuide .txt_box .p_box {
         width: 65vw;
         height: 9vh;
     }
 
-    .txt_box h3 {
+    .NipGuide .txt_box h3 {
         font-size: 25.60px;
     }
 
-    .txt_box p {
+    .NipGuide .txt_box p {
         font-size: 18px;
     }
 
 
-    .nip_box {
+    .NipGuide .nip_box {
         width: 100vw;
         height: 110vw;
     }
 
-    .container {
+    .NipGuide .container {
         width: 60vw;
         height: 90vw;
         padding-top: 65px;
     }
 
-    .container h3 {
+    .NipGuide .container h3 {
         font-size: 20.00px;
     }
 
-    .container ul {
+    .NipGuide .container ul {
         font-size: 16.00px;
 
     }
 
-    .container article {
+    .NipGuide .container article {
         width: 45vw;
     }
 
@@ -315,13 +315,13 @@ section.nip_box {
 
 /* 760 태블릿 */
 @media screen and (max-width: 760px) {
-    .container {
+    .NipGuide .container {
 
         width: 40vw;
         height: 90vw;
     }
 
-    .container ul {
+    .NipGuide .container ul {
 
         line-height: 1.4;
     }
@@ -331,12 +331,12 @@ section.nip_box {
 
 /* 700 */
 @media screen and (max-width: 700px) {
-    .container {
+    .NipGuide .container {
         width: 35vw;
         height: 90vw;
     }
 
-    .container ul {
+    .NipGuide .container ul {
         line-height: 1.4;
     }
 }
@@ -344,7 +344,7 @@ section.nip_box {
 
 /* 698 */
 @media screen and (max-width: 698px) {
-    .container {
+    .NipGuide .container {
         width: 40vw;
         height: 75vw;
     }
@@ -355,26 +355,26 @@ section.nip_box {
 @media screen and (max-width: 650px) {
 
 
-    .txt_box .p_box p {
+    .NipGuide .txt_box .p_box p {
 
         font-size: 14.00px;
     }
 
-    .txt_box h3 {
+    .NipGuide .txt_box h3 {
         font-size: 22.40px;
     }
 
-    .nip_box {
+    .NipGuide .nip_box {
         width: 85vw;
         height: 90vw;
     }
 
-    .nip_box {
+    .NipGuide .nip_box {
         width: 100vw;
         height: 110vw;
     }
 
-    .container {
+    .NipGuide .container {
         width: 60vw;
         height: 90vw;
     }
@@ -384,21 +384,21 @@ section.nip_box {
 
 /* 630 */
 @media screen and (max-width: 630px) {
-    .container h3 {
+    .NipGuide .container h3 {
         font-size: 17.60px;
     }
 
-    .container ul {
+    .NipGuide .container ul {
         font-size: 14.40px;
     }
 
 
-    .nip_box {
+    .NipGuide .nip_box {
         width: 100vw;
         height: 110vw;
     }
 
-    .container {
+    .NipGuide .container {
         width: 70vw;
         height: 90vw;
     }
@@ -407,12 +407,12 @@ section.nip_box {
 
 /* 617 */
 @media screen and (max-width: 617px) {
-    .txt_box .p_box {
+    .NipGuide .txt_box .p_box {
         width: 68vw;
         height: 8.5vh;
     }
 
-    .txt_box .p_box p {
+    .NipGuide .txt_box .p_box p {
         width: 64vw;
         height: 6vh;
     }
@@ -422,13 +422,13 @@ section.nip_box {
 /* 570 */
 @media screen and (max-width: 570px) {
 
-    .container {
+    .NipGuide .container {
 
         width: 90%;
         height: 100%;
     }
 
-    .nip_box {
+    .NipGuide .nip_box {
         width: 95vw;
         height: 130vw;
         background-image: url(../img/txt_bg_sm.png);
@@ -439,7 +439,7 @@ section.nip_box {
 
 /* 548 */
 @media screen and (max-width: 570px) {
-    .txt_box .p_box p {
+    .NipGuide .txt_box .p_box p {
         font-size: 12.80px;
     }
 }
@@ -450,55 +450,55 @@ section.nip_box {
 /* 524 모바일일 */
 @media screen and (max-width: 524px) {
 
-    .container article {
+    .NipGuide .container article {
         width: 68vw;
         margin-left: 4vw;
     }
 
-    .txt_box h2 {
+    .NipGuide .txt_box h2 {
         font-size: 25px;
     }
 
-    .txt_box .p_box {
+    .NipGuide .txt_box .p_box {
         width: 90vw;
         height: 9vh;
     }
 
-    .txt_box .p_box p {
+    .NipGuide .txt_box .p_box p {
         font-size: 13px;
         width: 85vw;
         height: 7vh;
     }
 
-    .txt_box h3 {
+    .NipGuide .txt_box h3 {
         padding-top: 40px;
         font-size: 18px;
     }
 
-    .txt_box p {
+    .NipGuide .txt_box p {
         font-size: 16px;
         padding-bottom: 40px
     }
 
-    .nip_box {
+    .NipGuide .nip_box {
         width: 95vw;
         height: 130vw;
         background: url(../img/txt_bg_sm.png)no-repeat center/cover;
     }
 
-    .container {
+    .NipGuide .container {
         padding-top: 40px;
         width: 100vw;
         height: 115vw;
 
     }
 
-    .container h3 {
+    .NipGuide .container h3 {
         font-size: 16px;
         padding-bottom: 10px;
     }
 
-    .container ul {
+    .NipGuide .container ul {
 
         padding-top: 10px;
         font-size: 14px;
@@ -511,7 +511,7 @@ section.nip_box {
 
 
 @media screen and (max-width: 400px) {
-    .container {
+    .NipGuide .container {
 
         width: 90vw;
         height: auto;
@@ -524,7 +524,7 @@ section.nip_box {
 }
 
 @media screen and (max-width: 390px) {
-    .container article {
+    .NipGuide .container article {
         width: 68vw;
 
     }
@@ -532,11 +532,11 @@ section.nip_box {
 
 /* 375 모바일일 */
 @media screen and (max-width: 375px) {
-    .gnb {
+    .NipGuide .gnb {
         display: none;
     }
 
-    .menu-icon {
+    .NipGuide .menu-icon {
         display: block;
         font-size: 24px;
         cursor: pointer;
@@ -546,26 +546,26 @@ section.nip_box {
 
     }
 
-    .container {
+    .NipGuide .container {
         width: 280.00px;
         height: 83.00px;
 
     }
 
-    .container h3 {
+    .NipGuide .container h3 {
         font-size: 14.40px;
     }
 
-    .container ul {
+    .NipGuide .container ul {
         font-size: 12.00px;
     }
 
-    .txt_box .p_box p {
+    .NipGuide .txt_box .p_box p {
         font-size: 12.00px;
         margin-left: 0;
     }
 
-    .txt_box p {
+    .NipGuide .txt_box p {
         margin-left: 20px;
         width: 283.86px;
         font-size: 16.00px;
@@ -575,11 +575,11 @@ section.nip_box {
 
     .txt_box .p_box p {}
 
-    .container {
+    .NipGuide .container {
         gap: 15px;
     }
 
-    .container article {
+    .NipGuide .container article {
         width: 65vw;
 
     }

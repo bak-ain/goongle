@@ -1,0 +1,1137 @@
+.MyPage section.nip_box {
+    width: 100%;
+    height: auto;
+    background: url(../img/nip_bg.png) no-repeat center/cover;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+
+.MyPage section.nip_box h2 {
+    padding-top: 60px;
+    padding-bottom: 95px;
+}
+
+
+.MyPage .name .img_box {
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 255px;
+    background: #fff;
+}
+
+.MyPage .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.MyPage .name p {
+    padding-top: 20px;
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    font-size: 20.0px;
+    text-align: center;
+}
+
+.MyPage .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyPage .name button {
+    border-radius: 30px;
+    color: #fff;
+    width: 167px;
+    height: 46px;
+    background: #2B475D;
+    margin-right: 45px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.MyPage .my_nip {
+    padding-top: 95px;
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.MyPage .nip_title {
+    margin-bottom: 16.0px;
+}
+
+.MyPage .nip_balance_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 줄바꿈 대응 */
+    gap: 16.0px;
+}
+
+.MyPage .nip_balance {
+    margin-top: 25px;
+    margin-left: 60px;
+
+}
+
+.MyPage .nip_balance h4 {
+    font-size: 24.0px;
+
+}
+
+.MyPage .nip_balance b {
+    font-weight: 600;
+}
+
+.MyPage .nip_balance h4 span {
+    margin-left: 10px;
+    color: #F26522;
+    font-weight: bold;
+    font-size: 32.0px;
+}
+
+.MyPage .nip_buttons {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: right;
+    gap: 16.0px;
+}
+
+.MyPage .nip_buttons .n2 {
+    background-color: #2B475D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    min-width: 160px;
+}
+
+
+
+/* 
+.MyPage .my_nip{
+    margin-top: 95px;
+      margin: auto;
+   padding-bottom: 70px;
+   display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16.0px;
+}
+.MyPage .my_nip h4{
+    font-family: "Noto Sans KR";
+font-size: 30px;
+}
+
+.MyPage .my_nip span{
+    font-family: "Noto Sans KR";
+font-size: 35px;
+font-weight: 700;
+    color: #E57032;
+}
+ 
+.MyPage .my_nip button{
+    
+    text-align: center;
+    width: 206px;
+    height: 60px;
+    color: #fff;
+    border-radius: 30px;
+background: #2B475D;
+}
+.MyPage .nip_buttons {
+      display: flex;
+      gap: 16.0px;
+    }
+
+    .MyPage .nip_buttons button {
+      padding: 11.2px 24.0px;
+      cursor: pointer;
+    } */
+.MyPage .yutnori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 230px;
+    width: 1070.0px;
+    height: 167.0px;
+    background: url(../img/bg1.png)no-repeat center/cover;
+}
+
+.MyPage .info_box {
+    text-align: center;
+    color: #222;
+
+
+}
+
+.MyPage .info_box .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.MyPage .info_box .count {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.MyPage .ticket {
+    padding-top: 95px;
+
+}
+
+.MyPage .ticket h3 {
+    padding-bottom: 50px;
+}
+
+.MyPage .tabs {
+
+    display: flex;
+    background-color: #fff;
+    border-radius: 999px;
+    padding: 4px;
+    width: 300px;
+    /* 고정 또는 % 도 가능 */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.MyPage .tab {
+    flex: 1;
+    /* 각각 같은 너비로 */
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+.MyPage .tab.active {
+    background-color: #2b475d;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.MyPage .tab-content {
+    padding-top: 45px;
+}
+
+.MyPage .content p {
+    display: flex;
+    justify-content: center;
+    /* 가로 가운데 정렬 */
+    align-items: center;
+    /* 세로 가운데 정렬 */
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.MyPage .content {
+    width: 1078px;
+    height: 185px;
+    background: url(../img/bg1.png)no-repeat center/cover;
+}
+
+.MyPage .coupon_info {
+    width: 1078px;
+    height: 185px;
+    background: url(../img/tic_bg_box.png)no-repeat center/cover;
+}
+
+.MyPage .coupon_info .text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-top: 20px;
+    justify-content: left;
+    gap: 15px;
+}
+
+.MyPage .coupon_right {
+    gap: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.MyPage .coupon_right button {
+
+    width: 190px;
+    height: 46px;
+    color: #fff;
+    border-radius: 20px;
+    background: #2B475D;
+
+}
+
+.MyPage .tab-content .content {
+    display: none;
+}
+
+.MyPage .tab-content .content.active {
+    display: block;
+}
+
+
+.MyPage .myinfo {
+    max-width: 900px;
+    margin: auto;
+    font-family: "Pretendard", sans-serif;
+    padding: 32.0px;
+}
+
+.MyPage .code h3 {
+    margin-top: 95px;
+    margin-bottom: 20px;
+}
+
+.MyPage form {
+    display: flex;
+    flex-direction: column;
+    gap: 16.0px;
+}
+
+.MyPage label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.MyPage input {
+    width: 1000px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.MyPage input[readonly] {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.MyPage input:focus {
+    /* outline: 1px solid #2b475d; */
+}
+
+.MyPage .edit-btn {
+    margin-bottom: 50px;
+    width: 167px;
+    margin-top: 24.0px;
+    align-self: flex-end;
+    background: #2b475d;
+    color: #fff;
+    padding: 9.6px 19.2px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.MyPage .account_link {
+    width: 1070px;
+    height: 178px;
+    background: url(../img/G_bg.png) no-repeat center/cover;
+    padding: 24.0px;
+    margin-top: 32.0px;
+    border-radius: 10px;
+}
+
+.MyPage .account_nfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MyPage .account-left {
+    display: flex;
+}
+
+.MyPage .right button {
+    color: #fff;
+    width: 167px;
+    height: 46px;
+    border-radius: 30px;
+    background: #2B475D;
+
+}
+
+.MyPage .account-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 1070px;
+    margin: auto;
+
+}
+
+.MyPage .account-header {
+    background: url(../img/G_bg.png) no-repeat center/cover;
+    padding: 16.0px;
+}
+
+.MyPage .account-header h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.MyPage .account-body {
+
+    background: #fff;
+    padding: 24.0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MyPage .account-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.MyPage .account-left img {
+    width: 35px;
+    height: 35px;
+}
+
+.MyPage .account_text {
+    padding-left: 50px;
+    line-height: 1.4;
+}
+
+.MyPage .disconnect_btn {
+    width: 167px;
+    background: #2B475D;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1450px) {
+
+    .MyPage .yutnori {
+        width: 960.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .my_nip {
+        width: 65vw;
+    }
+
+    .MyPage .content {
+        width: 960.0px;
+        height: 208.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 960.0px;
+        height: 160.0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .MyPage input {
+        width: 60vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .MyPage .name .img_box {
+        width: 220px;
+        height: 220px;
+
+    }
+
+    .MyPage .name .img_box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .MyPage .content p {
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 1210px) {
+
+    .MyPage .yutnori {
+        width: 864.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .content {
+        width: 864.0px;
+        height: 176.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 864.0px;
+        height: 144.0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1090px) {
+
+    .MyPage .yutnori {
+        width: 784.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .content {
+        width: 784.0px;
+        height: 176.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 784.0px;
+        height: 128.0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .MyPage .disconnect_btn {
+        width: 167px;
+    }
+}
+
+
+/* 1024px 태블릿  */
+@media screen and (max-width: 1024px) {
+
+    .MyPage .gnb {
+        width: 100vw;
+        height: 9.77vw;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        /* 꼭 초기화해줘야 하는 값들! */
+        top: auto;
+        left: auto;
+        z-index: 10;
+    }
+
+    .MyPage .code {
+        padding-bottom: 100px;
+    }
+
+
+    .MyPage .my_nip {
+        width: 80vw;
+    }
+
+    .MyPage .yutnori {
+        width: 864.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .content {
+        width: 864.0px;
+        height: 176.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 864.0px;
+        height: 144.0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .MyPage input {
+        width: 75vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 970px) {
+    .MyPage .yutnori {
+        width: 800.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .content {
+        width: 800.0px;
+        height: 176.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 800.0px;
+        height: 128.0px;
+
+
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+
+    .MyPage .yutnori {
+        width: 720.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .content {
+        width: 752.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 752.0px;
+        height: 128.0px;
+
+    }
+
+    .MyPage .coupon_right {
+        padding-top: 10px;
+    }
+
+    .MyPage .coupon_right .btn {
+
+        width: 150px;
+        height: 46px;
+
+    }
+
+    .MyPage input {
+        width: 80vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+}
+
+@media screen and (max-width: 847px) {
+
+    .MyPage .nip_buttons {
+        padding-top: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 770px) {
+
+    .MyPage section.nip_box h2 {
+        font-size: 32px;
+    }
+
+    .MyPage .name .btn button {
+        font-size: 17px;
+    }
+
+    .MyPage .nip_balance h4 {
+        font-size: 25px;
+    }
+
+    .MyPage .nip_buttons button {
+        font-size: 17px;
+    }
+
+    .MyPage .yutnori {
+        width: 656.0px;
+        height: 160.0px;
+        gap: 150px;
+    }
+
+    .MyPage .tabs {
+        width: 240px;
+    }
+
+    .MyPage .content {
+        width: 640.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 640.0px;
+        height: 112.0px;
+
+    }
+
+    .MyPage .coupon_right {
+        font-size: 18px;
+    }
+
+    .MyPage .account_text {
+        padding-left: 20px;
+
+    }
+
+    .MyPage .account_text p {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 728px) {
+    .MyPage .disconnect_btn {
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .MyPage .yutnori {
+        width: 624.0px;
+        height: 160.0px;
+
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .MyPage .disconnect_btn {
+        width: 135px;
+        font-size: 16px;
+    }
+
+    .MyPage .account_text p {
+        font-size: 16px;
+    }
+
+    .MyPage .account-left p {
+        font-size: 15px;
+    }
+
+    .MyPage .account-left img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .MyPage input {
+        width: 90vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .MyPage .yutnori {
+        width: 560.0px;
+        height: 160.0px;
+
+    }
+
+    .MyPage .content {
+        width: 560.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 560.0px;
+        height: 96.0px;
+
+    }
+
+    .MyPage .tab-content .h3 {
+        font-size: 19px;
+    }
+
+    .MyPage .text .desc {
+        font-size: 16px;
+    }
+
+    .MyPage .coupon_right .date {
+        font-size: 18px;
+    }
+
+    .MyPage .coupon_right button {
+        font-size: 18px;
+        width: 120px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .MyPage section.nip_box h2 {
+        font-size: 25px;
+    }
+
+    .MyPage .name .img_box {
+        width: 140px;
+        height: 140px;
+    }
+
+    .MyPage .name .img_box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .MyPage .name .btn button {
+        width: 140px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .MyPage .nip_balance h4 {
+        font-size: 20px;
+    }
+
+    .MyPage .nip_balance h4 span {
+        font-size: 28.8px;
+    }
+
+    .MyPage .nip_buttons .n2 {
+        font-size: 16px;
+    }
+
+    .MyPage .code .edit-btn {
+        width: 140px;
+        font-size: 16px;
+
+    }
+
+    .MyPage .yutnori {
+        width: 512.0px;
+        height: 160.0px;
+        gap: 100px;
+    }
+
+    .MyPage .info_box .title {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .MyPage .info_box .count {
+        font-size: 18px;
+    }
+
+    .MyPage .content {
+        width: 512.0px;
+        height: 160.0px;
+    }
+
+    .MyPage .coupon_info {
+        background: url(../img/img_bg_sm.png)no-repeat;
+
+    }
+
+    .MyPage .coupon_right .btn {
+        font-size: 16px;
+        width: 130px;
+        height: 46px;
+    }
+
+    .MyPage .coupon_info .text {
+        padding-left: 100px;
+
+    }
+
+    .MyPage .content p {
+        font-size: 25px;
+    }
+
+    .MyPage .coupon_right {
+        padding-right: 60px;
+    }
+
+    .MyPage .coupon_right .date {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+
+    .MyPage .name button {
+        margin-right: 25px;
+    }
+
+    .MyPage .name .btn button {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .MyPage .nip_buttons .n2 {
+        font-size: 14px;
+        min-width: 120px;
+    }
+
+    .MyPage .yutnori {
+        width: 464.0px;
+        height: 128.0px;
+        gap: 70px;
+    }
+
+    .MyPage .content {
+        width: 464.0px;
+        height: 144.0px;
+
+    }
+
+    .MyPage .content p {
+        font-size: 20px;
+    }
+
+    .MyPage .coupon_right {
+        padding-right: 120px;
+    }
+
+    .MyPage .tab {
+        font-size: 14px;
+    }
+
+    .MyPage .tabs {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .MyPage .coupon_right .btn {
+        font-size: 14px;
+        width: 120px;
+        height: 39px;
+    }
+
+    .MyPage .h3 {
+        font-size: 20px;
+    }
+
+    .MyPage input {
+        font-size: 14px;
+    }
+
+    .MyPage .code .edit-btn {
+        width: 125px;
+        font-size: 14px;
+    }
+
+    .MyPage .account_text {
+        padding-left: 10px;
+    }
+
+    .MyPage .account_text p.n2 {
+        font-size: 13px;
+    }
+
+    .MyPage .disconnect_btn {
+        width: 120px;
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .MyPage .name p {
+        font-size: 17.6px;
+    }
+
+    .MyPage .nip_balance h4 span {
+        font-size: 25.6px;
+    }
+
+    .MyPage .nip_balance h4 {
+        font-size: 18px;
+    }
+
+    .MyPage .ticket h3 {
+        padding-bottom: 35px;
+    }
+
+    .MyPage .my_nip {
+        padding-bottom: 50px;
+    }
+
+    .MyPage .yutnori {
+        width: 416.0px;
+        height: 128.0px;
+        gap: 50px;
+    }
+
+    .MyPage .info_box .title {
+        font-size: 14px;
+    }
+
+    .MyPage .info_box .count {
+        font-size: 16px;
+    }
+
+    .MyPage .content {
+        width: 432.0px;
+        height: 140px;
+    }
+
+    .MyPage .coupon_right {
+        padding-right: 10px;
+    }
+
+    .MyPage .coupon_info {
+        width: 400.0px;
+    }
+
+    .MyPage .account_text p.n2 {}
+
+    .MyPage .account-body {
+        gap: 20.8px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    form {
+        margin-left: 10px;
+    }
+
+    .MyPage .yutnori {
+        width: 384.0px;
+        height: 120.0px;
+        gap: 40px;
+    }
+
+    .MyPage .info_box .title {
+        font-size: 14px;
+    }
+
+    .MyPage .info_box .count {
+        font-size: 16px;
+    }
+
+    .MyPage .content {
+        width: 400.0px;
+        height: 140px;
+    }
+
+    .MyPage .tab-content .h3 {
+        font-size: 17px;
+    }
+
+    .MyPage .text .desc {
+        font-size: 15px;
+    }
+
+    .MyPage .tab-content {
+        padding-top: 35px;
+    }
+
+    .MyPage .coupon_right .date {
+        font-size: 14px;
+    }
+
+    .MyPage .coupon_right {}
+
+    .MyPage .coupon_right .btn {
+        font-size: 13px;
+        width: 110px;
+        height: 35px;
+    }
+}
+
+
+
+@media screen and (max-width: 410px) {
+    .MyPage .yutnori {
+        width: 352.0px;
+        height: 120.0px;
+
+    }
+
+    .MyPage .content {
+        width: 352.0px;
+        height: 120.0px;
+    }
+
+    .MyPage .coupon_info {
+        width: 352.0px;
+    }
+
+    .MyPage .tab-content .h3 {
+        font-size: 16px;
+    }
+
+    .MyPage .text .desc {
+        font-size: 13px;
+    }
+
+    .MyPage .coupon_right .date {
+        font-size: 12px;
+    }
+
+    .MyPage .coupon_info .text {
+
+        padding-top: 15px;
+
+    }
+
+    .MyPage .tabs {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .MyPage .tab {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 383px) {
+
+    .MyPage .code .edit-btn {
+        width: 115px;
+        font-size: 13px;
+    }
+
+    .MyPage .disconnect_btn {
+        font-size: 13px;
+        width: 120px;
+        height: 40px;
+
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .MyPage .gnb {
+        display: none;
+    }
+
+    .MyPage .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        top: 40px;
+        right: -145px;
+    }
+
+}

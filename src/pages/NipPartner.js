@@ -60,18 +60,21 @@ const NipPartner = () => {
           <h2 className="h2">닢의 제휴처</h2>
           <Swiper
             className="Partner_box"
-            spaceBetween={30}
+            spaceBetween={50}
             grabCursor={true}
+            slidesOffsetBefore={80}
+            slidesOffsetAfter={80}
+            // centeredSlides={false}
             breakpoints={{
-              1920: { slidesPerView: 3.5 },
-              1700: { slidesPerView: 2.5 },
+              1920: { slidesPerView: 4.5 },
+              1700: { slidesPerView: 3.5 },
               1400: { slidesPerView: 2.5 },
               1100: { slidesPerView: 2.4 },
               1024: { slidesPerView: 2.3 },
-              800:  { slidesPerView: 2.3 },
-              700:  { slidesPerView: 2.2 },
-              628:  { slidesPerView: 2 },
-              0:    { slidesPerView: 1.2 },
+              800: { slidesPerView: 2.3 },
+              700: { slidesPerView: 2.2 },
+              628: { slidesPerView: 2 },
+              0: { slidesPerView: 1.2 },
             }}
           >
             {partnerList.concat(partnerList).map((partner, index) => (

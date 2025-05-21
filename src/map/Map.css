@@ -5,6 +5,8 @@
     gap: 5vw;
     position: relative;
     height: 100vh;
+    /* width: calc(100% - 100px);
+    margin-left: 100px; */
     /* padding-bottom: 2vw; */
 }
 
@@ -179,7 +181,9 @@
         height: 100vh;
         /* gap: 3vw; */
     }
-
+    .Board{
+        z-index: 99;
+    }
     .Map .Map_left {
         gap: 4vw;
     }

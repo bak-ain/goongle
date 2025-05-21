@@ -1,26 +1,30 @@
-.NipPartner{
-    display: flex;
+.NipPartner {
+  display: flex;
 }
-.NipPartner .Header{
-    position: fixed;
+.NipPartner span{
+  white-space: nowrap;
 }
-section.nip_box {
+.NipPartner .Header {
+  position: fixed;
+}
+
+.NipPartner section.nip_box {
   width: 100%;
   height: 100vh;
-  background: url(../img/nip_bg.png) ;
+  background: url(../img/nip_bg.png);
   overflow-x: hidden;
-  padding-left: 80px;
+
 
 }
 
 .Partner {
-   padding-left: 200px;
+  /* padding-left: 200px; */
   color: #333;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
-  
+
 }
 
 .Partner h2 {
@@ -30,38 +34,35 @@ section.nip_box {
 
 .Partner_box {
   width: 100%;
-  height: 40rem;
+  height: 640.0px;
   background-color: #2B475D;
   border-radius: 100px 0px 0px 0px;
   background-image: url(../img/Partner_bg.png);
-/*   background-size: cover; */
+  /*   background-size: cover; */
   background-repeat: no-repeat;
   overflow: hidden;
-  gap: 75px;
   position: relative;
+  margin-left: 10vw;
 }
 
 .swiper-wrapper {
-  display: flex;
   align-items: center;
 }
 
 .Partner_box .txt_box {
-  width: auto !important;
+  /*   width: 100%;
+  max-width: 442px; */
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  height: 26.6875rem;
+  height: 427.0px;
   background-color: #F1E8E5;
   background-image: url(../img/line2.png);
-  background-size: 90% 90% ;
+  background-size: 90% 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.Partner_box .txt_box:first-child {
-  margin-left: 85px;
-}
 
 .Partner_box .txt_box h3 {
   padding-top: 60px;
@@ -83,7 +84,7 @@ section.nip_box {
 }
 
 .Partner_box .txt_box em {
-  font-size: 1.1rem;
+  font-size: 17.6px;
 }
 
 .Partner_box .txt_box p.p {
@@ -91,7 +92,7 @@ section.nip_box {
 }
 
 .Partner_box .txt_box small {
-  font-size: 1.2rem;
+  font-size: 19.2px;
 }
 
 .Partner_box .txt_box .align_left {
@@ -122,12 +123,13 @@ ul.price_list {}
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9375rem;
+  font-size: 15.0px;
   padding-bottom: 14px;
-  
+
 }
-ul.price_list li b{
-  font-size: 1rem;
+
+ul.price_list li b {
+  font-size: 16.0px;
   font-weight: 400;
 }
 
@@ -140,14 +142,8 @@ ul.price_list li b{
   display: block;
   margin-top: 10px;
   color: #777;
-  font-size: 0.8125rem;
+  font-size: 13.0px;
 }
-
-
-@media screen and (max-width: 1099px) {
-  
-}
-
 
 
 
@@ -156,31 +152,30 @@ ul.price_list li b{
 
 @media screen and (max-width: 1158px) {
 
-.Partner_box .txt_box {
-  height: 32vw;
-}
-
-  .Partner_box {
-   
+  .Partner_box .txt_box {
+    height: 32vw;
   }
-    .Partner_box .txt_box h3 {
-       font-size: 1.3rem;
-    }
-   
-    .Partner_box .txt_box span {
-       font-size: 1.1rem;
-    }
-    .Partner_box .txt_box strong {
-        font-size: 1.1rem;
-    }
-     
-     .Partner_box .txt_box b {
-         font-size: 0.9rem;
-     }
-     
-      .Partner_box .txt_box small {
-         font-size: 0.9rem;
-      } 
+
+
+  .Partner_box .txt_box h3 {
+    font-size: 20px;
+  }
+
+  .Partner_box .txt_box span {
+    font-size: 17px;
+  }
+
+  .Partner_box .txt_box strong {
+    font-size: 17px;
+  }
+
+  .Partner_box .txt_box b {
+    font-size: 14px;
+  }
+
+  .Partner_box .txt_box small {
+    font-size: 14px;
+  }
 }
 
 
@@ -189,85 +184,82 @@ ul.price_list li b{
 @media screen and (max-width: 1057px) {
 
 
-   .Partner_box .txt_box h3 {
-        padding-top: 30px;
-            padding-bottom: 15px;
-   }
-    .Partner_box .txt_box span {
-       font-size: 1rem;
-    }
-     .Partner_box .txt_box b {
-         font-size: 0.9rem;
-     }
+  .Partner_box .txt_box h3 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .Partner_box .txt_box span {
+    font-size: 16px;
+  }
+
+  .Partner_box .txt_box b {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1042px) {
 
   .Partner_box .txt_box strong {
-        font-size: 1rem;
-    }
+    font-size: 16px;
+  }
 }
+
 @media screen and (max-width: 1032px) {
   .Partner_box .txt_box b {
-         font-size: 0.8rem;
-     }
+    font-size: 13px;
+  }
 }
 
 
 /* 1024px 태블릿  */
 @media screen and (max-width: 1024px) {
-.gnb {
-    width: 100vw;    
-  height: 9.77vw; 
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    /* 꼭 초기화해줘야 하는 값들! */
-    top: auto;
-    left: auto;
-     z-index: 10;
-  }  
   .Partner {
-    padding-bottom: 6.25rem; /* .gnb 높이만큼 여백 추가 */
+    padding-bottom: 100.0px;
+    /* .gnb 높이만큼 여백 추가 */
   }
+
   .Partner_box {
     background-image: url(../img/Partner_bg_sm.png);
     background-size: contain;
     background-repeat: no-repeat;
-     width: 60vw;
+    width: 60vw;
     height: 50vw;
 
   }
-  .Partner_box .txt_box img{
+
+  .Partner_box .txt_box img {
     width: 33px;
     height: 30px;
   }
+
   .Partner_box .txt_box {
     width: 40%;
-  height: 35vw; 
+    height: 35vw;
   }
+
   .Partner_box {
     width: 100vw;
     max-width: 1024px;
-    margin: 0 auto;
   }
-   
-    
+
+
 
 }
 
 @media screen and (max-width: 840px) {
-.Partner{
-  padding-left: 100px;
- }
- 
-     .Partner_box {
-     height: 30rem;
+  .Partner {
+    /* padding-left: 100px; */
+  }
+
+  .Partner_box {
+    height: 480.0px;
+    margin: 0;
   }
 
   .Partner_box .txt_box {
- height: 20rem;
-    
+    height: 320.0px;
+
   }
 }
 
@@ -277,136 +269,120 @@ ul.price_list li b{
 /* 768px  */
 @media screen and (max-width: 770px) {
 
-    .Partner h2 {
-       font-size: 2rem;
-    }
-    .Partner_box .txt_box h3 {
-       font-size: 1.1rem;
-    }
-    .Partner_box .txt_box span {
-       font-size: 1rem;
-    }
-    .Partner_box .txt_box strong {
-        font-size: 1rem;
-    }
+  .Partner h2 {
+    font-size: 32.0px;
+  }
 
-     .Partner_box .txt_box b {
-         font-size: 0.8rem;
-     }
-      .Partner_box .txt_box small {
-         font-size: 0.9rem;
-      }
+  .Partner_box .txt_box h3 {
+    font-size: 17px;
+  }
 
-    
-     .Partner_box {
-     height: 30rem;
+  .Partner_box .txt_box span {
+    font-size: 16px;
+  }
+
+  .Partner_box .txt_box strong {
+    font-size: 16px;
+  }
+
+  .Partner_box .txt_box b {
+    font-size: 13px;
+  }
+
+  .Partner_box .txt_box small {
+    font-size: 14px;
+  }
+
+
+  .Partner_box {
+    height: 480.0px;
   }
 
   .Partner_box .txt_box {
- height: 20rem;
-    
-  }
-  .Partner_box .txt_box:first-child {
-  
-}
-  .Partner_box .txt_box h3 {
-     
-  }
+    height: 320.0px;
 
+  }
 }
+
 
 
 
 
 @media screen and (max-width: 628px) {
 
-.Partner {
-        padding-left: 50px;
-    }
-  }
-
-
-@media screen and (max-width: 599px) {
-  
-     .Partner_box {
-    
-  }
-
-  .Partner_box .txt_box {
- 
-    
+  .Partner {
+    /* padding-left: 50px; */
   }
 }
 
 /* 580px */
 @media screen and (max-width: 580px) {
- 
-/* 
+
+  /* 
    .Partner h2 {
-      font-size: 1.5625rem;
+      font-size: 25.0px;
     }
     .Partner_box .txt_box h3 {
-       font-size: 1.1rem;
+       font-size: 17.6px;
     }
     .Partner_box .txt_box span {
-        font-size: 1.125rem;
+        font-size: 18.0px;
     }
     .Partner_box .txt_box strong {
-        font-size: 1.125rem;
+        font-size: 18.0px;
     }
 
      .Partner_box .txt_box b {
-         font-size: 0.8rem;
+         font-size: 12.8px;
      }
       .Partner_box .txt_box small {
-         font-size: 0.9rem;
+         font-size: 14.4px;
       } */
-     
-      .Partner {
-         padding-left: 0;
-      }
 
-        .Partner_box {
-     width: 90vw;
-    height:	90vw;
+  .Partner {
+    padding-left: 0;
+  }
+
+  .Partner_box {
+    /* width: 90vw; */
+    height: 90vw;
     background-size: 90vw 90vw;
   }
 
-  .Partner_box .txt_box {
-   
-    
+
+
+  .Partner_box .txt_box img {
+    width: 35px;
+    height: 30px;
   }
-  .Partner_box .txt_box:first-child {
-  margin-left: 45px;
-}
-.Partner_box .txt_box img{
-  width: 35px;
-  height: 30px;
-}
+
   .Partner_box .txt_box h3 {
-      padding-top: 30px;
-  padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 }
 
 
 @media screen and (max-width: 500px) {
-   .Partner_box {
-    
-height: 32.125rem;
-background-size: 24.8rem 32.2rem;
-   }
-}
-@media screen and (max-width: 440px) {
-  section.nip_box {
-        padding-left: 30px;
+  .Partner_box {
+
+    height: 514.0px;
+    background-size: 397px 515px;
   }
+}
+
+@media screen and (max-width: 440px) {
+  .NipPartner section.nip_box {
+    padding-left: 30px;
+  }
+
   .Partner_box .txt_box span {
-  font-size: 0.9rem;
-}
-.Partner_box .txt_box h3 {
-          padding-top: 40px;
-}
+    font-size: 14px;
+  }
+
+  .Partner_box .txt_box h3 {
+    padding-top: 40px;
+  }
 
 }
 
@@ -419,69 +395,65 @@ background-size: 24.8rem 32.2rem;
 /* 396px   */
 @media screen and (max-width: 396px) {
 
-
-   .gnb{
-   display: none;
-  }
-     .Partner h2 {
+  .Partner h2 {
     padding-top: 85px;
     padding-bottom: 45px;
-}
+  }
 
-   
+
 
   .Partner_box {
 
- width: 24.4375rem;
-height: 30rem;
-background-size: 24.8rem 30rem;
+    width: 391.0px;
+    height: 480.0px;
+    background-size: 397px 480.0px;
   }
-      section.nip_box {
-        padding-left: 0;
-    }
-.Partner_box .txt_box h3 {
-font-size: 1.1rem;}
-    .Partner_box {
-              padding-bottom: 0;
-      
-       
-    }
-    .Partner_box .txt_box img{
-      width: 30px;
-      height: 28px;
-    }
-    .Partner_box .txt_box {
-    width: 22.5625rem;
-height: 20rem;}
-.Partner_box .txt_box span {
-  
-}
-.Partner_box .txt_box strong {
-  font-size: 1rem;}
-.Partner_box .txt_box b {
-  font-size: 0.875rem;
+
+  section.nip_box {
+    padding-left: 0;
+  }
+
+  .Partner_box .txt_box h3 {
+    font-size: 17px;
+  }
+
+  .Partner_box {
+    padding-bottom: 0;
+
+
+  }
+
+  .Partner_box .txt_box img {
+    width: 30px;
+    height: 28px;
+  }
+
+  .Partner_box .txt_box {
+    width: 361.0px;
+    height: 320.0px;
+  }
+
+  .Partner_box .txt_box span {}
+
+  .Partner_box .txt_box strong {
+    font-size: 16.0px;
+  }
+
+  .Partner_box .txt_box b {
+    font-size: 14.0px;
+  }
+
+
 }
 
-  
-}
 @media screen and (max-width: 375px) {
-  
-  .menu-icon {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    position: relative;
-    top: 40px;
-   right: -325px;
+
+  .Partner h2 {
+    font-size: 25px;
   }
-      .Partner h2 {
-       font-size: 25px;
-    }
-    .Partner h2 {
+
+  .Partner h2 {
     padding-top: 85px;
     padding-bottom: 45px;
+  }
 }
-}
-
-
-
