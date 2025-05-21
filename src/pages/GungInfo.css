@@ -1349,7 +1349,7 @@ img.guide {
         align-items: center;
         justify-content: center;
         gap: 5%;
-        margin-top: 11%;
+        margin-top: 6%;
         margin-left: 0%;
     }
 
@@ -1840,5 +1840,8 @@ img.guide {
         /* orange-300 */
     }
 }
-
-@media screen and (max-width: 932px) and (orientation: landscape) {}
+@media screen and (max-width: 667px) and (orientation: landscape){
+    .SixSec .position{
+        margin-top: 11%;
+    }
+}
