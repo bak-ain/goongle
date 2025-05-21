@@ -466,6 +466,7 @@ p.desc2{
     justify-content: center;
     align-items: center;
 }
+
 .correct p{
   color: #fff;
   position: absolute;
@@ -475,5 +476,339 @@ p.desc2{
     font-family: "Gapyeong Hanseokbong";
   color: #FFE3B4;
   font-size: 2.2rem;
+}
+}
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+
+    .quiz-wrap {
+    width: 100%;
+    height: 100%;
+     background-color: rgba(4, 4, 4, 0.8);
+    position: fixed;
+    right: 0;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    z-index: 9999;
+}
+  .quiz-box {
+    border-radius: 30px;
+    width: 70%;
+    height: 60%;
+    background-color: #000;
+    background-image: url(../img/quizbk.png);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+h2.question{
+  font-family: "Gapyeong Hanseokbong";
+  color: #fff;
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  font-size: 1.2rem;
+}
+span.q-mark{
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 2.2rem;
+  color: #72B1EF;
+  font-weight: 500;
+  
+}
+
+.marginleft{
+  margin-left: 8%;
+}
+
+p.desc{
+  margin-top: 1.2%;
+    font-family: "Noto Sans KR";
+  color: #fff;
+  font-size: 1rem;
+}
+
+p.desc2{
+  margin-top: 1.2%;
+  font-family: "Noto Sans KR";
+  color: #fff;
+  margin-left: 0.8%;
+}
+
+
+
+.options{
+  margin-top: 5%;
+
+}
+.option{
+  background: none;
+}
+.options button {
+  display: block;
+  margin:  0;
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  text-align: left;
+  transition: 0.6s;
+  
+}
+
+
+
+/* 오답 */
+
+.wrong{
+  position: absolute;
+  left: 50%;
+  top: 43.4%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 60%;
+  border-radius: 30px;
+  background: none;
+   background-color: rgba(4, 4, 4, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.wrong .explanation{
+  width: 50%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrong .explanation h3{
+
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 3rem;
+  color: #FFE3B4;
+  font-weight: 700;
+}
+
+.wrong .explanation p{
+  width: 80%;
+  text-align: center;
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+/* 정답 */
+
+.correct{
+  position: absolute;
+  left: 50%;
+  top: 43.4%;
+  transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    border-radius: 30px;
+     background-color: rgba(4, 4, 4, 0.9); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.correct img{
+  width: 30%;
+  height: auto;
+}
+.correct p{
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    font-family: "Gapyeong Hanseokbong";
+  color: #FFE3B4;
+  font-size: 2.2rem;
+}
+}
+
+
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+
+    .quiz-wrap {
+    width: 100%;
+    height: 100%;
+     background-color: rgba(4, 4, 4, 0.8);
+    position: fixed;
+    right: 0;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    z-index: 9999;
+}
+  .quiz-box {
+    border-radius: 30px;
+    width: 70%;
+    height: 60%;
+    background-color: #000;
+    background-image: url(../img/quizbk.png);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+h2.question{
+  font-family: "Gapyeong Hanseokbong";
+  color: #fff;
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  font-size: 1.2rem;
+}
+span.q-mark{
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 2.2rem;
+  color: #72B1EF;
+  font-weight: 500;
+  
+}
+
+.marginleft{
+  margin-left: 8%;
+}
+
+p.desc{
+  margin-top: 1.2%;
+    font-family: "Noto Sans KR";
+  color: #fff;
+  font-size: 1rem;
+}
+
+p.desc2{
+  margin-top: 1.2%;
+  font-family: "Noto Sans KR";
+  color: #fff;
+  margin-left: 0.8%;
+}
+
+
+
+.options{
+  margin-top: 5%;
+
+}
+.option{
+  background: none;
+}
+.options button {
+  display: block;
+  margin:  0;
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  text-align: left;
+  transition: 0.6s;
+  
+}
+
+
+
+/* 오답 */
+
+.wrong{
+  position: absolute;
+  left: 50%;
+  top: 43.4%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 60%;
+  border-radius: 30px;
+  background: none;
+   background-color: rgba(4, 4, 4, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.wrong .explanation{
+  width: 50%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrong .explanation h3{
+
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 3rem;
+  color: #FFE3B4;
+  font-weight: 700;
+}
+
+.wrong .explanation p{
+  width: 80%;
+  text-align: center;
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+/* 정답 */
+
+.correct{
+  position: absolute;
+  left: 50%;
+  top: 43.4%;
+  transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    border-radius: 30px;
+     background-color: rgba(4, 4, 4, 0.9); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.correct img{
+  width: 30%;
+  height: auto;
+}
+.correct p{
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    font-family: "Gapyeong Hanseokbong";
+  color: #FFE3B4;
+  font-size: 2rem;
+}
+.hint-box{
+  gap: 10%;
+  right: 5%;
+}
+.hint-box .character{
+    width: 45px;
+    height: auto;
+}
+.hint-box .hint{
+  scale: 0.8;
+  width: 60%;
+  text-align: right;
+  border: none;
 }
 }
