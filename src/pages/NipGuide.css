@@ -1,0 +1,1145 @@
+.NipGuide {
+    display: flex;
+}
+
+.menu-icon {
+    display: none;
+}
+
+section.nip_box {
+    width: 100%;
+    height: auto;
+    background: url(../img/nip_bg.png) no-repeat center/cover;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+
+.NipGuide section.nip_box h2 {
+    padding-top: 60px;
+    padding-bottom: 95px;
+}
+
+
+.NipGuide .name .img_box {
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 255px;
+    background: #fff;
+}
+
+.NipGuide .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.NipGuide .name p {
+    padding-top: 20px;
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.NipGuide .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NipGuide .name button {
+    border-radius: 30px;
+    color: #fff;
+    width: 167px;
+    height: 46px;
+    background: #2B475D;
+    margin-right: 45px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.my_nip {
+    padding-top: 95px;
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.nip_title {
+    margin-bottom: 1rem;
+}
+
+.nip_balance_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 줄바꿈 대응 */
+    gap: 1rem;
+}
+
+.nip_balance {
+    margin-top: 25px;
+    margin-left: 60px;
+
+}
+
+.nip_balance h4 {
+    font-size: 1.5rem;
+
+}
+
+.nip_balance b {
+    font-weight: 600;
+}
+
+.nip_balance h4 span {
+    margin-left: 10px;
+    color: #F26522;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nip_buttons {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+
+.nip_buttons .n2 {
+    background-color: #2B475D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    min-width: 160px;
+}
+
+
+
+/* 
+.my_nip{
+    margin-top: 95px;
+      margin: auto;
+   padding-bottom: 70px;
+   display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+}
+.my_nip h4{
+    font-family: "Noto Sans KR";
+font-size: 30px;
+}
+
+.my_nip span{
+    font-family: "Noto Sans KR";
+font-size: 35px;
+font-weight: 700;
+    color: #E57032;
+}
+ 
+.my_nip button{
+    
+    text-align: center;
+    width: 206px;
+    height: 60px;
+    color: #fff;
+    border-radius: 30px;
+background: #2B475D;
+}
+.nip_buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nip_buttons button {
+      padding: 0.7rem 1.5rem;
+      cursor: pointer;
+    } */
+.yutnori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 230px;
+    width: 66.875rem;
+    height: 10.4375rem;
+    background: url(../img/bg1.png)no-repeat center/cover;
+}
+
+.info_box {
+    text-align: center;
+    color: #222;
+
+
+}
+
+.info_box .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info_box .count {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ticket {
+    padding-top: 95px;
+
+}
+
+.ticket h3 {
+    padding-bottom: 50px;
+}
+
+.tabs {
+
+    display: flex;
+    background-color: #fff;
+    border-radius: 999px;
+    padding: 4px;
+    width: 300px;
+    /* 고정 또는 % 도 가능 */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.tab {
+    flex: 1;
+    /* 각각 같은 너비로 */
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tab.active {
+    background-color: #2b475d;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.tab-content {
+    padding-top: 45px;
+}
+
+.content p {
+    display: flex;
+    justify-content: center;
+    /* 가로 가운데 정렬 */
+    align-items: center;
+    /* 세로 가운데 정렬 */
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.content {
+    width: 1078px;
+    height: 185px;
+    background: url(../img/bg1.png)no-repeat center/cover;
+}
+
+.coupon_info {
+    width: 1078px;
+    height: 185px;
+    background: url(../img/tic_bg_box.png)no-repeat center/cover;
+}
+
+.coupon_info .text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-top: 20px;
+    justify-content: left;
+    gap: 15px;
+}
+
+.coupon_right {
+    gap: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.coupon_right button {
+
+    width: 190px;
+    height: 46px;
+    color: #fff;
+    border-radius: 20px;
+    background: #2B475D;
+
+}
+
+.tab-content .content {
+    display: none;
+}
+
+.tab-content .content.active {
+    display: block;
+}
+
+
+.myinfo {
+    max-width: 900px;
+    margin: auto;
+    font-family: "Pretendard", sans-serif;
+    padding: 2rem;
+}
+
+.code h3 {
+    margin-top: 95px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 1000px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[readonly] {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+input:focus {
+    /* outline: 1px solid #2b475d; */
+}
+
+.edit-btn {
+    margin-bottom: 50px;
+    width: 167px;
+    margin-top: 1.5rem;
+    align-self: flex-end;
+    background: #2b475d;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.account_link {
+    width: 1070px;
+    height: 178px;
+    background: url(../img/G_bg.png) no-repeat center/cover;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.account_nfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-left {
+    display: flex;
+}
+
+.right button {
+    color: #fff;
+    width: 167px;
+    height: 46px;
+    border-radius: 30px;
+    background: #2B475D;
+
+}
+
+.account-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 1070px;
+    margin: auto;
+
+}
+
+.account-header {
+    background: url(../img/G_bg.png) no-repeat center/cover;
+    padding: 1rem;
+}
+
+.account-header h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.account-body {
+
+    background: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-left img {
+    width: 35px;
+    height: 35px;
+}
+
+.account_text {
+    padding-left: 50px;
+    line-height: 1.4;
+}
+
+.disconnect_btn {
+    width: 167px;
+    background: #2B475D;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1450px) {
+
+    .yutnori {
+        width: 60rem;
+        height: 10rem;
+    }
+
+    .my_nip {
+        width: 65vw;
+    }
+
+    .content {
+        width: 60rem;
+        height: 13rem;
+    }
+
+    .coupon_info {
+        width: 60rem;
+        height: 10rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    input {
+        width: 60vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .name .img_box {
+        width: 220px;
+        height: 220px;
+
+    }
+
+    .name .img_box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .content p {
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 1210px) {
+
+    .yutnori {
+        width: 54rem;
+        height: 10rem;
+    }
+
+    .content {
+        width: 54rem;
+        height: 11rem;
+    }
+
+    .coupon_info {
+        width: 54rem;
+        height: 9rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1090px) {
+
+    .yutnori {
+        width: 49rem;
+        height: 10rem;
+    }
+
+    .content {
+        width: 49rem;
+        height: 11rem;
+    }
+
+    .coupon_info {
+        width: 49rem;
+        height: 8rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .disconnect_btn {
+        width: 167px;
+    }
+}
+
+
+/* 1024px 태블릿  */
+@media screen and (max-width: 1024px) {
+
+    .gnb {
+        width: 100vw;
+        height: 9.77vw;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        /* 꼭 초기화해줘야 하는 값들! */
+        top: auto;
+        left: auto;
+        z-index: 10;
+    }
+
+    .code {
+        padding-bottom: 100px;
+    }
+
+
+    .my_nip {
+        width: 80vw;
+    }
+
+    .yutnori {
+        width: 54rem;
+        height: 10rem;
+    }
+
+    .content {
+        width: 54rem;
+        height: 11rem;
+    }
+
+    .coupon_info {
+        width: 54rem;
+        height: 9rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    input {
+        width: 75vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 970px) {
+    .yutnori {
+        width: 50rem;
+        height: 10rem;
+    }
+
+    .content {
+        width: 50rem;
+        height: 11rem;
+    }
+
+    .coupon_info {
+        width: 50rem;
+        height: 8rem;
+
+
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+
+    .yutnori {
+        width: 45rem;
+        height: 10rem;
+    }
+
+    .content {
+        width: 47rem;
+        height: 10rem;
+    }
+
+    .coupon_info {
+        width: 47rem;
+        height: 8rem;
+
+    }
+
+    .coupon_right {
+        padding-top: 10px;
+    }
+
+    .coupon_right .btn {
+
+        width: 150px;
+        height: 46px;
+
+    }
+
+    input {
+        width: 80vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+}
+
+@media screen and (max-width: 847px) {
+
+    .nip_buttons {
+        padding-top: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 770px) {
+
+    section.nip_box h2 {
+        font-size: 32px;
+    }
+
+    .name .btn button {
+        font-size: 17px;
+    }
+
+    .nip_balance h4 {
+        font-size: 25px;
+    }
+
+    .nip_buttons button {
+        font-size: 17px;
+    }
+
+    .yutnori {
+        width: 41rem;
+        height: 10rem;
+        gap: 150px;
+    }
+
+    .tabs {
+        width: 240px;
+    }
+
+    .content {
+        width: 40rem;
+        height: 10rem;
+    }
+
+    .coupon_info {
+        width: 40rem;
+        height: 7rem;
+
+    }
+
+    .coupon_right {
+        font-size: 18px;
+    }
+
+    .account_text {
+        padding-left: 20px;
+
+    }
+
+    .account_text p {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 728px) {
+    .disconnect_btn {
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .yutnori {
+        width: 39rem;
+        height: 10rem;
+
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .disconnect_btn {
+        width: 135px;
+        font-size: 16px;
+    }
+
+    .account_text p {
+        font-size: 16px;
+    }
+
+    .account-left p {
+        font-size: 15px;
+    }
+
+    .account-left img {
+        width: 25px;
+        height: 25px;
+    }
+
+    input {
+        width: 90vw;
+        /* 또는 90%, 40vw 등 명시적으로 설정 */
+
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .yutnori {
+        width: 35rem;
+        height: 10rem;
+
+    }
+
+    .content {
+        width: 35rem;
+        height: 10rem;
+    }
+
+    .coupon_info {
+        width: 35rem;
+        height: 6rem;
+
+    }
+
+    .tab-content .h3 {
+        font-size: 19px;
+    }
+
+    .text .desc {
+        font-size: 16px;
+    }
+
+    .coupon_right .date {
+        font-size: 18px;
+    }
+
+    .coupon_right button {
+        font-size: 18px;
+        width: 120px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    section.nip_box h2 {
+        font-size: 25px;
+    }
+
+    .name .img_box {
+        width: 140px;
+        height: 140px;
+    }
+
+    .name .img_box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name .btn button {
+        width: 140px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .nip_balance h4 {
+        font-size: 20px;
+    }
+
+    .nip_balance h4 span {
+        font-size: 1.8rem;
+    }
+
+    .nip_buttons .n2 {
+        font-size: 16px;
+    }
+
+    .code .edit-btn {
+        width: 140px;
+        font-size: 16px;
+
+    }
+
+    .yutnori {
+        width: 32rem;
+        height: 10rem;
+        gap: 100px;
+    }
+
+    .info_box .title {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .info_box .count {
+        font-size: 18px;
+    }
+
+    .content {
+        width: 32rem;
+        height: 10rem;
+    }
+
+    .coupon_info {
+        background: url(../img/img_bg_sm.png)no-repeat;
+
+    }
+
+    .coupon_right .btn {
+        font-size: 16px;
+        width: 130px;
+        height: 46px;
+    }
+
+    .coupon_info .text {
+        padding-left: 100px;
+
+    }
+
+    .content p {
+        font-size: 25px;
+    }
+
+    .coupon_right {
+        padding-right: 60px;
+    }
+
+    .coupon_right .date {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+
+    .name button {
+        margin-right: 25px;
+    }
+
+    .name .btn button {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .nip_buttons .n2 {
+        font-size: 14px;
+        min-width: 120px;
+    }
+
+    .yutnori {
+        width: 29rem;
+        height: 8rem;
+        gap: 70px;
+    }
+
+    .content {
+        width: 29rem;
+        height: 9rem;
+
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .coupon_right {
+        padding-right: 120px;
+    }
+
+    .tab {
+        font-size: 14px;
+    }
+
+    .tabs {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .coupon_right .btn {
+        font-size: 14px;
+        width: 120px;
+        height: 39px;
+    }
+
+    .h3 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .code .edit-btn {
+        width: 125px;
+        font-size: 14px;
+    }
+
+    .account_text {
+        padding-left: 10px;
+    }
+
+    .account_text p.n2 {
+        font-size: 13px;
+    }
+
+    .disconnect_btn {
+        width: 120px;
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .name p {
+        font-size: 1.1rem;
+    }
+
+    .nip_balance h4 span {
+        font-size: 1.6rem;
+    }
+
+    .nip_balance h4 {
+        font-size: 18px;
+    }
+
+    .ticket h3 {
+        padding-bottom: 35px;
+    }
+
+    .my_nip {
+        padding-bottom: 50px;
+    }
+
+    .yutnori {
+        width: 26rem;
+        height: 8rem;
+        gap: 50px;
+    }
+
+    .info_box .title {
+        font-size: 14px;
+    }
+
+    .info_box .count {
+        font-size: 16px;
+    }
+
+    .content {
+        width: 27rem;
+        height: 140px;
+    }
+
+    .coupon_right {
+        padding-right: 10px;
+    }
+
+    .coupon_info {
+        width: 25rem;
+    }
+
+    .account_text p.n2 {}
+
+    .account-body {
+        gap: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    form {
+        margin-left: 10px;
+    }
+
+    .yutnori {
+        width: 24rem;
+        height: 7.5rem;
+        gap: 40px;
+    }
+
+    .info_box .title {
+        font-size: 14px;
+    }
+
+    .info_box .count {
+        font-size: 16px;
+    }
+
+    .content {
+        width: 25rem;
+        height: 140px;
+    }
+
+    .tab-content .h3 {
+        font-size: 17px;
+    }
+
+    .text .desc {
+        font-size: 15px;
+    }
+
+    .tab-content {
+        padding-top: 35px;
+    }
+
+    .coupon_right .date {
+        font-size: 14px;
+    }
+
+    .coupon_right {}
+
+    .coupon_right .btn {
+        font-size: 13px;
+        width: 110px;
+        height: 35px;
+    }
+}
+
+
+
+@media screen and (max-width: 410px) {
+    .yutnori {
+        width: 22rem;
+        height: 7.5rem;
+
+    }
+
+    .content {
+        width: 22rem;
+        height: 7.5rem;
+    }
+
+    .coupon_info {
+        width: 22rem;
+    }
+
+    .tab-content .h3 {
+        font-size: 16px;
+    }
+
+    .text .desc {
+        font-size: 13px;
+    }
+
+    .coupon_right .date {
+        font-size: 12px;
+    }
+
+    .coupon_info .text {
+
+        padding-top: 15px;
+
+    }
+
+    .tabs {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .tab {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 383px) {
+
+    .code .edit-btn {
+        width: 115px;
+        font-size: 13px;
+    }
+
+    .disconnect_btn {
+        font-size: 13px;
+        width: 120px;
+        height: 40px;
+
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .gnb {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        top: 40px;
+        right: -145px;
+    }
+
+}
