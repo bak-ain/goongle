@@ -136,6 +136,192 @@ import Gwanghwamun135 from '../img/Gwanghwamun135.jpg'
 import Gwanghwamun136 from '../img/Gwanghwamun136.jpg'
 import Gwanghwamun137 from '../img/Gwanghwamun137.jpg'
 import Gwanghwamun138 from '../img/Gwanghwamun138.jpg'
+import Gwanghwamun139 from '../img/Gwanghwamun139.jpg'
+import Gwanghwamun140 from '../img/Gwanghwamun140.png'
+import Gwanghwamun141 from '../img/Gwanghwamun141.png'
+import Gwanghwamun142 from '../img/Gwanghwamun142.jpg'
+import Gwanghwamun143 from '../img/Gwanghwamun143.jpg'
+import Gwanghwamun144 from '../img/Gwanghwamun144.jpg'
+import Gwanghwamun145 from '../img/Gwanghwamun145.jpg'
+import Gwanghwamun146 from '../img/Gwanghwamun146.png'
+import Gwanghwamun147 from '../img/Gwanghwamun147.png'
+import Gwanghwamun148 from '../img/Gwanghwamun148.png'
+import Gwanghwamun149 from '../img/Gwanghwamun149.png'
+import Gwanghwamun150 from '../img/Gwanghwamun150.png'
+import Gwanghwamun151 from '../img/Gwanghwamun151.png'
+import Gwanghwamun152 from '../img/Gwanghwamun152.png'
+import Gwanghwamun153 from '../img/Gwanghwamun153.png'
+import Gwanghwamun154 from '../img/Gwanghwamun154.jpg'
+import Gwanghwamun155 from '../img/Gwanghwamun155.jpg'
+import Gwanghwamun156 from '../img/Gwanghwamun156.png'
+import Gwanghwamun157 from '../img/Gwanghwamun157.png'
+import Gwanghwamun158 from '../img/Gwanghwamun158.png'
+import Gwanghwamun159 from '../img/Gwanghwamun159.png'
+import Gwanghwamun160 from '../img/Gwanghwamun160.png'
+import Gwanghwamun161 from '../img/Gwanghwamun161.png'
+import Gwanghwamun162 from '../img/Gwanghwamun162.png'
+import Gwanghwamun163 from '../img/Gwanghwamun163.png'
+import Gwanghwamun164 from '../img/Gwanghwamun164.png'
+import Gwanghwamun165 from '../img/Gwanghwamun165.png'
+import Gwanghwamun166 from '../img/Gwanghwamun166.png'
+import Gwanghwamun167 from '../img/Gwanghwamun167.png'
+import Gwanghwamun168 from '../img/Gwanghwamun168.png'
+import Gwanghwamun169 from '../img/Gwanghwamun169.png'
+import Gwanghwamun170 from '../img/Gwanghwamun170.png'
+import Gwanghwamun171 from '../img/Gwanghwamun171.jpg'
+import Gwanghwamun172 from '../img/Gwanghwamun172.png'
+import Gwanghwamun173 from '../img/Gwanghwamun173.png'
+import Gwanghwamun174 from '../img/Gwanghwamun174.png'
+import Gwanghwamun175 from '../img/Gwanghwamun175.png'
+import Gwanghwamun176 from '../img/Gwanghwamun176.png'
+import Gwanghwamun177 from '../img/Gwanghwamun177.png'
+import Gwanghwamun178 from '../img/Gwanghwamun178.png'
+import Gwanghwamun179 from '../img/Gwanghwamun179.png'
+import Gwanghwamun180 from '../img/Gwanghwamun180.png'
+import Gwanghwamun181 from '../img/Gwanghwamun181.png'
+import Gwanghwamun182 from '../img/Gwanghwamun182.png'
+import Gwanghwamun183 from '../img/Gwanghwamun183.png'
+import Gwanghwamun184 from '../img/Gwanghwamun184.png'
+import Gwanghwamun185 from '../img/Gwanghwamun185.png'
+import Gwanghwamun186 from '../img/Gwanghwamun186.jpg'
+import Gwanghwamun187 from '../img/Gwanghwamun187.png'
+import Gwanghwamun188 from '../img/Gwanghwamun188.png'
+import Gwanghwamun189 from '../img/Gwanghwamun189.png'
+import Gwanghwamun190 from '../img/Gwanghwamun187.png'
+import Gwanghwamun191 from '../img/Gwanghwamun187.png'
+import Gwanghwamun192 from '../img/Gwanghwamun187.png'
+import Gwanghwamun193 from '../img/Gwanghwamun187.png'
+import Gwanghwamun194 from '../img/Gwanghwamun187.png'
+import Gwanghwamun195 from '../img/Gwanghwamun187.png'
+import Gwanghwamun196 from '../img/Gwanghwamun187.png'
+import Gwanghwamun197 from '../img/Gwanghwamun187.png'
+import Gwanghwamun198 from '../img/Gwanghwamun187.png'
+import Gwanghwamun199 from '../img/Gwanghwamun187.png'
+import Gwanghwamun200 from '../img/Gwanghwamun187.png'
+import Gwanghwamun201 from '../img/Gwanghwamun187.png'
+import Gwanghwamun202 from '../img/Gwanghwamun187.png'
+import Gwanghwamun203 from '../img/Gwanghwamun187.png'
+import Gwanghwamun204 from '../img/Gwanghwamun187.png'
+import Gwanghwamun205 from '../img/Gwanghwamun187.png'
+import Gwanghwamun206 from '../img/Gwanghwamun187.png'
+import Gwanghwamun207 from '../img/Gwanghwamun187.png'
+import Gwanghwamun208 from '../img/Gwanghwamun187.png'
+import Gwanghwamun209 from '../img/Gwanghwamun187.png'
+import Gwanghwamun210 from '../img/Gwanghwamun187.png'
+import Gwanghwamun211 from '../img/Gwanghwamun187.png'
+import Gwanghwamun212 from '../img/Gwanghwamun187.png'
+import Gwanghwamun213 from '../img/Gwanghwamun187.png'
+import Gwanghwamun214 from '../img/Gwanghwamun187.png'
+import Gwanghwamun215 from '../img/Gwanghwamun187.png'
+import Gwanghwamun216 from '../img/Gwanghwamun187.png'
+import Gwanghwamun217 from '../img/Gwanghwamun187.png'
+import Gwanghwamun218 from '../img/Gwanghwamun187.png'
+import Gwanghwamun219 from '../img/Gwanghwamun187.png'
+import Gwanghwamun220 from '../img/Gwanghwamun187.png'
+import Gwanghwamun221 from '../img/Gwanghwamun187.png'
+import Gwanghwamun222 from '../img/Gwanghwamun187.png'
+import Gwanghwamun223 from '../img/Gwanghwamun187.png'
+import Gwanghwamun224 from '../img/Gwanghwamun187.png'
+import Gwanghwamun225 from '../img/Gwanghwamun187.png'
+import Gwanghwamun226 from '../img/Gwanghwamun187.png'
+import Gwanghwamun227 from '../img/Gwanghwamun187.png'
+import Gwanghwamun228 from '../img/Gwanghwamun187.png'
+import Gwanghwamun229 from '../img/Gwanghwamun187.png'
+import Gwanghwamun230 from '../img/Gwanghwamun187.png'
+import Gwanghwamun231 from '../img/Gwanghwamun187.png'
+import Gwanghwamun232 from '../img/Gwanghwamun187.png'
+import Gwanghwamun233 from '../img/Gwanghwamun187.png'
+import Gwanghwamun234 from '../img/Gwanghwamun187.png'
+import Gwanghwamun235 from '../img/Gwanghwamun187.png'
+import Gwanghwamun236 from '../img/Gwanghwamun187.png'
+import Gwanghwamun237 from '../img/Gwanghwamun187.png'
+import Gwanghwamun238 from '../img/Gwanghwamun187.png'
+import Gwanghwamun239 from '../img/Gwanghwamun187.png'
+import Gwanghwamun240 from '../img/Gwanghwamun187.png'
+import Gwanghwamun241 from '../img/Gwanghwamun187.png'
+import Gwanghwamun242 from '../img/Gwanghwamun187.png'
+import Gwanghwamun243 from '../img/Gwanghwamun187.png'
+import Gwanghwamun244 from '../img/Gwanghwamun187.png'
+import Gwanghwamun245 from '../img/Gwanghwamun187.png'
+import Gwanghwamun246 from '../img/Gwanghwamun187.png'
+import Gwanghwamun247 from '../img/Gwanghwamun187.png'
+import Gwanghwamun248 from '../img/Gwanghwamun187.png'
+import Gwanghwamun249 from '../img/Gwanghwamun187.png'
+import Gwanghwamun250 from '../img/Gwanghwamun187.png'
+import Gwanghwamun251 from '../img/Gwanghwamun187.png'
+import Gwanghwamun252 from '../img/Gwanghwamun187.png'
+import Gwanghwamun253 from '../img/Gwanghwamun187.png'
+import Gwanghwamun254 from '../img/Gwanghwamun187.png'
+import Gwanghwamun255 from '../img/Gwanghwamun187.png'
+import Gwanghwamun256 from '../img/Gwanghwamun187.png'
+import Gwanghwamun257 from '../img/Gwanghwamun187.png'
+import Gwanghwamun258 from '../img/Gwanghwamun187.png'
+import Gwanghwamun259 from '../img/Gwanghwamun187.png'
+import Gwanghwamun260 from '../img/Gwanghwamun187.png'
+import Gwanghwamun261 from '../img/Gwanghwamun187.png'
+import Gwanghwamun262 from '../img/Gwanghwamun187.png'
+import Gwanghwamun263 from '../img/Gwanghwamun187.png'
+import Gwanghwamun264 from '../img/Gwanghwamun187.png'
+import Gwanghwamun265 from '../img/Gwanghwamun187.png'
+import Gwanghwamun266 from '../img/Gwanghwamun187.png'
+import Gwanghwamun267 from '../img/Gwanghwamun187.png'
+import Gwanghwamun268 from '../img/Gwanghwamun187.png'
+import Gwanghwamun269 from '../img/Gwanghwamun187.png'
+import Gwanghwamun270 from '../img/Gwanghwamun187.png'
+import Gwanghwamun271 from '../img/Gwanghwamun187.png'
+import Gwanghwamun272 from '../img/Gwanghwamun187.png'
+import Gwanghwamun273 from '../img/Gwanghwamun273.png'
+import Gwanghwamun274 from '../img/Gwanghwamun274.png'
+import Gwanghwamun275 from '../img/Gwanghwamun275.png'
+import Gwanghwamun276 from '../img/Gwanghwamun276.png'
+import Gwanghwamun277 from '../img/Gwanghwamun277.png'
+import Gwanghwamun278 from '../img/Gwanghwamun278.png'
+import Gwanghwamun279 from '../img/Gwanghwamun279.png'
+import Gwanghwamun280 from '../img/Gwanghwamun280.png'
+import Gwanghwamun281 from '../img/Gwanghwamun281.png'
+import Gwanghwamun282 from '../img/Gwanghwamun282.png'
+import Gwanghwamun283 from '../img/Gwanghwamun283.png'
+import Gwanghwamun284 from '../img/Gwanghwamun284.png'
+import Gwanghwamun285 from '../img/Gwanghwamun285.png'
+import Gwanghwamun286 from '../img/Gwanghwamun286.png'
+import Gwanghwamun287 from '../img/Gwanghwamun287.png'
+import Gwanghwamun288 from '../img/Gwanghwamun288.png'
+import Gwanghwamun289 from '../img/Gwanghwamun289.png'
+import Gwanghwamun409 from '../img/Gwanghwamun409.jpg'
+import Gwanghwamun410 from '../img/Gwanghwamun410.jpg'
+import Gwanghwamun411 from '../img/Gwanghwamun411.jpg'
+import Gwanghwamun412 from '../img/Gwanghwamun412.jpg'
+import Gwanghwamun413 from '../img/Gwanghwamun413.jpg'
+import Gwanghwamun414 from '../img/Gwanghwamun414.png'
+import Gwanghwamun415 from '../img/Gwanghwamun415.jpg'
+import Gwanghwamun416 from '../img/Gwanghwamun416.png'
+import Gwanghwamun417 from '../img/Gwanghwamun417.png'
+import Gwanghwamun418 from '../img/Gwanghwamun410.jpg'
+import Gwanghwamun419 from '../img/Gwanghwamun419.png'
+import Gwanghwamun420 from '../img/Gwanghwamun420.png'
+import Gwanghwamun421 from '../img/Gwanghwamun421.png'
+import Gwanghwamun422 from '../img/Gwanghwamun422.png'
+import Gwanghwamun423 from '../img/Gwanghwamun423.jpg'
+import Gwanghwamun424 from '../img/Gwanghwamun105.jpg'
+import Gwanghwamun425 from '../img/Gwanghwamun425.jpg'
+import changgyeonggung1 from '../img/changgyeonggung1.png'
+import changgyeonggung2 from '../img/changgyeonggung2.png'
+import changgyeonggung3 from '../img/changgyeonggung3.png'
+import changgyeonggung4 from '../img/changgyeonggung4.png'
+import changgyeonggung5 from '../img/changgyeonggung5.png'
+import changgyeonggung6 from '../img/changgyeonggung6.png'
+import changgyeonggung7 from '../img/changgyeonggung7.png'
+import changgyeonggung8 from '../img/changgyeonggung8.png'
+import changgyeonggung9 from '../img/changgyeonggung9.png'
+import changgyeonggung10 from '../img/changgyeonggung10.png'
+import changgyeonggung11 from '../img/changgyeonggung11.png'
+import changgyeonggung12 from '../img/changgyeonggung12.png'
+import changgyeonggung13 from '../img/changgyeonggung13.png'
+import changgyeonggung14 from '../img/changgyeonggung14.png'
+import changgyeonggung15 from '../img/changgyeonggung15.png'
+import changgyeonggung16 from '../img/changgyeonggung16.png'
+import changgyeonggung17 from '../img/changgyeonggung17.png'
+
 
 export const InfoImgs = {
   gyeongbokgung: {
@@ -222,13 +408,13 @@ export const InfoImgs = {
   },
   changdeokgung: {
     donhwamun: {
-      first: [Gwanghwamun137],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun273],
+      second: [Gwanghwamun274],
+      third: [Gwanghwamun275, Gwanghwamun276, Gwanghwamun277],
+      fourth: [Gwanghwamun278, Gwanghwamun279, Gwanghwamun280, Gwanghwamun281],
+      fifth: [Gwanghwamun282, Gwanghwamun283, Gwanghwamun284, Gwanghwamun285],
+      sixth: [Gwanghwamun286, Gwanghwamun287, Gwanghwamun288],
+      seventh: [Gwanghwamun289],
       last: [],
     },
     injeongjeon: {
@@ -304,13 +490,13 @@ export const InfoImgs = {
   },
   changgyeonggung: {
     honghwamun: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [changgyeonggung1],
+      second: [changgyeonggung2],
+      third: [changgyeonggung3, changgyeonggung4, changgyeonggung5],
+      fourth: [changgyeonggung6, changgyeonggung7, changgyeonggung8, changgyeonggung15],
+      fifth: [changgyeonggung9, changgyeonggung16, changgyeonggung10, changgyeonggung17],
+      sixth: [changgyeonggung11, changgyeonggung12, changgyeonggung13],
+      seventh: [changgyeonggung14],
       last: [],
     },
     okcheongyo: {
@@ -386,13 +572,13 @@ export const InfoImgs = {
   },
   deoksugung: {
     daehanmun: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun409],
+      second: [Gwanghwamun410],
+      third: [Gwanghwamun411, Gwanghwamun412, Gwanghwamun413],
+      fourth: [Gwanghwamun414, Gwanghwamun415, Gwanghwamun416, Gwanghwamun417],
+      fifth: [Gwanghwamun418, Gwanghwamun419, Gwanghwamun420, Gwanghwamun421],
+      sixth: [Gwanghwamun422, Gwanghwamun423, Gwanghwamun424],
+      seventh: [Gwanghwamun425],
       last: [],
     },
     hamnyeongjeon: {
@@ -470,81 +656,81 @@ export const InfoImgs = {
     heunghwamun: {
       first: [Gwanghwamun137],
       second: [Gwanghwamun138],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      third: [Gwanghwamun139, Gwanghwamun140, Gwanghwamun141],
+      fourth: [Gwanghwamun142, Gwanghwamun143, Gwanghwamun144, Gwanghwamun145],
+      fifth: [Gwanghwamun146, Gwanghwamun147, Gwanghwamun148, Gwanghwamun149],
+      sixth: [Gwanghwamun150, Gwanghwamun151, Gwanghwamun152],
+      seventh: [Gwanghwamun153],
       last: [],
     },
     sungjeongjeon: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun154],
+      second: [Gwanghwamun155],
+      third: [Gwanghwamun156, Gwanghwamun157, Gwanghwamun158],
+      fourth: [Gwanghwamun159, Gwanghwamun160, Gwanghwamun161, Gwanghwamun162],
+      fifth: [Gwanghwamun163, Gwanghwamun164, Gwanghwamun165, Gwanghwamun166],
+      sixth: [Gwanghwamun167, Gwanghwamun168, Gwanghwamun169],
+      seventh: [Gwanghwamun170],
       last: [],
     },
     jajeongjeon: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun171],
+      second: [Gwanghwamun172],
+      third: [Gwanghwamun173, Gwanghwamun174, Gwanghwamun175],
+      fourth: [Gwanghwamun176, Gwanghwamun177, Gwanghwamun178, Gwanghwamun179],
+      fifth: [Gwanghwamun180, Gwanghwamun181, Gwanghwamun182, Gwanghwamun183],
+      sixth: [Gwanghwamun184, Gwanghwamun185, Gwanghwamun186],
+      seventh: [Gwanghwamun187],
       last: [],
     },
     chungwandang: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun188],
+      second: [Gwanghwamun189],
+      third: [Gwanghwamun190, Gwanghwamun191, Gwanghwamun192],
+      fourth: [Gwanghwamun193, Gwanghwamun194, Gwanghwamun195, Gwanghwamun196],
+      fifth: [Gwanghwamun197, Gwanghwamun198, Gwanghwamun199, Gwanghwamun200],
+      sixth: [Gwanghwamun201, Gwanghwamun202, Gwanghwamun203],
+      seventh: [Gwanghwamun204],
       last: [],
     },
     yanghwadang: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun205],
+      second: [Gwanghwamun206],
+      third: [Gwanghwamun207, Gwanghwamun208, Gwanghwamun209],
+      fourth: [Gwanghwamun210, Gwanghwamun211, Gwanghwamun212, Gwanghwamun213],
+      fifth: [Gwanghwamun214, Gwanghwamun215, Gwanghwamun216, Gwanghwamun217],
+      sixth: [Gwanghwamun218, Gwanghwamun219, Gwanghwamun220],
+      seventh: [Gwanghwamun221],
       last: [],
     },
     yeonmotjeongwon: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun222],
+      second: [Gwanghwamun223],
+      third: [Gwanghwamun224, Gwanghwamun225, Gwanghwamun226],
+      fourth: [Gwanghwamun227, Gwanghwamun228, Gwanghwamun229, Gwanghwamun230],
+      fifth: [Gwanghwamun231, Gwanghwamun232, Gwanghwamun233, Gwanghwamun234],
+      sixth: [Gwanghwamun235, Gwanghwamun236, Gwanghwamun237],
+      seventh: [Gwanghwamun238],
       last: [],
     },
     taeryeongjeon: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun239],
+      second: [Gwanghwamun240],
+      third: [Gwanghwamun241, Gwanghwamun242, Gwanghwamun243],
+      fourth: [Gwanghwamun244, Gwanghwamun245, Gwanghwamun246, Gwanghwamun247],
+      fifth: [Gwanghwamun248, Gwanghwamun249, Gwanghwamun250, Gwanghwamun251],
+      sixth: [Gwanghwamun252, Gwanghwamun253, Gwanghwamun254],
+      seventh: [Gwanghwamun255],
       last: [],
     },
     seoulmuseum: {
-      first: [Gwanghwamun1],
-      second: [Gwanghwamun2],
-      third: [Gwanghwamun3, Gwanghwamun4, Gwanghwamun5],
-      fourth: [Gwanghwamun6, Gwanghwamun7, Gwanghwamun8, Gwanghwamun15],
-      fifth: [Gwanghwamun9, Gwanghwamun16, Gwanghwamun10, Gwanghwamun17],
-      sixth: [Gwanghwamun11, Gwanghwamun12, Gwanghwamun13],
-      seventh: [Gwanghwamun14],
+      first: [Gwanghwamun256],
+      second: [Gwanghwamun257],
+      third: [Gwanghwamun258, Gwanghwamun259, Gwanghwamun260],
+      fourth: [Gwanghwamun261, Gwanghwamun262, Gwanghwamun263, Gwanghwamun264],
+      fifth: [Gwanghwamun265, Gwanghwamun266, Gwanghwamun267, Gwanghwamun268],
+      sixth: [Gwanghwamun269, Gwanghwamun270, Gwanghwamun271],
+      seventh: [Gwanghwamun272],
       last: [],
     },
   },
@@ -1112,7 +1298,8 @@ export const InfoTexts = {
         title: '물은 모든 걸 씻는다, 금천의 숨은 의미',
         paragraphs: [
           "금천에는 오래된 믿음이 담겨 있어요. 바로 **물은 악귀를 막는다**는 것이죠.",
-          "그래서 궁궐 앞엔 언제나 물길이 있었고, 이 금천은 나쁜 기운이 들어오지 못하게 막는 **심리적 정화선**이 되었어요.",
+          "그래서 궁궐 앞엔 언제나 물길이 있었고,",
+          "이 금천은 나쁜 기운이 들어오지 못하게 막는 **심리적 정화선**이 되었어요",
           "지금으로 치면 에너지 정화존이나 **힐링 게이트**처럼 여겨졌던 거죠.",
         ]
       },
