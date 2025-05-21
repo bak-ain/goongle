@@ -127,7 +127,7 @@ p.desc2{
     width: 45%;
     height: 55.1%;
     border-radius: 30px;
-     background-color: rgba(4, 4, 4, 0.6); 
+     /* background-color: rgba(4, 4, 4, 0.6);  */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,8 @@ p.desc2{
 .wrong .explanation{
   width: 50%;
   height: 85%;
-  background: rgba(255, 255, 255, 0.2);
+  background: #817973;
+  /* background: rgba(255, 255, 255, 0.2); */
   color: #fff;
   border-radius: 30px;
   display: flex;
