@@ -1719,3 +1719,7 @@ scale: 0.8;
   background-color: #ffa920 !important; /* orange-300 */
 }
 }
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    
+}

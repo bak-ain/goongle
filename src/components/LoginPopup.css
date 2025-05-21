@@ -1,6 +1,6 @@
 .login-popup-overlay {
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
@@ -241,6 +241,40 @@ button.apple {
 
 .signup-link {
   margin-top: 40px;
+;
+}
+}
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+  .Header .login-popup-overlay {
+    bottom: 100px;
+  }
+    .login-popup-content {
+    height: 90%;
+    width: 45%;
+    padding: 0;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .loginall {
+  margin-top: 8%;
+  }
+    button.google {
+      display: none;
+  }
+    button.apple {
+      display: none;
+  
+
+  }
+
+  .login-btn {
+  margin:0;
+}
+
+.signup-link {
+  margin-top: -15%;
 ;
 }
 }
