@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: "Noto Sans KR";
 }
 
 .gnb_link {
@@ -28,8 +27,10 @@
 .gnb_label {
     color: var(--text-main);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     white-space: nowrap;
+    font-family: 'NanumSquareRound';
+    color: #333;
 }
 
 .GnbItem.on .gnb_label {
@@ -72,6 +73,7 @@
     padding: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 10;
+
 }
 
 .GnbItem.Nip {
@@ -81,7 +83,9 @@
 .GnbItem.Nip:hover .submenu {
     display: block;
 }
-
+.submenu.show {
+  display: block;
+}
 /* 모바일/태블릿 toggle용 */
 .GnbItem.sub_open .submenu {
     display: block;
@@ -97,6 +101,7 @@
     padding: 8px 12px;
     cursor: pointer;
     white-space: nowrap;
+    font-family: 'NanumSquareRoundBold';
 }
 
 .sub_list li:hover {

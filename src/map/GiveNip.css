@@ -42,7 +42,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 4vw;
+    width: 6vw;
 }
 .GiveNip .nip-content img:nth-child(2){
     width: 8vw;
@@ -71,8 +71,8 @@ p.count{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 18%;
-    padding-bottom: 15%;
+    gap: 10%;
+    padding-bottom: 10%;
 }
 
 h2.title{

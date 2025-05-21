@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GnbItem from './GnbItem';
 import { Icons } from '../img/img';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -18,11 +18,21 @@ const Gnb = ({ currentGung, setCurrentGung, onItemClick }) => {
   const isNipPage = currentPath.startsWith('/nip');
   const currentGungFromURL = currentPath.startsWith('/map/') ? currentPath.split('/')[2] : null;
 
-  const activeGung = currentGungFromURL || currentGung; // ✅ 우선순위: URL → props fallback
+  const [nipMenuOpen, setNipMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 1024);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const activeGung = currentGungFromURL || currentGung;
 
   const handleMove = (path) => {
     navigate(path);
     if (onItemClick) onItemClick();
+    setNipMenuOpen(false); // 닫기
   };
 
   return (
@@ -37,13 +47,22 @@ const Gnb = ({ currentGung, setCurrentGung, onItemClick }) => {
           className={gung.id}
         />
       ))}
+
       <GnbItem
         icon={isNipPage ? Icons.coinOn : Icons.coin}
         label="궁글 닢"
         isActive={isNipPage}
-        onClick={() => handleMove('/nip-guide')}
+        onClick={() => {
+          if (isMobile) {
+            setNipMenuOpen((prev) => !prev);
+          } else {
+            handleMove('/nip-guide');
+          }
+        }}
         className="Nip"
         enableToggle={true}
+        isSubOpen={nipMenuOpen}
+        setIsSubOpen={setNipMenuOpen}
       >
         <ul className="sub_list">
           <li onClick={() => handleMove('/nip-guide')}>닢제도 가이드</li>
@@ -54,7 +73,5 @@ const Gnb = ({ currentGung, setCurrentGung, onItemClick }) => {
     </ul>
   );
 };
-
-
 
 export default Gnb;

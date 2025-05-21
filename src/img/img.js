@@ -2,7 +2,7 @@
 
 import coin from './coin.svg';
 import coinOn from './coinon.svg';
-import nipcoin from './nipcoin.png';
+import nipcoin from './nipcoin2.png';
 import gnb1 from './kbicon.png'
 import gnb1On from './kbiconon.svg'
 import gnb2 from './khicon.png'

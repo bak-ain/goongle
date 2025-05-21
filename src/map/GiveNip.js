@@ -12,7 +12,7 @@ const GiveNip = ({ amount, onClose, total }) => {
 
           <div className='leftcontent'>
           <div className='imageall'>
-        <img src={Characters.goong1} alt="캐릭터" className="char" />
+        <img src={Characters.gle2} alt="캐릭터" className="char" />
         <img src={Icons.nipcoin} alt="캐릭터" className="char" />
           </div>
         <p className="count">현재 보유한 닢 : {total}닢</p>

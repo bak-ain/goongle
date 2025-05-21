@@ -19,18 +19,38 @@ function App() {
   const [showGuide, setShowGuide] = useState(true);
   const [logoutMessage, setLogoutMessage] = useState('');
 
-  // 한 번 본 가이드는 다시 안 보이게 하고 싶다면 아래 코드 추가
-  // useEffect(() => {
-  //   const seen = localStorage.getItem('guideSeen');
-  //   if (seen) setShowGuide(false);
-  // }, []);
+  useEffect(() => {
+    const seen = localStorage.getItem('guideSeen');
+    const path = window.location.pathname;
 
-  // const handleGuideClose = () => {
-  //   localStorage.setItem('guideSeen', 'true');
-  //   setShowGuide(false);
-  // };
+    const isPersistentPage = [
+      '/nip-guide',
+      '/nip-change',
+      '/nip-partner',
+      '/mypage',
+    ].includes(path);
+
+    if (seen && isPersistentPage) {
+      // ⛔️ 이미 본 사용자, 그리고 닢/마이페이지일 경우
+      setShowGuide(false);
+    } else if (isPersistentPage) {
+      // ✅ 닢/마이페이지지만 처음 접속한 경우
+      localStorage.setItem('guideSeen', 'true');
+    }
+  }, []);
 
   const handleGuideClose = () => {
+    const path = window.location.pathname;
+    const isPersistentPage = [
+      '/nip-guide',
+      '/nip-change',
+      '/nip-partner',
+      '/mypage',
+    ].includes(path);
+
+    if (isPersistentPage) {
+      localStorage.setItem('guideSeen', 'true');
+    }
     setShowGuide(false);
   };
 
