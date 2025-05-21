@@ -310,13 +310,14 @@
         top: 5%;
         right: 8%;
         flex-direction: column;
-        z-index: 100;
+        /* z-index: 100; */
     }
 
     .Board {
         flex-direction: row;
         align-items: end;
         gap: 5vw;
+        width: 50%;
     }
 
     .InfoCard_wrap {
