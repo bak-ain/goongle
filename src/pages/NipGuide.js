@@ -7,7 +7,6 @@ const NipGuide = () => {
     <div className="NipGuide">
       <Header />
       <section className="nip_box">
-        <i className="fa-solid fa-bars menu-icon"></i>
         <div className="b_txt_box">
           <div className="txt_box">
             <h2 className="h2">닢 제도 가이드 설명</h2>

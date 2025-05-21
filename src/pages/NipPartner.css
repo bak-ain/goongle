@@ -1,0 +1,487 @@
+.NipPartner{
+    display: flex;
+}
+.NipPartner .Header{
+    position: fixed;
+}
+section.nip_box {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/nip_bg.png) ;
+  overflow-x: hidden;
+  padding-left: 80px;
+
+}
+
+.Partner {
+   padding-left: 200px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.Partner h2 {
+  padding-top: 65px;
+  padding-bottom: 95px;
+}
+
+.Partner_box {
+  width: 100%;
+  height: 40rem;
+  background-color: #2B475D;
+  border-radius: 100px 0px 0px 0px;
+  background-image: url(../img/Partner_bg.png);
+/*   background-size: cover; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+  gap: 75px;
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Partner_box .txt_box {
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 26.6875rem;
+  background-color: #F1E8E5;
+  background-image: url(../img/line2.png);
+  background-size: 90% 90% ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Partner_box .txt_box:first-child {
+  margin-left: 85px;
+}
+
+.Partner_box .txt_box h3 {
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.Partner_box .txt_box h3 img {
+  padding-right: 5px;
+}
+
+
+.Partner_box .txt_box span {
+  font-weight: 700;
+  /* padding-left: 65px; */
+}
+
+.Partner_box .txt_box b {
+  font-weight: 700;
+}
+
+.Partner_box .txt_box em {
+  font-size: 1.1rem;
+}
+
+.Partner_box .txt_box p.p {
+  padding-bottom: 90px;
+}
+
+.Partner_box .txt_box small {
+  font-size: 1.2rem;
+}
+
+.Partner_box .txt_box .align_left {
+  width: 100%;
+  padding-left: 75px;
+  text-align: left;
+  display: block;
+  margin-left: 0;
+}
+
+.txt_box b,
+.txt_box p,
+.txt_box small {
+  gap: 0;
+}
+
+ul.price_list {}
+
+.price_list {
+
+  padding: 0;
+  margin: 0;
+  padding: 20px 20px;
+}
+
+.price_list li {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9375rem;
+  padding-bottom: 14px;
+  
+}
+ul.price_list li b{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.price_list strong {
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.price_list small {
+  display: block;
+  margin-top: 10px;
+  color: #777;
+  font-size: 0.8125rem;
+}
+
+
+@media screen and (max-width: 1099px) {
+  
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1158px) {
+
+.Partner_box .txt_box {
+  height: 32vw;
+}
+
+  .Partner_box {
+   
+  }
+    .Partner_box .txt_box h3 {
+       font-size: 1.3rem;
+    }
+   
+    .Partner_box .txt_box span {
+       font-size: 1.1rem;
+    }
+    .Partner_box .txt_box strong {
+        font-size: 1.1rem;
+    }
+     
+     .Partner_box .txt_box b {
+         font-size: 0.9rem;
+     }
+     
+      .Partner_box .txt_box small {
+         font-size: 0.9rem;
+      } 
+}
+
+
+
+
+@media screen and (max-width: 1057px) {
+
+
+   .Partner_box .txt_box h3 {
+        padding-top: 30px;
+            padding-bottom: 15px;
+   }
+    .Partner_box .txt_box span {
+       font-size: 1rem;
+    }
+     .Partner_box .txt_box b {
+         font-size: 0.9rem;
+     }
+}
+
+@media screen and (max-width: 1042px) {
+
+  .Partner_box .txt_box strong {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1032px) {
+  .Partner_box .txt_box b {
+         font-size: 0.8rem;
+     }
+}
+
+
+/* 1024px 태블릿  */
+@media screen and (max-width: 1024px) {
+.gnb {
+    width: 100vw;    
+  height: 9.77vw; 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* 꼭 초기화해줘야 하는 값들! */
+    top: auto;
+    left: auto;
+     z-index: 10;
+  }  
+  .Partner {
+    padding-bottom: 6.25rem; /* .gnb 높이만큼 여백 추가 */
+  }
+  .Partner_box {
+    background-image: url(../img/Partner_bg_sm.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+     width: 60vw;
+    height: 50vw;
+
+  }
+  .Partner_box .txt_box img{
+    width: 33px;
+    height: 30px;
+  }
+  .Partner_box .txt_box {
+    width: 40%;
+  height: 35vw; 
+  }
+  .Partner_box {
+    width: 100vw;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+   
+    
+
+}
+
+@media screen and (max-width: 840px) {
+.Partner{
+  padding-left: 100px;
+ }
+ 
+     .Partner_box {
+     height: 30rem;
+  }
+
+  .Partner_box .txt_box {
+ height: 20rem;
+    
+  }
+}
+
+
+
+
+/* 768px  */
+@media screen and (max-width: 770px) {
+
+    .Partner h2 {
+       font-size: 2rem;
+    }
+    .Partner_box .txt_box h3 {
+       font-size: 1.1rem;
+    }
+    .Partner_box .txt_box span {
+       font-size: 1rem;
+    }
+    .Partner_box .txt_box strong {
+        font-size: 1rem;
+    }
+
+     .Partner_box .txt_box b {
+         font-size: 0.8rem;
+     }
+      .Partner_box .txt_box small {
+         font-size: 0.9rem;
+      }
+
+    
+     .Partner_box {
+     height: 30rem;
+  }
+
+  .Partner_box .txt_box {
+ height: 20rem;
+    
+  }
+  .Partner_box .txt_box:first-child {
+  
+}
+  .Partner_box .txt_box h3 {
+     
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 628px) {
+
+.Partner {
+        padding-left: 50px;
+    }
+  }
+
+
+@media screen and (max-width: 599px) {
+  
+     .Partner_box {
+    
+  }
+
+  .Partner_box .txt_box {
+ 
+    
+  }
+}
+
+/* 580px */
+@media screen and (max-width: 580px) {
+ 
+/* 
+   .Partner h2 {
+      font-size: 1.5625rem;
+    }
+    .Partner_box .txt_box h3 {
+       font-size: 1.1rem;
+    }
+    .Partner_box .txt_box span {
+        font-size: 1.125rem;
+    }
+    .Partner_box .txt_box strong {
+        font-size: 1.125rem;
+    }
+
+     .Partner_box .txt_box b {
+         font-size: 0.8rem;
+     }
+      .Partner_box .txt_box small {
+         font-size: 0.9rem;
+      } */
+     
+      .Partner {
+         padding-left: 0;
+      }
+
+        .Partner_box {
+     width: 90vw;
+    height:	90vw;
+    background-size: 90vw 90vw;
+  }
+
+  .Partner_box .txt_box {
+   
+    
+  }
+  .Partner_box .txt_box:first-child {
+  margin-left: 45px;
+}
+.Partner_box .txt_box img{
+  width: 35px;
+  height: 30px;
+}
+  .Partner_box .txt_box h3 {
+      padding-top: 30px;
+  padding-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+   .Partner_box {
+    
+height: 32.125rem;
+background-size: 24.8rem 32.2rem;
+   }
+}
+@media screen and (max-width: 440px) {
+  section.nip_box {
+        padding-left: 30px;
+  }
+  .Partner_box .txt_box span {
+  font-size: 0.9rem;
+}
+.Partner_box .txt_box h3 {
+          padding-top: 40px;
+}
+
+}
+
+
+
+
+
+
+
+/* 396px   */
+@media screen and (max-width: 396px) {
+
+
+   .gnb{
+   display: none;
+  }
+     .Partner h2 {
+    padding-top: 85px;
+    padding-bottom: 45px;
+}
+
+   
+
+  .Partner_box {
+
+ width: 24.4375rem;
+height: 30rem;
+background-size: 24.8rem 30rem;
+  }
+      section.nip_box {
+        padding-left: 0;
+    }
+.Partner_box .txt_box h3 {
+font-size: 1.1rem;}
+    .Partner_box {
+              padding-bottom: 0;
+      
+       
+    }
+    .Partner_box .txt_box img{
+      width: 30px;
+      height: 28px;
+    }
+    .Partner_box .txt_box {
+    width: 22.5625rem;
+height: 20rem;}
+.Partner_box .txt_box span {
+  
+}
+.Partner_box .txt_box strong {
+  font-size: 1rem;}
+.Partner_box .txt_box b {
+  font-size: 0.875rem;
+}
+
+  
+}
+@media screen and (max-width: 375px) {
+  
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+   right: -325px;
+  }
+      .Partner h2 {
+       font-size: 25px;
+    }
+    .Partner h2 {
+    padding-top: 85px;
+    padding-bottom: 45px;
+}
+}
+
+
+
