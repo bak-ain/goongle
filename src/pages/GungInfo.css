@@ -82,7 +82,9 @@ img.guide {
     transition: 1.1s;
     display: inline-block;
 }
+.swiper-slide-active .FirstSec .first_img {
 
+}
 .FirstSec .first_img img {
     width: 100%;
     height: auto;
@@ -184,12 +186,15 @@ img.guide {
     height: 32vw;
     object-fit: cover;
     opacity: 0;
-    transition: 3s;
 }
 .swiper-slide-active .ThirdSec img.first {
     opacity: 1;
+    transition: 1s;
 }
-
+.swiper-slide-active .ThirdSec img.sec {
+    opacity: 1;
+    transition: 2s;
+}
 .ThirdSec img.sec {
     position: absolute;
     right: 15%;
@@ -198,8 +203,13 @@ img.guide {
     width: 22vw;
     height: 20vw;
     object-fit: cover;
-}
+    opacity: 0;
 
+}
+.swiper-slide-active .ThirdSec img.third {
+    opacity: 1;
+    transition: 3s;
+}
 .ThirdSec img.third {
     position: absolute;
     right: 10%;
@@ -208,6 +218,7 @@ img.guide {
     width: 15vw;
     height: 15vw;
     object-fit: cover;
+    opacity: 0;
 }
 
 .ThirdSec .TextBox {
