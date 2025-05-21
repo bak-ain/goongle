@@ -47,8 +47,8 @@ section.nip_box {
 }
 
 .Partner_box .txt_box {
-
-  padding: 20px;
+  width: auto !important;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   height: 26.6875rem;
