@@ -4,13 +4,13 @@ import './LoginPopup.css';
 
 const LoginPopup = ({ onClose }) => {
     const { setIsMember } = useLogin();
-    const [id, setId] = useState('gungle123');
+    const [id, setId] = useState('goongle123');
     const [pw, setPw] = useState('1234');
     const [error, setError] = useState('');
     const [rememberMe, setRememberMe] = useState(false); // ✅ 추가
 
     const handleLogin = () => {
-        if (id === 'gungle123' && pw === '1234') {
+        if (id === 'goongle123' && pw === '1234') {
             if (rememberMe) {
                 localStorage.setItem('userToken', 'valid');
             } else {

@@ -6,7 +6,7 @@ import "./MyPage.css";
 const MyPage = () => {
   const [activeTab, setActiveTab] = useState("used");
   const [phone, setPhone] = useState("010-****-6482");
-  const [email, setEmail] = useState("gunggle123@google.com");
+  const [email, setEmail] = useState("hong123@google.com");
 
   const nameRef = useRef(null);
   const phoneRef = useRef(null);
@@ -151,7 +151,7 @@ const MyPage = () => {
             />
 
             <label>아이디</label>
-            <input type="text" value="gunggle123" readOnly />
+            <input type="text" value="goongle123" readOnly />
 
             <label>비밀번호</label>
             <input

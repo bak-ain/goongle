@@ -66,7 +66,7 @@ const NipPartner = () => {
             slidesOffsetAfter={80}
             // centeredSlides={false}
             breakpoints={{
-              1920: { slidesPerView: 4.5 },
+              1920: { slidesPerView: 'auto' },
               1700: { slidesPerView: 3.5 },
               1400: { slidesPerView: 2.5 },
               1100: { slidesPerView: 2.4 },

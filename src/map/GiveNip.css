@@ -110,15 +110,14 @@ button.exit {
     width: 10vw;
     height: 3vw;
     color: #fff;
-    /* background: rgba(4, 4, 4, 0.8); */
-    background: #16457D;
-    border: 2px solid #607894;
+    background: rgba(4, 4, 4, 0.8);
+    border: 2px solid #fff;
     border-radius: 20px;
     transition: 0.8s;
 }
 
 button.exit:hover {
-    background: #4d7cb6;
+    background: rgba(4, 4, 4, 0.3);
 }
 
 @media screen and (max-width : 1024px) {

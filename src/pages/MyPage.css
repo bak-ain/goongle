@@ -1,3 +1,9 @@
+.MyPage {
+    display: flex;
+}
+.MyPage .Header{
+    position: fixed;
+}
 .MyPage section.nip_box {
     width: 100%;
     height: auto;
@@ -45,6 +51,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1vw;
+    margin-top: 2vw;
 }
 
 .MyPage .name button {
@@ -53,9 +61,9 @@
     width: 167px;
     height: 46px;
     background: #2B475D;
-    margin-right: 45px;
+    /* margin-right: 45px; */
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .MyPage .my_nip {
@@ -869,16 +877,18 @@ background: #2B475D;
 
 @media screen and (max-width: 530px) {
 
-
+.MyPage .btn{
+    gap: 0.2vw;
+    margin-top: 3vw;
+}
     .MyPage .name button {
-        margin-right: 25px;
+        /* margin-right: 25px; */
     }
 
     .MyPage .name .btn button {
         width: 120px;
         height: 40px;
         font-size: 14px;
-        margin-left: 20px;
     }
 
     .MyPage .nip_buttons .n2 {
