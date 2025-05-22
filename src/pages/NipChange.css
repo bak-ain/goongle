@@ -13,7 +13,7 @@ section.nip_box {
 
 
 
-.ticket {
+.NipChange .ticket {
   height: auto;
   display: flex;
   flex-direction: column;
