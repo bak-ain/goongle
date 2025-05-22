@@ -1,5 +1,6 @@
 .NipPartner {
   display: flex;
+  
 }
 .NipPartner span{
   white-space: nowrap;
@@ -53,7 +54,7 @@
 .Partner_box .txt_box {
   /*   width: 100%;
   max-width: 442px; */
-  padding: 20px 40px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   height: 427.0px;
