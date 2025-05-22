@@ -43,6 +43,7 @@
   overflow: hidden;
   position: relative;
   margin-left: 10vw;
+    padding-right: 10vw;
 }
 
 .swiper-wrapper {

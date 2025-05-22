@@ -47,7 +47,7 @@
     text-align: center;
 }
 
-.MyPage .btn {
+.MyPage .name .btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -877,7 +877,7 @@ background: #2B475D;
 
 @media screen and (max-width: 530px) {
 
-.MyPage .btn{
+.MyPage .name .btn{
     gap: 0.2vw;
     margin-top: 3vw;
 }
