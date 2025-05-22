@@ -20,6 +20,30 @@ function App() {
   const [logoutMessage, setLogoutMessage] = useState('');
 
   useEffect(() => {
+    // 새로고침 감지 및 리디렉트
+    if (performance.getEntriesByType('navigation')[0].type === 'reload') {
+      window.location.replace('/');
+    }
+
+    const seen = localStorage.getItem('guideSeen');
+    const path = window.location.pathname;
+
+    const isPersistentPage = [
+      '/nip-guide',
+      '/nip-change',
+      '/nip-partner',
+      '/mypage',
+    ].includes(path);
+
+    if (seen && isPersistentPage) {
+      setShowGuide(false);
+    } else if (isPersistentPage) {
+      localStorage.setItem('guideSeen', 'true');
+    }
+  }, []);
+
+
+  useEffect(() => {
     const seen = localStorage.getItem('guideSeen');
     const path = window.location.pathname;
 
