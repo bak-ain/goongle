@@ -1,5 +1,294 @@
-
-
 body {
   font-family: 'Gapyeong Hanseokbong', 'Noto Sans KR', 'SunBatang', 'ShillaCulture', sans-serif;
+}
+
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+/* color_style */
+:root {
+  --main-color: #4A85FA;
+  --sub1-color: #123697;
+  --sub2-color: #91C0FF;
+  --point1-color: #FFA45B;
+  --point2-color: #FFD93D;
+  --text-Bk: #000;
+  --text-Bk2: #333;
+  --text-sub: #555;
+  --white-color: #fff;
+  --Gyeongbokgung-main-color: #2A6DB9;
+  --Gyeonghuigung-main-color: #238455;
+  --Changdeokgung-main-color: #A13B47;
+  --Changgyeonggung-main-color: #D2A75F;
+  --Deoksugung-main-color: #3B9AA1;
+  --Gyeongbokgung-info-color: #1B5CA6;
+  --Gyeonghuigung-info-color: #0F5734;
+  --Changdeokgung-info-color: #87333C;
+  --Changgyeonggung-info-color: #B98F48;
+  --Deoksugung-info-color: #2E8389;
+
+
+
+}
+
+/* font_style */
+.Guide_h1 {
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.h2 {
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h3 {
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h4 {
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.s {
+  font-family: "Gapyeong Hanseokbong";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  /* 37.5px */
+  letter-spacing: -0.275px;
+}
+
+.p {
+  font-family: 'MaruBuriBold';
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 100%;
+}
+
+.p2 {
+  font-family: 'Noto Sans KR';
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+.p3 {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.n1 {
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+}
+
+.n2 {
+  font-family: "Noto Sans KR";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1749px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    /* font-size: 11px; */
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .h2 {
+    font-size: 2rem;
+  }
 }
