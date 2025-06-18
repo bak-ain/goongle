@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Quiz.css';
 import correctIcon from '../img/answer.png';
 import wrongIcon from '../img/wrong.png';
+import WrongCharacter from '../img/wrongC.png';
 import { Characters } from "../img/img";
 
 const Quiz = ({ questionData, onClose, onCorrect }) => {
@@ -41,20 +42,20 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
           <span className="q-mark">Q</span> {questionData.question}
         </h2>
         <div className='marginleft'>
-        <p className="desc">*답은 하나만 선택해 주세요.</p>
-        <p className="desc2">난이도 ⭐⭐⭐</p>
-        <div className="options">
-          {questionData.options.map((option, index) => (
-            <button
-              key={index}
-              className={`option ${selected === index ? 'selected' : ''}`}
-              onClick={() => handleClick(index)}
-              disabled={selected !== null}
-            >
-              <span>{String.fromCharCode(65 + index)}.</span> {option}
-            </button>
-          ))}
-        </div>
+          <p className="desc">*답은 하나만 선택해 주세요.</p>
+          <p className="desc2">난이도 ⭐⭐⭐</p>
+          <div className="options">
+            {questionData.options.map((option, index) => (
+              <button
+                key={index}
+                className={`option ${selected === index ? 'selected' : ''}`}
+                onClick={() => handleClick(index)}
+                disabled={selected !== null}
+              >
+                <span>{String.fromCharCode(65 + index)}.</span> {option}
+              </button>
+            ))}
+          </div>
         </div>
 
         {!selected && (
@@ -75,9 +76,13 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
         <div className="popup wrong">
           <img src={wrongIcon} alt="오답" />
           <div className="explanation">
-            <h3>다음 기회에...</h3>
-            <p>{questionData.explanation}</p>
-
+            <div className="explanationTop"/>
+            <div className="explanationText">
+              <img src={WrongCharacter} alt="캐릭터" className="WrongCharacter" />
+              <h3>다음 기회에...</h3>
+              <p>{questionData.explanation}</p>
+            </div>
+            <div className="explanationBottom"/>
           </div>
         </div>
       )}
