@@ -243,7 +243,7 @@ const GungInfo = () => {
   const totalSections = 8;
 
   return (
-    <div className="GungInfoWrapper">
+    <div className={`GungInfoWrapper ${gungId}bk`}>
       <GungHeader placeId={placeId} fromTileId={fromTileId} characterKey={characterKey} />
 
       <Swiper

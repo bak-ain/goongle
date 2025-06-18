@@ -15,6 +15,21 @@
     position: relative;
 }
 
+/* 각 궁마다의 배경 색 */
+.gyeongbokgungbk{
+    background: #f6ebd3 url('../img/info_bg1.png') center/cover no-repeat fixed;
+}
+.gyeonghuigungbk{
+    background: #f6ebd3 url('../img/info_bg2.png') center/cover no-repeat fixed;
+}
+.changdeokgungbk{
+    background: #f6ebd3 url('../img/info_bg3.png') center/cover no-repeat fixed;
+}
+.deoksugungbk{
+    background: #f6ebd3 url('../img/info_bg5.png') center/cover no-repeat fixed;
+}
+
+
 .GungHeader {
     width: 100%;
     position: fixed;
