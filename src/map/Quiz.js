@@ -37,8 +37,13 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
   return (
     <div className="quiz-wrap">
       <div className="quiz-box">
+        <div className='quizrightbox'>
+          <p>QUIZ</p>
+          <div className='quizlogo'></div>
+        </div>
+        <div className="q-mark"></div> 
         <h2 className="question">
-          <span className="q-mark">Q</span> {questionData.question}
+          {questionData.question}
         </h2>
         <div className='marginleft'>
         <p className="desc">*답은 하나만 선택해 주세요.</p>
