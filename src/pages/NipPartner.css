@@ -1,10 +1,12 @@
 .NipPartner {
   display: flex;
-  
+
 }
-.NipPartner span{
+
+.NipPartner span {
   white-space: nowrap;
 }
+
 .NipPartner .Header {
   position: fixed;
 }
@@ -14,6 +16,7 @@
   height: 100vh;
   background: url(../img/nip_bg.png);
   overflow-x: hidden;
+  background-color: #2B475D;
 
 
 }
@@ -44,7 +47,7 @@
   overflow: hidden;
   position: relative;
   margin-left: 10vw;
-    padding-right: 10vw;
+  padding-right: 10vw;
 }
 
 .swiper-wrapper {
