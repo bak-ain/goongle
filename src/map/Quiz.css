@@ -15,19 +15,23 @@
 
 .quiz-box {
   padding: 30px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
     width: 45%;
     height: 55%;
+    border: 7px solid #29283A;
     background-color: #000;
-    background-image: url(../img/quizbk.png);
+    background-image: url(../img/quizbk1.png);
+    background-repeat: no-repeat;
     padding: 3.5%;
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
+
 h2.question{
     font-family: "Gapyeong Hanseokbong";
-  color: #fff;
+  color: #3B3953;
   display: flex;
   gap: 2%;
   align-items: center;
@@ -36,9 +40,8 @@ h2.question{
 span.q-mark{
     font-family: "Gapyeong Hanseokbong";
   font-size: 2.2rem;
-  color: #72B1EF;
+  color: #3B3953;
   font-weight: 500;
-  
 }
 
 .marginleft{
@@ -48,14 +51,14 @@ span.q-mark{
 p.desc{
   margin-top: 1.2%;
     font-family: "Noto Sans KR";
-  color: #fff;
+  color: #3B3953;
   font-size: 0.9rem;
 }
 
 p.desc2{
   margin-top: 1.2%;
   font-family: "Noto Sans KR";
-  color: #fff;
+  color: #3B3953;
   margin-left: 0.8%;
 }
 
@@ -71,22 +74,24 @@ p.desc2{
   height: 100%;
 }
 .hint-box .hint{
-  color: #fff;
+  color: #3B3953;
   font-family: "Noto Sans KR";
   font-size: 1.1rem;
   width: 125%;
   height: 3vw;
-  border: 1px solid #fff;
+  border: 1px solid #97BDD7;
+  background: #D7E9F8;
   border-radius: 10px;
   text-align: center;
-  line-height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hint-box img{
   transform: scaleX(-1);
 }
 .options{
   margin-top: 5%;
-
 }
 .option{
   background: none;
@@ -94,7 +99,7 @@ p.desc2{
 .options button {
   display: block;
   margin: 10px 0;
-  color: white;
+  color: #3B3953;
   font-size: 18px;
   padding: 10px;
   text-align: left;

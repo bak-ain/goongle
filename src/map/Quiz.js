@@ -37,7 +37,6 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
   return (
     <div className="quiz-wrap">
       <div className="quiz-box">
-        
         <h2 className="question">
           <span className="q-mark">Q</span> {questionData.question}
         </h2>
