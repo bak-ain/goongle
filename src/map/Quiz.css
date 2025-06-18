@@ -13,45 +13,73 @@
   z-index: 9999;
 }
 
-.quiz-box {
-  padding: 30px;
-  /* border-radius: 30px; */
-  width: 45%;
-  height: 55%;
-  border: 7px solid #29283A;
-  background-color: #000;
-  background-image: url(../img/quizbk1.png);
-  background-repeat: no-repeat;
-  padding: 3.5%;
+.quizrightbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8.5%;
+  height: 100%;
+  background-color: #3B3953;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
-  position: relative;
-}
-
-
-h2.question {
-  font-family: "Gapyeong Hanseokbong";
-  color: #3B3953;
-  display: flex;
-  gap: 2%;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  padding: 18px 0;
 }
 
-span.q-mark {
+.quizrightbox p{
+  color: #F8DFAF;
+  font-size: 3rem;
+  writing-mode: vertical-rl; /* 또는 vertical-lr */
+}
+
+.quizlogo{
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/quizlogo.png);
+}
+
+.quiz-box {
+    padding: 30px;
+  /* border-radius: 30px; */
+    width: 45%;
+    height: 55%;
+    border: 7px solid #29283A;
+    background-color: #000;
+    background-image: url(../img/quizbk1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3% 0 0 3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h2.question{
   font-family: "Gapyeong Hanseokbong";
-  font-size: 2.2rem;
   color: #3B3953;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.marginleft {
-  margin-left: 5%;
+/* .q-mark{
+  position: absolute;
+  left: 28px;
+  top: 24px;
+  background-image: url(../img/quizlogo2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 106px;
+  height: 98px;
+} */
+
+.marginleft{
 }
 
-p.desc {
-  margin-top: 1.2%;
-  font-family: "Noto Sans KR";
+p.desc{
+  margin-top: 2%;
+    font-family: "Noto Sans KR";
   color: #3B3953;
   font-size: 0.9rem;
 }
@@ -65,7 +93,7 @@ p.desc2 {
 
 .hint-box {
   position: absolute;
-  right: 10%;
+  right: 12%;
   bottom: 10%;
   display: flex;
   flex-direction: column;
@@ -75,11 +103,12 @@ p.desc2 {
   height: 100%;
 }
 
-.hint-box .hint {
+.hint-box .hint{
   color: #3B3953;
   font-family: "Noto Sans KR";
   font-size: 1.1rem;
-  width: 125%;
+  width: max-content;
+  padding-inline: 5% ;
   height: 3vw;
   border: 1px solid #97BDD7;
   background: #D7E9F8;
@@ -90,15 +119,15 @@ p.desc2 {
   align-items: center;
 }
 
-.hint-box img {
+.hint-box img{
   transform: scaleX(-1);
 }
 
-.options {
+.options{
   margin-top: 5%;
 }
 
-.option {
+.option{
   background: none;
 }
 
@@ -106,14 +135,14 @@ p.desc2 {
   display: block;
   margin: 10px 0;
   color: #3B3953;
-  font-size: 18px;
+  font-size: 1.25rem;
+  font-weight: 600;
   padding: 10px;
   text-align: left;
   transition: 0.6s;
-
 }
 
-.options button:hover {
+.options button:hover{
   scale: 1.1;
 }
 
@@ -124,9 +153,9 @@ p.desc2 {
   transform: translate(-50%, -50%);
 }
 
-.hint-box .character {
-  width: 65px;
-  height: 86px;
+.hint-box .character{
+    width: 65px;
+    height: 86px;
 }
 
 
@@ -250,18 +279,19 @@ p.desc2 {
   }
 
   .quiz-box {
-
-    border-radius: 30px;
     width: 65%;
     height: 35%;
-    background-color: #000;
-    background-image: url(../img/quizbk.png);
-    padding: 3.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-  }
+    padding: 0 0 0 3%;
+}
+
+.quizrightbox p{
+  font-size: 3rem;
+}
+
 
   /* 오답 */
 
@@ -341,76 +371,42 @@ p.desc2 {
   }
 
   .quiz-box {
-    border-radius: 30px;
     width: 80%;
-    height: 35%;
-    background-color: #000;
-    background-image: url(../img/quizbk.png);
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-  }
 
-  h2.question {
-    font-family: "Gapyeong Hanseokbong";
-    color: #fff;
-    display: flex;
-    gap: 2%;
-    align-items: center;
-    font-size: 1.2rem;
-  }
+}
+h2.question{
+  font-size: 1.2rem;
+}
+.quizrightbox{
+  display: none;
+}
 
-  span.q-mark {
-    font-family: "Gapyeong Hanseokbong";
-    font-size: 2.2rem;
-    color: #72B1EF;
-    font-weight: 500;
+.marginleft{
+}
 
-  }
+p.desc{
+  margin-top: 5%;
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+}
 
-  .marginleft {
-    margin-left: 8%;
-  }
+p.desc2{
+  margin-left: 2%;
+}
 
-  p.desc {
-    margin-top: 1.2%;
-    font-family: "Noto Sans KR";
-    color: #fff;
-    font-size: 1rem;
-  }
-
-  p.desc2 {
-    margin-top: 1.2%;
-    font-family: "Noto Sans KR";
-    color: #fff;
-    margin-left: 0.8%;
-  }
-
-  .hint-box {
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 5%;
-    height: 100%;
-  }
-
-  .hint-box .hint {
-    color: #fff;
-    font-family: "Noto Sans KR";
-    font-size: 1.1rem;
-    width: 125%;
-    height: 3vw;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 3vw;
-    display: none;
+.hint-box{
+  right: 5%;
+}
+.hint-box .hint{
+  font-family: "Noto Sans KR";
+  font-size: 1.1rem;
+  width: 125%;
+  height: 3vw;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3vw;
+  display: none;
 
   }
 
@@ -421,40 +417,25 @@ p.desc2 {
   .options {
     margin-top: 5%;
 
-  }
-
-  .option {
-    background: none;
-  }
-
-  .options button {
-    display: block;
-    margin: 10px 0;
-    color: white;
-    font-size: 12px;
-    padding: 8px;
-    text-align: left;
-    transition: 0.6s;
-
-  }
-
-  .options button:hover {
-    scale: 1.1;
-  }
-
-  .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .hint-box .character {
-    width: 65px;
-    height: 86px;
-  }
-
-  /* 오답 */
+}
+.options button {
+  font-size: 1rem;
+  padding: 7px;
+  transition: 0.6s;  
+}
+.options button:hover{
+  scale: 1.1;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hint-box .character{
+scale: 0.8;
+}
+/* 오답 */
 
   .wrong {
     position: absolute;
@@ -518,7 +499,7 @@ p.desc2 {
     width: 70%;
     height: 60%;
     background-color: #000;
-    background-image: url(../img/quizbk.png);
+    /* background-image: url(../img/quizbk.png); */
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -678,7 +659,7 @@ p.desc2 {
     width: 70%;
     height: 60%;
     background-color: #000;
-    background-image: url(../img/quizbk.png);
+    /* background-image: url(../img/quizbk.png); */
     padding: 5%;
     display: flex;
     flex-direction: column;
