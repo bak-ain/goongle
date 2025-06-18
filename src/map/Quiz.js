@@ -43,7 +43,7 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
         </div>
         {/* <div className="q-mark"></div>  */}
         <h2 className="question">
-          {questionData.question}
+          <span>Q.</span>{questionData.question}
         </h2>
         <div className='marginleft'>
         <p className="desc">*답은 하나만 선택해 주세요.</p>

@@ -17,7 +17,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 69px;
+  width: 8.5%;
   height: 100%;
   background-color: #3B3953;
   z-index: 1000;
@@ -30,7 +30,7 @@
 
 .quizrightbox p{
   color: #F8DFAF;
-  font-size: 48px;
+  font-size: 3rem;
   writing-mode: vertical-rl; /* 또는 vertical-lr */
 }
 
@@ -50,7 +50,7 @@
     background-image: url(../img/quizbk1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4.5% 0 0 7%;
+    padding: 3% 0 0 3%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -245,8 +245,6 @@ p.desc2{
     z-index: 9999;
 }
   .quiz-box {
-
-    border-radius: 30px;
     width: 65%;
     height: 35%;
     background-color: #000;
@@ -257,6 +255,11 @@ p.desc2{
     justify-content: center;
     position: relative;
 }
+
+.quizrightbox p{
+  font-size: 3rem;
+}
+
 
 /* 오답 */
 
