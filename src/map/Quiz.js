@@ -41,7 +41,7 @@ const Quiz = ({ questionData, onClose, onCorrect }) => {
           <p>QUIZ</p>
           <div className='quizlogo'></div>
         </div>
-        <div className="q-mark"></div> 
+        {/* <div className="q-mark"></div>  */}
         <h2 className="question">
           {questionData.question}
         </h2>
