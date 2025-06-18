@@ -247,12 +247,16 @@ const GungInfo = () => {
       <GungHeader placeId={placeId} fromTileId={fromTileId} characterKey={characterKey} />
 
       <Swiper
-        className="GungInfo"
+        className={`GungInfo ${gungId}-swiper`}
         modules={[Pagination, Mousewheel]}
         direction="horizontal"
         slidesPerView={1}
         mousewheel={true}
-        pagination={{ clickable: true }}
+        pagination={{
+          clickable: true,
+          bulletClass: `swiper-pagination-bullet ${gungId}-bullet`,
+          bulletActiveClass: `swiper-pagination-bullet-active ${gungId}-bullet-active`,
+        }}
         speed={600}
         grabCursor={true}
         onSlideChange={(swiper) => setSectionIndex(swiper.activeIndex)}

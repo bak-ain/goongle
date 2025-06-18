@@ -597,6 +597,19 @@ img.guide {
     /* orange-300 */
 }
 
+/* 각 페이지 마다의 pagenation 색 변경 */
+.gyeongbokgung-bullet {
+    background-color: #2A6DB9 !important;
+}
+.gyeonghuigung-bullet{
+    background-color: #238455 !important;
+}
+.changdeokgung-bullet{
+    background-color: #A13B47 !important;
+}
+.deoksugung-bullet{
+    background-color: #3B9AA1 !important;
+}
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: #000;
