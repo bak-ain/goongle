@@ -45,7 +45,12 @@ const Profile = ({ onLoginClick, onLogout }) => {
           }
         }}
       >
-        <span>{isMember ? '로그아웃' : '로그인'}</span>
+        <span className="nickname-text">{isMember ? '로그아웃' : '로그인'}</span>
+        <img
+          className="nickname-img"
+          src={isMember ? Icons.logoutIcon : Icons.loginIcon}
+          alt={isMember ? '로그아웃' : '로그인'}
+        />
       </div>
     </div>
   );

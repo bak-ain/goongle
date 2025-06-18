@@ -1,5 +1,7 @@
 // src/img/img.js
 
+import loginIcon from './log-in.png';
+import logoutIcon from './log-out.png'
 import coin from './coin.svg';
 import coinOn from './coinon.svg';
 import nipcoin from './nipcoin2.png';
@@ -115,7 +117,9 @@ export const Icons = {
   gnb5,
   gnb5On,
   logo,
-  login
+  login,
+  logoutIcon,
+  loginIcon,
 };
 
 export const Characters = {

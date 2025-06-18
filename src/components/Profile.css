@@ -10,20 +10,32 @@
 }
 
 .cha_box {
-    width: 70px;
-    /* height: 70px; */
+    width: 75px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #ddd;
+    /* background: #ffeaf1; */
+    border-radius: 10px;
+    padding-block: 6px;
+}
+
+.cha_box.guest {
+    border: none;
+    background: #efefef;
+
 }
 
 .cha_box img {
     height: 40px;
     width: auto;
 }
-.cha_box.member{
+
+.cha_box.member {
     cursor: pointer;
-} 
+}
+
 .cha_box.member img {
     height: 60px;
 }
@@ -41,6 +53,10 @@
     cursor: pointer;
 }
 
+.nickname_box img {
+    display: none;
+}
+
 .nickname_box span {
     font-size: 1rem;
     font-weight: 500;
@@ -50,30 +66,75 @@
     .Profile {
         width: 12%;
         gap: 5px;
+        flex-direction: row;
     }
 
     .cha_box {
         width: 60px;
         height: auto;
+        padding: 5px;
     }
 
+    .cha_box.guest {
+        height: 60px;
+    }
 
     .cha_box.member img {
         height: 50px;
     }
 
+    .nickname_box {
+        width: auto;
+        height: auto;
+        /* padding: 2px; */
+        background: none;
+        border: none;
+    }
+
+    .nickname_box span {
+        display: none;
+    }
+
+    .nickname_box img {
+        display: block;
+        width: 32px;
+    }
 
 }
 
 @media screen and (min-width: 360px) and (max-width: 430px) {
     .Profile {
         width: 100%;
+        flex-direction: column;
+        gap: 8px;
     }
-      .nickname_box{
+
+    .cha_box.guest {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .cha_box.guest img {
+        width: 32px;
+        height: auto;
+    }
+
+    .cha_box.member {
+        width: 50px;
+        /* height: 60px; */
+    }
+
+    .nickname_box {
         width: 60px;
         height: 35px;
-      }
-    .nickname_box span{
+    }
+
+    .nickname_box span {
         font-size: 14px;
+    }
+
+    .nickname_box img {
+        width: 30px;
     }
 }
